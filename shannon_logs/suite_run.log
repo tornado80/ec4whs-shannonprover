@@ -1,0 +1,270 @@
+17:23:28 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of H0_H1_0_equiv
+
+17:23:28 [Orchestrator] Starting run for artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/source/Full4WHS/Eq_H0_H1_0.ec:H0_H1_0_equiv
+17:23:28 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv
+
+──────────────────────────────────────────────────
+17:23:28 ▶ PROVE
+──────────────────────────────────────────────────
+17:23:28 [orchestrator] tree mode, 1 provers
+17:23:28 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/source/Full4WHS/Eq_H0_H1_0.ec:H0_H1_0_equiv
+17:23:28 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:23:28 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_d0b7f4adb9a4.sock
+17:23:28 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_d0b7f4adb9a4.sock
+17:23:29 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_d0b7f4adb9a4.sock (pid=14212)
+17:23:29 [Prover] why3server ready on /tmp/why3ec_d0b7f4adb9a4.sock
+17:23:29 [Prover] Tree mode for H0_H1_0_equiv (agent=claude, model=claude-opus-5-5, timeout=60min, initial_roots=1, max_concurrent=1)
+17:23:29 [Orchestrator] Tree prover: starting 1 provers from root
+17:23:36 [Tree-0.0] 💬 Let me look at the source.
+17:23:36 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "H0_H1_0_equiv", "scope": "task"})
+17:23:38 [Tree-0.0] 💬 Need to see the games.
+17:23:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+17:23:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+17:23:41 [Tree-0.0] 💬 Now the packages: Prot, ReductionNonce, Nonces, KX.
+17:23:42 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+17:23:44 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+17:23:44 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+17:23:45 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 1s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:23:48 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:23:49 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "path": "artifacts/ec4whs/full4whs-H0-H1_0-without-invarian)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:23:59 [Tree-0.0] 🔧 submit_proof_intent malformed: missing intent
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:24:00 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 1s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:24:03 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: byequiv => //; proc; inline Comp_H0.Game_H0.init Comp_H1.Game_H1.init Comp_H1.Pkg_Inst_Nonces.init; wp; call (_: ={d_LTK, d_H, ctr_, kid_, d_RevTested, d_Fresh, d_First, d_Second, d_State, b}(Comp_H0.Cloned_Pkg_KX.KX,...
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:24:09 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sim.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:24:16 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 0s (47s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:21 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if => //; auto => />.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:25 [Tree-0.0] 💬 Proving each oracle equivalence for H0 vs H1; working through the oracle subgoals now.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //; auto => />.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:28 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => />.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:30 [Tree-0.0] 💬 Send1 involves sampling; inline and look.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if => //.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:24:31 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 0s (63s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+17:24:45 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //; last by auto => />. sp; if => //; last by auto => />. if => //; last by auto => />. if => //; last by auto => />. wp; rnd; wp; skip => />.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+17:24:47 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=1, idle 1s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 78s
+17:24:50 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => />.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 78s
+17:24:55 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => />. 2: by auto => />. if; 1: by move => />. 2: by auto => />. if; 1: by move => />. 2: by auto => />. wp; rnd; wp; skip => />.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 78s
+17:25:03 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=1, idle 3s (94s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+17:25:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => /> /#.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+17:25:13 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move => /> /#. if; 1: by move => /> /#. wp; rnd; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+17:25:15 [Tree-0.0] 💬 Send1's sampling case is done; now closing its deterministic else-branches.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+17:25:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: do 3! (wp; skip => /> /#).
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+17:25:19 [Orchestrator]   Tree-0.0 (d=0): 11 tactics, 1 errors, errs_since_accept=0, idle 2s (110s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 94s
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:20 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:22 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by move => /> /#. sp; if; 1: by move=> /> /#. sp; if; 1: by move => /> /#. if; 1: by move => /> /#. if; 1: by move => /> /#. wp; rnd; wp; skip => /> /#. all: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:34 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by move => /> /#.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+17:25:35 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 1 errors, errs_since_accept=1, idle 0s (126s elapsed)
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 110s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:37 [Tree-0.0] 💬 Same shape as Send1; applying the same pattern to Send2.
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:38 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => /> /#.
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:41 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => /> /#. if; 1: by move => /> /#. if; 1: by move => /> /#. wp; rnd; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:47 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:49 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+17:25:51 [Orchestrator]   Tree-0.0 (d=0): 22 tactics, 1 errors, errs_since_accept=0, idle 1s (142s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 126s
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:25:52 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:25:55 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:25:58 [Tree-0.0] 💬 Send1/Send2 done; closing the abort branch, then the deterministic oracles.
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:25:58 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:26:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:26:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: do 7! (proc; inline *; wp; skip => /> /#).
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+17:26:07 [Orchestrator]   Tree-0.0 (d=0): 27 tactics, 1 errors, errs_since_accept=0, idle 1s (158s elapsed)
+
+🌳 1 alive │ 🐝0.0[22]★ │ 0 killed │ 142s
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+17:26:10 [Tree-0.0] 💬 Repeat for each remaining oracle.
+
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+17:26:10 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+17:26:13 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+17:26:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+17:26:22 [Orchestrator]   Tree-0.0 (d=0): 29 tactics, 1 errors, errs_since_accept=1, idle 6s (174s elapsed)
+
+🌳 1 alive │ 🐝0.0[27]★ │ 0 killed │ 158s
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 174s
+17:26:38 [Orchestrator]   Tree-0.0 (d=0): 29 tactics, 1 errors, errs_since_accept=1, idle 10s (189s elapsed)
+
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 174s
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 189s
+17:26:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by move => /> /#.
+
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 189s
+17:26:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move => /> /#. sp; if; 1: by move => /> /#. if; 1: by move => /> /#. if; 1: by move => /> /#. if; 1: by move => /> /#. if; 1: by move => /> /#. sp; if; 1: by move => /> /#. wp; rnd; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 189s
+17:26:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 189s
+17:26:54 [Orchestrator]   Tree-0.0 (d=0): 39 tactics, 1 errors, errs_since_accept=0, idle 0s (205s elapsed)
+
+🌳 1 alive │ 🐝0.0[29]★ │ 0 killed │ 189s
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:26:56 [Tree-0.0] 💬 Clearing the Test oracle's remaining deterministic branches one by one.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:26:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:02 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:04 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:07 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:09 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+17:27:10 [Orchestrator]   Tree-0.0 (d=0): 45 tactics, 1 errors, errs_since_accept=0, idle 1s (221s elapsed)
+
+🌳 1 alive │ 🐝0.0[39]★ │ 0 killed │ 205s
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:11 [Tree-0.0] 💬 Test oracle nearly done; three simple oracles and the final goal remain.
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:11 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:14 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:19 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+17:27:26 [Orchestrator]   Tree-0.0 (d=0): 49 tactics, 1 errors, errs_since_accept=0, idle 1s (237s elapsed)
+
+🌳 1 alive │ 🐝0.0[45]★ │ 0 killed │ 221s
+🌳 1 alive │ 🐝0.0[49]★ │ 0 killed │ 237s
+17:27:28 [Orchestrator] No prover succeeded. Best: Tree-0.0 (49 tactics)
+17:27:28 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:27:28 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:27:28 [Prover] Stopped EasyCrypt daemon after tree prover
+17:27:28 [Prover] Selected tree result: Tree-0.0
+17:27:28 [workflow.agents.prover] INFO: Subagent session_id: d2e6ba48-93fb-4830-ba6f-33cbce1fbe5a
+17:27:28 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_0f4a76d059c1_tree_0_0
+17:27:28 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/payload_audit.jsonl
+17:27:28 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/ec_sessions
+17:27:28 [Prover] Wrote 1 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/resume_capsules
+17:27:28 [Prover] Safe-stop checkpoint finalized via drained_live_checkpoint (49 tactic(s)).
+17:27:28 [Prover] Could not extract a closed proof; wrote 49 tactic partial prefix to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/partial_proof_prefix.ec.
+17:27:28 [workflow.agents.prover] INFO: Prover finished. Outcome: infrastructure_invalid, Time: 240s, Session: d2e6ba48-93fb-4830-ba6f-33cbce1fbe5a
+17:27:28 ✓ PROVE → outcome=infrastructure_invalid, time=240s
+
+17:27:28 [orchestrator] PROVE ⚠️ infrastructure invalid, 240s
+
+──────────────────────────────────────────────────
+17:27:28 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:27:28 [Orchestrator] Iterations: 1, Proved: NO, Time: 4.0min
+17:27:28 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/summary.json
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/source/Full4WHS/Eq_H0_H1_0.ec --lemma H0_H1_0_equiv --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 60 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01
+PREFLIGHT OK — target 'H0_H1_0_equiv': loads OK
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/H0_H1_0_equiv/2026-11-13_1723_H0_H1_0_equiv--H0_H1_0_equiv__proof_state_compiler__r01__ba30e6c9-dirty
+SUITE-EXECUTION-MANIFEST: artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/executions/20261113T152325.647346Z_9d73f2d6aafa/manifest.json

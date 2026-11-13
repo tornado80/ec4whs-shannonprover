@@ -1,0 +1,33 @@
+{
+ "rows": [
+  {
+   "lemma": "H0_H1_0_equiv",
+   "status": "infrastructure_invalid",
+   "wall_s": 239.68010139465332,
+   "turns": 42,
+   "msgs": 47,
+   "input": 94,
+   "output": 11425,
+   "wr_5m": 0,
+   "wr_1h": 167487,
+   "cache_rd": 4441393,
+   "cost_usd": 2.46,
+   "transcripts_missing": 0,
+   "committed": "partial",
+   "admits_before": 1,
+   "admits_after": 1,
+   "run_dir": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv"
+  }
+ ],
+ "total": {
+  "wall_s": 239.68010139465332,
+  "turns": 42,
+  "msgs": 47,
+  "input": 94,
+  "output": 11425,
+  "wr_5m": 0,
+  "wr_1h": 167487,
+  "cache_rd": 4441393,
+  "cost_usd": 2.46
+ }
+}

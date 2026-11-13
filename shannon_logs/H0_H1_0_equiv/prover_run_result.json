@@ -1,0 +1,29 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/ec_sessions/.ec_session_prover_0f4a76d059c1_tree_0_0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_0f4a76d059c1_tree_0_0",
+  "elapsed_seconds": 239.68010139465332,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "selected proof worker exited nonzero (code 2)"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "f503fb14449399555366f107f27fbbd257c57f3833203be5df4840a96d7d58b4",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_0f4a76d059c1_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "d2e6ba48-93fb-4830-ba6f-33cbce1fbe5a",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 42,
+  "verification": {}
+}

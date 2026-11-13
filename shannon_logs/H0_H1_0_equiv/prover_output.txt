@@ -1,0 +1,3 @@
+provider attempted a disabled tool: proof_node_manager:amend_and_replay
+
+MANAGER WORKER ERROR: agent exited with 2.

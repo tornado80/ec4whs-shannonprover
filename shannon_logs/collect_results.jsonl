@@ -1,0 +1,1 @@
+{"lemma": "H0_H1_0_equiv", "status": "infrastructure_invalid", "run_dir": "artifacts/ec4whs/full4whs-H0-H1_0-without-invariant/runs/ec4whs_h0_h1_noinv/proof_state_compiler/H0_H1_0_equiv/r01/2026-11-13_1723_H0_H1_0_equiv", "file": "Full4WHS/Eq_H0_H1_0.ec", "old_admits": 1, "kind": "partial", "open_goals": 1, "new_admits": 1, "compiles": true, "applied": true}

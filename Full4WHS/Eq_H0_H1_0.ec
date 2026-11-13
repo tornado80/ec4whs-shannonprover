@@ -12,6 +12,56 @@ lemma H0_H1_0_equiv &m (b : bool) :
   =
   Pr[Comp_H1.Exp_H1(A).run(b, false) @ &m : res].
 proof.
+byequiv => //; proc; inline Comp_H0.Game_H0.init Comp_H1.Game_H1.init Comp_H1.Pkg_Inst_Nonces.init; wp; call (_: ={d_LTK, d_H, ctr_, kid_, d_RevTested, d_Fresh, d_First, d_Second, d_State, b}(Comp_H0.Cloned_Pkg_KX.KX, Comp_H1.Cloned_Pkg_KX.KX) /\ Comp_H0.Game_H0.abort_flag{1} = Comp_H1.Game_H1.abort_flag{2} /\ !Comp_H1.Cloned_Pkg_Nonces.Nonces.b{2}).
+proc; inline *; sp; if => //; auto => />.
+sp; if => //; auto => />.
+proc; inline *; wp; skip => />.
+proc; inline *; sp; if => //.
+sp; if; 1: by move => />.
+sp; if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+wp; rnd; wp; skip => /> /#.
+do 3! (wp; skip => /> /#).
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+proc; inline *; sp; if; 1: by move => /> /#.
+sp; if; 1: by move => /> /#.
+sp; if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+wp; rnd; wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+skip => /> /#.
+proc; inline *; wp; skip => /> /#.
+do 7! (proc; inline *; wp; skip => /> /#).
+proc; inline *; wp; skip => /> /#.
+proc; inline *; wp; skip => /> /#.
+proc; inline *; sp; if; 1: by move => /> /#.
+sp; if; 1: by move => /> /#.
+sp; if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+if; 1: by move => /> /#.
+sp; if; 1: by move => /> /#.
+wp; rnd; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+wp; skip => /> /#.
+skip => /> /#.
+proc; inline *; wp; skip => /> /#.
+proc; inline *; wp; skip => /> /#.
+proc; inline *; wp; skip => /> /#.
+(* PARTIAL: Shannon Prover stopped here (infrastructure_invalid, run 2026-11-13_1723_H0_H1_0_equiv); the 1 remaining goal(s) are admitted. *)
 admit.
 qed.
 
