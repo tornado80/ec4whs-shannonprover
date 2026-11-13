@@ -1,0 +1,33 @@
+{
+ "rows": [
+  {
+   "lemma": "Eq_H0_H1_0_Send5",
+   "status": "verified",
+   "wall_s": 44.183181047439575,
+   "turns": 5,
+   "msgs": 9,
+   "input": 18,
+   "output": 1846,
+   "wr_5m": 0,
+   "wr_1h": 29106,
+   "cache_rd": 187404,
+   "cost_usd": 0.31,
+   "transcripts_missing": 0,
+   "committed": "proof",
+   "admits_before": 1,
+   "admits_after": 0,
+   "run_dir": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs_2026-11-14/ec4whs_h0_h1_send5_rerun/proof_state_compiler/Eq_H0_H1_0_Send5/r01/2026-11-14_0019_Eq_H0_H1_0_Send5"
+  }
+ ],
+ "total": {
+  "wall_s": 44.183181047439575,
+  "turns": 5,
+  "msgs": 9,
+  "input": 18,
+  "output": 1846,
+  "wr_5m": 0,
+  "wr_1h": 29106,
+  "cache_rd": 187404,
+  "cost_usd": 0.31
+ }
+}

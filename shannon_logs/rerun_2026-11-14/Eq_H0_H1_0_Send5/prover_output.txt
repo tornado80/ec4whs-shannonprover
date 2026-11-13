@@ -1,0 +1,8 @@
+EasyCrypt accepted the proof of `Eq_H0_H1_0_Send5` and `qed.`, and the manager accepted `finish`. Offline verification hasn't run yet; it happens after this node stops. It took two committed tactics plus `qed.`:
+
+1. `proc; inline *.` made the two programs match line for line.
+2. `wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().` closed the goal with no case split.
+
+One attempt failed before that: `sp; if` was rejected with "invalid first instruction" and nothing from it was committed.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["After `proc; inline *`, both sides of d_Send5 were syntactically identical inlined code.", "`wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().` discharged the goal without splitting on the abort flag.", "The compound `sp; if` was rejected with 'invalid first instruction' on the inlined goal."]}

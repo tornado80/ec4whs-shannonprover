@@ -61,3 +61,20 @@ result), `prover_report.json` (the agent's blockers/discoveries), `prover_output
 `timeline.jsonl` (every tactic the agent tried), `partial_proof_prefix.ec` (if not proved),
 `token_usage.jsonl` (usage and cost of every model message) and the full Claude transcript
 (`transcript_*.jsonl.gz`).
+
+## Shannon Prover rerun of `Eq_H0_H1_0_Send5` (2026-11-14): proved
+
+**All 12 oracle lemmas are now proved**; no admit is left in `Full4WHS/`, and `Eq_H0_H1_0.ec`
+compiles. The rerun of `Send5` (Opus 5.5 low, eval-mode sandbox from a proof-stripped copy,
+60 min limit, EasyCrypt limited to one SMT solver at a time) was verified by Shannon in 44
+seconds. The proof is `proc; inline *.` then `wp; skip` and an `smt()` on the unfolded
+invariant. In the first run the agent continued with `sp.` after inlining, and the resulting
+goal exceeded the proof tool's 2 MB response limit; this time it applied `wp; skip` directly.
+The proof replaces the partial one.
+
+| lemma | result | committed | admits before → after | wall time | turns | msgs | input | output | cache wr 5m | cache wr 1h | cache read | cost (USD) |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `Eq_H0_H1_0_Send5` | verified | proof | 1 → 0 | 0:00:44 | 5 | 9 | 18 | 1,846 | 0 | 29,106 | 187,404 | 0.31 |
+| **total** | 1/1 verified | | | 0:00:44 | 5 | 9 | 18 | 1,846 | 0 | 29,106 | 187,404 | 0.31 |
+
+Logs: `shannon_logs/rerun_2026-11-14/` (same layout as above; suite `suite_2026-11-14.json`).

@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *`, both sides of d_Send5 were syntactically identical inlined code.",
+    "`wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().` discharged the goal without splitting on the abort flag.",
+    "The compound `sp; if` was rejected with 'invalid first instruction' on the inlined goal."
+  ]
+}

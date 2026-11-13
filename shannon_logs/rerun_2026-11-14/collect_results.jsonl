@@ -1,0 +1,1 @@
+{"lemma": "Eq_H0_H1_0_Send5", "status": "verified", "run_dir": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs_2026-11-14/ec4whs_h0_h1_send5_rerun/proof_state_compiler/Eq_H0_H1_0_Send5/r01/2026-11-14_0019_Eq_H0_H1_0_Send5", "file": "Full4WHS/Eq_H0_H1_0_Send5.ec", "old_admits": 1, "kind": "proof", "new_admits": 0, "compiles": true, "applied": true}

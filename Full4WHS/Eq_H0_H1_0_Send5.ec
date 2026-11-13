@@ -57,7 +57,6 @@ lemma Eq_H0_H1_0_Send5 : equiv[Comp_H0.Game_H0.d_Send5 ~ Comp_H1.Game_H1.d_Send5
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-proc; inline *; sp.
-(* PARTIAL: Shannon Prover stopped here (incomplete, run 2026-11-13_1716_Eq_H0_H1_0_Send5); the 1 remaining goal(s) are admitted. *)
-admit.
+  proc; inline *.
+  wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
 qed.
