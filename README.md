@@ -33,11 +33,15 @@ Result:
   recorded tactic history (`shannon_logs/Eq_H6_1_1_H7_0_Send3/partial_proof_prefix.ec`, ends in
   `qed.`); it was spliced into `Eq_H6_1_1_H7_0_Send3.ec` and checked here with EasyCrypt
   (no admits, compiles).
-- **`Eq_H6_1_1_H7_0_Send4`: not proved yet.** The first agent was killed after 36 minutes by a
-  harness error (`unknown Claude user block 'text'`, Claude CLI output Shannon does not parse);
-  every restart then failed with "OAuth token revoked" during a Claude login outage
-  (19:05-19:20). Its best state had 2 open goals. One retry is queued; until then the file keeps
-  the earlier partial proof. Kill reasons: `shannon_logs/Eq_H6_1_1_H7_0_Send*/worker_stderr/`.
+- **`Eq_H6_1_1_H7_0_Send4`: not proved; partial proof committed.** The first agent was killed
+  after 36 minutes by a harness error (`unknown Claude user block 'text'`, Claude CLI output
+  Shannon does not parse); every restart then failed with "OAuth token revoked" during a Claude
+  login outage (19:05-19:20). `Eq_H6_1_1_H7_0_Send4.ec` now holds the furthest state, the first
+  agent's 18 accepted tactics (`proc`, the abort-flag case, inlining `d_Send4`/`d_Run4`, a `seq`
+  and `conseq` through the MAC check, ...), followed by 5 `admit.` for the 5 goals still open,
+  marked `(* PARTIAL ... *)`; the file compiles. (The restarts replayed shorter prefixes and
+  never got further.) One retry is queued. Kill reasons:
+  `shannon_logs/Eq_H6_1_1_H7_0_Send*/worker_stderr/`.
 - The main file `Eq_H6_1_1_H7_0.ec` does not compile in this environment, before and after this
   change: `cannot prove goal` at lines 112-113 (the initial-state step), independent of the
   oracle lemmas.
