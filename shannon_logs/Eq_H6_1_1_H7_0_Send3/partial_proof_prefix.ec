@@ -1,0 +1,146 @@
+proc.
+case (Comp_H6.Game_H6.abort_flag{1}).
+rcondf{1} 2; 1: by auto.
+rcondf{2} 2; 1: by auto; smt().
+by auto.
+rcondt{1} 2; 1: by auto.
+rcondt{2} 2; 1: by auto; smt().
+wp.
+inline Comp_H6.Pkg_Inst_KX.d_Send3 Comp_H7.Pkg_Inst_KX.d_Send3.
+sp.
+conseq (_: _ ==> ec_result{1} = ec_result{2} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |}); 1: by move=> &1 &2; rewrite /inv /params_inv /=; smt().
+if.
+move=> &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /= => _ HI _ _ Ha; have [_ [HS _]] := HI Ha; by have [-> _] := HS ctr{2}.
+sp.
+conseq (_: ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ !ec_done{1} /\ !ec_done{2} /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp_H7.Game_H7.abort_flag{2} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |} /\ Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[ctr0{1}] = Some state{1} /\ Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_State{2}.[ctr0{2}] = Some state{2} /\ state{2} = (if Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{1}.[ctr0{1}] = Some true then (state{1}.`1, state{1}.`2, state{1}.`3, state{1}.`4, state{1}.`5, state{1}.`6, state{1}.`7, state{1}.`8, None, state{1}.`10, state{1}.`11) else state{1}) /\ Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{1}.[ctr0{1}] = Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1}.[state{1}.`4] /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1}.[state{1}.`4] <> None /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1}.[state{1}.`4] <> None /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1} = Comp_H7.Cloned_Pkg_PRF.PRF.d_H{2} /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1} = Comp_H7.Cloned_Pkg_PRF.PRF.d_LTK{2} /\ Comp_H6.Cloned_Pkg_PRF.PRF.b{1} /\ Comp_H7.Cloned_Pkg_PRF.PRF.b{2} /\ !Comp_H7.Cloned_Pkg_MAC.MAC.b{2} /\ (forall kid dU dV ni nr, Comp_H6.Cloned_Pkg_PRF.PRF.d_PRF{1}.[(kid, (dU, dV, ni, nr, false))] = Comp_H7.Cloned_Pkg_MAC.MAC.d_Keys{2}.[(kid, dU, dV, ni, nr)]) ==> _).
+move=> &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
+move=> Hb HI H6 H7 Ha Hs; have [[_ [hL [hH [_ [_ [hF _]]]]]] [HSE [HPRF _]]] := HI Ha; have [_ [_ [_ [HNO [_ [_ [_ [_ [_ [_ [HHF _]]]]]]]]]]] := H6 Ha; clear HI H6 H7; have [HSE1 HSE2] := HSE ctr{2}; have [HF1 [HF2 HF3]] := HHF ctr{2} Hs; have [_ [_ [HN1 _]]] := HNO (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[ctr{2}]).`4; do! split; smt().
+inline Comp_H6.Pkg_Imports_KX.d_Run3 Comp_H7.Pkg_Imports_KX.d_Run3 Comp_H6.Pkg_Inst_Prot.d_Run3 Comp_H7.Pkg_Inst_Prot.d_Run3.
+sp.
+if.
+move=> &1 &2 />; smt().
+if.
+move=> &1 &2 />; smt().
+if.
+move=> &1 &2 />; smt().
+sp.
+inline{2} Comp_H7.Pkg_Imports_Prot.d_Hon Comp_H7.Pkg_Inst_PRF.d_Hon.
+sp.
+rcondt{2} 1.
+by move=> &m; auto => />; smt().
+sp.
+conseq (_: ctr0{1} = ctr0{2} /\ !ec_done{1} /\ !ec_done{2} /\ ec_result0{1} = None /\ ec_result0{2} = None /\ ec_result1{1} = None /\ ec_result1{2} = None /\ !ec_done0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp_H7.Game_H7.abort_flag{2} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |} /\ Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[ctr0{1}] = Some state{1} /\ Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_State{2}.[ctr0{2}] = Some state{2} /\ state{2} = (if Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{1}.[ctr0{1}] = Some true then (state{1}.`1, state{1}.`2, state{1}.`3, state{1}.`4, state{1}.`5, state{1}.`6, state{1}.`7, state{1}.`8, None, state{1}.`10, state{1}.`11) else state{1}) /\ Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{1}.[ctr0{1}] = Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1}.[state{1}.`4] /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1}.[state{1}.`4] <> None /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1}.[state{1}.`4] <> None /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1} = Comp_H7.Cloned_Pkg_PRF.PRF.d_H{2} /\ Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1} = Comp_H7.Cloned_Pkg_PRF.PRF.d_LTK{2} /\ Comp_H6.Cloned_Pkg_PRF.PRF.b{1} /\ Comp_H7.Cloned_Pkg_PRF.PRF.b{2} /\ !Comp_H7.Cloned_Pkg_MAC.MAC.b{2} /\ (forall kid dU dV ni nr, Comp_H6.Cloned_Pkg_PRF.PRF.d_PRF{1}.[(kid, (dU, dV, ni, nr, false))] = Comp_H7.Cloned_Pkg_MAC.MAC.d_Keys{2}.[(kid, dU, dV, ni, nr)]) /\ state1{1} = state{1} /\ state1{2} = state{2} /\ d_U0{1} = state{1}.`1 /\ u0{1} = state{1}.`2 /\ d_V0{1} = state{1}.`3 /\ kid0{1} = state{1}.`4 /\ acc0{1} = state{1}.`5 /\ ni0{1} = state{1}.`7 /\ mess0{1} = state{1}.`11 /\ d_U0{2} = d_U0{1} /\ u0{2} = u0{1} /\ d_V0{2} = d_V0{1} /\ kid0{2} = kid0{1} /\ ni0{2} = ni0{1} /\ mess0{1} = 1 /\ acc0{1} = None /\ !u0{1} /\ nr0{1} = nr0{2} /\ tau{1} = tau{2} /\ hon{2} = (Comp_H6.Cloned_Pkg_PRF.PRF.d_H{1}.[kid0{1}] = Some true) ==> _).
+move=> &1 &2 [#] -> -> -> [] />; smt().
+case (ni0{1} = None).
+rcondf{1} 1.
+by auto => />.
+if{2}.
+rcondf{2} 1.
+by auto => />.
+rcondf{2} 2.
+by auto.
+by auto => />.
+rcondf{2} 1.
+by auto => />.
+rcondf{2} 2.
+by auto.
+by auto => />.
+rcondt{1} 1; 1: by auto.
+case (hon{2}).
+rcondt{2} 1; 1: by auto.
+rcondt{2} 1; 1: by auto.
+inline *.
+sp.
+rcondt{1} 1; 1: by auto; smt().
+rcondf{1} 1; 1: by auto; smt().
+if; 1: by move=> &1 &2 />; smt().
+rcondt{1} 4; 1: by move=> &m; auto => /> *; rewrite get_set_sameE.
+rcondt{1} 7; 1: by move=> &m; auto => /> *; rewrite get_set_sameE.
+rcondt{2} 6; 1: by move=> &m; auto.
+rcondt{2} 8; 1: by move=> &m; auto.
+rcondt{2} 8; 1: by move=> &m; auto.
+rcondt{2} 9; 1: by move=> &m; auto.
+rcondt{2} 17; 1: by move=> &m; auto => /> *; rewrite get_set_sameE.
+rcondf{2} 17; 1: by move=> &m; auto.
+rcondt{2} 22; 1: by move=> &m; auto.
+rcondt{2} 23; 1: by move=> &m; auto.
+seq 1 1 : (#pre /\ temp{1} = key{2}); 1: by auto.
+case (func_mac temp{1} nr0{1} 2 = tau{1}).
+rcondt{1} 9.
+move=> &m; auto => />.
+by move=> &hr *; rewrite get_set_sameE.
+rcondt{2} 22; 1: by move=> &m; auto => /> &hr *; rewrite get_set_sameE.
+rcondt{2} 22; 1: by move=> &m; auto.
+rcondt{2} 28; 1: by move=> &m; auto => /> &hr *; rewrite get_set_sameE.
+rcondt{2} 34; 1: by move=> &m; auto.
+rcondt{2} 35; 1: by move=> &m; auto.
+rcondt{1} 12; 1: by move=> &m; auto.
+rcondt{2} 38; 1: by move=> &m; auto.
+rcondt{1} 15; 1: by move=> &m; auto.
+rcondt{2} 41; 1: by move=> &m; auto.
+rcondt{1} 15; 1: by move=> &m; auto.
+rcondt{2} 41; 1: by move=> &m; auto.
+rcondt{1} 16; first by auto.
+rcondt{2} 42; first by auto.
+swap{1} 15 3; swap{2} 41 3.
+seq 17 43 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |}).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone; rewrite !get_setE /=.
+split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+split; first by move=> k dU dV n1 n2; rewrite !get_setE /=; smt().
+move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+if; first by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt().
+auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => /> | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />].
+rcondf{1} 9; first by auto => />; smt(get_setE).
+(rcondt{1} 12; first by auto); (rcondf{1} 15; first by auto => />; smt()); (rcondt{1} 15; first by auto).
+(rcondf{2} 22; first by auto => />; smt(get_setE)); (rcondt{2} 25; first by auto); (rcondf{2} 28; first by auto => />; smt()); (rcondt{2} 28; first by auto).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone Hmac; split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+split; first by move=> k dU dV n1 n2; rewrite !get_setE /=; smt().
+rewrite (set_get_eq _ _ _ HS1) => c Hc H9; have Hk := Hprf2 state{1}.`4 state{1}.`1 state{1}.`3 (oget state{1}.`7) nr0{2}; have := Hkm c Hc H9; rewrite !get_setE /=; case: (c = ctr0{2}) => [Ec|hc] /=.
+move: H9; rewrite Ec HS1 HF Hhon /= => H9 Hkey; case: (oget state{1}.`8 = nr0{2}) => E8 //; move: Hkey; rewrite E8 -Hk Hnone; smt().
+case: (Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[c] = Some true) => HFc /=; [move=> Hkey | done].
+case: ((oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`4 = state{1}.`4 /\ (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`1 = state{1}.`1 /\ (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`3 = state{1}.`3 /\ oget (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`7 = oget state{1}.`7 /\ oget (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`8 = nr0{2}) => [[E4 [E1 [E3 [E7 E8]]]] | //]; move: H9; rewrite Hkey E4 E1 E3 E7 E8 -Hk Hnone.
+done.
+(rcondt{1} 2; first by auto => />); (rcondt{1} 5; first by auto => />).
+(rcondt{2} 4; first by auto); (rcondt{2} 6; first by auto); (rcondt{2} 6; first by auto => />); (rcondt{2} 7; first by auto => />).
+(rcondt{2} 15; first by auto => />; smt()); (rcondf{2} 15; first by auto => />); (rcondt{2} 20; first by auto); (rcondt{2} 21; first by auto).
+case (func_mac (oget Comp_H6.Cloned_Pkg_PRF.PRF.d_PRF{1}.[kid2{1}, x0{1}]) nr0{1} 2 = tau{1}).
+(rcondt{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 15; first by auto => />; smt()).
+(rcondt{2} 21; first by auto => />; smt()); (rcondt{2} 21; first by auto); (rcondt{2} 27; first by auto => />; smt()); (rcondt{2} 33; first by auto); (rcondt{2} 34; first by auto); (rcondt{2} 37; first by auto); (rcondt{2} 40; first by auto); (rcondt{2} 40; first by auto); (rcondt{2} 41; first by auto).
+swap{1} 14 3; swap{2} 40 3.
+seq 16 42 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |}).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone; split; first by rewrite Hprf2.
+split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; [rewrite HF Hhon /= -Hprf2; smt() | smt()].
+if; first by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt().
+auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => /> | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />].
+(rcondf{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondf{1} 14; first by auto => />; smt()); (rcondt{1} 14; first by auto).
+(rcondf{2} 21; first by auto => />; smt()); (rcondt{2} 24; first by auto); (rcondf{2} 27; first by auto => />; smt()); (rcondt{2} 27; first by auto).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone Hmac; rewrite (set_get_eq _ _ _ HS1); have E2 : state{1}.`2 = false by smt(); move: HS2; rewrite HF Hhon /= E2 => HS2; rewrite HF Hhon /= (set_get_eq _ _ _ HS2).
+have HFt : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] = Some true by rewrite HF Hhon.
+rewrite HFt /=.
+have HS3 : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_State{2}.[ctr0{2}] = Some (state{1}.`1, false, state{1}.`3, state{1}.`4, state{1}.`5, state{1}.`6, state{1}.`7, state{1}.`8, None<:bits_n>, state{1}.`10, state{1}.`11) by rewrite HS2 HFt /= E2.
+rewrite (set_get_eq _ _ _ HS3); split => c; [have := Hst c | have := Hkm c]; smt().
+(rcondf{2} 1; first by auto => />); (rcondt{2} 1; first by auto => />); inline *; sp.
+(rcondt{1} 1; first by auto => />; smt()); (rcondt{1} 1; first by auto => />; smt()); (rcondt{1} 5; first by auto); (rcondt{2} 1; first by auto => />; smt()); (rcondt{2} 1; first by auto => />; smt()); (rcondt{2} 5; first by auto); (rcondt{2} 7; first by auto); (rcondt{2} 7; first by auto => />); (rcondf{2} 8; first by auto => />); (rcondt{2} 8; first by auto); (rcondt{2} 9; first by auto).
+case (func_mac (func_prf (oget Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1}.[kid2{1}]) x0{1}) nr0{1} 2 = tau{1}).
+(rcondt{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 15; first by auto); (rcondt{2} 9; first by auto => />; smt()); (rcondf{2} 9; first by auto => />); (rcondt{2} 9; first by auto); (rcondt{2} 10; first by auto); (rcondt{2} 13; first by auto); (rcondt{2} 16; first by auto); (rcondt{2} 16; first by auto); (rcondt{2} 17; first by auto).
+swap{1} 14 3; swap{2} 16 3; seq 16 18 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg_Inst_PRF.kid_{1} |}; l_pkg_Nonces = {| Nonces_d_Nonces = Comp_H6.Pkg_Inst_Nonces.d_Nonces{1} |}; l_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H6.Pkg_Inst_KX.ctr_{1}; KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1}; KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1}; KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1}; KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1}; KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1}; KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |}; l_pkg_PRF_b = Comp_H6.Pkg_Inst_PRF.b{1}; l_pkg_Nonces_b = Comp_H6.Pkg_Inst_Nonces.b{1}; l_pkg_KX_btest = Comp_H6.Pkg_Inst_KX.btest{1}; l_pkg_KX_bleast = Comp_H6.Pkg_Inst_KX.bleast{1}; l_abort_flag = Comp_H6.Game_H6.abort_flag{1} |} {| r_pkg_PRF = {| PRF_d_LTK = Comp_H7.Pkg_Inst_PRF.d_LTK{2}; PRF_d_H = Comp_H7.Pkg_Inst_PRF.d_H{2}; PRF_d_PRF = Comp_H7.Pkg_Inst_PRF.d_PRF{2}; PRF_kid_ = Comp_H7.Pkg_Inst_PRF.kid_{2} |}; r_pkg_MAC = {| MAC_d_Keys = Comp_H7.Pkg_Inst_MAC.d_Keys{2}; MAC_d_Values = Comp_H7.Pkg_Inst_MAC.d_Values{2} |}; r_pkg_Nonces = {| Nonces_d_Nonces = Comp_H7.Pkg_Inst_Nonces.d_Nonces{2} |}; r_pkg_KX = {| KX_noprfkey_ctr_ = Comp_H7.Pkg_Inst_KX.ctr_{2}; KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2}; KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2}; KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2}; KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2}; KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2}; KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |}; r_pkg_PRF_b = Comp_H7.Pkg_Inst_PRF.b{2}; r_pkg_MAC_b = Comp_H7.Pkg_Inst_MAC.b{2}; r_pkg_Nonces_b = Comp_H7.Pkg_Inst_Nonces.b{2}; r_pkg_KX_btest = Comp_H7.Pkg_Inst_KX.btest{2}; r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2}; r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |}).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hnh; have HFf : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] <> Some true; first by rewrite HF.
+split => c; have := Hst c; have := Hkm c; rewrite !get_setE; case (c = ctr0{2}) => Hc /=; smt().
+if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => /> | if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => /> | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />]].
+(rcondf{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondf{1} 14; first by auto => />; smt()); (rcondt{1} 14; first by auto); (rcondf{2} 9; first by auto => />; smt()); (rcondt{2} 12; first by auto); (rcondf{2} 15; first by auto => />; smt()); (rcondt{2} 15; first by auto).
+wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /= => />.
+move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hnh Hmac; have HFf : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] <> Some true; first by rewrite HF.
+rewrite (set_get_eq _ _ _ HS1); split => c; have := Hst c; have := Hkm c; rewrite !get_setE; case (c = ctr0{2}) => Hc /=; smt().
+(rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+(rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+(rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+auto => />.
+qed.

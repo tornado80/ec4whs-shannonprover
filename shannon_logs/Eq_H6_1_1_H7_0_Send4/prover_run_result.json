@@ -1,0 +1,39 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0_r0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_5cbe73c13f2e_tree_0_0",
+  "elapsed_seconds": 2149.51376414299,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "selected proof worker exited nonzero (code 2)"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "ca5721c79099df5dda8bc4011794a8a470186e8d1ccdc32b3fa6896ef15f194f",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0_r0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "b5e9e3c5-1302-4f39-b3c7-8763bdf7f8b9",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 43,
+  "verification": {}
+}

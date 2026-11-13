@@ -1,0 +1,7 @@
+# worker stderr — node Tree-0.0.r1.r0
+# returncode=1 reason=worker_exit time=2026-11-13T19:13:57
+# (empty below = the worker wrote nothing to stderr before exit)
+
+managed worker: agent exit 1 reason:
+Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.

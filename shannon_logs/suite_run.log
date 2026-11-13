@@ -1,0 +1,2235 @@
+17:57:52 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H6_1_1_H7_0_Send3
+
+17:57:53 [Orchestrator] Starting run for artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send3.ec:Eq_H6_1_1_H7_0_Send3
+17:57:53 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3
+
+──────────────────────────────────────────────────
+17:57:53 ▶ PROVE
+──────────────────────────────────────────────────
+17:57:53 [orchestrator] tree mode, 1 provers
+17:57:53 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send3.ec:Eq_H6_1_1_H7_0_Send3
+17:57:53 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:57:53 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_9450ea3b21e2.sock
+17:57:53 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_9450ea3b21e2.sock
+17:57:53 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_9450ea3b21e2.sock (pid=21238)
+17:57:53 [Prover] why3server ready on /tmp/why3ec_9450ea3b21e2.sock
+17:57:54 [Prover] Tree mode for Eq_H6_1_1_H7_0_Send3 (agent=claude, model=claude-opus-5-5, timeout=60min, initial_roots=1, max_concurrent=1)
+17:57:54 [Orchestrator] Tree prover: starting 1 provers from root
+17:58:01 [Tree-0.0] 💬 I'll start by reading the target source to understand the lemma and sibling proofs.
+17:58:01 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"query": "Eq_H6_1_1_H7_0_Send3", "scope": "task"})
+17:58:04 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+17:58:05 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+17:58:08 [Tree-0.0] 💬 Siblings are stripped too. Let me read the invariant and game definitions.
+17:58:08 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+17:58:09 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"query": "d_Send3", "scope": "task"})
+17:58:09 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (15s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:11 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:12 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:13 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:17 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:19 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:20 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:21 [Tree-0.0] 💬 Now the PRF and MAC packages.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:23 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:24 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:58:25 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:58:26 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:58:40 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 14s (46s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+17:58:55 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 30s (62s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 62s
+17:59:11 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 46s (78s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 78s
+17:59:27 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 61s (93s elapsed)
+
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 93s
+17:59:28 [Tree-0.0] 🧠 H6 and H7 both sample the same key in the honest case, so they agree by prf_equality. I'm starting the proof now.
+
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 93s
+17:59:28 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc.
+
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 93s
+17:59:38 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (Comp_H6.Game_H6.abort_flag{1}).
+
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 93s
+17:59:42 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 0 errors, errs_since_accept=0, idle 5s (109s elapsed)
+
+🌳 1 alive │ 🐝0.0[0] │ 0 killed │ 93s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 109s
+17:59:43 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondf{1} 2; 1: by auto. rcondf{2} 2; 1: by auto; smt(). by auto.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 109s
+17:59:50 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 2; 1: by auto. rcondt{2} 2; 1: by auto; smt(). wp. inline *.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 109s
+17:59:58 [Orchestrator]   Tree-0.0 (d=0): 9 tactics, 0 errors, errs_since_accept=0, idle 7s (125s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 109s
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 125s
+18:00:07 [Tree-0.0] 💬 The output overflowed my readable limit. I'll undo and proceed with more incremental inlining so that goals stay displayable.
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 125s
+18:00:07 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 125s
+18:00:14 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=1, idle 7s, undo_repair (140s elapsed)
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 125s
+🌳 1 alive │ 🔧0.0[5]★ │ 0 killed │ 140s
+18:00:27 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 2; 1: by auto. rcondt{2} 2; 1: by auto; smt(). wp. inline Comp_H6.Pkg_Inst_KX.d_Send3 Comp_H7.Pkg_Inst_KX.d_Send3. sp.
+
+🌳 1 alive │ 🔧0.0[5]★ │ 0 killed │ 140s
+18:00:30 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 1s (156s elapsed)
+
+🌳 1 alive │ 🔧0.0[5]★ │ 0 killed │ 140s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 156s
+18:00:45 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 17s (172s elapsed)
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 156s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 172s
+18:01:01 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 33s (187s elapsed)
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 172s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 187s
+18:01:17 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 48s (203s elapsed)
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 187s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 203s
+18:01:29 [Tree-0.0] 💬 The post is now 4× `inv`. Since abort flags stay false and states are unchanged in every failing path, I'll strengthen the post to a single `ec_result...
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 203s
+18:01:32 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 3s (219s elapsed)
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 203s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 219s
+18:01:40 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_: _ ==> ec_result{1} = ec_result{2} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg...
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 219s
+18:01:48 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=1, idle 1s, undo_repair (234s elapsed)
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 219s
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 234s
+18:02:04 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=1, idle 11s, undo_repair (250s elapsed)
+
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 234s
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 250s
+18:02:07 [Tree-0.0] 💬 smt failed on the conseq side condition, probably due to size. I'll unfold `inv`/`params_inv` and simplify first.
+
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 250s
+18:02:17 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_: _ ==> ec_result{1} = ec_result{2} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H{1}; PRF_d_PRF = Comp_H6.Pkg_Inst_PRF.d_PRF{1}; PRF_kid_ = Comp_H6.Pkg...
+
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 250s
+18:02:19 [Orchestrator]   Tree-0.0 (d=0): 11 tactics, 1 errors, errs_since_accept=0, idle 1s (266s elapsed)
+
+🌳 1 alive │ 🔧0.0[10]★ │ 0 killed │ 250s
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 266s
+18:02:24 [Tree-0.0] 💬 Now the synchronized `if` on `d_State[ctr] <> None`.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 266s
+18:02:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_state_equality /=; smt(). 2: by auto; smt().
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 266s
+18:02:35 [Orchestrator]   Tree-0.0 (d=0): 11 tactics, 1 errors, errs_since_accept=1, idle 2s, undo_repair (282s elapsed)
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 266s
+🌳 1 alive │ 🔧0.0[11]★ │ 0 killed │ 282s
+18:02:45 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if.
+
+🌳 1 alive │ 🔧0.0[11]★ │ 0 killed │ 282s
+18:02:51 [Orchestrator]   Tree-0.0 (d=0): 12 tactics, 1 errors, errs_since_accept=0, idle 5s, undo_repair (297s elapsed)
+
+🌳 1 alive │ 🔧0.0[11]★ │ 0 killed │ 282s
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 297s
+18:03:01 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /= => *.
+
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 297s
+18:03:04 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: smt().
+
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 297s
+18:03:07 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 1 errors, errs_since_accept=0, idle 2s (313s elapsed)
+
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 297s
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 313s
+18:03:19 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 313s
+18:03:23 [Orchestrator]   Tree-0.0 (d=0): 12 tactics, 2 errors, errs_since_accept=2, idle 3s, undo_repair (329s elapsed)
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 313s
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 329s
+18:03:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /= => _ HI _ _ Ha; have [_ [HS _]] := HI Ha; by have [-> _] := HS ctr{2}.
+
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 329s
+18:03:38 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 14s, undo_repair (345s elapsed)
+
+🌳 1 alive │ 🔧0.0[12]★ │ 0 killed │ 329s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 345s
+18:03:54 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 29s, undo_repair (360s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 345s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 360s
+18:04:10 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 45s, undo_repair (376s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 360s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 376s
+18:04:26 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 61s, undo_repair (392s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 376s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 392s
+18:04:41 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 77s, undo_repair (408s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 392s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 408s
+18:04:45 [Tree-0.0] 🧠 Abort case and the `d_State[ctr] = None` guard are finished. Next I'm working on `sp` and then a `conseq` with a slimmer...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 408s
+18:04:57 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 12s, undo_repair (424s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 408s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 424s
+18:05:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp. conseq (_: ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ !ec_done{1} /\ !ec_done{2} /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp_H7.Game_H7.abort_flag{2} /\ inv {| l_pkg_P...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 424s
+18:05:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /Comp_H6.side_inv_H6 /Comp_H6.l...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 424s
+18:05:13 [Orchestrator]   Tree-0.0 (d=0): 16 tactics, 2 errors, errs_since_accept=0, idle 2s (439s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 424s
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 439s
+18:05:29 [Tree-0.0] 💬 Now I'll name the needed facts, clear the heavy hypotheses, and close the side condition.
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 439s
+18:05:29 [Orchestrator]   Tree-0.0 (d=0): 16 tactics, 2 errors, errs_since_accept=0, idle 0s (455s elapsed)
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 439s
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 455s
+18:05:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> Hb HI H6 H7 Ha Hs; have [[_ [hL [hH [_ [_ [hF _]]]]]] [HSE [HPRF _]]] := HI Ha; have [_ [_ [_ [HNO [_ [_ [_ [_ [_ [_ [HHF _]]]]]]]]]]] := H6 Ha; clear HI H6 H7; have [HSE1 HSE2] := HSE ctr{2}; have [HF1 [HF2 HF...
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 455s
+18:05:45 [Orchestrator]   Tree-0.0 (d=0): 17 tactics, 2 errors, errs_since_accept=0, idle 13s (471s elapsed)
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 455s
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 471s
+18:05:53 [Tree-0.0] 💬 Now inlining the `Run3` layers on both sides.
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 471s
+18:05:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline Comp_H6.Pkg_Imports_KX.d_Run3 Comp_H7.Pkg_Imports_KX.d_Run3 Comp_H6.Pkg_Inst_Prot.d_Run3 Comp_H7.Pkg_Inst_Prot.d_Run3. sp.
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 471s
+18:06:01 [Orchestrator]   Tree-0.0 (d=0): 19 tactics, 2 errors, errs_since_accept=0, idle 7s (487s elapsed)
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 471s
+🌳 1 alive │ 🐝0.0[19]★ │ 0 killed │ 487s
+18:06:02 [Tree-0.0] 💬 Three synchronized guards (`mess=1`, `acc=None`, `u=false`) come next; trying the first.
+
+🌳 1 alive │ 🐝0.0[19]★ │ 0 killed │ 487s
+18:06:02 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: smt(). 2: by auto => />.
+
+🌳 1 alive │ 🐝0.0[19]★ │ 0 killed │ 487s
+18:06:17 [Orchestrator]   Tree-0.0 (d=0): 19 tactics, 2 errors, errs_since_accept=1, idle 5s, undo_repair (503s elapsed)
+
+🌳 1 alive │ 🐝0.0[19]★ │ 0 killed │ 487s
+🌳 1 alive │ 🔧0.0[19]★ │ 0 killed │ 503s
+18:06:29 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if.
+
+🌳 1 alive │ 🔧0.0[19]★ │ 0 killed │ 503s
+18:06:32 [Orchestrator]   Tree-0.0 (d=0): 20 tactics, 2 errors, errs_since_accept=0, idle 4s, undo_repair (519s elapsed)
+
+🌳 1 alive │ 🔧0.0[19]★ │ 0 killed │ 503s
+🌳 1 alive │ 🔧0.0[20]★ │ 0 killed │ 519s
+18:06:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 />; smt().
+
+🌳 1 alive │ 🔧0.0[20]★ │ 0 killed │ 519s
+18:06:40 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if. move=> &1 &2 />; smt(). if. move=> &1 &2 />; smt(). sp.
+
+🌳 1 alive │ 🔧0.0[20]★ │ 0 killed │ 519s
+18:06:48 [Orchestrator]   Tree-0.0 (d=0): 26 tactics, 2 errors, errs_since_accept=0, idle 5s (535s elapsed)
+
+🌳 1 alive │ 🔧0.0[20]★ │ 0 killed │ 519s
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 535s
+18:07:04 [Orchestrator]   Tree-0.0 (d=0): 26 tactics, 2 errors, errs_since_accept=0, idle 21s (551s elapsed)
+
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 535s
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 551s
+18:07:20 [Orchestrator]   Tree-0.0 (d=0): 26 tactics, 2 errors, errs_since_accept=0, idle 36s (567s elapsed)
+
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 551s
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 567s
+18:07:27 [Tree-0.0] 💬 Now inlining `d_Hon` on the right and resolving its (always-taken) branches.
+
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 567s
+18:07:28 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline{2} Comp_H7.Pkg_Imports_Prot.d_Hon Comp_H7.Pkg_Inst_PRF.d_Hon. sp. rcondt{2} 1. auto => />; smt(). sp. rcondt{2} 1. auto => />. sp.
+
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 567s
+18:07:36 [Orchestrator]   Tree-0.0 (d=0): 26 tactics, 2 errors, errs_since_accept=1, idle 6s, undo_repair (582s elapsed)
+
+🌳 1 alive │ 🐝0.0[26]★ │ 0 killed │ 567s
+🌳 1 alive │ 🔧0.0[26]★ │ 0 killed │ 582s
+18:07:52 [Orchestrator]   Tree-0.0 (d=0): 26 tactics, 2 errors, errs_since_accept=1, idle 10s, undo_repair (598s elapsed)
+
+🌳 1 alive │ 🔧0.0[26]★ │ 0 killed │ 582s
+🌳 1 alive │ 🔧0.0[26]★ │ 0 killed │ 598s
+18:08:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline{2} Comp_H7.Pkg_Imports_Prot.d_Hon Comp_H7.Pkg_Inst_PRF.d_Hon. sp. rcondt{2} 1.
+
+🌳 1 alive │ 🔧0.0[26]★ │ 0 killed │ 598s
+18:08:08 [Orchestrator]   Tree-0.0 (d=0): 29 tactics, 2 errors, errs_since_accept=0, idle 8s, undo_repair (614s elapsed)
+
+🌳 1 alive │ 🔧0.0[26]★ │ 0 killed │ 598s
+🌳 1 alive │ 🔧0.0[29]★ │ 0 killed │ 614s
+18:08:09 [Tree-0.0] 💬 The earlier failure was my second `rcondt` landing on `if (hon)` (undetermined). Closing this side goal now.
+
+🌳 1 alive │ 🔧0.0[29]★ │ 0 killed │ 614s
+18:08:09 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by move=> &m; auto => />; smt().
+
+🌳 1 alive │ 🔧0.0[29]★ │ 0 killed │ 614s
+18:08:23 [Orchestrator]   Tree-0.0 (d=0): 30 tactics, 2 errors, errs_since_accept=0, idle 12s, undo_repair (629s elapsed)
+
+🌳 1 alive │ 🔧0.0[29]★ │ 0 killed │ 614s
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 629s
+18:08:33 [Tree-0.0] 💬 The precondition now carries a contradictory disjunct from `sp`. I'll `sp` the `hon` assignment and `conseq` to a clean, flat precondition that fixes ...
+
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 629s
+18:08:38 [Orchestrator]   Tree-0.0 (d=0): 30 tactics, 2 errors, errs_since_accept=0, idle 5s, undo_repair (644s elapsed)
+
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 629s
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 644s
+18:08:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp. conseq (_: ctr0{1} = ctr0{2} /\ !ec_done{1} /\ !ec_done{2} /\ ec_result0{1} = None /\ ec_result0{2} = None /\ ec_result1{1} = None /\ ec_result1{2} = None /\ !ec_done0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp...
+
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 644s
+18:08:54 [Orchestrator]   Tree-0.0 (d=0): 32 tactics, 2 errors, errs_since_accept=0, idle 1s, undo_repair (660s elapsed)
+
+🌳 1 alive │ 🔧0.0[30]★ │ 0 killed │ 644s
+🌳 1 alive │ 🔧0.0[32]★ │ 0 killed │ 660s
+18:08:56 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 [#] -> -> -> [] />; smt().
+
+🌳 1 alive │ 🔧0.0[32]★ │ 0 killed │ 660s
+18:09:10 [Orchestrator]   Tree-0.0 (d=0): 33 tactics, 2 errors, errs_since_accept=0, idle 10s, undo_repair (676s elapsed)
+
+🌳 1 alive │ 🔧0.0[32]★ │ 0 killed │ 660s
+🌳 1 alive │ 🔧0.0[33]★ │ 0 killed │ 676s
+18:09:13 [Tree-0.0] 💬 Clean precondition achieved. Now splitting on `ni0{1} = None`; in that case both sides return `None` with no state change.
+
+🌳 1 alive │ 🔧0.0[33]★ │ 0 killed │ 676s
+18:09:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (ni0{1} = None). rcondf{1} 1. by auto => />. if{2}. rcondf{2} 1. by auto => />. rcondf{2} 2. by auto. by auto => />. rcondf{2} 1. by auto => />. rcondf{2} 2. by auto. by auto => />.
+
+🌳 1 alive │ 🔧0.0[33]★ │ 0 killed │ 676s
+18:09:25 [Orchestrator]   Tree-0.0 (d=0): 47 tactics, 2 errors, errs_since_accept=0, idle 9s (691s elapsed)
+
+🌳 1 alive │ 🔧0.0[33]★ │ 0 killed │ 676s
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 691s
+18:09:38 [Tree-0.0] 💬 `ni0 = None` case closed. Now `ni0 <> None`; splitting on honesty of `kid0`, starting with the honest case.
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 691s
+18:09:41 [Orchestrator]   Tree-0.0 (d=0): 47 tactics, 2 errors, errs_since_accept=0, idle 4s (708s elapsed)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 691s
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:45 [Tree-0.0] 🔧 submit_proof_intent undo_to_checkpoint
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:50 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:50 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:54 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "module Pkg_Imports_Prot", "scope": "task"})
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:56 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 60, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+18:09:56 [Orchestrator]   Tree-0.0 (d=0): 47 tactics, 2 errors, errs_since_accept=0, idle 0s (723s elapsed)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 708s
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 723s
+18:10:10 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 723s
+18:10:12 [Orchestrator]   Tree-0.0 (d=0): 47 tactics, 2 errors, errs_since_accept=0, idle 2s (739s elapsed)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 723s
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 739s
+18:10:17 [Tree-0.0] 💬 Recovered the current goal; continuing the `ni0 <> None` branch by fixing the left-hand `if` to true.
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 739s
+18:10:17 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 1; 1: by auto.
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 739s
+18:10:23 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (hon{2}).
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 739s
+18:10:28 [Orchestrator]   Tree-0.0 (d=0): 49 tactics, 2 errors, errs_since_accept=0, idle 0s (754s elapsed)
+
+🌳 1 alive │ 🐝0.0[47]★ │ 0 killed │ 739s
+🌳 1 alive │ 🐝0.0[49]★ │ 0 killed │ 754s
+18:10:29 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 1; 1: by auto. rcondt{2} 1; 1: by auto. inline *. sp.
+
+🌳 1 alive │ 🐝0.0[49]★ │ 0 killed │ 754s
+18:10:41 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 1; 1: by auto; smt(). rcondf{1} 1; 1: by auto; smt().
+
+🌳 1 alive │ 🐝0.0[49]★ │ 0 killed │ 754s
+18:10:44 [Orchestrator]   Tree-0.0 (d=0): 55 tactics, 2 errors, errs_since_accept=0, idle 0s (770s elapsed)
+
+🌳 1 alive │ 🐝0.0[49]★ │ 0 killed │ 754s
+🌳 1 alive │ 🐝0.0[55]★ │ 0 killed │ 770s
+18:10:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> &1 &2 />; smt().
+
+🌳 1 alive │ 🐝0.0[55]★ │ 0 killed │ 770s
+18:11:00 [Orchestrator]   Tree-0.0 (d=0): 56 tactics, 2 errors, errs_since_accept=0, idle 4s (786s elapsed)
+
+🌳 1 alive │ 🐝0.0[55]★ │ 0 killed │ 770s
+🌳 1 alive │ 🐝0.0[56]★ │ 0 killed │ 786s
+18:11:11 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 4; 1: by move=> &m; auto => /> *; rewrite get_set_sameE.
+
+🌳 1 alive │ 🐝0.0[56]★ │ 0 killed │ 786s
+18:11:16 [Tree-0.0] 💬 Honest-key branch: the left/right PRF-vs-MAC-key samples are synchronized; now resolving the deterministic conditionals that follow.
+
+🌳 1 alive │ 🐝0.0[56]★ │ 0 killed │ 786s
+18:11:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 7; 1: by move=> &m; auto => /> *; rewrite get_set_sameE. rcondt{2} 6; 1: by move=> &m; auto.
+
+🌳 1 alive │ 🐝0.0[56]★ │ 0 killed │ 786s
+18:11:16 [Orchestrator]   Tree-0.0 (d=0): 59 tactics, 2 errors, errs_since_accept=0, idle 0s (802s elapsed)
+
+🌳 1 alive │ 🐝0.0[56]★ │ 0 killed │ 786s
+🌳 1 alive │ 🐝0.0[59]★ │ 0 killed │ 802s
+18:11:29 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 8; 1: by move=> &m; auto. rcondt{2} 8; 1: by move=> &m; auto. rcondt{2} 9; 1: by move=> &m; auto.
+
+🌳 1 alive │ 🐝0.0[59]★ │ 0 killed │ 802s
+18:11:32 [Orchestrator]   Tree-0.0 (d=0): 62 tactics, 2 errors, errs_since_accept=0, idle 0s (819s elapsed)
+
+🌳 1 alive │ 🐝0.0[59]★ │ 0 killed │ 802s
+🌳 1 alive │ 🐝0.0[62]★ │ 0 killed │ 819s
+18:11:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 17; 1: by move=> &m; auto => /> *; rewrite get_set_sameE. rcondf{2} 17; 1: by move=> &m; auto. rcondt{2} 22; 1: by move=> &m; auto. rcondt{2} 23; 1: by move=> &m; auto.
+
+🌳 1 alive │ 🐝0.0[62]★ │ 0 killed │ 819s
+18:11:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; rnd; skip.
+
+🌳 1 alive │ 🐝0.0[62]★ │ 0 killed │ 819s
+18:11:49 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=0, idle 5s (835s elapsed)
+
+🌳 1 alive │ 🐝0.0[62]★ │ 0 killed │ 819s
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 835s
+18:12:05 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=0, idle 21s (851s elapsed)
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 835s
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 851s
+18:12:24 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=0, idle 6s (867s elapsed)
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 851s
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 867s
+18:12:43 [Tree-0.0] 🔧 submit_proof_intent undo_to_checkpoint
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 867s
+18:12:43 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 867s
+18:12:44 [Orchestrator]   Tree-0.0 (d=0): 66 tactics, 2 errors, errs_since_accept=1, idle 0s, undo_repair (879s elapsed)
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 867s
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 879s
+18:13:00 [Orchestrator]   Tree-0.0 (d=0): 66 tactics, 2 errors, errs_since_accept=1, idle 16s, undo_repair (906s elapsed)
+
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 879s
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 906s
+18:13:16 [Tree-0.0] 💬 Still in the honest-key branch; the one-shot `wp` produced a goal too large to display, so I'm splitting it into smaller steps: couple the samples, th...
+
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 906s
+18:13:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 1 : (#pre /\ temp{1} = key{2}); 1: by auto.
+
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 906s
+18:13:16 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=0, idle 0s (922s elapsed)
+
+🌳 1 alive │ 🔧0.0[66]★ │ 0 killed │ 906s
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 922s
+18:13:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (func_mac temp{1} nr0{1} 2 = tau{1}). rcondt{1} 9; 1: by move=> &m; auto => /> *; smt(get_setE). rcondt{2} 22; 1: by move=> &m; auto => /> *; smt(get_setE). rcondt{2} 22; 1: by move=> &m; auto. rcondt{2} 28; 1: b...
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 922s
+18:13:31 [Orchestrator]   Tree-0.0 (d=0): 74 tactics, 2 errors, errs_since_accept=0, idle 1s (937s elapsed)
+
+🌳 1 alive │ 🐝0.0[67]★ │ 0 killed │ 922s
+🌳 1 alive │ 🐝0.0[74]★ │ 0 killed │ 937s
+18:13:40 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (func_mac temp{1} nr0{1} 2 = tau{1}). rcondt{1} 9; 1: by move=> &m; auto => /> *; smt(get_setE).
+
+🌳 1 alive │ 🐝0.0[74]★ │ 0 killed │ 937s
+18:13:46 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=2, idle 1s, undo_repair (952s elapsed)
+
+🌳 1 alive │ 🐝0.0[74]★ │ 0 killed │ 937s
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 952s
+18:14:02 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=2, idle 17s, undo_repair (968s elapsed)
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 952s
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 968s
+18:14:18 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=2, idle 11s, undo_repair (984s elapsed)
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 968s
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 984s
+18:14:34 [Orchestrator]   Tree-0.0 (d=0): 67 tactics, 2 errors, errs_since_accept=2, idle 7s, undo_repair (1000s elapsed)
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 984s
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 1000s
+18:14:37 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: case (func_mac temp{1} nr0{1} 2 = tau{1}). rcondt{1} 9. move=> &m; auto => />.
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 1000s
+18:14:43 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by move=> &hr *; rewrite get_set_sameE.
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 1000s
+18:14:49 [Orchestrator]   Tree-0.0 (d=0): 71 tactics, 2 errors, errs_since_accept=0, idle 5s, undo_repair (1015s elapsed)
+
+🌳 1 alive │ 🔧0.0[67]★ │ 0 killed │ 1000s
+🌳 1 alive │ 🔧0.0[71]★ │ 0 killed │ 1015s
+18:14:52 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 22; 1: by move=> &m; auto => /> &hr *; rewrite get_set_sameE.
+
+🌳 1 alive │ 🔧0.0[71]★ │ 0 killed │ 1015s
+18:14:56 [Tree-0.0] 💬 Honest + MAC-verified sub-case: continuing to resolve the right-hand MAC conditionals one by one.
+
+🌳 1 alive │ 🔧0.0[71]★ │ 0 killed │ 1015s
+18:14:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 22; 1: by move=> &m; auto. rcondt{2} 28; 1: by move=> &m; auto => /> &hr *; rewrite get_set_sameE. rcondt{2} 34; 1: by move=> &m; auto. rcondt{2} 35; 1: by move=> &m; auto.
+
+🌳 1 alive │ 🔧0.0[71]★ │ 0 killed │ 1015s
+18:15:04 [Orchestrator]   Tree-0.0 (d=0): 76 tactics, 2 errors, errs_since_accept=0, idle 6s (1031s elapsed)
+
+🌳 1 alive │ 🔧0.0[71]★ │ 0 killed │ 1015s
+🌳 1 alive │ 🐝0.0[76]★ │ 0 killed │ 1031s
+18:15:13 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 12; 1: by move=> &m; auto. rcondt{2} 38; 1: by move=> &m; auto. rcondt{1} 15; 1: by move=> &m; auto. rcondt{2} 41; 1: by move=> &m; auto. rcondt{1} 15; 1: by move=> &m; auto. rcondt{2} 41; 1: by move=> &m; a...
+
+🌳 1 alive │ 🐝0.0[76]★ │ 0 killed │ 1031s
+18:15:20 [Orchestrator]   Tree-0.0 (d=0): 82 tactics, 2 errors, errs_since_accept=0, idle 5s (1046s elapsed)
+
+🌳 1 alive │ 🐝0.0[76]★ │ 0 killed │ 1031s
+🌳 1 alive │ 🐝0.0[82]★ │ 0 killed │ 1046s
+18:15:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 16; 1: by move=> &m; auto; smt(). rcondt{2} 42; 1: by move=> &m; auto; smt(). sp.
+
+🌳 1 alive │ 🐝0.0[82]★ │ 0 killed │ 1046s
+18:15:35 [Orchestrator]   Tree-0.0 (d=0): 85 tactics, 2 errors, errs_since_accept=0, idle 0s (1061s elapsed)
+
+🌳 1 alive │ 🐝0.0[82]★ │ 0 killed │ 1046s
+🌳 1 alive │ 🐝0.0[85]★ │ 0 killed │ 1061s
+18:15:39 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[85]★ │ 0 killed │ 1061s
+18:15:50 [Orchestrator]   Tree-0.0 (d=0): 82 tactics, 2 errors, errs_since_accept=1, idle 11s, undo_repair (1076s elapsed)
+
+🌳 1 alive │ 🐝0.0[85]★ │ 0 killed │ 1061s
+🌳 1 alive │ 🔧0.0[82]★ │ 0 killed │ 1076s
+18:16:06 [Orchestrator]   Tree-0.0 (d=0): 82 tactics, 2 errors, errs_since_accept=1, idle 27s, undo_repair (1092s elapsed)
+
+🌳 1 alive │ 🔧0.0[82]★ │ 0 killed │ 1076s
+🌳 1 alive │ 🔧0.0[82]★ │ 0 killed │ 1092s
+18:16:12 [Orchestrator] Layer-3 crash respawn: Tree-0.0 exited degraded with the proof open (exit 2); resuming from 82-tactic live capsule as Tree-0.0.r1. last stderr: managed worker: agent exit 2: unknown Claude user block 'text'
+
+🌳 1 alive │ 🔧0.0[82]★ │ 0 killed │ 1092s
+18:16:42 [Orchestrator]   Tree-0.0.r1 (d=1): 82 tactics, 0 errors, errs_since_accept=0, idle 0s (1098s elapsed)
+
+🌳 1 alive │ 🔧0.0[82]★ │ 0 killed │ 1092s
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1098s
+18:16:49 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1098s
+18:16:53 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1098s
+18:16:53 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shanno)
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1098s
+18:16:58 [Orchestrator]   Tree-0.0.r1 (d=1): 82 tactics, 0 errors, errs_since_accept=0, idle 5s (1144s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1098s
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1144s
+18:17:06 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip.
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1144s
+18:17:13 [Orchestrator]   Tree-0.0.r1 (d=1): 83 tactics, 0 errors, errs_since_accept=0, idle 6s (1159s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[82] │ 1 killed │ 1144s
+🌳 1 alive │ 🐝0.0.r1[83] │ 1 killed │ 1159s
+18:17:19 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consi...
+
+🌳 1 alive │ 🐝0.0.r1[83] │ 1 killed │ 1159s
+18:17:26 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: smt(get_setE).
+
+🌳 1 alive │ 🐝0.0.r1[83] │ 1 killed │ 1159s
+18:17:28 [Orchestrator]   Tree-0.0.r1 (d=1): 85 tactics, 0 errors, errs_since_accept=0, idle 2s (1175s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[83] │ 1 killed │ 1159s
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1175s
+18:17:43 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 1 errors, errs_since_accept=1, idle 10s (1190s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1175s
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1190s
+18:17:46 [Tree-0.0.r1] 💬 I'm working mostly blind: the proof-state outputs are too large to show, so I'm checking the rewind menu to see which steps were actually committed.
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1190s
+18:17:46 [Tree-0.0.r1] 🔧 submit_proof_intent undo_to_checkpoint
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1190s
+18:17:59 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (do ? split) => *; smt(get_setE).
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1190s
+18:17:59 [Orchestrator]   Tree-0.0.r1 (d=1): 85 tactics, 1 errors, errs_since_accept=1, idle 0s (1205s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1190s
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1205s
+18:18:15 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 2 errors, errs_since_accept=2, idle 9s (1221s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1205s
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1221s
+18:18:31 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 2 errors, errs_since_accept=2, idle 25s (1237s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1221s
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1237s
+18:18:46 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 2 errors, errs_since_accept=2, idle 9s (1252s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1237s
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1252s
+18:19:01 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 2 errors, errs_since_accept=2, idle 25s (1268s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1252s
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1268s
+18:19:12 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: exact nonexistent_lemma_xyz.
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1268s
+18:19:16 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 3 errors, errs_since_accept=3, idle 4s (1283s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[84] │ 1 killed │ 1268s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1283s
+18:19:32 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 3 errors, errs_since_accept=3, idle 20s (1299s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1283s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1299s
+18:19:47 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: idtac.
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1299s
+18:19:48 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 4 errors, errs_since_accept=4, idle 0s (1314s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1299s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1314s
+18:20:03 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 4 errors, errs_since_accept=4, idle 15s (1329s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1314s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1329s
+18:20:14 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; first smt(get_setE).
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1329s
+18:20:18 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 5 errors, errs_since_accept=5, idle 3s (1344s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1329s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1344s
+18:20:33 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 5 errors, errs_since_accept=5, idle 18s (1359s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1344s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1359s
+18:20:48 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 5 errors, errs_since_accept=5, idle 2s (1374s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1359s
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1374s
+18:20:54 [Tree-0.0.r1] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1374s
+18:20:59 [Tree-0.0.r1] 💬 Still blind on output size, so I'm using line counts to track state. Rolling back past `wp; skip` to restructure the program step.
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1374s
+18:20:59 [Tree-0.0.r1] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1374s
+18:21:04 [Orchestrator]   Tree-0.0.r1 (d=1): 82 tactics, 7 errors, errs_since_accept=7, idle 5s, undo_repair (1390s elapsed)
+
+🌳 1 alive │ 🐌0.0.r1[84] │ 1 killed │ 1374s
+🌳 1 alive │ 🔧0.0.r1[82] │ 1 killed │ 1390s
+18:21:15 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rcondt{1} 16; first by auto.
+
+🌳 1 alive │ 🔧0.0.r1[82] │ 1 killed │ 1390s
+18:21:20 [Orchestrator]   Tree-0.0.r1 (d=1): 83 tactics, 7 errors, errs_since_accept=0, idle 5s, undo_repair (1406s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[82] │ 1 killed │ 1390s
+🌳 1 alive │ 🔧0.0.r1[83] │ 1 killed │ 1406s
+18:21:24 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rcondt{2} 42; first by auto.
+
+🌳 1 alive │ 🔧0.0.r1[83] │ 1 killed │ 1406s
+18:21:32 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp 15 41; sp.
+
+🌳 1 alive │ 🔧0.0.r1[83] │ 1 killed │ 1406s
+18:21:35 [Orchestrator]   Tree-0.0.r1 (d=1): 85 tactics, 7 errors, errs_since_accept=0, idle 1s (1421s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[83] │ 1 killed │ 1406s
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1421s
+18:21:36 [Tree-0.0.r1] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1421s
+18:21:50 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 7 errors, errs_since_accept=1, idle 14s, undo_repair (1436s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1421s
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1436s
+18:22:06 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 7 errors, errs_since_accept=1, idle 30s, undo_repair (1452s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1436s
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1452s
+18:22:14 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__search_easycrypt_source({"max_results": 30, "query": "d_First", "scope": "task"})
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1452s
+18:22:21 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 7 errors, errs_since_accept=1, idle 7s, undo_repair (1467s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1452s
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1467s
+18:22:37 [Orchestrator]   Tree-0.0.r1 (d=1): 84 tactics, 7 errors, errs_since_accept=1, idle 23s, undo_repair (1484s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1467s
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1484s
+18:22:46 [Tree-0.0.r1] 💬 Switching strategy: I'll swap the `d_First` conditionals to the end of each program so the straight-line part can be handled without the 9× post dupli...
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1484s
+18:22:46 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: swap{1} 15 3; swap{2} 41 3.
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1484s
+18:22:52 [Orchestrator]   Tree-0.0.r1 (d=1): 85 tactics, 7 errors, errs_since_accept=0, idle 0s (1499s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[84] │ 1 killed │ 1484s
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1499s
+18:23:02 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: seq 17 43 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H...
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1499s
+18:23:08 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1499s
+18:23:08 [Orchestrator]   Tree-0.0.r1 (d=1): 87 tactics, 7 errors, errs_since_accept=0, idle 0s (1515s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[85] │ 1 killed │ 1499s
+🌳 1 alive │ 🐝0.0.r1[87]★ │ 1 killed │ 1515s
+18:23:19 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone; rewrite !get_setE /=.
+
+🌳 1 alive │ 🐝0.0.r1[87]★ │ 1 killed │ 1515s
+18:23:23 [Orchestrator]   Tree-0.0.r1 (d=1): 88 tactics, 7 errors, errs_since_accept=0, idle 5s (1530s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[87]★ │ 1 killed │ 1515s
+🌳 1 alive │ 🐝0.0.r1[88]★ │ 1 killed │ 1530s
+18:23:24 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[88]★ │ 1 killed │ 1530s
+18:23:35 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; first by move=> k dU dV n1 n2; rewrite !get_setE /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[88]★ │ 1 killed │ 1530s
+18:23:39 [Orchestrator]   Tree-0.0.r1 (d=1): 90 tactics, 7 errors, errs_since_accept=0, idle 2s (1545s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[88]★ │ 1 killed │ 1530s
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+18:23:40 [Tree-0.0.r1] 💬 Good progress — the straight-line part is nearly closed; now the kmac-consistency conjunct.
+
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+18:23:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+18:23:48 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if; first by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+18:23:51 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_cons...
+
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+18:23:54 [Orchestrator]   Tree-0.0.r1 (d=1): 93 tactics, 7 errors, errs_since_accept=0, idle 1s (1560s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[90]★ │ 1 killed │ 1545s
+🌳 1 alive │ 🐝0.0.r1[93]★ │ 1 killed │ 1560s
+18:23:57 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equal...
+
+🌳 1 alive │ 🐝0.0.r1[93]★ │ 1 killed │ 1560s
+18:24:09 [Orchestrator]   Tree-0.0.r1 (d=1): 94 tactics, 7 errors, errs_since_accept=0, idle 9s (1575s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[93]★ │ 1 killed │ 1560s
+🌳 1 alive │ 🐝0.0.r1[94]★ │ 1 killed │ 1575s
+18:24:19 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rcondf{1} 9; first by auto => />; smt(get_setE).
+
+🌳 1 alive │ 🐝0.0.r1[94]★ │ 1 killed │ 1575s
+18:24:24 [Orchestrator]   Tree-0.0.r1 (d=1): 95 tactics, 7 errors, errs_since_accept=0, idle 2s (1590s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[94]★ │ 1 killed │ 1575s
+🌳 1 alive │ 🐝0.0.r1[95]★ │ 1 killed │ 1590s
+18:24:30 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{1} 12; first by auto); (rcondf{1} 15; first by auto => />; smt()); (rcondt{1} 15; first by auto).
+
+🌳 1 alive │ 🐝0.0.r1[95]★ │ 1 killed │ 1590s
+18:24:37 [Tree-0.0.r1] 💬 Now resolving the right-side conditionals (MAC verify fails branch).
+
+🌳 1 alive │ 🐝0.0.r1[95]★ │ 1 killed │ 1590s
+18:24:37 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{2} 22; first by auto => />; smt(get_setE)); (rcondt{2} 25; first by auto); (rcondf{2} 28; first by auto => />; smt()); (rcondt{2} 28; first by auto).
+
+🌳 1 alive │ 🐝0.0.r1[95]★ │ 1 killed │ 1590s
+18:24:39 [Orchestrator]   Tree-0.0.r1 (d=1): 97 tactics, 7 errors, errs_since_accept=0, idle 2s (1605s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[95]★ │ 1 killed │ 1590s
+🌳 1 alive │ 🐝0.0.r1[97]★ │ 1 killed │ 1605s
+18:24:44 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[97]★ │ 1 killed │ 1605s
+18:24:51 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone Hmac; split; [move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt() | split; [move=> k dU dV n1 n2; rewrite !get_setE /=...
+
+🌳 1 alive │ 🐝0.0.r1[97]★ │ 1 killed │ 1605s
+18:24:54 [Orchestrator]   Tree-0.0.r1 (d=1): 99 tactics, 7 errors, errs_since_accept=0, idle 3s (1621s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[97]★ │ 1 killed │ 1605s
+🌳 1 alive │ 🐝0.0.r1[99]★ │ 1 killed │ 1621s
+18:25:10 [Orchestrator]   Tree-0.0.r1 (d=1): 98 tactics, 7 errors, errs_since_accept=1, idle 11s, undo_repair (1637s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[99]★ │ 1 killed │ 1621s
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1637s
+18:25:26 [Orchestrator]   Tree-0.0.r1 (d=1): 98 tactics, 7 errors, errs_since_accept=1, idle 27s, undo_repair (1652s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1637s
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1652s
+18:25:33 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone Hmac; split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1652s
+18:25:39 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; first by move=> k dU dV n1 n2; rewrite !get_setE /=; smt().
+
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1652s
+18:25:41 [Orchestrator]   Tree-0.0.r1 (d=1): 100 tactics, 7 errors, errs_since_accept=0, idle 1s (1668s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[98]★ │ 1 killed │ 1652s
+🌳 1 alive │ 🐝0.0.r1[100]★ │ 1 killed │ 1668s
+18:25:45 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 2, "query": "lemma set_get", "scope": "libraries"})
+
+🌳 1 alive │ 🐝0.0.r1[100]★ │ 1 killed │ 1668s
+18:25:55 [Tree-0.0.r1] 💬 Using `set_get_eq` to collapse the unchanged left-state write, then closing kmac consistency with an explicit PRF instance.
+
+🌳 1 alive │ 🐝0.0.r1[100]★ │ 1 killed │ 1668s
+18:25:55 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rewrite (set_get_eq _ _ _ HS1) => c Hc H9; have Hk := Hprf2 state{1}.`4 state{1}.`1 state{1}.`3 (oget state{1}.`7) nr0{2}; have := Hkm c Hc H9; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[100]★ │ 1 killed │ 1668s
+18:25:56 [Orchestrator]   Tree-0.0.r1 (d=1): 101 tactics, 7 errors, errs_since_accept=0, idle 1s (1683s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[100]★ │ 1 killed │ 1668s
+🌳 1 alive │ 🐝0.0.r1[101]★ │ 1 killed │ 1683s
+18:26:12 [Orchestrator]   Tree-0.0.r1 (d=1): 100 tactics, 7 errors, errs_since_accept=1, idle 13s, undo_repair (1699s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[101]★ │ 1 killed │ 1683s
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1699s
+18:26:28 [Orchestrator]   Tree-0.0.r1 (d=1): 100 tactics, 7 errors, errs_since_accept=1, idle 28s, undo_repair (1715s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1699s
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1715s
+18:26:34 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rewrite (set_get_eq _ _ _ HS1) => c Hc H9; have Hk := Hprf2 state{1}.`4 state{1}.`1 state{1}.`3 (oget state{1}.`7) nr0{2}; have := Hkm c Hc H9; rewrite !get_setE /=; case: (c = ctr0{2}) => [Ec|hc] /=.
+
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1715s
+18:26:41 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move: Hc H9; rewrite Ec HS1 /= => _ H9; smt().
+
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1715s
+18:26:44 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=0, idle 2s (1730s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[100]★ │ 1 killed │ 1715s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1730s
+18:27:00 [Orchestrator]   Tree-0.0.r1 (d=1): 101 tactics, 7 errors, errs_since_accept=1, idle 14s, undo_repair (1746s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1730s
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1746s
+18:27:16 [Orchestrator]   Tree-0.0.r1 (d=1): 101 tactics, 7 errors, errs_since_accept=1, idle 0s, undo_repair (1762s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1746s
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1762s
+18:27:22 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move: Hc H9; rewrite Ec HS1 /= => _ H9; rewrite HF Hhon /=.
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1762s
+18:27:28 [Tree-0.0.r1] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1762s
+18:27:31 [Orchestrator]   Tree-0.0.r1 (d=1): 101 tactics, 7 errors, errs_since_accept=1, idle 1s, undo_repair (1777s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1762s
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1777s
+18:27:38 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move: H9; rewrite Ec HS1 HF Hhon /= => H9 Hkey; case: (oget state{1}.`8 = nr0{2}) => E8 //; move: Hkey; rewrite E8 -Hk Hnone; smt().
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1777s
+18:27:45 [Tree-0.0.r1] 💬 Closing the `c ≠ ctr0` case: when the session tuple collides with the fresh handle, the old key slot was `None`, which contradicts `kmac ≠ None`.
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1777s
+18:27:46 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=0, idle 1s (1792s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[101]★ │ 1 killed │ 1777s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1792s
+18:27:47 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case: (Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[c] = Some true) => HFc /= Hkey //; case: ((oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`4 = state{1}.`4 /\ (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Stat...
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1792s
+18:28:02 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=1, idle 14s (1809s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1792s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1809s
+18:28:18 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=1, idle 0s (1825s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1809s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1825s
+18:28:23 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case: (Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[c] = Some true) => HFc; last by rewrite HFc /=. rewrite HFc /= => Hkey.
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1825s
+18:28:34 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=2, idle 11s (1841s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1825s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1841s
+18:28:50 [Orchestrator]   Tree-0.0.r1 (d=1): 102 tactics, 7 errors, errs_since_accept=2, idle 27s (1857s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1841s
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1857s
+18:29:02 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case: (Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[c] = Some true) => HFc /=; [move=> Hkey | done].
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1857s
+18:29:06 [Orchestrator]   Tree-0.0.r1 (d=1): 103 tactics, 7 errors, errs_since_accept=0, idle 4s (1872s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[102]★ │ 1 killed │ 1857s
+🌳 1 alive │ 🐝0.0.r1[103]★ │ 1 killed │ 1872s
+18:29:07 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case: ((oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`4 = state{1}.`4 /\ (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`1 = state{1}.`1 /\ (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_State{1}.[c]).`3...
+
+🌳 1 alive │ 🐝0.0.r1[103]★ │ 1 killed │ 1872s
+18:29:09 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: done.
+
+🌳 1 alive │ 🐝0.0.r1[103]★ │ 1 killed │ 1872s
+18:29:21 [Orchestrator]   Tree-0.0.r1 (d=1): 105 tactics, 7 errors, errs_since_accept=0, idle 12s (1887s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[103]★ │ 1 killed │ 1872s
+🌳 1 alive │ 🐝0.0.r1[105]★ │ 1 killed │ 1887s
+18:29:27 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{1} 2; first by auto => />); (rcondt{1} 5; first by auto => />).
+
+🌳 1 alive │ 🐝0.0.r1[105]★ │ 1 killed │ 1887s
+18:29:35 [Tree-0.0.r1] 💬 Linearizing the right side (key already exists branch) with a chain of `rcond`s.
+
+🌳 1 alive │ 🐝0.0.r1[105]★ │ 1 killed │ 1887s
+18:29:35 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{2} 4; first by auto); (rcondt{2} 6; first by auto); (rcondt{2} 6; first by auto => />); (rcondt{2} 7; first by auto => />).
+
+🌳 1 alive │ 🐝0.0.r1[105]★ │ 1 killed │ 1887s
+18:29:36 [Orchestrator]   Tree-0.0.r1 (d=1): 107 tactics, 7 errors, errs_since_accept=0, idle 1s (1903s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[105]★ │ 1 killed │ 1887s
+🌳 1 alive │ 🐝0.0.r1[107]★ │ 1 killed │ 1903s
+18:29:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{2} 15; first by auto => />; smt()); (rcondf{2} 15; first by auto => />); (rcondt{2} 20; first by auto); (rcondt{2} 21; first by auto).
+
+🌳 1 alive │ 🐝0.0.r1[107]★ │ 1 killed │ 1903s
+18:29:52 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case (func_mac (oget Comp_H6.Cloned_Pkg_PRF.PRF.d_PRF{1}.[kid2{1}, x0{1}]) nr0{1} 2 = tau{1}).
+
+🌳 1 alive │ 🐝0.0.r1[107]★ │ 1 killed │ 1903s
+18:29:52 [Orchestrator]   Tree-0.0.r1 (d=1): 109 tactics, 7 errors, errs_since_accept=0, idle 0s (1918s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[107]★ │ 1 killed │ 1903s
+🌳 1 alive │ 🐝0.0.r1[109]★ │ 1 killed │ 1918s
+18:29:56 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 15; first by auto => />; smt()).
+
+🌳 1 alive │ 🐝0.0.r1[109]★ │ 1 killed │ 1918s
+18:30:03 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{2} 21; first by auto => />; smt()); (rcondt{2} 21; first by auto); (rcondt{2} 27; first by auto => />; smt()); (rcondt{2} 33; first by auto); (rcondt{2} 34; first by auto); (rcondt{2} 37; first by auto); (rcon...
+
+🌳 1 alive │ 🐝0.0.r1[109]★ │ 1 killed │ 1918s
+18:30:07 [Orchestrator]   Tree-0.0.r1 (d=1): 111 tactics, 7 errors, errs_since_accept=0, idle 0s (1933s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[109]★ │ 1 killed │ 1918s
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1933s
+18:30:13 [Tree-0.0.r1] 🔧 submit_proof_intent status
+
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1933s
+18:30:23 [Orchestrator]   Tree-0.0.r1 (d=1): 111 tactics, 7 errors, errs_since_accept=0, idle 10s (1949s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1933s
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1949s
+18:30:26 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1949s
+18:30:38 [Orchestrator]   Tree-0.0.r1 (d=1): 112 tactics, 7 errors, errs_since_accept=0, idle 7s (1964s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[111]★ │ 1 killed │ 1949s
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1964s
+18:30:46 [Tree-0.0.r1] 🔧 submit_proof_intent undo_to_checkpoint
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1964s
+18:30:50 [Tree-0.0.r1] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1964s
+18:30:54 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: swap{1} 14 3; swap{2} 40 3.
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1964s
+18:30:54 [Orchestrator]   Tree-0.0.r1 (d=1): 112 tactics, 7 errors, errs_since_accept=0, idle 0s (1980s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1964s
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1980s
+18:30:59 [Tree-0.0.r1] 🧠 I've moved the `d_First` branch to the end of both programs, and I'm splitting off the straight-line prefix with `seq` n...
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1980s
+18:31:08 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: seq 16 42 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_H = Comp_H6.Pkg_Inst_PRF.d_H...
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1980s
+18:31:10 [Orchestrator]   Tree-0.0.r1 (d=1): 113 tactics, 7 errors, errs_since_accept=0, idle 1s (1996s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[112]★ │ 1 killed │ 1980s
+🌳 1 alive │ 🐝0.0.r1[113]★ │ 1 killed │ 1996s
+18:31:23 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[113]★ │ 1 killed │ 1996s
+18:31:25 [Orchestrator]   Tree-0.0.r1 (d=1): 114 tactics, 7 errors, errs_since_accept=0, idle 1s (2012s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[113]★ │ 1 killed │ 1996s
+🌳 1 alive │ 🐝0.0.r1[114]★ │ 1 killed │ 2012s
+18:31:32 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone; split; first by rewrite Hprf2.
+
+🌳 1 alive │ 🐝0.0.r1[114]★ │ 1 killed │ 2012s
+18:31:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; first by move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[114]★ │ 1 killed │ 2012s
+18:31:41 [Orchestrator]   Tree-0.0.r1 (d=1): 116 tactics, 7 errors, errs_since_accept=0, idle 1s (2027s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[114]★ │ 1 killed │ 2012s
+🌳 1 alive │ 🐝0.0.r1[116]★ │ 1 killed │ 2027s
+18:31:51 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; [rewrite HF Hhon /= -Hprf2; smt() | smt()].
+
+🌳 1 alive │ 🐝0.0.r1[116]★ │ 1 killed │ 2027s
+18:31:56 [Orchestrator]   Tree-0.0.r1 (d=1): 117 tactics, 7 errors, errs_since_accept=0, idle 0s (2043s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[116]★ │ 1 killed │ 2027s
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+18:32:01 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if; first by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+18:32:04 [Tree-0.0.r1] 💬 The `d_First` branches are now lined up on both sides. Next I'm closing both branches with the same `auto`/invariant step that worked earlier.
+
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+18:32:06 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_cons...
+
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+18:32:10 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equal...
+
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+18:32:12 [Orchestrator]   Tree-0.0.r1 (d=1): 120 tactics, 7 errors, errs_since_accept=0, idle 0s (2058s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[117]★ │ 1 killed │ 2043s
+🌳 1 alive │ 🐝0.0.r1[120]★ │ 1 killed │ 2058s
+18:32:24 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondf{1} 14; first by auto => />; smt()); (rcondt{1} 14; first by auto).
+
+🌳 1 alive │ 🐝0.0.r1[120]★ │ 1 killed │ 2058s
+18:32:27 [Orchestrator]   Tree-0.0.r1 (d=1): 121 tactics, 7 errors, errs_since_accept=0, idle 0s (2073s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[120]★ │ 1 killed │ 2058s
+🌳 1 alive │ 🐝0.0.r1[121]★ │ 1 killed │ 2073s
+18:32:31 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{2} 21; first by auto => />; smt()); (rcondt{2} 24; first by auto); (rcondf{2} 27; first by auto => />; smt()); (rcondt{2} 27; first by auto).
+
+🌳 1 alive │ 🐝0.0.r1[121]★ │ 1 killed │ 2073s
+18:32:42 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[121]★ │ 1 killed │ 2073s
+18:32:42 [Orchestrator]   Tree-0.0.r1 (d=1): 123 tactics, 7 errors, errs_since_accept=0, idle 0s (2089s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[121]★ │ 1 killed │ 2073s
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2089s
+18:32:58 [Orchestrator]   Tree-0.0.r1 (d=1): 123 tactics, 7 errors, errs_since_accept=0, idle 0s (2104s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2089s
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2104s
+18:32:59 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hhon Hnone Hmac; rewrite (set_get_eq _ _ _ HS1); have E2 : state{1}.`2 = false by smt(); move: HS2; rewrite HF Hhon /= E2 => HS2; rewrite HF Hhon /...
+
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2104s
+18:33:07 [Tree-0.0.r1] 💬 The MAC-fails branch is down to proving the invariant after rewriting an unchanged state slot. I'm closing it point by point with `smt`.
+
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2104s
+18:33:08 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split; move=> c; rewrite !get_setE; case: (c = ctr0{2}) => [->|hc] /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2104s
+18:33:13 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=1, idle 4s (2120s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[123]★ │ 1 killed │ 2104s
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2120s
+18:33:28 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=1, idle 19s (2135s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2120s
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2135s
+18:33:43 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=1, idle 4s (2150s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2135s
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2150s
+18:33:48 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split => c; rewrite !get_setE; [have := Hst c | have := Hkm c]; smt().
+
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2150s
+18:33:59 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=2, idle 6s, undo_repair (2165s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[124]★ │ 1 killed │ 2150s
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2165s
+18:34:14 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=2, idle 21s, undo_repair (2180s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2165s
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2180s
+18:34:29 [Orchestrator]   Tree-0.0.r1 (d=1): 124 tactics, 7 errors, errs_since_accept=2, idle 6s, undo_repair (2195s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2180s
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2195s
+18:34:32 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: have HFt : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] = Some true by rewrite HF Hhon.
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2195s
+18:34:38 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rewrite HFt /=.
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2195s
+18:34:43 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: have HS2' : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_State{2}.[ctr0{2}] = Some (state{1}.`1, false, state{1}.`3, state{1}.`4, state{1}.`5, state{1}.`6, state{1}.`7, state{1}.`8, None<:bits_n>, state{1}.`10, state{1}.`11) b...
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2195s
+18:34:45 [Orchestrator]   Tree-0.0.r1 (d=1): 126 tactics, 7 errors, errs_since_accept=1, idle 0s (2211s elapsed)
+
+🌳 1 alive │ 🔧0.0.r1[124]★ │ 1 killed │ 2195s
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2211s
+18:35:00 [Orchestrator]   Tree-0.0.r1 (d=1): 126 tactics, 7 errors, errs_since_accept=1, idle 15s (2226s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2211s
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2226s
+18:35:15 [Orchestrator]   Tree-0.0.r1 (d=1): 126 tactics, 7 errors, errs_since_accept=1, idle 0s (2241s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2226s
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2241s
+18:35:21 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: have HS3 : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_State{2}.[ctr0{2}] = Some (state{1}.`1, false, state{1}.`3, state{1}.`4, state{1}.`5, state{1}.`6, state{1}.`7, state{1}.`8, None<:bits_n>, state{1}.`10, state{1}.`11) by...
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2241s
+18:35:25 [Tree-0.0.r1] 💬 I've shown the right-hand state slot already holds the value being written. Next I'm collapsing that redundant write and closing the remaining invaria...
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2241s
+18:35:26 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rewrite (set_get_eq _ _ _ HS3); split => c; [have := Hst c | have := Hkm c]; smt().
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2241s
+18:35:30 [Orchestrator]   Tree-0.0.r1 (d=1): 128 tactics, 7 errors, errs_since_accept=0, idle 0s (2257s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[126]★ │ 1 killed │ 2241s
+🌳 1 alive │ 🐝0.0.r1[128]★ │ 1 killed │ 2257s
+18:35:36 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{2} 1; first by auto => />); (rcondt{2} 1; first by auto => />); inline *; sp.
+
+🌳 1 alive │ 🐝0.0.r1[128]★ │ 1 killed │ 2257s
+18:35:45 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{1} 1; first by auto => />; smt()); (rcondt{1} 1; first by auto => />; smt()); (rcondt{1} 5; first by auto); (rcondt{2} 1; first by auto => />; smt()); (rcondt{2} 1; first by auto => />; smt()); (rcondt{2} 5; f...
+
+🌳 1 alive │ 🐝0.0.r1[128]★ │ 1 killed │ 2257s
+18:35:46 [Orchestrator]   Tree-0.0.r1 (d=1): 130 tactics, 7 errors, errs_since_accept=0, idle 1s (2272s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[128]★ │ 1 killed │ 2257s
+🌳 1 alive │ 🐝0.0.r1[130]★ │ 1 killed │ 2272s
+18:36:00 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: case (func_mac (func_prf (oget Comp_H6.Cloned_Pkg_PRF.PRF.d_LTK{1}.[kid2{1}]) x0{1}) nr0{1} 2 = tau{1}).
+
+🌳 1 alive │ 🐝0.0.r1[130]★ │ 1 killed │ 2272s
+18:36:02 [Orchestrator]   Tree-0.0.r1 (d=1): 131 tactics, 7 errors, errs_since_accept=0, idle 0s (2288s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[130]★ │ 1 killed │ 2272s
+🌳 1 alive │ 🐝0.0.r1[131]★ │ 1 killed │ 2288s
+18:36:07 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondt{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 14; first by auto); (rcondt{1} 15; first by auto); (rcondt{2} 9; first by auto => />; smt()); (rcondf{2} 9;...
+
+🌳 1 alive │ 🐝0.0.r1[131]★ │ 1 killed │ 2288s
+18:36:17 [Orchestrator]   Tree-0.0.r1 (d=1): 132 tactics, 7 errors, errs_since_accept=0, idle 7s (2303s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[131]★ │ 1 killed │ 2288s
+🌳 1 alive │ 🐝0.0.r1[132]★ │ 1 killed │ 2303s
+18:36:21 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: swap{1} 14 3; swap{2} 16 3; seq 16 18 : (ec_result{1} = ec_result{2} /\ sid{1} = sid{2} /\ ctr0{1} = ctr0{2} /\ !Comp_H6.Game_H6.abort_flag{1} /\ inv {| l_pkg_PRF = {| PRF_d_LTK = Comp_H6.Pkg_Inst_PRF.d_LTK{1}; PRF_d_...
+
+🌳 1 alive │ 🐝0.0.r1[132]★ │ 1 killed │ 2303s
+18:36:27 [Tree-0.0.r1] 💬 Now in the dishonest-key branch where the MAC verifies: both sides compute the same PRF key directly. I'm discharging the straight-line invariant step...
+
+🌳 1 alive │ 🐝0.0.r1[132]★ │ 1 killed │ 2303s
+18:36:28 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[132]★ │ 1 killed │ 2303s
+18:36:33 [Orchestrator]   Tree-0.0.r1 (d=1): 134 tactics, 7 errors, errs_since_accept=0, idle 4s (2319s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[132]★ │ 1 killed │ 2303s
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2319s
+18:36:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hnh; have HFf : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] <> Some true by rewrite HF; split => c; have := Hst c; have := Hkm c; rewrit...
+
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2319s
+18:36:48 [Orchestrator]   Tree-0.0.r1 (d=1): 134 tactics, 7 errors, errs_since_accept=1, idle 7s (2334s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2319s
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2334s
+18:37:03 [Orchestrator]   Tree-0.0.r1 (d=1): 134 tactics, 7 errors, errs_since_accept=1, idle 23s (2349s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2334s
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2349s
+18:37:18 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hnh; have HFf : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] <> Some true; first by rewrite HF.
+
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2349s
+18:37:18 [Orchestrator]   Tree-0.0.r1 (d=1): 135 tactics, 7 errors, errs_since_accept=0, idle 0s (2365s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[134]★ │ 1 killed │ 2349s
+🌳 1 alive │ 🐝0.0.r1[135]★ │ 1 killed │ 2365s
+18:37:27 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: split => c; have := Hst c; have := Hkm c; rewrite !get_setE; case (c = ctr0{2}) => Hc /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[135]★ │ 1 killed │ 2365s
+18:37:34 [Orchestrator]   Tree-0.0.r1 (d=1): 136 tactics, 7 errors, errs_since_accept=0, idle 0s (2380s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[135]★ │ 1 killed │ 2365s
+🌳 1 alive │ 🐝0.0.r1[136]★ │ 1 killed │ 2380s
+18:37:36 [Tree-0.0.r1] 💬 Same pattern as before for the `d_First`/`d_Second` branch.
+
+🌳 1 alive │ 🐝0.0.r1[136]★ │ 1 killed │ 2380s
+18:37:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /=; smt() | auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equal...
+
+🌳 1 alive │ 🐝0.0.r1[136]★ │ 1 killed │ 2380s
+18:37:48 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{1} 8; first by auto => />); (rcondt{1} 11; first by auto); (rcondf{1} 14; first by auto => />; smt()); (rcondt{1} 14; first by auto); (rcondf{2} 9; first by auto => />; smt()); (rcondt{2} 12; first by auto); (...
+
+🌳 1 alive │ 🐝0.0.r1[136]★ │ 1 killed │ 2380s
+18:37:50 [Orchestrator]   Tree-0.0.r1 (d=1): 138 tactics, 7 errors, errs_since_accept=0, idle 1s (2396s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[136]★ │ 1 killed │ 2380s
+🌳 1 alive │ 🐝0.0.r1[138]★ │ 1 killed │ 2396s
+18:38:01 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_...
+
+🌳 1 alive │ 🐝0.0.r1[138]★ │ 1 killed │ 2396s
+18:38:05 [Orchestrator]   Tree-0.0.r1 (d=1): 139 tactics, 7 errors, errs_since_accept=0, idle 3s (2411s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[138]★ │ 1 killed │ 2396s
+🌳 1 alive │ 🐝0.0.r1[139]★ │ 1 killed │ 2411s
+18:38:06 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: move=> _ _ _ _ _ Hst Hprf Hkm HS1 HS2 HF HHn HLn Hprf2 Hm Hacc Hu Hni Hnh Hmac; have HFf : Comp_H7.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{2}.[ctr0{2}] <> Some true; first by rewrite HF.
+
+🌳 1 alive │ 🐝0.0.r1[139]★ │ 1 killed │ 2411s
+18:38:12 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rewrite (set_get_eq _ _ _ HS1); split => c; have := Hst c; have := Hkm c; rewrite !get_setE; case (c = ctr0{2}) => Hc /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[139]★ │ 1 killed │ 2411s
+18:38:21 [Orchestrator]   Tree-0.0.r1 (d=1): 141 tactics, 7 errors, errs_since_accept=0, idle 0s (2427s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[139]★ │ 1 killed │ 2411s
+🌳 1 alive │ 🐝0.0.r1[141]★ │ 1 killed │ 2427s
+18:38:25 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+
+🌳 1 alive │ 🐝0.0.r1[141]★ │ 1 killed │ 2427s
+18:38:29 [Tree-0.0.r1] 💬 These are the remaining "message skipped" branches, where both sides return `None` and leave the state unchanged. I'm closing them with the same one-l...
+
+🌳 1 alive │ 🐝0.0.r1[141]★ │ 1 killed │ 2427s
+18:38:30 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+
+🌳 1 alive │ 🐝0.0.r1[141]★ │ 1 killed │ 2427s
+18:38:37 [Orchestrator]   Tree-0.0.r1 (d=1): 143 tactics, 7 errors, errs_since_accept=0, idle 0s (2443s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[141]★ │ 1 killed │ 2427s
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:38 [Tree-0.0.r1] 💬 I can't read the follow-up `.md` with the available tools, so I'll try the established pattern for the remaining skip branches. The manager's response...
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:38 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: (rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:40 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: auto => />.
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:43 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:43 [Orchestrator] Tree-0.0.r1 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:45 [Tree-0.0.r1] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:51 [Tree-0.0.r1] 💬 PROVER REPORT: EasyCrypt accepted every remaining goal of `Eq_H6_1_1_H7_0_Send3` and accepted `qed.`, and the manager accepted `finish`. The status is...
+
+🌳 1 alive │ 🐝0.0.r1[143]★ │ 1 killed │ 2443s
+18:38:51 [Orchestrator] Tree prover done: 2 node(s) spawned, max depth 1, winner: Tree-0.0.r1
+18:38:52 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+18:38:52 [Prover] Stopped EasyCrypt daemon after tree prover
+18:38:52 [Prover] Selected tree result: Tree-0.0.r1
+18:38:52 [workflow.agents.prover] INFO: Subagent session_id: 7a5b9b34-2246-44a4-8914-6c4f63dd5549
+18:38:52 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_ddb4ee83a4a7_tree_0_0_r1
+18:38:52 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/payload_audit.jsonl
+18:38:52 [Prover] Archived 2 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/ec_sessions
+18:38:52 [Prover] Wrote 1 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/resume_capsules
+18:38:52 [Prover] Safe-stop checkpoint finalized via last_confirmed_checkpoint (146 tactic(s)).
+18:38:52 [Prover] Could not extract a closed proof; wrote 146 tactic partial prefix to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/partial_proof_prefix.ec.
+18:38:52 [workflow.agents.prover] INFO: Prover finished. Outcome: infrastructure_invalid, Time: 2458s, Session: 7a5b9b34-2246-44a4-8914-6c4f63dd5549
+18:38:52 ✓ PROVE → outcome=infrastructure_invalid, time=2458s
+
+18:38:52 [orchestrator] PROVE ⚠️ infrastructure invalid, 2458s
+
+──────────────────────────────────────────────────
+18:38:52 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+18:38:52 [Orchestrator] Iterations: 1, Proved: NO, Time: 41.0min
+18:38:52 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/summary.json
+18:38:55 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H6_1_1_H7_0_Send4
+
+18:38:55 [Orchestrator] Starting run for artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send4.ec:Eq_H6_1_1_H7_0_Send4
+18:38:55 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4
+
+──────────────────────────────────────────────────
+18:38:55 ▶ PROVE
+──────────────────────────────────────────────────
+18:38:55 [orchestrator] tree mode, 1 provers
+18:38:55 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send4.ec:Eq_H6_1_1_H7_0_Send4
+18:38:55 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+18:38:55 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_68dc38c1e182.sock
+18:38:55 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_68dc38c1e182.sock
+18:38:56 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_68dc38c1e182.sock (pid=26594)
+18:38:56 [Prover] why3server ready on /tmp/why3ec_68dc38c1e182.sock
+18:38:56 [Prover] Tree mode for Eq_H6_1_1_H7_0_Send4 (agent=claude, model=claude-opus-5-5, timeout=60min, initial_roots=1, max_concurrent=1)
+18:38:56 [Orchestrator] Tree prover: starting 1 provers from root
+18:39:03 [Tree-0.0] 💬 I'll start by looking at the target source and sibling lemmas.
+18:39:04 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+18:39:04 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+18:39:07 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+18:39:07 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 1, "query": "proc d_Send4"})
+18:39:11 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 260, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+18:39:11 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (15s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:12 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 300, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:15 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 414, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:16 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 396, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:17 [Tree-0.0] 💬 Now the KX package Send4 and the Prot run4s.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:19 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 200, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:19 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"query": "proc d_Run4"})
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:23 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 200, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:24 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 320, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+18:39:26 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (30s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+18:39:27 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+18:39:28 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+18:39:42 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 13s (46s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+18:39:56 [Tree-0.0] 💬 Both procedures are deterministic (no sampling), so my plan is to case on the abort flag, inline, and reason about the invariants. I'll start with `pr...
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+18:39:56 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+18:39:57 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 1s (61s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 46s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 61s
+18:40:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; first by move=> &1 &2; rewrite /inv /=; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 61s
+18:40:13 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 0 errors, errs_since_accept=0, idle 7s (77s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 61s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 77s
+18:40:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 77s
+18:40:28 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 12s (93s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 77s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 93s
+18:40:44 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 28s (108s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 93s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 108s
+18:40:59 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 43s (124s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 108s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 124s
+18:41:15 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 59s (139s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 124s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 139s
+18:41:31 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 74s (155s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 139s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 155s
+18:41:46 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 90s (170s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 155s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 170s
+18:42:02 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 105s (186s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 170s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 186s
+18:42:17 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 121s (201s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 186s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 201s
+18:42:33 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 136s (217s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 201s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 217s
+18:42:48 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 152s (232s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 217s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 232s
+18:43:04 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 168s (248s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 232s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 248s
+18:43:19 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 9s (263s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 248s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 263s
+18:43:35 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 25s (279s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 263s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 279s
+18:43:50 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 10s (295s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 279s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 295s
+18:44:06 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 26s (310s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 295s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 310s
+18:44:22 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 41s (326s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 310s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 326s
+18:44:30 [Tree-0.0] 💬 The full `inline *; wp` timed out, likely because sequential `if`s make the weakest precondition blow up exponentially. I'll inline step by step and u...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 326s
+18:44:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline Comp_H6.Pkg_Inst_KX.d_Send4 Comp_H7.Pkg_Inst_KX.d_Send4 Comp_H6.Pkg_Imports_KX.d_Run4 Comp_H7.Pkg_Imports_KX.d_Run4.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 326s
+18:44:37 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 1 errors, errs_since_accept=0, idle 3s (341s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 326s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 341s
+18:44:38 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 4 4; if; first by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /=; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 341s
+18:44:53 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 1 errors, errs_since_accept=1, idle 2s (357s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 341s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 357s
+18:44:55 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 4 4; if.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 357s
+18:45:08 [Orchestrator]   Tree-0.0 (d=0): 4 tactics, 1 errors, errs_since_accept=0, idle 13s (373s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 357s
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 373s
+18:45:12 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 [#] -> _ _ _ -> _ _ _ _ _ /= [#] <- _ Hinv _ _ Hab; move: Hinv; rewrite /inv Hab /= => [#] _ _; rewrite /StateRelation_invariant /StateRelation_relation_state_equality /= => [#] _ /(_ ctr{1}) [] h _ _ _;...
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 373s
+18:45:24 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 12s (388s elapsed)
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 373s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 388s
+18:45:40 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 28s (404s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 388s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 404s
+18:45:55 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 44s (420s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 404s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 420s
+18:46:11 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 59s (435s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 420s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 435s
+18:46:22 [Tree-0.0] 🧠 I'm cutting the proof after the `d_Run4` call with an intermediate relation J, which keeps `inv`, says both `d_Run4` cal...
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 435s
+18:46:27 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 1 errors, errs_since_accept=0, idle 5s (451s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 435s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 451s
+18:46:34 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 5 5 : (ctr0{1} = ctr0{2} /\ ec_done{1} = false /\ ec_done{2} = false /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp_H7.Game_H7.abort_flag{2} /\ inv {| l_pkg_PRF = {| PRF...
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 451s
+18:46:42 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=0, idle 8s (467s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 451s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 467s
+18:46:58 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=0, idle 24s (483s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 467s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 483s
+18:47:14 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=0, idle 39s (498s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 483s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 498s
+18:47:27 [Tree-0.0] 💬 Next I'll use `conseq` to shrink both pre and post to just the facts `d_Run4` needs. This keeps the weakest-precondition computation small.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 498s
+18:47:30 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=0, idle 2s (514s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 498s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 514s
+18:47:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_Ins...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 514s
+18:47:45 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=1, idle 11s (530s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 514s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 530s
+18:47:57 [Tree-0.0] 💬 Parse error, probably from unbalanced closing parentheses. Retrying with the parentheses counted carefully.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 530s
+18:48:01 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=1, idle 3s (545s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 530s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 545s
+18:48:04 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_Ins...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 545s
+18:48:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_Ins...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 545s
+18:48:17 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=1, idle 1s (561s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 545s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 561s
+18:48:28 [Tree-0.0] 💬 I've been sending the same string each time. This time I'll rebuild the closing parentheses exactly: `)]` followed by four `)`.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 561s
+18:48:32 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=1, idle 5s (577s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 561s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:34 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_Ins...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:42 [Tree-0.0] 💬 Still a parse error, so the problem isn't parentheses. I'll narrow it down with a minimal `conseq` to check whether the syntax itself parses.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:42 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : (let (a1, a2) = (ctr0{1}, ctr0{2}) in a1 = a2) ==> true).
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:46 [Tree-0.0] 💬 That test tactic was accepted and committed, which I didn't intend. Undoing it.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:46 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+18:48:48 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 2 errors, errs_since_accept=1, idle 2s, undo_repair (592s elapsed)
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 577s
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 592s18:48:48 [workflow.tree.supervisor.tree_prover] INFO: Deferring structural-undo spawn from Tree-0.0 for 298s: waiting for the same agent to repair its route after undo.
+
+18:48:51 [Tree-0.0] 💬 The minimal form parses. Next I'll try the full formula with both pre and post wrapped in an extra pair of parentheses.
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 592s
+18:48:58 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : (ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_In...
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 592s
+18:49:04 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 2 errors, errs_since_accept=2, idle 6s, undo_repair (608s elapsed)
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 592s
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:08 [Tree-0.0] 💬 Still a parse error, so I'll bisect. First test: the pre-condition alone with post `true`. If it parses I'll undo it right away.
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : (ctr0{1} = ctr0{2} /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] in a2 /\ a11 = 1)) ==> true).
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:13 [Tree-0.0] 💬 That parses. Undoing it, then testing a larger chunk.
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:13 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:19 [Tree-0.0] 💬 Next bisect test: the full pre with post `true`.
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+18:49:19 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 2 errors, errs_since_accept=1, idle 0s, undo_repair (624s elapsed)
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 608s
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 624s18:49:19 [workflow.tree.supervisor.tree_prover] INFO: Deferring structural-undo spawn from Tree-0.0 for 293s: waiting for the same agent to repair its route after undo.
+
+18:49:24 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : (ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_In...
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 624s
+18:49:33 [Tree-0.0] 💬 The pre parses, so the post had an extra `)`. Undoing this test commit, then submitting the corrected `conseq`.
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 624s
+18:49:33 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 624s
+18:49:35 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 2 errors, errs_since_accept=1, idle 1s, undo_repair (640s elapsed)
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 624s
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 640s18:49:35 [workflow.tree.supervisor.tree_prover] INFO: Deferring structural-undo spawn from Tree-0.0 for 298s: waiting for the same agent to repair its route after undo.
+
+18:49:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: conseq (_ : (ctr0{1} = ctr0{2} /\ msg0{1} = msg0{2} /\ Comp_H7.Pkg_Inst_MAC.b{2} = false /\ Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}] <> None /\ (let (a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11) = oget Comp_H6.Pkg_In...
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 640s
+18:49:51 [Orchestrator]   Tree-0.0 (d=0): 7 tactics, 2 errors, errs_since_accept=0, idle 6s (655s elapsed)
+
+🌳 1 alive │ 🔧0.0[6]★ │ 0 killed │ 640s
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 655s
+18:50:07 [Orchestrator]   Tree-0.0 (d=0): 7 tactics, 2 errors, errs_since_accept=0, idle 21s (671s elapsed)
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 655s
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 671s
+18:50:20 [Tree-0.0] 💬 The `conseq` is in. Now the first side goal is the pre-implication. I'll destructure the hypotheses and unfold the relation definitions.
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 671s
+18:50:21 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 [#] -> -> _ _ -> -> _ _ _ _ /= [#] <- <- Hinv H6 _ Hab Hs; move: Hinv; rewrite /inv /params_inv Hab /= /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equ...
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 671s
+18:50:23 [Orchestrator]   Tree-0.0 (d=0): 8 tactics, 2 errors, errs_since_accept=0, idle 0s (687s elapsed)
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 671s
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 687s
+18:50:29 [Tree-0.0] 💬 My conjunct count was off; `/=` reshaped the params part. I'll undo and look at the unfolded hypothesis before destructuring it.
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 687s
+18:50:30 [Tree-0.0] 🔧 submit_proof_intent amend_and_replay
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 687s
+18:50:36 [Tree-0.0] 🔧 submit_proof_intent amend_and_replay
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 687s
+18:50:38 [Orchestrator]   Tree-0.0 (d=0): 8 tactics, 2 errors, errs_since_accept=0, idle 2s (703s elapsed)
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 687s
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 703s
+18:50:52 [Tree-0.0] 🧠 The destructuring now has the right count: MAC.b is the 5th of 8 params, and d_H and Fresh sit at positions 3 and 6 amon...
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 703s
+18:50:52 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> [#] _ _ _ _ -> _ _ _ _ _ _ <- _ _ <- _ _ _ _ Hst _ Hkm; move: H6; rewrite /side_inv_H6 Hab /= => [#] _ Hearly _ _ _ _ _ _ _ _ Hhf _.
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 703s
+18:50:54 [Orchestrator]   Tree-0.0 (d=0): 9 tactics, 2 errors, errs_since_accept=0, idle 2s (719s elapsed)
+
+🌳 1 alive │ 🐝0.0[8]★ │ 0 killed │ 703s
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+18:50:58 [Tree-0.0] 💬 The key facts are now named. Next: specialize them at `ctr{1}`, case on the session state, and look at the remaining goal.
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+18:50:59 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move: Hearly Hhf; rewrite /GameInv_stuff__not__initialized__early_of_H6 /GameInv_h__and__fresh__match_of_H6 /= => /(_ ctr{1}) He /(_ ctr{1}) Hh; move: (Hst ctr{1}) (Hkm ctr{1}) Hs He Hh; case: (Comp_H6.Cloned_Pkg_KX.K...
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+18:51:03 [Tree-0.0] 💬 The goal is now purely propositional over the tuple fields, so I'll clear the quantified hypotheses and call `smt`.
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+18:51:03 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: clear Hst Hkm; smt().
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+18:51:10 [Orchestrator]   Tree-0.0 (d=0): 11 tactics, 2 errors, errs_since_accept=0, idle 7s (735s elapsed)
+
+🌳 1 alive │ 🐝0.0[9]★ │ 0 killed │ 719s
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 735s
+18:51:21 [Tree-0.0] 💬 The pre-implication is closed. The next goal is the post-implication, where `d_Values{2}` and `ec_r1` are universally quantified. Introducing everythi...
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 735s
+18:51:21 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 [#] -> _ -> -> -> _ -> -> _ _ /= [#] <- _ Hinv _ _ Hab _ r1 dv r2 H1 H2 /=.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 735s
+18:51:26 [Orchestrator]   Tree-0.0 (d=0): 11 tactics, 2 errors, errs_since_accept=1, idle 5s (750s elapsed)
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 735s
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+18:51:28 [Tree-0.0] 💬 The hypothesis is a single conjunction, so it needs `[H1 H2]`.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+18:51:28 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> &1 &2 [#] -> _ -> -> -> _ -> -> _ _ /= [#] <- _ Hinv _ _ Hab _ r1 dv r2 [H1 H2] /=.
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+18:51:37 [Tree-0.0] 💬 Remaining: `!abort{2}` and `inv` with the new `d_Values` both follow from `Hinv` (`inv` never mentions `MAC_d_Values`), and the last two conjuncts are...
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+18:51:38 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: split; [exact Hab|]; split; [by move: Hinv; rewrite /inv Hab /= /#|]; split; [|by split; [exact H1|exact H2]]; move: Hinv; rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /...
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+18:51:42 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=0, idle 2s (766s elapsed)
+
+🌳 1 alive │ 🐝0.0[11]★ │ 0 killed │ 750s
+🌳 1 alive │ 🐝0.0[13]★ │ 0 killed │ 766s
+18:51:43 [Tree-0.0] 💬 Now the core `d_Run4` equivalence, with small pre and post. I'll try `inline *; wp; skip` now that the post is small.
+
+🌳 1 alive │ 🐝0.0[13]★ │ 0 killed │ 766s
+18:51:43 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip.
+
+🌳 1 alive │ 🐝0.0[13]★ │ 0 killed │ 766s
+18:51:58 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 2 errors, errs_since_accept=0, idle 15s (782s elapsed)
+
+🌳 1 alive │ 🐝0.0[13]★ │ 0 killed │ 766s
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 782s
+18:52:14 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 2 errors, errs_since_accept=0, idle 31s (798s elapsed)
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 782s
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 798s
+18:52:29 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 2 errors, errs_since_accept=0, idle 46s (814s elapsed)
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 798s
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 814s
+18:52:51 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 2 errors, errs_since_accept=0, idle 9s (829s elapsed)
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 814s
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+18:53:15 [Tree-0.0] 💬 The manager returned a "response too large" error, so I can't tell whether that tactic was committed. I'll open the rewind menu, which should show the...
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+18:53:15 [Tree-0.0] 🔧 submit_proof_intent undo_to_checkpoint
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+18:53:15 [Tree-0.0] 💬 Both responses are too large, which suggests the tactic was committed and produced a huge goal. Undoing the last step should return to the previous, d...
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+18:53:15 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+18:53:15 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=1, idle 0s, undo_repair (846s elapsed)
+
+🌳 1 alive │ 🐝0.0[14]★ │ 0 killed │ 829s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 846s18:53:15 [workflow.tree.supervisor.tree_prover] INFO: Deferring structural-undo spawn from Tree-0.0 for 300s: waiting for the same agent to repair its route after undo.
+
+18:53:31 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=1, idle 16s, undo_repair (875s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 846s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 875s
+18:53:47 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=1, idle 32s, undo_repair (891s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 875s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 891s
+18:53:53 [Tree-0.0] 🧠 The wp step itself finished; only the resulting goal was too large to display. Next I'll close it as one compound tactic...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 891s
+18:53:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip => &1 &2 [#] <- <- -> Hs Hl; move: Hs Hl; case: (Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}]) => [|[a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11]] //= [#] Hs2 Hh Hf Hu Hk; move: Hs2 Hh Hk; case: (Comp_H6.Pkg_Ins...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 891s
+18:54:03 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=2, idle 1s, undo_repair (907s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 891s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 907s
+18:54:19 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=2, idle 13s, undo_repair (923s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 907s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 923s
+18:54:35 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=2, idle 28s, undo_repair (939s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 923s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 939s
+18:54:50 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=2, idle 14s, undo_repair (955s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 939s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 955s
+18:55:06 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 2 errors, errs_since_accept=2, idle 30s, undo_repair (971s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 955s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 971s
+18:55:14 [Tree-0.0] 💬 "Nothing to introduce" is probably `[#]` also splitting the `let` conjunction, which shifts my names. I'll use explicit `[]` splits and avoid naming h...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 971s
+18:55:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip => &1 &2 [] <- [] <- [] -> [] Hs Hl; move: Hs Hl; case: (Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}]) => [|[a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11]] //= _ [] Hs2 [] Hh [] Hf [] Hu Hk; rewrite Hs2 /=; case...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 971s
+18:55:22 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 3 errors, errs_since_accept=3, idle 1s, undo_repair (986s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 971s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 986s
+18:55:38 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 3 errors, errs_since_accept=3, idle 17s, undo_repair (1002s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 986s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1002s
+18:55:54 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 3 errors, errs_since_accept=3, idle 2s, undo_repair (1018s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1002s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1018s
+18:55:58 [Tree-0.0] 💬 Parse error: `case hF: (e)` isn't valid EasyCrypt syntax. Instead I'll generalize the hypotheses that mention `d_Fresh` into the goal before casing on...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1018s
+18:56:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip => &1 &2 [] <- [] <- [] -> [] Hs Hl; move: Hs Hl; case: (Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}]) => [|[a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11]] //= _ [] Hs2 [] Hh [] Hf [] Hu Hk; rewrite Hs2 /=; move:...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1018s
+18:56:09 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 3 errors, errs_since_accept=3, idle 9s (1034s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1018s
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1034s
+18:56:25 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 4 errors, errs_since_accept=4, idle 5s, undo_repair (1049s elapsed)
+
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1034s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1049s
+18:56:41 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 4 errors, errs_since_accept=4, idle 21s, undo_repair (1065s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1049s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1065s
+18:56:56 [Orchestrator]   Tree-0.0 (d=0): 13 tactics, 4 errors, errs_since_accept=4, idle 7s, undo_repair (1081s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1065s
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1081s
+18:57:00 [Tree-0.0] 💬 "Nothing to eliminate": `//=` most likely already dropped the `Some _ <> None` premise, so my extra `_` was misplaced. I'll reorder so that premise co...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1081s
+18:57:01 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *; wp; skip => &1 &2 [] <- [] <- [] -> [] Hs Hl; move: Hl Hs; case: (Comp_H6.Pkg_Inst_KX.d_State{1}.[ctr0{1}]) => [|[a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11]] //= [] Hs2 [] Hh [] Hf [] Hu Hk; rewrite Hs2 /=; move: H...
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1081s
+18:57:12 [Orchestrator]   Tree-0.0 (d=0): 14 tactics, 4 errors, errs_since_accept=4, idle 11s (1096s elapsed)
+
+🌳 1 alive │ 🔧0.0[13]★ │ 0 killed │ 1081s
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1096s18:57:12 [workflow.tree.supervisor.tree_prover] INFO: Skip error-stuck spawn from Tree-0.0: parent is in a read-only backend window (last call 53s ago).
+
+18:57:27 [Tree-0.0] 💬 The `d_Run4` part is proved. Now the tail: both sides have the same control flow, so I'll use two-sided `if`. The condition equivalence (`ec_r1` being...
+
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1096s
+18:57:27 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; first by move=> &1 &2 /#.
+
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1096s
+18:57:28 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 0s (1112s elapsed)
+
+🌳 1 alive │ 🐌0.0[14]★ │ 0 killed │ 1096s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1112s
+18:57:44 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 16s (1128s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1112s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1128s
+18:58:00 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 32s (1144s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1128s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1144s
+18:58:16 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 48s (1160s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1144s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1160s
+18:58:32 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 64s (1176s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1160s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1176s
+18:58:47 [Tree-0.0] 🧠 Next I'll cut after the d_State update at seq 3, with a mid-point invariant covering the updated state and the erasure r...
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1176s
+18:58:47 [Orchestrator]   Tree-0.0 (d=0): 15 tactics, 4 errors, errs_since_accept=0, idle 0s (1191s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1176s
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1191s
+18:58:58 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 3 3 : (ctr0{1} = ctr0{2} /\ ec_done{1} = false /\ ec_done{2} = false /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Comp_H6.Game_H6.abort_flag{1} /\ !Comp_H7.Game_H7.abort_flag{2} /\ msg_{1} = msg_{2} /\ stat...
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1191s
+18:59:03 [Orchestrator]   Tree-0.0 (d=0): 16 tactics, 4 errors, errs_since_accept=0, idle 4s (1207s elapsed)
+
+🌳 1 alive │ 🐝0.0[15]★ │ 0 killed │ 1191s
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 1207s
+18:59:10 [Tree-0.0] 💬 Running `wp; skip`, introducing the pre, and destructuring both `ec_r1` values. Then I'll look at the goal.
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 1207s
+18:59:12 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => &1 &2 [] [] <- [] -> [] -> [] -> [] -> [] Ha1 [] Ha2 [] Hinv [] Hiff Himp Hne; move: Hiff Himp Hne; case: (ec_r1{1}) => [|[[a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11] m1]] //=; case: (ec_r1{2}) => [|[s2 m2]] //=.
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 1207s
+18:59:19 [Orchestrator]   Tree-0.0 (d=0): 17 tactics, 4 errors, errs_since_accept=0, idle 5s (1223s elapsed)
+
+🌳 1 alive │ 🐝0.0[16]★ │ 0 killed │ 1207s
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1223s
+18:59:35 [Orchestrator]   Tree-0.0 (d=0): 17 tactics, 4 errors, errs_since_accept=0, idle 21s (1239s elapsed)
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1223s
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+18:59:36 [Tree-0.0] 💬 Both sides now take the same branch, and the goal is `inv` after the `d_State` update at `ctr0`. Before using it, I'll confirm the name of the FMap up...
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+18:59:37 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 2, "query": "lemma get_setE", "scope": "libraries"})
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+18:59:39 [Tree-0.0] 💬 `get_setE` exists. Now I'll unfold `inv` on both hypothesis and goal and destructure.
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+18:59:41 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> [-> [-> Hk]]; move: Hinv; rewrite Ha1 Ha2 /= /inv /params_inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /Sta...
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+18:59:51 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=0, idle 10s (1255s elapsed)
+
+🌳 1 alive │ 🐝0.0[17]★ │ 0 killed │ 1239s
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1255s
+18:59:55 [Tree-0.0] 💬 The structure is params, trivial equalities, state-equality, prf-equality, kmac. Only state-equality and kmac change; I'll prove those pointwise with ...
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1255s
+18:59:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> [] Hp [] Ht [] Hst [] Hprf Hkm; have [#] _ _ _ _ _ HF _ _ _ _ := Ht; split; [exact Hp|]; split; [exact Ht|]; split; [|split; [exact Hprf|]]; move=> c; rewrite !get_setE; case: (c = ctr0{1}) => [->|hc] /=; [smt(...
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1255s
+19:00:06 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=1, idle 9s (1270s elapsed)
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1255s
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1270s
+19:00:07 [Tree-0.0] 💬 Error: the `[..|..]` tactic list is applied per goal, so each of the two goals needs its own two-element list. Restructuring.
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1270s
+19:00:09 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> [] Hp [] Ht [] Hst [] Hprf Hkm; have [#] _ _ _ _ _ HF _ _ _ _ := Ht; split; [exact Hp|]; split; [exact Ht|]; split; [|split; [exact Hprf|]]; [move=> c; rewrite !get_setE; case: (c = ctr0{1}) => [->|hc] /=; [smt...
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1270s
+19:00:22 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=2, idle 9s, undo_repair (1286s elapsed)
+
+🌳 1 alive │ 🐝0.0[18]★ │ 0 killed │ 1270s
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1286s
+19:00:38 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=2, idle 25s, undo_repair (1302s elapsed)
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1286s
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1302s
+19:00:54 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=2, idle 15s, undo_repair (1318s elapsed)
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1302s
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1318s
+19:01:08 [Tree-0.0] 💬 One of the `smt` calls failed. I'll commit up to the case split, discharge the `c ≠ ctr0` goals with `exact`, and look at what remains.
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1318s
+19:01:10 [Orchestrator]   Tree-0.0 (d=0): 18 tactics, 4 errors, errs_since_accept=2, idle 1s, undo_repair (1334s elapsed)
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1318s
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1334s
+19:01:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: idtac.
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1334s
+19:01:20 [Orchestrator] Layer-3 crash respawn: Tree-0.0 exited degraded with the proof open (exit 2); resuming from 2-tactic checkpoint capsule as Tree-0.0.r1. last stderr: managed worker: agent exit 2: unknown Claude user block 'text'
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1334s
+19:01:25 [Orchestrator]   Tree-0.0.r1 (d=1): 2 tactics, 0 errors, errs_since_accept=0, idle 0s (1344s elapsed)
+
+🌳 1 alive │ 🔧0.0[18]★ │ 0 killed │ 1334s
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:31 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:35 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:37 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 200, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:38 [Tree-0.0.r1] 💬 Now the Run4 implementations.
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:39 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 200, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:40 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 330, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+19:01:41 [Orchestrator]   Tree-0.0.r1 (d=1): 2 tactics, 0 errors, errs_since_accept=0, idle 1s (1365s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1344s
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:47 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 414, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:49 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 400, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:52 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 414, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:54 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:56 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+19:01:57 [Orchestrator]   Tree-0.0.r1 (d=1): 2 tactics, 0 errors, errs_since_accept=0, idle 1s (1381s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1365s
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1381s
+19:02:09 [Tree-0.0.r1] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 396, "path": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1381s
+19:02:12 [Orchestrator]   Tree-0.0.r1 (d=1): 2 tactics, 0 errors, errs_since_accept=0, idle 3s (1397s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1381s
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1397s
+19:02:28 [Orchestrator]   Tree-0.0.r1 (d=1): 2 tactics, 0 errors, errs_since_accept=0, idle 19s (1412s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1397s
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1412s
+19:02:32 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: inline *.
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1412s
+19:02:39 [Tree-0.0.r1] 💬 Inlining went through. Next I'm turning the deterministic code into a single first-order goal with `wp; skip`.
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1412s
+19:02:39 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: wp; skip.
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1412s
+19:02:44 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 5s (1428s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[2] │ 1 killed │ 1412s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1428s
+19:02:59 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 20s (1444s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1428s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1444s
+19:03:15 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 36s (1459s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1444s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1459s
+19:03:31 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 51s (1475s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1459s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1475s
+19:03:46 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 67s (1490s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1475s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1490s
+19:04:02 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 83s (1506s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1490s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1506s
+19:04:17 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 98s (1522s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1506s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1522s
+19:04:33 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 114s (1537s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1522s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1537s
+19:04:49 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 129s (1553s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1537s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1553s
+19:05:04 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 145s (1568s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1553s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1568s
+19:05:20 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 0 errors, errs_since_accept=0, idle 161s (1584s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1568s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1584s
+19:05:35 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 1s (1600s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1584s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1600s
+19:05:51 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 17s (1615s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1600s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1615s
+19:06:07 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 1s (1631s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1615s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1631s
+19:06:22 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 17s (1647s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1631s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1647s
+19:06:38 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 33s (1662s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1647s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1662s
+19:06:54 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 49s (1678s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1662s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1678s
+19:07:10 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 64s (1694s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1678s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1694s
+19:07:25 [Tree-0.0.r1] 💬 Plain `wp` timed out because the nested branches multiply the large postcondition. I'll split the program into cases first. Starting with `sp`.
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1694s
+19:07:26 [Orchestrator]   Tree-0.0.r1 (d=1): 3 tactics, 1 errors, errs_since_accept=1, idle 0s (1710s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1694s
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1710s
+19:07:27 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: sp.
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1710s
+19:07:41 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 15s (1726s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[3] │ 1 killed │ 1710s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1726s
+19:07:57 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 30s (1741s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1726s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1741s
+19:08:12 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 46s (1757s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1741s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1757s
+19:08:28 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 62s (1772s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1757s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1772s
+19:08:44 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 77s (1788s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1772s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1788s
+19:08:59 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 93s (1804s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1788s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1804s
+19:09:15 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 108s (1819s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1804s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1819s
+19:09:30 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 124s (1835s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1819s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1835s
+19:09:46 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 139s (1850s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1835s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1850s
+19:10:02 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 155s (1866s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1850s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1866s
+19:10:17 [Orchestrator]   Tree-0.0.r1 (d=1): 4 tactics, 1 errors, errs_since_accept=1, idle 171s (1882s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1866s
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1882s
+19:10:25 [Tree-0.0.r1] 💬 `sp` timed out as well, which is odd for a few assignments. EasyCrypt may still be busy from the earlier timeout. Trying a smaller step.
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1882s
+19:10:25 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: sp 1 1.
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1882s
+19:10:33 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: sp 3 3.
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1882s
+19:10:33 [Orchestrator]   Tree-0.0.r1 (d=1): 5 tactics, 2 errors, errs_since_accept=0, idle 0s (1897s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[4] │ 1 killed │ 1882s
+🌳 1 alive │ 🐝0.0.r1[5] │ 1 killed │ 1897s
+19:10:39 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: if{1}.
+
+🌳 1 alive │ 🐝0.0.r1[5] │ 1 killed │ 1897s
+19:10:45 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: rcondt{2} 1; first by move=> &m; skip => &hr; rewrite /inv /StateRelation_invariant /StateRelation_relation_state_equality /=; smt().
+
+🌳 1 alive │ 🐝0.0.r1[5] │ 1 killed │ 1897s
+19:10:49 [Orchestrator]   Tree-0.0.r1 (d=1): 7 tactics, 2 errors, errs_since_accept=0, idle 2s (1913s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[5] │ 1 killed │ 1897s
+🌳 1 alive │ 🐝0.0.r1[7] │ 1 killed │ 1913s
+19:10:51 [Tree-0.0.r1] 🔧 submit_proof_intent commit_tactic: sp.
+
+🌳 1 alive │ 🐝0.0.r1[7] │ 1 killed │ 1913s
+19:11:05 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 13s (1929s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[7] │ 1 killed │ 1913s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1929s
+19:11:20 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 29s (1945s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1929s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1945s
+19:11:36 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 45s (1960s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1945s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1960s
+19:11:52 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 60s (1976s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1960s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1976s
+19:12:07 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 76s (1991s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1976s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1991s
+19:12:23 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 92s (2007s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 1991s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2007s
+19:12:38 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 107s (2023s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2007s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2023s
+19:12:54 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 123s (2038s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2023s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2038s
+19:13:10 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 139s (2054s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2038s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2054s
+19:13:25 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 154s (2070s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2054s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2070s
+19:13:41 [Orchestrator]   Tree-0.0.r1 (d=1): 8 tactics, 2 errors, errs_since_accept=0, idle 170s (2085s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2070s
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2085s
+19:13:45 [Tree-0.0.r1] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2085s
+19:13:45 [Orchestrator] Layer-3 crash respawn: Tree-0.0.r1 exited degraded with the proof open (exit 1); resuming from 3-tactic checkpoint capsule as Tree-0.0.r1.r0. last stderr: managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2085s
+19:13:56 [Tree-0.0.r1.r0] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2085s
+19:13:56 [Orchestrator]   Tree-0.0.r1.r0 (d=2): 3 tactics, 0 errors, errs_since_accept=0, idle 0s (2101s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1[8] │ 1 killed │ 2085s
+🌳 1 alive │ 🐝0.0.r1.r0[3] │ 2 killed │ 2101s
+19:13:57 [Orchestrator] Layer-3 crash respawn: Tree-0.0.r1.r0 exited degraded with the proof open (exit 1); resuming from 3-tactic live capsule as Tree-0.0.r1.r0.r0. last stderr: managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0[3] │ 2 killed │ 2101s
+19:14:08 [Tree-0.0.r1.r0.r0] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0[3] │ 2 killed │ 2101s
+19:14:09 [Orchestrator] Layer-3 crash respawn: Tree-0.0.r1.r0.r0 exited degraded with the proof open (exit 1); resuming from 3-tactic live capsule as Tree-0.0.r1.r0.r0.r0. last stderr: managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0[3] │ 2 killed │ 2101s
+19:14:15 [Orchestrator]   Tree-0.0.r1.r0.r0.r0 (d=4): 3 tactics, 0 errors, errs_since_accept=0, idle 0s (2114s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1.r0[3] │ 2 killed │ 2101s
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0[3] │ 4 killed │ 2114s
+19:14:20 [Tree-0.0.r1.r0.r0.r0] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0[3] │ 4 killed │ 2114s
+19:14:21 [Orchestrator] Layer-3 crash respawn: Tree-0.0.r1.r0.r0.r0 exited degraded with the proof open (exit 1); resuming from 3-tactic live capsule as Tree-0.0.r1.r0.r0.r0.r0. last stderr: managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0[3] │ 4 killed │ 2114s
+19:14:30 [Orchestrator]   Tree-0.0.r1.r0.r0.r0.r0 (d=5): 3 tactics, 0 errors, errs_since_accept=0, idle 3s (2135s elapsed)
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0[3] │ 4 killed │ 2114s
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0.r0[3] │ 5 killed │ 2135s
+19:14:31 [Tree-0.0.r1.r0.r0.r0.r0] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0.r0[3] │ 5 killed │ 2135s
+19:14:33 [Orchestrator] Layer-3 crash respawn: Tree-0.0.r1.r0.r0.r0.r0 exited degraded with the proof open (exit 1); resuming from 3-tactic live capsule as Tree-0.0.r1.r0.r0.r0.r0.r0. last stderr: managed worker: agent exit 1: Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0.r0[3] │ 5 killed │ 2135s
+19:14:43 [Tree-0.0.r1.r0.r0.r0.r0.r0] 💬 Failed to authenticate: OAuth token revoked. Please log in again or contact your administrator.
+
+🌳 1 alive │ 🐝0.0.r1.r0.r0.r0.r0[3] │ 5 killed │ 2135s
+19:14:45 [Orchestrator] No prover succeeded. Best: Tree-0.0 (18 tactics)
+19:14:45 [Orchestrator] Tree prover done: 7 node(s) spawned, max depth 6, winner: Tree-0.0
+19:14:45 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+19:14:45 [Prover] Stopped EasyCrypt daemon after tree prover
+19:14:45 [Prover] Selected tree result: Tree-0.0
+19:14:45 [workflow.agents.prover] INFO: Subagent session_id: b5e9e3c5-1302-4f39-b3c7-8763bdf7f8b9
+19:14:45 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_5cbe73c13f2e_tree_0_0
+19:14:45 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/payload_audit.jsonl
+19:14:45 [Prover] Archived 7 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions
+19:14:45 [Prover] Wrote 5 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules
+19:14:45 [Prover] Safe-stop checkpoint finalized via accepted_prefix_only (18 tactic(s)).
+19:14:45 [Prover] Could not extract a closed proof; wrote 18 tactic partial prefix to /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/partial_proof_prefix.ec.
+19:14:45 [workflow.agents.prover] INFO: Prover finished. Outcome: infrastructure_invalid, Time: 2150s, Session: b5e9e3c5-1302-4f39-b3c7-8763bdf7f8b9
+19:14:45 ✓ PROVE → outcome=infrastructure_invalid, time=2150s
+
+19:14:45 [orchestrator] PROVE ⚠️ infrastructure invalid, 2150s
+
+──────────────────────────────────────────────────
+19:14:45 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+19:14:45 [Orchestrator] Iterations: 1, Proved: NO, Time: 35.8min
+19:14:45 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/summary.json
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send3.ec --lemma Eq_H6_1_1_H7_0_Send3 --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 60 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort high --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01
+PREFLIGHT OK — target 'Eq_H6_1_1_H7_0_Send3': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send4.ec --lemma Eq_H6_1_1_H7_0_Send4 --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 60 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort high --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01
+PREFLIGHT OK — target 'Eq_H6_1_1_H7_0_Send4': loads OK
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H6_1_1_H7_0_Send3/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3--Eq_H6_1_1_H7_0_Send3__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H6_1_1_H7_0_Send4/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4--Eq_H6_1_1_H7_0_Send4__proof_state_compiler__r01__ba30e6c9-dirty
+SUITE-EXECUTION-MANIFEST: artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/executions/20261113T155749.372510Z_ae9f244fae6e/manifest.json

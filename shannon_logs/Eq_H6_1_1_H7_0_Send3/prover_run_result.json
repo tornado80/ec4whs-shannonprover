@@ -1,0 +1,30 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/ec_sessions/.ec_session_prover_ddb4ee83a4a7_tree_0_0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/ec_sessions/.ec_session_prover_ddb4ee83a4a7_tree_0_0_r1"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_ddb4ee83a4a7_tree_0_0_r1",
+  "elapsed_seconds": 2458.01806473732,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "completion candidate snapshot is not authoritative"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "84c38f7f57c8480496be3acadb2b9b35ae1b92ca4820a0193aebb7845d07b889",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_ddb4ee83a4a7_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0.r1",
+  "session_id": "7a5b9b34-2246-44a4-8914-6c4f63dd5549",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 92,
+  "verification": {}
+}

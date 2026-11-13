@@ -1,0 +1,51 @@
+{
+ "rows": [
+  {
+   "lemma": "Eq_H6_1_1_H7_0_Send3",
+   "status": "infrastructure_invalid",
+   "wall_s": 2458.01806473732,
+   "turns": 92,
+   "msgs": 158,
+   "input": 316,
+   "output": 149266,
+   "wr_5m": 0,
+   "wr_1h": 1497789,
+   "cache_rd": 27539102,
+   "cost_usd": 20.48,
+   "transcripts_missing": 0,
+   "committed": "proof_recovered",
+   "admits_before": 9,
+   "admits_after": 0,
+   "run_dir": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send3/r01/2026-11-13_1757_Eq_H6_1_1_H7_0_Send3"
+  },
+  {
+   "lemma": "Eq_H6_1_1_H7_0_Send4",
+   "status": "infrastructure_invalid",
+   "wall_s": 2149.51376414299,
+   "turns": 43,
+   "msgs": 72,
+   "input": 132,
+   "output": 96020,
+   "wr_5m": 0,
+   "wr_1h": 513938,
+   "cache_rd": 11548389,
+   "cost_usd": 8.34,
+   "transcripts_missing": 0,
+   "committed": "",
+   "admits_before": null,
+   "admits_after": null,
+   "run_dir": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4"
+  }
+ ],
+ "total": {
+  "wall_s": 4607.53182888031,
+  "turns": 135,
+  "msgs": 230,
+  "input": 448,
+  "output": 245286,
+  "wr_5m": 0,
+  "wr_1h": 2011727,
+  "cache_rd": 39087491,
+  "cost_usd": 28.82
+ }
+}

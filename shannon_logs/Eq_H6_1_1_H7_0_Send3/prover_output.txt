@@ -1,0 +1,8 @@
+PROVER REPORT: EasyCrypt accepted every remaining goal of `Eq_H6_1_1_H7_0_Send3` and accepted `qed.`, and the manager accepted `finish`. The status is `session_closed_pending_verification`: offline verification runs after this node stops, so the final result isn't confirmed yet.
+
+The last steps after the context swap:
+1. **Last skipped-message branch:** this branch is where both sides return `None` and the state doesn't change. I closed it with the same one-liner used for the earlier ones: `(rcondf{1} 3; first by auto); (rcondf{2} 3; first by auto); auto => />.`
+2. **Final goal:** the state at `ctr0` was `None`, so the only remaining code was `ec_result <- ec_result0`. `auto => />.` closed it.
+3. **Close:** committed `qed.`, then `finish`.
+
+Overall, the proof splits on the cases in the Send3 oracle: whether the state is present, whether the key is honest or dishonest, and whether the MAC verifies. In the branches that update state, it uses `seq` with the `inv` invariant, then reasons about the map updates with `get_setE` and `set_get_eq`.

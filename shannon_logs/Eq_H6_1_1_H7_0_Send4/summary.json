@@ -1,0 +1,38 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/source/Full4WHS/Eq_H6_1_1_H7_0_Send4.ec",
+    "lemma": "Eq_H6_1_1_H7_0_Send4"
+  },
+  "iterations": 1,
+  "final_proved": false,
+  "final_prover_result_id": "ca5721c79099df5dda8bc4011794a8a470186e8d1ccdc32b3fa6896ef15f194f",
+  "final_prover_result_status": "infrastructure_invalid",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 35.8,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0_r0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "ca5721c79099df5dda8bc4011794a8a470186e8d1ccdc32b3fa6896ef15f194f",
+      "prover_result_status": "infrastructure_invalid",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/prover_run_result.json",
+      "verified": false,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-shannon-partial/runs/ec4whs_h6_h7_shannon/proof_state_compiler/Eq_H6_1_1_H7_0_Send4/r01/2026-11-13_1838_Eq_H6_1_1_H7_0_Send4/iteration_1/resume_capsules/Tree_0_0_r1_r0_r0_r0_r0_r0_.ec_session_prover_5cbe73c13f2e_tree_0_0_r1_r0_r0_r0_r0_r0/resume.json"
+      ]
+    }
+  ]
+}
