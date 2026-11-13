@@ -1,0 +1,201 @@
+(* ProtNoKeyOnlyKid: n = n, mac = func_mac *)
+
+require import AllCore Distr FMap Int IntDiv Types.
+
+module type ProtNoKeyOnlyKid_Imports = {
+  proc d_Eval(kid : int, x : (int * int * bits_n * bits_n * bool)) : bits_n option
+  proc d_Sample() : bits_n option
+}.
+
+module ProtNoKeyOnlyKid (O : ProtNoKeyOnlyKid_Imports) = {
+  proc d_Run1(state : (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int)) : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bits_n) option = {
+    var ec_result : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bits_n) option;
+    var d_U : int;
+    var u : bool;
+    var d_V : int;
+    var kid : int;
+    var acc : bool option;
+    var k : bits_n option;
+    var ni_ : bits_n option;
+    var nr : bits_n option;
+    var kmac : bits_n option;
+    var sid : (int * int * bits_n * bits_n * bits_n) option;
+    var mess : int;
+    var ec_r1 : bits_n option;
+    var ni : bits_n;
+    ec_result <- None;
+    (d_U, u, d_V, kid, acc, k, ni_, nr, kmac, sid, mess) <- state;
+    if (acc = None) {
+      if (mess = 0) {
+        if (u = false) {
+          ec_r1 <@ O.d_Sample();
+          if (!(ec_r1 = None)) {
+            ni <- oget ec_r1;
+            ec_result <- Some ((d_U, u, d_V, kid, None, k, Some ni, nr, kmac, sid, 1), ni);
+          }
+        }
+      }
+    }
+    return ec_result;
+  }
+
+  proc d_Run2(state : (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int), ni : bits_n) : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n)) option = {
+    var ec_result : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n)) option;
+    var d_U : int;
+    var v : bool;
+    var d_V : int;
+    var kid : int;
+    var acc : bool option;
+    var k_ : bits_n option;
+    var ni_ : bits_n option;
+    var nr_ : bits_n option;
+    var kmac_ : bits_n option;
+    var sid_ : (int * int * bits_n * bits_n * bits_n) option;
+    var mess : int;
+    var ec_r1 : bits_n option;
+    var nr : bits_n;
+    var ec_r2 : bits_n option;
+    var kmac : bits_n;
+    var tau : bits_n;
+    var sid : (int * int * bits_n * bits_n * bits_n);
+    ec_result <- None;
+    (d_U, v, d_V, kid, acc, k_, ni_, nr_, kmac_, sid_, mess) <- state;
+    if (acc = None) {
+      if (mess = 0) {
+        if (v = true) {
+          ec_r1 <@ O.d_Sample();
+          if (!(ec_r1 = None)) {
+            nr <- oget ec_r1;
+            ec_r2 <@ O.d_Eval(kid, (d_U, d_V, ni, nr, false));
+            if (!(ec_r2 = None)) {
+              kmac <- oget ec_r2;
+              tau <- func_mac kmac nr 2;
+              sid <- (d_U, d_V, ni, nr, tau);
+              ec_result <- Some ((d_U, v, d_V, kid, None, None, Some ni, Some nr, Some kmac, Some sid, 1), (nr, tau));
+            }
+          }
+        }
+      }
+    }
+    return ec_result;
+  }
+
+  proc d_Run3(state : (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int), msg : (bits_n * bits_n)) : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n)) option = {
+    var ec_result : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n)) option;
+    var d_U : int;
+    var u : bool;
+    var d_V : int;
+    var kid : int;
+    var acc : bool option;
+    var k_ : bits_n option;
+    var ni : bits_n option;
+    var nr_ : bits_n option;
+    var kmac_ : bits_n option;
+    var sid_ : (int * int * bits_n * bits_n * bits_n) option;
+    var mess : int;
+    var nr : bits_n;
+    var tau : bits_n;
+    var ec_r1 : bits_n option;
+    var kmac : bits_n;
+    var tau_ : bits_n;
+    var sid : (int * int * bits_n * bits_n * bits_n);
+    ec_result <- None;
+    (d_U, u, d_V, kid, acc, k_, ni, nr_, kmac_, sid_, mess) <- state;
+    if (mess = 1) {
+      if (acc = None) {
+        if (u = false) {
+          (nr, tau) <- msg;
+          if (!(ni = None)) {
+            ec_r1 <@ O.d_Eval(kid, (d_U, d_V, oget ni, nr, false));
+            if (!(ec_r1 = None)) {
+              kmac <- oget ec_r1;
+              tau_ <- func_mac kmac (oget ni) 3;
+              sid <- (d_U, d_V, oget ni, nr, tau);
+              if (func_mac kmac nr 2 = tau) {
+                ec_result <- Some ((d_U, u, d_V, kid, None, None, ni, Some nr, Some kmac, Some sid, 2), (oget ni, tau_));
+              } else {
+                ec_result <- Some (state, (zero_n, zero_n));
+              }
+            }
+          }
+        }
+      }
+    }
+    return ec_result;
+  }
+
+  proc d_Run4(state : (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int), msg : (bits_n * bits_n)) : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bits_n) option = {
+    var ec_result : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bits_n) option;
+    var d_U : int;
+    var v : bool;
+    var d_V : int;
+    var kid : int;
+    var acc : bool option;
+    var k : bits_n option;
+    var ni_ : bits_n option;
+    var nr : bits_n option;
+    var kmac : bits_n option;
+    var sid : (int * int * bits_n * bits_n * bits_n) option;
+    var mess : int;
+    var ni : bits_n;
+    var tau : bits_n;
+    var tau_ : bits_n;
+    ec_result <- None;
+    (d_U, v, d_V, kid, acc, k, ni_, nr, kmac, sid, mess) <- state;
+    if (acc = None) {
+      if (mess = 1) {
+        if (v = true) {
+          (ni, tau) <- msg;
+          if (!(kmac = None)) {
+            if (!(ni_ = None)) {
+              if (func_mac (oget kmac) ni 3 = tau /\ ni = oget ni_) {
+                acc <- Some true;
+                tau_ <- func_mac (oget kmac) zero_n 4;
+                ec_result <- Some ((d_U, v, d_V, kid, acc, k, ni_, nr, kmac, sid, 2), tau_);
+              } else {
+                acc <- Some false;
+                ec_result <- Some ((d_U, v, d_V, kid, acc, k, ni_, nr, kmac, sid, 2), zero_n);
+              }
+            }
+          }
+        }
+      }
+    }
+    return ec_result;
+  }
+
+  proc d_Run5(state : (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int), tau : bits_n) : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bool) option = {
+    var ec_result : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * bool) option;
+    var d_U : int;
+    var u : bool;
+    var d_V : int;
+    var kid : int;
+    var acc : bool option;
+    var k : bits_n option;
+    var ni : bits_n option;
+    var nr : bits_n option;
+    var kmac : bits_n option;
+    var sid : (int * int * bits_n * bits_n * bits_n) option;
+    var mess : int;
+    ec_result <- None;
+    (d_U, u, d_V, kid, acc, k, ni, nr, kmac, sid, mess) <- state;
+    if (acc = None) {
+      if (mess = 2) {
+        if (u = false) {
+          if (!(kmac = None)) {
+            if (func_mac (oget kmac) zero_n 4 = tau) {
+              ec_result <- Some ((d_U, u, d_V, kid, Some true, k, ni, nr, kmac, sid, 3), true);
+            } else {
+              ec_result <- Some (state, false);
+            }
+          }
+        }
+      }
+    }
+    return ec_result;
+  }
+}.
+
+type ProtNoKeyOnlyKid_pkgparams = {
+  ProtNoKeyOnlyKid_param_mac : bits_n -> bits_n -> int -> bits_n
+}.
