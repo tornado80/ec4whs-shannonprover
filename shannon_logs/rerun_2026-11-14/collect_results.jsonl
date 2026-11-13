@@ -1,0 +1,1 @@
+{"lemma": "Eq_H3_H4_PKDEC", "status": "verified", "run_dir": "artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC", "file": "kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec", "old_admits": 1, "kind": "proof", "new_admits": 0, "compiles": true, "applied": true}

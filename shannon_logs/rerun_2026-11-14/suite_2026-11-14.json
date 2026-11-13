@@ -1,0 +1,30 @@
+{
+ "suite": "ec4whs_h0_h1_send5_rerun",
+ "profiles": [
+  "proof_state_compiler"
+ ],
+ "defaults": {
+  "eval_mode": true,
+  "agent_backend": "claude",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "max_iterations": 1,
+  "timeout_minutes": 60,
+  "repeats": 1,
+  "tree_initial_provers": 1,
+  "tree_max_concurrent": 1,
+  "output_dir": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs_2026-11-14",
+  "source_isolation": true,
+  "strip_proofs": true,
+  "source_navigation": true,
+  "include_dir": "easycrypt-src/theories"
+ },
+ "targets": [
+  {
+   "id": "Eq_H0_H1_0_Send5",
+   "file": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/snapshot/Full4WHS/Eq_H0_H1_0_Send5.ec",
+   "lemma": "Eq_H0_H1_0_Send5",
+   "copy_root": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/snapshot/Full4WHS"
+  }
+ ]
+}

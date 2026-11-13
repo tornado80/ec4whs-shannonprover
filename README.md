@@ -12,7 +12,7 @@ Compile: `easycrypt compile -I kem_dem_cca_blended_parallel kem_dem_cca_blended_
 
 ## Shannon Prover run (2026-11-13)
 
-Result: **17 of 18 oracle lemmas proved**; all except `Eq_H3_H4_PKDEC`, which holds Shannon's
+Result of this first run: **17 of 18 oracle lemmas proved**; all except `Eq_H3_H4_PKDEC`, which held Shannon's
 partial proof (`proc; inline *; sp.` then one `admit.`, marked `(* PARTIAL ... *)`). The
 proofs are in the `Eq_*_<Oracle>.ec` and `Red_*_<Oracle>.ec` files. Every changed file and
 `Prop_main.ec` compile with EasyCrypt r2026.06; `Eq_H3_H4_PKDEC` is the only admit left.
@@ -61,3 +61,20 @@ Logs (`shannon_logs/`): `suite_run.log`, `report.json` (the table above),
 `prover_report.json`, `prover_output.txt`, `timeline.jsonl` (every tactic tried),
 `partial_proof_prefix.ec` (if not proved), `token_usage.jsonl` (usage and cost per model
 message) and the Claude transcript (`transcript_*.jsonl.gz`).
+
+## Shannon Prover rerun of `Eq_H3_H4_PKDEC` (2026-11-14): proved
+
+**All 18 oracle lemmas are now proved**; no admit is left in `kem_dem_cca_blended_parallel/`, and
+`Prop_main.ec` compiles. The rerun of `Eq_H3_H4_PKDEC` (same settings: Opus 5.5 low, eval-mode
+sandbox, from a proof-stripped copy; 60 min limit instead of 30, EasyCrypt limited to one SMT
+solver at a time) was verified by Shannon in 41 seconds; the proof is three tactics,
+`proc; inline *; wp; skip => />.` then an `smt()` on the unfolded invariant. In the first run
+the step `proc; inline *; sp.` exceeded the manager's fixed 180 s per-command limit; this time
+the inlining step finished within it. The proof replaces the partial one.
+
+| lemma | result | committed | admits before → after | wall time | turns | msgs | input | output | cache wr 5m | cache wr 1h | cache read | cost (USD) |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `Eq_H3_H4_PKDEC` | verified | proof | 1 → 0 | 0:00:41 | 4 | 8 | 16 | 2,775 | 0 | 56,729 | 272,592 | 0.56 |
+| **total** | 1/1 verified | | | 0:00:41 | 4 | 8 | 16 | 2,775 | 0 | 56,729 | 272,592 | 0.56 |
+
+Logs: `shannon_logs/rerun_2026-11-14/` (same layout as above; suite `suite_2026-11-14.json`).

@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After proc; inline *; wp; skip => />, the remaining goal holds only in terms of the pure ops func_kem_decaps and func_dem_dec. Unfolding StateRelation_invariant and calling smt() closes it."
+  ]
+}

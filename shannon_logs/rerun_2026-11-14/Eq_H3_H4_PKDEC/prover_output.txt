@@ -1,0 +1,3 @@
+EasyCrypt accepted the proof of `Eq_H3_H4_PKDEC` and the manager accepted `finish`. The offline check that runs after the node stops is still pending. It took two tactics plus `qed.`: `proc; inline *; wp; skip => />.`, then `move=> &1 &2; rewrite /StateRelation_invariant /=; smt().`
+
+PROVER REPORT: {"blockers": [], "discoveries": ["After proc; inline *; wp; skip => />, the remaining goal holds only in terms of the pure ops func_kem_decaps and func_dem_dec. Unfolding StateRelation_invariant and calling smt() closes it."]}

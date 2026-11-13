@@ -1,0 +1,33 @@
+{
+ "rows": [
+  {
+   "lemma": "Eq_H3_H4_PKDEC",
+   "status": "verified",
+   "wall_s": 41.62518548965454,
+   "turns": 4,
+   "msgs": 8,
+   "input": 16,
+   "output": 2775,
+   "wr_5m": 0,
+   "wr_1h": 56729,
+   "cache_rd": 272592,
+   "cost_usd": 0.56,
+   "transcripts_missing": 0,
+   "committed": "proof",
+   "admits_before": 1,
+   "admits_after": 0,
+   "run_dir": "artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC"
+  }
+ ],
+ "total": {
+  "wall_s": 41.62518548965454,
+  "turns": 4,
+  "msgs": 8,
+  "input": 16,
+  "output": 2775,
+  "wr_5m": 0,
+  "wr_1h": 56729,
+  "cache_rd": 272592,
+  "cost_usd": 0.56
+ }
+}

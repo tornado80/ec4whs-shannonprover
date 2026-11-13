@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec",
+    "lemma": "Eq_H3_H4_PKDEC"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "ec3631db9d78a45dd1b68fd3077a014f9b16f54125708a2d9fd15e9bfae73cd8",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 0.8,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_bcee98cb4208_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_bcee98cb4208_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "ec3631db9d78a45dd1b68fd3077a014f9b16f54125708a2d9fd15e9bfae73cd8",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_bcee98cb4208_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs_2026-11-14/ec4whs_kem_dem_pkdec_rerun/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-14_0018_Eq_H3_H4_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_bcee98cb4208_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}
