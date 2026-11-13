@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send2/r01/2026-11-13_1711_Eq_H0_H1_0_Send2/iteration_1/ec_sessions/.ec_session_prover_5e86d5589e41_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "c0c9c215736873cd2e7f1d426e231a53e1bb84b22f21126152b8e649de71c66b",
+    "close_event_id": "452ded5a-c1f4-41d2-a755-f85a9719a2ad",
+    "close_result_event_id": "7b90bf78-d0a9-45cf-9729-1eacdd00bad5",
+    "history_sha256": "78b022f0fd1f66823c0c84e255316a8579294ed58e16d9a6ce2f2fe75bdb40d0",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_5e86d5589e41_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 14,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send2/r01/source/Full4WHS/Eq_H0_H1_0_Send2.ec",
+    "target_file_sha256": "79dad23e45cc14da9bdd90a88a5560441616553ef9795f47d3abb86f0c626cb2",
+    "target_lemma": "Eq_H0_H1_0_Send2",
+    "terminal_event_id": "dbbb4d21-5408-4ac3-94f5-66a51ced3ace"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_5e86d5589e41_tree_0_0",
+  "elapsed_seconds": 150.28996777534485,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "The invariant `inv` makes `Comp_H1.Pkg_Inst_Nonces.b{2} = false` (via `params_inv`). With that, `rcondf{2}` skips the nonce-uniqueness branch in `Nonces.d_Sample`, and `rcondt{2}` goes through both the `!ec_done` and `ec_r10 <> None` branches.",
+      "After `rewrite /inv /params_inv /StateRelation_invariant /=`, the invariant becomes plain field-by-field equalities of the KX state. `seq 6 6` with those equalities plus `ec_result0 = None` separates the calls to `d_Run2` from the abort-flag update at the end.",
+      "The nested `if (acc = None) / if (mess = 0) / if (v = true)` conditions sync up with `if; 1: smt(); last by auto`. Then `wp; rnd; wp; skip => /> /#` matches `nr <$ dbits_n` on the left with `ni0 <$ dbits_n` on the right."
+    ]
+  },
+  "result_id": "b4c69c1b2029fdcffa8be3f2303bcb2d4eaa10dfbe7b95c95d6c09294c2b9a1c",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send2/r01/2026-11-13_1711_Eq_H0_H1_0_Send2/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_5e86d5589e41_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send2/r01/2026-11-13_1711_Eq_H0_H1_0_Send2/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_5e86d5589e41_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "4d5f7bf3-a210-4af2-910e-8eb7c1ecb880",
+  "skipped": false,
+  "status": "verified",
+  "turns": 16,
+  "verification": {
+    "candidate_id": "c0c9c215736873cd2e7f1d426e231a53e1bb84b22f21126152b8e649de71c66b",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

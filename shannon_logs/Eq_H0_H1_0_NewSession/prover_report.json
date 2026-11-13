@@ -1,0 +1,9 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Both Game_H0.d_NewSession and Game_H1.d_NewSession call Pkg_Inst_KX.d_NewSession, which contains no random sampling.",
+    "inv only needs abort_flag equal on both sides, the params_inv conditions, and l_pkg_KX = r_pkg_KX when there is no abort.",
+    "An attempt using an sp/if chain after inline * was rejected with 'invalid first instruction'.",
+    "The goal closed with: proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt()."
+  ]
+}

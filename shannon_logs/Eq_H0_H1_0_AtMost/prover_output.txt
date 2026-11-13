@@ -1,0 +1,3 @@
+EasyCrypt accepted the full proof of `Eq_H0_H1_0_AtMost`, including `qed.`. Offline verification hasn't run yet; it happens after this proof node stops.
+
+PROVER REPORT: {"blockers": [], "discoveries": []}

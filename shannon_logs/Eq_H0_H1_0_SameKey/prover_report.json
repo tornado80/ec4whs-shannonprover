@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Under the invariant, when the abort flag is not set, the H0 and H1 key-exchange states are equal (StateRelation_invariant), so after `proc; inline *; wp; skip`, splitting on the abort flag and substituting the equal fields leaves goals that `smt()` closes."
+  ]
+}

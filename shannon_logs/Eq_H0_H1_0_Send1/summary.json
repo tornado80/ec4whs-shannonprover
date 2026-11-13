@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/source/Full4WHS/Eq_H0_H1_0_Send1.ec",
+    "lemma": "Eq_H0_H1_0_Send1"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "7c5f87b91dd5d9b82c5faf06704eb1026753a84c5aad61d211797f2d9caffae7",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 1.5,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "7c5f87b91dd5d9b82c5faf06704eb1026753a84c5aad61d211797f2d9caffae7",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

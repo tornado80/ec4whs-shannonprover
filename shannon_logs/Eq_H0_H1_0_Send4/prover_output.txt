@@ -1,0 +1,5 @@
+I proved `Eq_H0_H1_0_Send4` with one tactic followed by `qed.`. EasyCrypt accepted both, and the manager accepted `finish`. Offline verification still has to run after this node stops, so the proof is closed but not yet independently checked.
+
+The tactic was `proc; inline *; auto => /> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().`
+
+PROVER REPORT: {"blockers": [], "discoveries": ["proc; inline *; auto => /> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt(). discharged all goals of Eq_H0_H1_0_Send4, and qed. was accepted"]}

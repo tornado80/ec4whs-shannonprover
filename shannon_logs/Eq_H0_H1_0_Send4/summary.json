@@ -1,0 +1,30 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send4/r01/source/Full4WHS/Eq_H0_H1_0_Send4.ec",
+    "lemma": "Eq_H0_H1_0_Send4"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "464ef8d81dfa82e003a31a51ec2bbccbb30fce8b9a46745830acfb9d130b4b97",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 0.8,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send4/r01/2026-11-13_1715_Eq_H0_H1_0_Send4/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6bf352de5986_tree_0_0_closed/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "464ef8d81dfa82e003a31a51ec2bbccbb30fce8b9a46745830acfb9d130b4b97",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send4/r01/2026-11-13_1715_Eq_H0_H1_0_Send4/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send4/r01/2026-11-13_1715_Eq_H0_H1_0_Send4/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6bf352de5986_tree_0_0_closed/resume.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewKey/r01/2026-11-13_1708_Eq_H0_H1_0_NewKey/iteration_1/ec_sessions/.ec_session_prover_39448c90ca6e_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "8c084b4070e6db2593c2b79cddf601a1403e9673d07aef3288183e99deb65c7b",
+    "close_event_id": "46f07243-d844-47be-b84f-2f1ec616acfe",
+    "close_result_event_id": "afb33943-a9c1-44a2-ac99-fda5aef8ea7e",
+    "history_sha256": "c02f5d1e92c2e9368f3d5282c1ea3bec7a133b715364d925f06c99e3f6283729",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_39448c90ca6e_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 2,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewKey/r01/source/Full4WHS/Eq_H0_H1_0_NewKey.ec",
+    "target_file_sha256": "860bf04eb128fa7ff8a2b20f6ee3981fe35810cfbe91ba579c13745785712bea",
+    "target_lemma": "Eq_H0_H1_0_NewKey",
+    "terminal_event_id": "0627cfba-b26b-4c37-b0ff-8849b8058e51"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_39448c90ca6e_tree_0_0",
+  "elapsed_seconds": 29.63280749320984,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Both sides of d_NewKey call the same Pkg_KX.d_NewKey under the same `!abort_flag` guard; after `proc; inline *; sp; if`, unfolding inv/params_inv/StateRelation_invariant and closing with `/#` handled every branch (abort-condition sync, ltk = None sampling, ltk given, aborted case)."
+    ]
+  },
+  "result_id": "15b40e479d1cfa9827268740a987f02d571fb42bfd9e94f52e54c8fd7dc93d22",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewKey/r01/2026-11-13_1708_Eq_H0_H1_0_NewKey/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_39448c90ca6e_tree_0_0_closed/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "616f0c60-aba0-4a29-b264-12c5028418c6",
+  "skipped": false,
+  "status": "verified",
+  "turns": 3,
+  "verification": {
+    "candidate_id": "8c084b4070e6db2593c2b79cddf601a1403e9673d07aef3288183e99deb65c7b",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

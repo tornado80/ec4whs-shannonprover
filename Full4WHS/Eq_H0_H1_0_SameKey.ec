@@ -57,6 +57,5 @@ lemma Eq_H0_H1_0_SameKey : equiv[Comp_H0.Game_H0.d_SameKey ~ Comp_H1.Game_H1.d_S
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_SameKey *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => -[#] <- <- [#] -> -> ->; case: (Comp_H1.Game_H1.abort_flag{2}) => //= [#] <<- <<- <<- <<- <<- <<- <<- <<- <<- /=; smt().
 qed.

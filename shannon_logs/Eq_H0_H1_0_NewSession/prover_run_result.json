@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/2026-11-13_1709_Eq_H0_H1_0_NewSession/iteration_1/ec_sessions/.ec_session_prover_164a430c6f96_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "fa84d491ad0aac239fe0863fd2f969cd6a6708e8dd09805ed605ad4ba2ec1c92",
+    "close_event_id": "d8def7e3-5db5-4660-bb7d-3e78bbe1a166",
+    "close_result_event_id": "e8b301fe-d0fe-429c-a296-c15e2e2ca9b9",
+    "history_sha256": "8717d054fe05decc53b754e7796c55d1e8b49668851f0127f008a4a5d5c71d17",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_164a430c6f96_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 2,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/source/Full4WHS/Eq_H0_H1_0_NewSession.ec",
+    "target_file_sha256": "21a0ee7defbf2e9cd9d241ac7019d6fd4dd1c92e635f04b8703e0280488c69e3",
+    "target_lemma": "Eq_H0_H1_0_NewSession",
+    "terminal_event_id": "cd0386fa-5d62-4d2a-bacb-5e7ab21c77a6"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_164a430c6f96_tree_0_0",
+  "elapsed_seconds": 30.017480850219727,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Both Game_H0.d_NewSession and Game_H1.d_NewSession call Pkg_Inst_KX.d_NewSession, which contains no random sampling.",
+      "inv only needs abort_flag equal on both sides, the params_inv conditions, and l_pkg_KX = r_pkg_KX when there is no abort.",
+      "An attempt using an sp/if chain after inline * was rejected with 'invalid first instruction'.",
+      "The goal closed with: proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt()."
+    ]
+  },
+  "result_id": "2c6f6540b9e56de09b22020fcf6b4590b48a3001d98054b7a5224afc9299a072",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/2026-11-13_1709_Eq_H0_H1_0_NewSession/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_164a430c6f96_tree_0_0_closed/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "02d120d9-aebb-4082-8fa3-03d111e993f8",
+  "skipped": false,
+  "status": "verified",
+  "turns": 4,
+  "verification": {
+    "candidate_id": "fa84d491ad0aac239fe0863fd2f969cd6a6708e8dd09805ed605ad4ba2ec1c92",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

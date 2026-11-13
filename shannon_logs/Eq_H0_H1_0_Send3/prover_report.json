@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After proc; inline *, Send3 is deterministic and has the same structure on both sides; the only difference is the order of the k/kmac assignments.",
+    "wp; skip, then unfolding inv/params_inv/StateRelation_invariant and case-splitting on abort_flag{1}, closes the goal with smt; when the flag is clear, the invariant gives equal KX package records."
+  ]
+}

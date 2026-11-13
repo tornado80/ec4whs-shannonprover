@@ -57,6 +57,15 @@ lemma Eq_H0_H1_0_Send1 : equiv[Comp_H0.Game_H0.d_Send1 ~ Comp_H1.Game_H1.d_Send1
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_Send1 *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: by move=> &1 &2 [] _; rewrite /inv /=.
+  sp 2 2; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  sp 4 4; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  if; 1: (by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt()); 1: (rcondf{2} 4; 1: (by move=> &m; wp; rnd; wp; skip; rewrite /inv /params_inv /=; smt()); rcondt{2} 4; 1: (by move=> &m; wp; rnd; wp; skip); rcondt{2} 6; 1: (by move=> &m; wp; rnd; wp; skip); wp; rnd; wp; skip).
+  by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
 qed.

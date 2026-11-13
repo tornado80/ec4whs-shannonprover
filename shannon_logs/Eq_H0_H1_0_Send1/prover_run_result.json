@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/ec_sessions/.ec_session_prover_69a65ee78f40_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "2b76efe9a3c729437a2f1f96b215ea86900b5dbcb9993a1ee4322a5063163bfc",
+    "close_event_id": "e73ccfa6-aebc-46db-9529-5783edefba9f",
+    "close_result_event_id": "d33ac0b3-2fb0-407f-836f-ee5dc2622b36",
+    "history_sha256": "5294c1f7984ce4fd13912deba0ad68bec03c67ff92f70261411b1354482536cb",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_69a65ee78f40_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 12,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/source/Full4WHS/Eq_H0_H1_0_Send1.ec",
+    "target_file_sha256": "c967c904a96e2d39b865cb4f6bb21e9be67da865dd77f06ce400eb067d4d0ea3",
+    "target_lemma": "Eq_H0_H1_0_Send1",
+    "terminal_event_id": "8ba7d893-7575-48d9-b5f7-03469f6afd2c"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_69a65ee78f40_tree_0_0",
+  "elapsed_seconds": 84.77843952178955,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `proc; inline *`, both sides of `d_Send1` line up branch for branch with two-sided `if`. Every branch condition was discharged by `rewrite /inv /params_inv /StateRelation_invariant /=; smt()`.",
+      "The H1 side's `Nonces.d_Sample` duplicate-check branch can be removed with `rcondf{2} 4`, because `inv` forces `Comp_H1.Pkg_Inst_Nonces.b = false`. After that, `rcondt{2} 4` and `rcondt{2} 6` leave sampling that matches the left side directly, closed by `wp; rnd; wp; skip`.",
+      "EasyCrypt accepted `qed.` and the manager accepted `finish`; offline verification runs after the node stops."
+    ]
+  },
+  "result_id": "7c5f87b91dd5d9b82c5faf06704eb1026753a84c5aad61d211797f2d9caffae7",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send1/r01/2026-11-13_1710_Eq_H0_H1_0_Send1/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_69a65ee78f40_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "e923e4ef-686e-4ec4-9506-67797ef2ac1b",
+  "skipped": false,
+  "status": "verified",
+  "turns": 13,
+  "verification": {
+    "candidate_id": "2b76efe9a3c729437a2f1f96b215ea86900b5dbcb9993a1ee4322a5063163bfc",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

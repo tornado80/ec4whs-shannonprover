@@ -57,6 +57,5 @@ lemma Eq_H0_H1_0_NewKey : equiv[Comp_H0.Game_H0.d_NewKey ~ Comp_H1.Game_H1.d_New
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_NewKey *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; [by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> | sp; if; [by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> /#| auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> /#| auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> /#] | auto].
 qed.

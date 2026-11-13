@@ -1,0 +1,5 @@
+EasyCrypt accepted the proof of `Eq_H0_H1_0_SameKey` in one tactic step plus `qed.`, and the manager accepted `finish`. Offline verification runs after this node stops, so the result isn't final until that passes.
+
+The proof unfolds both procedures, then splits on whether the abort flag is set. If it is, both sides return `None`. If it isn't, the invariant says the two key-exchange states are equal, so both sides return the same result and leave the state unchanged.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Under the invariant, when the abort flag is not set, the H0 and H1 key-exchange states are equal (StateRelation_invariant), so after `proc; inline *; wp; skip`, splitting on the abort flag and substituting the equal fields leaves goals that `smt()` closes."]}

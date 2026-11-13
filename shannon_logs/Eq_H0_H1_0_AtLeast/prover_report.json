@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "The inner Pkg_Inst_KX.d_AtLeast bodies match on both sides and contain no loops or sampling, so `wp; skip => /> /#` closes them given equality of all KX globals.",
+    "inv unfolds via /inv /params_inv /StateRelation_invariant; when abort_flag is false it implies componentwise equality of the KX state records."
+  ]
+}

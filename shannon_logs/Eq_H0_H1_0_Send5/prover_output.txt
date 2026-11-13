@@ -1,0 +1,10 @@
+`Eq_H0_H1_0_Send5` is not proved, and the session has ended. The manager had already accepted my `finish` request, so it stopped taking proof steps. I couldn't see whether that counted as a give-up or a saved proof, but nothing I saw confirmed a saved proof.
+
+What happened:
+- **Rejected attempt 1:** `proc; inline *; sim : (={res}) => //.` failed because `sim` doesn't recognise `res` there ("unknown variable or constant").
+- **Rejected attempt 2:** `proc; inline *; sp; if; ...` failed at `if` with "invalid first instruction". After `inline *` the two sides don't line up for a two-sided `if`.
+- **Unconfirmed:** from then on, every call to the proof manager failed with "proof-tool endpoint response is too large". That includes `proc; inline *; sp.`, a corrected branch-splitting tactic, `smt()`, `fresh_restart` and `finish`. I can't tell whether any of those were applied.
+
+From the source, `Game_H0.d_Send5` and `Game_H1.d_Send5` have the same shape: they call `Pkg_Inst_KX.d_Send5`, which is a separate clone of `Pkg_KX` in each game. The invariant `inv` requires the two KX states to be equal only when `abort_flag` is false.
+
+PROVER REPORT: {"blockers": ["After `proc; inline *; sp.`, every manager call failed with 'proof-tool endpoint response is too large', so I could not see the proof state; `finish` was then reported as already accepted", "`proc; inline *; sp; if` was rejected with 'invalid first instruction'", "`sim : (={res})` was rejected with 'unknown variable or constant: res'"], "discoveries": ["Game_H0.d_Send5 and Game_H1.d_Send5 have the same wrapper shape around Pkg_Inst_KX.d_Send5, which is a separate clone of Pkg_KX in each game", "`inv` requires equal KX package states only when abort_flag is false, plus equal abort flags, equal KX b bits, and r_pkg_Nonces_b = false"]}

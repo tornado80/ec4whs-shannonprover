@@ -57,6 +57,6 @@ lemma Eq_H0_H1_0_Reveal : equiv[Comp_H0.Game_H0.d_Reveal ~ Comp_H1.Game_H1.d_Rev
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_Reveal *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip; rewrite /inv /params_inv /StateRelation_invariant => />.
+  move=> &1 &2 H Ha; have := H Ha; move=> /> -> -> -> -> -> -> -> -> ->; smt().
 qed.

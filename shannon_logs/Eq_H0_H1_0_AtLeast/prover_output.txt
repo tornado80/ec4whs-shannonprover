@@ -1,0 +1,7 @@
+EasyCrypt accepted every step and `qed.` for `Eq_H0_H1_0_AtLeast`. The manager now marks the proof `session_closed_pending_verification`, so the offline check that runs after this node stops hasn't confirmed it yet.
+
+The proof works in two cases:
+- **Not aborted:** the invariant gives equal KX package state on both sides. I called the inner `d_AtLeast` with a spec that keeps all those KX globals and `b` equal, and `wp; skip` closed it.
+- **Aborted:** both sides return `None` and nothing changes, so `skip` closed it.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["The inner Pkg_Inst_KX.d_AtLeast bodies match on both sides and contain no loops or sampling, so `wp; skip => /> /#` closes them given equality of all KX globals.", "inv unfolds via /inv /params_inv /StateRelation_invariant; when abort_flag is false it implies componentwise equality of the KX state records."]}

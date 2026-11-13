@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "proc; inline *; auto => /> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt(). discharged all goals of Eq_H0_H1_0_Send4, and qed. was accepted"
+  ]
+}

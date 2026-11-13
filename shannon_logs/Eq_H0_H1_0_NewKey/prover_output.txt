@@ -1,0 +1,3 @@
+EasyCrypt accepted the proof of `Eq_H0_H1_0_NewKey` with a single combined tactic and `qed.`, and the manager accepted `finish`. Offline verification is still pending and runs after this proof node stops.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Both sides of d_NewKey call the same Pkg_KX.d_NewKey under the same `!abort_flag` guard; after `proc; inline *; sp; if`, unfolding inv/params_inv/StateRelation_invariant and closing with `/#` handled every branch (abort-condition sync, ltk = None sampling, ltk given, aborted case)."]}

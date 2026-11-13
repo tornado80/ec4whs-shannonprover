@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *`, the two inlined `d_Test` bodies have the same branch structure, so two-sided `if` steps whose side conditions `smt()` discharges from `inv` (matching KX state and `b`, abort flags equal and false) close the proof.",
+    "In `Eq_H0_H1_0_Invariants.ec`, `inv` requires both abort flags to be equal, `b` to match, the Nonces `b` to be false, and the left and right KX package states to be equal whenever the game has not aborted."
+  ]
+}

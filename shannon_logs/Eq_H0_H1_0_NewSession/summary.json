@@ -1,0 +1,30 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/source/Full4WHS/Eq_H0_H1_0_NewSession.ec",
+    "lemma": "Eq_H0_H1_0_NewSession"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "2c6f6540b9e56de09b22020fcf6b4590b48a3001d98054b7a5224afc9299a072",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 0.6,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/2026-11-13_1709_Eq_H0_H1_0_NewSession/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_164a430c6f96_tree_0_0_closed/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "2c6f6540b9e56de09b22020fcf6b4590b48a3001d98054b7a5224afc9299a072",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/2026-11-13_1709_Eq_H0_H1_0_NewSession/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_NewSession/r01/2026-11-13_1709_Eq_H0_H1_0_NewSession/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_164a430c6f96_tree_0_0_closed/resume.json"
+      ]
+    }
+  ]
+}

@@ -57,6 +57,9 @@ lemma Eq_H0_H1_0_AtLeast : equiv[Comp_H0.Game_H0.d_AtLeast ~ Comp_H1.Game_H1.d_A
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_AtLeast *)
-+ proc; inline. admit.
+  proc; sp; if; 1: by move=> &1 &2 /> ; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  wp; call (_: Comp_H0.Pkg_Inst_KX.d_LTK{1} = Comp_H1.Pkg_Inst_KX.d_LTK{2} /\ Comp_H0.Pkg_Inst_KX.d_H{1} = Comp_H1.Pkg_Inst_KX.d_H{2} /\ Comp_H0.Pkg_Inst_KX.ctr_{1} = Comp_H1.Pkg_Inst_KX.ctr_{2} /\ Comp_H0.Pkg_Inst_KX.kid_{1} = Comp_H1.Pkg_Inst_KX.kid_{2} /\ Comp_H0.Pkg_Inst_KX.d_RevTested{1} = Comp_H1.Pkg_Inst_KX.d_RevTested{2} /\ Comp_H0.Pkg_Inst_KX.d_Fresh{1} = Comp_H1.Pkg_Inst_KX.d_Fresh{2} /\ Comp_H0.Pkg_Inst_KX.d_First{1} = Comp_H1.Pkg_Inst_KX.d_First{2} /\ Comp_H0.Pkg_Inst_KX.d_Second{1} = Comp_H1.Pkg_Inst_KX.d_Second{2} /\ Comp_H0.Pkg_Inst_KX.d_State{1} = Comp_H1.Pkg_Inst_KX.d_State{2} /\ Comp_H0.Pkg_Inst_KX.b{1} = Comp_H1.Pkg_Inst_KX.b{2}); last first.
+  + skip => &1 &2 />; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  by wp; skip => /> /#.
+  by skip => /> /#.
 qed.

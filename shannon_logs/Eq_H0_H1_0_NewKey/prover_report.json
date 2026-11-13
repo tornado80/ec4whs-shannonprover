@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Both sides of d_NewKey call the same Pkg_KX.d_NewKey under the same `!abort_flag` guard; after `proc; inline *; sp; if`, unfolding inv/params_inv/StateRelation_invariant and closing with `/#` handled every branch (abort-condition sync, ltk = None sampling, ltk given, aborted case)."
+  ]
+}

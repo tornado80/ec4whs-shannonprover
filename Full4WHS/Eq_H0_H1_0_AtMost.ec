@@ -57,6 +57,6 @@ lemma Eq_H0_H1_0_AtMost : equiv[Comp_H0.Game_H0.d_AtMost ~ Comp_H1.Game_H1.d_AtM
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_AtMost *)
-+ proc; inline. admit.
+  proc; sp; if; [by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt() | | by auto].
+  inline *; wp; skip; move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
 qed.

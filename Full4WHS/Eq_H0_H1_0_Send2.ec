@@ -57,6 +57,17 @@ lemma Eq_H0_H1_0_Send2 : equiv[Comp_H0.Game_H0.d_Send2 ~ Comp_H1.Game_H1.d_Send2
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_Send2 *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: by move=> /> &1 &2; rewrite /inv /params_inv /=.
+  seq 3 3 : (={ctr0, msg0, ec_result0} /\ ec_result0{1} = None /\ !Comp_H0.Game_H0.abort_flag{1} /\ !Comp_H1.Game_H1.abort_flag{2} /\ Comp_H1.Pkg_Inst_Nonces.b{2} = false /\ Comp_H0.Pkg_Inst_KX.b{1} = Comp_H1.Pkg_Inst_KX.b{2} /\ Comp_H0.Pkg_Inst_KX.d_LTK{1} = Comp_H1.Pkg_Inst_KX.d_LTK{2} /\ Comp_H0.Pkg_Inst_KX.d_H{1} = Comp_H1.Pkg_Inst_KX.d_H{2} /\ Comp_H0.Pkg_Inst_KX.ctr_{1} = Comp_H1.Pkg_Inst_KX.ctr_{2} /\ Comp_H0.Pkg_Inst_KX.kid_{1} = Comp_H1.Pkg_Inst_KX.kid_{2} /\ Comp_H0.Pkg_Inst_KX.d_RevTested{1} = Comp_H1.Pkg_Inst_KX.d_RevTested{2} /\ Comp_H0.Pkg_Inst_KX.d_Fresh{1} = Comp_H1.Pkg_Inst_KX.d_Fresh{2} /\ Comp_H0.Pkg_Inst_KX.d_First{1} = Comp_H1.Pkg_Inst_KX.d_First{2} /\ Comp_H0.Pkg_Inst_KX.d_Second{1} = Comp_H1.Pkg_Inst_KX.d_Second{2} /\ Comp_H0.Pkg_Inst_KX.d_State{1} = Comp_H1.Pkg_Inst_KX.d_State{2}); 1: by auto => /> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> <- -> ->.
+  if; 1: by auto.
+  seq 6 6 : (={ctr0, ec_result1, ec_result0} /\ ec_result0{1} = None /\ !Comp_H0.Game_H0.abort_flag{1} /\ !Comp_H1.Game_H1.abort_flag{2} /\ Comp_H1.Pkg_Inst_Nonces.b{2} = false /\ Comp_H0.Pkg_Inst_KX.b{1} = Comp_H1.Pkg_Inst_KX.b{2} /\ Comp_H0.Pkg_Inst_KX.d_LTK{1} = Comp_H1.Pkg_Inst_KX.d_LTK{2} /\ Comp_H0.Pkg_Inst_KX.d_H{1} = Comp_H1.Pkg_Inst_KX.d_H{2} /\ Comp_H0.Pkg_Inst_KX.ctr_{1} = Comp_H1.Pkg_Inst_KX.ctr_{2} /\ Comp_H0.Pkg_Inst_KX.kid_{1} = Comp_H1.Pkg_Inst_KX.kid_{2} /\ Comp_H0.Pkg_Inst_KX.d_RevTested{1} = Comp_H1.Pkg_Inst_KX.d_RevTested{2} /\ Comp_H0.Pkg_Inst_KX.d_Fresh{1} = Comp_H1.Pkg_Inst_KX.d_Fresh{2} /\ Comp_H0.Pkg_Inst_KX.d_First{1} = Comp_H1.Pkg_Inst_KX.d_First{2} /\ Comp_H0.Pkg_Inst_KX.d_Second{1} = Comp_H1.Pkg_Inst_KX.d_Second{2} /\ Comp_H0.Pkg_Inst_KX.d_State{1} = Comp_H1.Pkg_Inst_KX.d_State{2}); last by auto => />; rewrite /inv /params_inv /StateRelation_invariant /=.
+  sp; if; 1: smt(); last by auto.
+  if; 1: smt(); last by auto.
+  if; 1: smt(); last by auto.
+  rcondf{2} 4; 1: by auto => /> /#.
+  rcondt{2} 4; 1: by auto.
+  rcondt{2} 6; 1: by auto.
+  wp; rnd; wp; skip => /> /#.
+  auto => />; rewrite /inv /params_inv /StateRelation_invariant /=.
+  auto => /> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /> /#.
 qed.

@@ -1,0 +1,35 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send5/r01/2026-11-13_1716_Eq_H0_H1_0_Send5/iteration_1/ec_sessions/.ec_session_prover_6b9c5cb0ef0c_tree_0_0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_6b9c5cb0ef0c_tree_0_0",
+  "elapsed_seconds": 134.851557970047,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [
+      "After `proc; inline *; sp.`, every manager call failed with 'proof-tool endpoint response is too large', so I could not see the proof state; `finish` was then reported as already accepted",
+      "`proc; inline *; sp; if` was rejected with 'invalid first instruction'",
+      "`sim : (={res})` was rejected with 'unknown variable or constant: res'"
+    ],
+    "discoveries": [
+      "Game_H0.d_Send5 and Game_H1.d_Send5 have the same wrapper shape around Pkg_Inst_KX.d_Send5, which is a separate clone of Pkg_KX in each game",
+      "`inv` requires equal KX package states only when abort_flag is false, plus equal abort flags, equal KX b bits, and r_pkg_Nonces_b = false"
+    ]
+  },
+  "result_id": "226cc9bbc9d9217c99f25d96f254cc9be42fc32a971808d637d99f96c8f124db",
+  "resume_capsules": [],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "12b52083-bf3c-4284-9bb4-295603daac95",
+  "skipped": false,
+  "status": "incomplete",
+  "turns": 7,
+  "verification": {}
+}

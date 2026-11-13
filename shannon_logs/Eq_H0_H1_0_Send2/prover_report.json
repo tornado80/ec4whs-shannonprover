@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "The invariant `inv` makes `Comp_H1.Pkg_Inst_Nonces.b{2} = false` (via `params_inv`). With that, `rcondf{2}` skips the nonce-uniqueness branch in `Nonces.d_Sample`, and `rcondt{2}` goes through both the `!ec_done` and `ec_r10 <> None` branches.",
+    "After `rewrite /inv /params_inv /StateRelation_invariant /=`, the invariant becomes plain field-by-field equalities of the KX state. `seq 6 6` with those equalities plus `ec_result0 = None` separates the calls to `d_Run2` from the abort-flag update at the end.",
+    "The nested `if (acc = None) / if (mess = 0) / if (v = true)` conditions sync up with `if; 1: smt(); last by auto`. Then `wp; rnd; wp; skip => /> /#` matches `nr <$ dbits_n` on the left with `ni0 <$ dbits_n` on the right."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_AtLeast/r01/2026-11-13_1721_Eq_H0_H1_0_AtLeast/iteration_1/ec_sessions/.ec_session_prover_d4112ec11f9d_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "ded5e4d7c1feb4a67f6152a5634d71ba14f8fef87b6d6709322befe0b9e74066",
+    "close_event_id": "761b33d9-b31c-4863-a4bb-5f3ba1f7493d",
+    "close_result_event_id": "ffbe2a0f-bd3d-4585-9a6a-4021078b4fef",
+    "history_sha256": "59c53f9b615a5bdbab668e1a6920d160dbb4fb164dd34ec17ecd9a8376ada312",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_d4112ec11f9d_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 6,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_AtLeast/r01/source/Full4WHS/Eq_H0_H1_0_AtLeast.ec",
+    "target_file_sha256": "0be8d642d5966975f394cf699db963851549d58073d49836dc883a7fae39e66a",
+    "target_lemma": "Eq_H0_H1_0_AtLeast",
+    "terminal_event_id": "8489108e-f0de-4d87-b18e-cf099f9bf9c1"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_d4112ec11f9d_tree_0_0",
+  "elapsed_seconds": 45.975932121276855,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "The inner Pkg_Inst_KX.d_AtLeast bodies match on both sides and contain no loops or sampling, so `wp; skip => /> /#` closes them given equality of all KX globals.",
+      "inv unfolds via /inv /params_inv /StateRelation_invariant; when abort_flag is false it implies componentwise equality of the KX state records."
+    ]
+  },
+  "result_id": "88d9619ccd4e267dfbd1aff118ed27907db2807e465b4ee724fc51ae0469d614",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_AtLeast/r01/2026-11-13_1721_Eq_H0_H1_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_d4112ec11f9d_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_AtLeast/r01/2026-11-13_1721_Eq_H0_H1_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_d4112ec11f9d_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "70e77600-af03-405f-8cf8-032854e5f0cd",
+  "skipped": false,
+  "status": "verified",
+  "turns": 6,
+  "verification": {
+    "candidate_id": "ded5e4d7c1feb4a67f6152a5634d71ba14f8fef87b6d6709322befe0b9e74066",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

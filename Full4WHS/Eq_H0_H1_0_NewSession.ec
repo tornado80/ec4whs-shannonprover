@@ -57,6 +57,5 @@ lemma Eq_H0_H1_0_NewSession : equiv[Comp_H0.Game_H0.d_NewSession ~ Comp_H1.Game_
                          r_pkg_KX_b = Comp_H1.Pkg_Inst_KX.b{2};
                          r_abort_flag = Comp_H1.Game_H1.abort_flag{2} |}].
 proof.
-(* d_NewSession *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
 qed.

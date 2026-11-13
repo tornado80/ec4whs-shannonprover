@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_6cda06d3546a_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "cc3f8ebf26114c4e6b65357c82ab84b8aafc46d843de96dc63e59f6632880458",
+    "close_event_id": "f0e99a5e-f884-48f6-9eff-ae3a557f2b9c",
+    "close_result_event_id": "2ef0488c-57fe-494d-8790-a071a996a890",
+    "history_sha256": "cfe258776f84bbb03401a00467d1d133a16970a439a92116aa9d650f0d62efdd",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_6cda06d3546a_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 3,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/source/Full4WHS/Eq_H0_H1_0_Reveal.ec",
+    "target_file_sha256": "c7a38cf39be0a7bb88390490ebc7b609603050ea94afac328a8392631be301c9",
+    "target_lemma": "Eq_H0_H1_0_Reveal",
+    "terminal_event_id": "dff3703c-994f-4eb5-9af6-9f9c6ff9e0da"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_6cda06d3546a_tree_0_0",
+  "elapsed_seconds": 54.206589698791504,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "`proc; inline *; wp; skip; rewrite /inv /params_inv /StateRelation_invariant => />.` reduces the goal to a first-order goal: under the hypothesis that abort_flag{2} is false, all KX state fields are equal on both sides.",
+      "Applying that hypothesis to the not-aborted assumption, rewriting with the nine KX field equalities, and then calling `smt()` closes the goal.",
+      "`if` fails with 'invalid first instruction' after `proc; inline *; sp`."
+    ]
+  },
+  "result_id": "63e08e09116a97d17781bede0dbbf908b4a47c3a499de568932c70951f8c9dc0",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "dbf46fac-26df-41bb-b5ec-a54a4f4ec11f",
+  "skipped": false,
+  "status": "verified",
+  "turns": 6,
+  "verification": {
+    "candidate_id": "cc3f8ebf26114c4e6b65357c82ab84b8aafc46d843de96dc63e59f6632880458",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

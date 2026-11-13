@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send3/r01/2026-11-13_1714_Eq_H0_H1_0_Send3/iteration_1/ec_sessions/.ec_session_prover_5efa176dfa85_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "315fd3c8e1eea70cd6a76c58b74b918aacd900726422f20e12d6f52531d91dc0",
+    "close_event_id": "b37c72b3-5243-49cb-8081-9547fe8d878c",
+    "close_result_event_id": "7b772fc9-08d1-4d15-9029-dfd9bd2b84b9",
+    "history_sha256": "4cdb891116b82b302a421b34e4d966b2d8d309cf6a462e3cf2be20e7fe6c40d4",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_5efa176dfa85_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 3,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send3/r01/source/Full4WHS/Eq_H0_H1_0_Send3.ec",
+    "target_file_sha256": "df4350bdeace2875d0f94ae1226bb6e70c3f0a78b8b0b235fe93e1be617e9a25",
+    "target_lemma": "Eq_H0_H1_0_Send3",
+    "terminal_event_id": "0264e399-a571-4a3a-a047-e00b0b60e1f0"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_5efa176dfa85_tree_0_0",
+  "elapsed_seconds": 41.632166624069214,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After proc; inline *, Send3 is deterministic and has the same structure on both sides; the only difference is the order of the k/kmac assignments.",
+      "wp; skip, then unfolding inv/params_inv/StateRelation_invariant and case-splitting on abort_flag{1}, closes the goal with smt; when the flag is clear, the invariant gives equal KX package records."
+    ]
+  },
+  "result_id": "326643fa8d519d957b051278213254b1841e03274795d5c1d503e2db380fe94f",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send3/r01/2026-11-13_1714_Eq_H0_H1_0_Send3/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_5efa176dfa85_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Send3/r01/2026-11-13_1714_Eq_H0_H1_0_Send3/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_5efa176dfa85_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "45b67659-94dd-4c2e-9b9e-14d7336ff01e",
+  "skipped": false,
+  "status": "verified",
+  "turns": 4,
+  "verification": {
+    "candidate_id": "315fd3c8e1eea70cd6a76c58b74b918aacd900726422f20e12d6f52531d91dc0",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

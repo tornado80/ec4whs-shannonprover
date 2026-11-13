@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/source/Full4WHS/Eq_H0_H1_0_Reveal.ec",
+    "lemma": "Eq_H0_H1_0_Reveal"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "63e08e09116a97d17781bede0dbbf908b4a47c3a499de568932c70951f8c9dc0",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 1.0,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "63e08e09116a97d17781bede0dbbf908b4a47c3a499de568932c70951f8c9dc0",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H0-H1_0-with-invariant/runs/ec4whs_h0_h1_inv/proof_state_compiler/Eq_H0_H1_0_Reveal/r01/2026-11-13_1718_Eq_H0_H1_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6cda06d3546a_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

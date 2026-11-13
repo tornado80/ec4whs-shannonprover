@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *`, both sides of `d_Send1` line up branch for branch with two-sided `if`. Every branch condition was discharged by `rewrite /inv /params_inv /StateRelation_invariant /=; smt()`.",
+    "The H1 side's `Nonces.d_Sample` duplicate-check branch can be removed with `rcondf{2} 4`, because `inv` forces `Comp_H1.Pkg_Inst_Nonces.b = false`. After that, `rcondt{2} 4` and `rcondt{2} 6` leave sampling that matches the left side directly, closed by `wp; rnd; wp; skip`.",
+    "EasyCrypt accepted `qed.` and the manager accepted `finish`; offline verification runs after the node stops."
+  ]
+}
