@@ -16,7 +16,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                    KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                    KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                    KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                   KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                    KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                    KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                    KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -36,7 +35,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                    KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                    KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                    KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                   KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                    KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                    KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                    KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -56,7 +54,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                             KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                             KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                             KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                            KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                             KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                             KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                             KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -83,7 +80,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                             KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                             KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                             KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                            KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                             KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                             KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                             KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -110,7 +106,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                        KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                        KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                        KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                       KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                        KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                        KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                        KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -130,7 +125,6 @@ lemma Eq_H6_1_1_H7_0_NewKey (b : bool) : equiv[Comp_H6.Game_H6.d_NewKey ~ Comp_H
                                        KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                        KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                        KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                       KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                        KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                        KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                        KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};

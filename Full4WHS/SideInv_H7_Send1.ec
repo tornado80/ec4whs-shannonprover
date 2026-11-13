@@ -17,7 +17,6 @@ lemma SideInv_H7_Send1 (bleast : bool) (bmac : bool) (btest : bool) : hoare[Comp
                                   KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested;
                                   KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh;
                                   KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval;
-                                  KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac;
                                   KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First;
                                   KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second;
                                   KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State |};
@@ -46,7 +45,6 @@ lemma SideInv_H7_Send1 (bleast : bool) (bmac : bool) (btest : bool) : hoare[Comp
                                       KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested;
                                       KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh;
                                       KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval;
-                                      KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac;
                                       KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First;
                                       KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second;
                                       KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State |};
@@ -132,7 +130,7 @@ proof.
                 move => ctr1 /=.
                 move => hpre2 /=.
                 rewrite /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre2.
-                smt(get_setE mem_set remE mem_rem emptyE).
+                move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /=.
                 move => ctr1 /=.
                 move => hpre2 /=.
@@ -141,11 +139,11 @@ proof.
                 + move => hpre3 /=.
                   rewrite /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre3.
                   do split.
-                  + smt(get_setE mem_set remE mem_rem emptyE).
-                  + smt(get_setE mem_set remE mem_rem emptyE).
+                  + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                  + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                 + move => hpre3 /=.
                   rewrite /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre3.
-                  smt(get_setE mem_set remE mem_rem emptyE).
+                  move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /=.
                 move => hpre2 /=.
                 move => kid0 d_U0 d_V0 ni1 nr0 /=.
@@ -177,8 +175,10 @@ proof.
                 move => hpre4 /=.
                 rewrite /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre4.
                 do split.
-                + smt(get_setE mem_set remE mem_rem emptyE).
-                + smt(get_setE mem_set remE mem_rem emptyE).
+                + case (ctr1 = ctr0{hr}) => [->>|?].
+                  + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                  + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
             + rcondf ^if; 1: by auto.
               rcondf ^if; 1: by auto.
               rcondf ^if; 1: by auto.

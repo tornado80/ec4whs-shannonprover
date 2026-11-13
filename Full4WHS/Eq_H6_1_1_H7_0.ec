@@ -11,7 +11,10 @@ section.
 
 declare module A <: Interfaces.Adv_H0 { -Comp_H6.Game_H6, -Comp_H6.Pkg_Inst_PRF, -Comp_H6.Pkg_Inst_Nonces, -Comp_H6.Pkg_Inst_Prot, -Comp_H6.Pkg_Inst_KX, -Comp_H7.Game_H7, -Comp_H7.Pkg_Inst_PRF, -Comp_H7.Pkg_Inst_MAC, -Comp_H7.Pkg_Inst_Nonces, -Comp_H7.Pkg_Inst_Prot, -Comp_H7.Pkg_Inst_KX }.
 
-lemma H6_1_1_H7_0_equiv &m (b : bool) : Pr[Comp_H6.Exp_H6(A).run(b, true, true) @ &m : res] = Pr[Comp_H7.Exp_H7(A).run(b, false, true) @ &m : res].
+lemma H6_1_1_H7_0_equiv &m (b : bool) :
+  Pr[Comp_H6.Exp_H6(A).run(b, true, true) @ &m : res]
+  =
+  Pr[Comp_H7.Exp_H7(A).run(b, false, true) @ &m : res].
 proof.
 byequiv
   (: ={glob A}
@@ -29,7 +32,6 @@ call (: inv
                            KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                            KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                            KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                           KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                            KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                            KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                            KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -49,7 +51,6 @@ call (: inv
                            KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                            KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                            KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                           KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                            KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                            KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                            KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -69,7 +70,6 @@ call (: inv
                                     KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                     KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                     KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                    KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                     KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                     KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                     KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -96,7 +96,6 @@ call (: inv
                                     KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                     KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                     KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                    KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                     KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                     KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                     KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};

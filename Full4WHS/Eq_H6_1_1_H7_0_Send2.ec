@@ -16,7 +16,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                    KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                    KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                    KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                   KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                    KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                    KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                    KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -36,7 +35,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                    KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                    KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                    KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                   KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                    KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                    KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                    KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -56,7 +54,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                             KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                             KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                             KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                            KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                             KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                             KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                             KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -83,7 +80,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                             KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                             KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                             KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                            KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                             KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                             KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                             KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -110,7 +106,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                        KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested{1};
                                        KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh{1};
                                        KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval{1};
-                                       KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac{1};
                                        KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First{1};
                                        KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second{1};
                                        KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State{1} |};
@@ -130,7 +125,6 @@ lemma Eq_H6_1_1_H7_0_Send2 (b : bool) : equiv[Comp_H6.Game_H6.d_Send2 ~ Comp_H7.
                                        KX_noprfkey_d_RevTested = Comp_H7.Pkg_Inst_KX.d_RevTested{2};
                                        KX_noprfkey_d_Fresh = Comp_H7.Pkg_Inst_KX.d_Fresh{2};
                                        KX_noprfkey_d_RevTestEval = Comp_H7.Pkg_Inst_KX.d_RevTestEval{2};
-                                       KX_noprfkey_d_ReverseMac = Comp_H7.Pkg_Inst_KX.d_ReverseMac{2};
                                        KX_noprfkey_d_First = Comp_H7.Pkg_Inst_KX.d_First{2};
                                        KX_noprfkey_d_Second = Comp_H7.Pkg_Inst_KX.d_Second{2};
                                        KX_noprfkey_d_State = Comp_H7.Pkg_Inst_KX.d_State{2} |};
@@ -151,13 +145,14 @@ proof.
     + move=> /> &1 &2 *; smt().
     + sp 7 8.
       if.
-      + auto => /#.
+      + move=> /> &1 &2.
+        move=> h0 h1 h2 h3 _ _ h4 h5; move: h0 h1 h2 h3 h4 h5; smt().
       + if.
-        + auto => /#.
+        + smt(get_setE mem_set remE mem_rem emptyE).
         + if.
           + auto => /#.
           + sp 2 2.
-            seq 1 1 : (#pre /\ ni2{1} = ni2{2}); 1: auto => />.
+            seq 1 1 : (#pre /\ ni1{1} = ni1{2}); 1: auto => />.
             rcondt{1} ^if; 1: auto => /#.
             rcondt{2} ^if; 1: auto => /#.
             if.
@@ -175,10 +170,6 @@ proof.
                 + exfalso; smt().
                 + rcondt{1} ^if; 1: auto => /#.
                   rcondt{1} ^if; 1: auto => /#.
-                  rcondt{1} ^if; 1: auto => /#.
-                  rcondt{1} ^if; 1: auto => /#.
-                  rcondt{2} ^if; 1: auto => /#.
-                  rcondt{2} ^if; 1: auto => /#.
                   rcondt{2} ^if; 1: auto => /#.
                   rcondt{2} ^if; 1: auto => /#.
                   rcondt{2} ^if; 1: auto => /#.
@@ -189,7 +180,7 @@ proof.
                   auto => &1 &2 hpre.
                   rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /StateRelation_relation_trivial_equalities /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre.
                   do split.
-                  + admit. (* domino: J1; domino-verified-ec-failed; smt: timeout *)
+                  + move: hpre => />; smt(get_setE mem_set remE mem_rem emptyE).
                   + smt().
                   + smt().
                   + smt().
@@ -231,7 +222,7 @@ proof.
                           + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                           + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                     + rewrite /StateRelation_relation_prf_equality /=.
-                      move => kid4 d_U1 d_V1 ni3 nr1 /=.
+                      move => kid3 d_U0 d_V0 ni2 nr0 /=.
                       do split.
                       + smt().
                       + smt().
@@ -245,10 +236,7 @@ proof.
                       + move => hpre4 /=.
                         move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + move => hpre4 /=.
-                        have hk : ctr0{1} = ctr0{2} by move: hpre hpre1 hpre2 hpre3 hpre4 => />.
-                        case (ctr1 = ctr0{1}) => [->>|?].
-                        + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                        + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                        smt(get_setE mem_set remE mem_rem emptyE).
               + if{2}.
                 + sp 0 3.
                   if.
@@ -261,15 +249,11 @@ proof.
                       smt(get_setE mem_set remE mem_rem emptyE).
                     rcondt{1} ^if; 1: auto => /#.
                     rcondt{1} ^if; 1: auto => /#.
-                    rcondt{1} ^if; 1: auto => /#.
-                    rcondt{1} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if.
                     + move => &m.
                       auto.
                       smt(get_setE mem_set remE mem_rem emptyE).
-                    rcondt{2} ^if; 1: auto => /#.
-                    rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
@@ -292,7 +276,7 @@ proof.
                       rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /StateRelation_relation_trivial_equalities /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre1.
                       rewrite /StateRelation_invariant /=.
                       do split.
-                      + move: hpre hpre1 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                      + smt().
                       + smt().
                       + smt().
                       + smt().
@@ -320,10 +304,10 @@ proof.
                             + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                             + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + rewrite /StateRelation_relation_prf_equality /=.
-                        move => kid4 d_U1 d_V1 ni3 nr1 /=.
+                        move => kid3 d_U0 d_V0 ni2 nr0 /=.
                         do split.
                         + smt(get_setE mem_set remE mem_rem emptyE).
-                        + move: hpre hpre1 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                        + admit. (* domino: J2 StateRelation_relation_prf_equality; domino-verified-ec-failed; smt: timeout *)
                       + rewrite /StateRelation_relation_kmac_consistent_in_state_and_mac /=.
                         move => ctr1 /=.
                         move => hpre2 /=.
@@ -341,10 +325,6 @@ proof.
                   + rcondt{1} ^if; 1: auto => /#.
                     rcondt{1} ^if; 1: auto => /#.
                     rcondt{1} ^if; 1: auto => /#.
-                    rcondt{1} ^if; 1: auto => /#.
-                    rcondt{1} ^if; 1: auto => /#.
-                    rcondt{2} ^if; 1: auto => /#.
-                    rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
                     rcondt{2} ^if; 1: auto => /#.
@@ -355,7 +335,7 @@ proof.
                     auto => &1 &2 hpre.
                     rewrite /inv /params_inv /StateRelation_invariant /StateRelation_relation_state_equality /StateRelation_relation_prf_equality /StateRelation_relation_kmac_consistent_in_state_and_mac /StateRelation_relation_trivial_equalities /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /Comp_H7.side_inv_H7 /Comp_H7.links_H7 /Comp_H7.GameInv_first__points__to__state_of_H7 /Comp_H7.GameInv_first__entry__after__message1_of_H7 /Comp_H7.GameInv_keys__above__counter__empty_of_H7 /Comp_H7.GameInv_sessions__above__counter__empty_of_H7 /Comp_H7.GameInv_session__key__is__defined_of_H7 /Comp_H7.GameInv_fresh__accepted__first__has__second_of_H7 /Comp_H7.GameInv_session__freshness__matches__honesty_of_H7 /Comp_H7.GameInv_early__fresh__session__has__no__complete__transcript_of_H7 /Comp_H7.GameInv_mac3__entry__authenticates__first_of_H7 /Comp_H7.GameInv_mac4__entry__authenticates__second_of_H7 /Comp_H7.GameInv_mac__values__are__correct_of_H7 /Comp_H7.GameInv_fresh__sid__authenticated__by__mac2_of_H7 in hpre.
                     do split.
-                    + move: hpre => />; smt(get_setE mem_set remE mem_rem emptyE).
+                    + smt().
                     + smt().
                     + smt().
                     + smt().
@@ -397,7 +377,7 @@ proof.
                             + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                             + move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + rewrite /StateRelation_relation_prf_equality /=.
-                        move => kid4 d_U1 d_V1 ni3 nr1 /=.
+                        move => kid3 d_U0 d_V0 ni2 nr0 /=.
                         do split.
                         + smt().
                         + smt().
@@ -411,7 +391,10 @@ proof.
                         + move => hpre4 /=.
                           move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                         + move => hpre4 /=.
-                          move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                          have hk : ctr0{1} = ctr0{2} by move: hpre hpre1 hpre2 hpre3 hpre4 => />.
+                          case (ctr1 = ctr0{1}) => [->>|?].
+                          + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                          + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                 + exfalso; smt().
             + rcondf{1} ^if; 1: by auto.
               rcondf{1} ^if; 1: by auto.

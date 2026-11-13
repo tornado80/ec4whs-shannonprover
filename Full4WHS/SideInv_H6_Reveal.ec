@@ -15,7 +15,6 @@ lemma SideInv_H6_Reveal (bleast : bool) (bprf : bool) (btest : bool) : hoare[Com
                                   KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested;
                                   KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh;
                                   KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval;
-                                  KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac;
                                   KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First;
                                   KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second;
                                   KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State |};
@@ -40,7 +39,6 @@ lemma SideInv_H6_Reveal (bleast : bool) (bprf : bool) (btest : bool) : hoare[Com
                                       KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested;
                                       KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh;
                                       KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval;
-                                      KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac;
                                       KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First;
                                       KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second;
                                       KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State |};

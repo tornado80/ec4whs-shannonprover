@@ -15,7 +15,6 @@ lemma SideInv_H6_Send4 (bleast : bool) (bprf : bool) (btest : bool) : hoare[Comp
                                   KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested;
                                   KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh;
                                   KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval;
-                                  KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac;
                                   KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First;
                                   KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second;
                                   KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State |};
@@ -40,7 +39,6 @@ lemma SideInv_H6_Send4 (bleast : bool) (bprf : bool) (btest : bool) : hoare[Comp
                                       KX_noprfkey_d_RevTested = Comp_H6.Pkg_Inst_KX.d_RevTested;
                                       KX_noprfkey_d_Fresh = Comp_H6.Pkg_Inst_KX.d_Fresh;
                                       KX_noprfkey_d_RevTestEval = Comp_H6.Pkg_Inst_KX.d_RevTestEval;
-                                      KX_noprfkey_d_ReverseMac = Comp_H6.Pkg_Inst_KX.d_ReverseMac;
                                       KX_noprfkey_d_First = Comp_H6.Pkg_Inst_KX.d_First;
                                       KX_noprfkey_d_Second = Comp_H6.Pkg_Inst_KX.d_Second;
                                       KX_noprfkey_d_State = Comp_H6.Pkg_Inst_KX.d_State |};
@@ -76,8 +74,6 @@ proof.
               sp 9.
               if.
               + rcondt ^if; 1: auto => /#.
-                rcondt ^if; 1: auto => /#.
-                rcondt ^if; 1: auto => /#.
                 rcondf ^if; 1: by auto.
                 auto => &hr hpre /=.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
@@ -98,9 +94,9 @@ proof.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
                       do split.
                       + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
                       + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                      + smt(get_setE mem_set remE mem_rem emptyE).
+                      + smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
                     + move => hpre4 /=.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
@@ -125,10 +121,10 @@ proof.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
                       do split.
                       + smt(get_setE mem_set remE mem_rem emptyE).
-                      + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
-                      + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                      + smt(get_setE mem_set remE mem_rem emptyE).
+                      + smt(get_setE mem_set remE mem_rem emptyE).
                     + move => hpre4 /=.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
                       do split.
@@ -226,8 +222,6 @@ proof.
                   smt().
               + if.
                 + rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
                   rcondf ^if; 1: by auto.
                   auto => &hr hpre /=.
                   rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
@@ -329,7 +323,7 @@ proof.
                     move => hpre3 /=.
                     move => hpre4 /=.
                     rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                    smt(get_setE mem_set remE mem_rem emptyE).
+                    move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                   + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
                     move => ctr1 /=.
                     move => hpre2 /=.
@@ -375,8 +369,6 @@ proof.
                     rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
                     smt().
                 + rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
                   rcondf ^if; 1: by auto.
                   auto => &hr hpre /=.
                   rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
@@ -547,10 +539,10 @@ proof.
                   + move => hpre4 /=.
                     rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
                     do split.
-                    + smt(get_setE mem_set remE mem_rem emptyE).
                     + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                    + smt(get_setE mem_set remE mem_rem emptyE).
-                    + smt(get_setE mem_set remE mem_rem emptyE).
+                    + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                    + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                    + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                     + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                   + move => hpre4 /=.
                     rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
@@ -566,8 +558,8 @@ proof.
                       do split.
                       + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                 + move => hpre3 /=.
                   rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
                   do split.
@@ -576,34 +568,34 @@ proof.
                     do split.
                     + smt(get_setE mem_set remE mem_rem emptyE).
                     + smt(get_setE mem_set remE mem_rem emptyE).
+                    + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                     + smt(get_setE mem_set remE mem_rem emptyE).
-                    + smt(get_setE mem_set remE mem_rem emptyE).
-                    + smt(get_setE mem_set remE mem_rem emptyE).
+                    + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                   + move => hpre4 /=.
                     rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
                     do split.
                     + move => hpre5 /=.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
                       do split.
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                     + move => hpre5 /=.
                       rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
                       do split.
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
                       + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
-                      + smt(get_setE mem_set remE mem_rem emptyE).
+                      + move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
                 move => hpre2 /=.
                 move => kid1 d_U1 d_V1 ni1 nr1 /=.
                 do split.
                 + move => hpre3 /=.
                   rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                  smt().
+                  smt(get_setE mem_set remE mem_rem emptyE).
                 + move => hpre3 /=.
                   smt().
               + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
@@ -630,7 +622,7 @@ proof.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
                 move => hpre4 /=.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                smt(get_setE mem_set remE mem_rem emptyE).
+                move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
                 move => ctr1 /=.
                 move => hpre2 /=.
@@ -646,7 +638,7 @@ proof.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
                 move => hpre3 /=.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                smt(get_setE mem_set remE mem_rem emptyE).
+                move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
                 move => hpre2 /=.
                 move => ctr1 /=.
@@ -654,10 +646,10 @@ proof.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
                 move => hpre4 /=.
                 do split.
-                + smt(get_setE mem_set remE mem_rem emptyE).
+                + move: hpre hpre1 hpre2 hpre3 hpre4 => />; smt(get_setE mem_set remE mem_rem emptyE).
                 + move => hpre5 /=.
                   rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                  move: hpre hpre1 hpre2 hpre3 hpre4 hpre5 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                  smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
                 move => ctr1 /=.
                 move => hpre2 /=.
@@ -673,8 +665,8 @@ proof.
                 rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
                 do split.
                 + smt(get_setE mem_set remE mem_rem emptyE).
-                + smt(get_setE mem_set remE mem_rem emptyE).
-                + smt(get_setE mem_set remE mem_rem emptyE).
+                + move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
+                + move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
               + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
                 move => kid1 d_U1 d_V1 ni1 nr1 /=.
                 move => hpre2 /=.

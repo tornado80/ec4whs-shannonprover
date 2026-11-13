@@ -17,7 +17,6 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
   var d_RevTested : ((int * int * bits_n * bits_n * bits_n), bool) fmap
   var d_Fresh : (int, bool) fmap
   var d_RevTestEval : ((int * int * int * bits_n * bits_n), int) fmap
-  var d_ReverseMac : (((int * int * int * bits_n * bits_n) * (bits_n * int)), int) fmap
   var d_First : ((int * int * bits_n * bits_n * bits_n), int) fmap
   var d_Second : ((int * int * bits_n * bits_n * bits_n), int) fmap
   var d_State : (int, (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int)) fmap
@@ -29,7 +28,6 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
     d_RevTested <- empty;
     d_Fresh <- empty;
     d_RevTestEval <- empty;
-    d_ReverseMac <- empty;
     d_First <- empty;
     d_Second <- empty;
     d_State <- empty;
@@ -79,17 +77,6 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
     var ec_r1 : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n)) option;
     var d_return : ((int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int) * (bits_n * bits_n));
     var msg_ : (bits_n * bits_n);
-    var d_U : int;
-    var u : bool;
-    var d_V : int;
-    var kid : int;
-    var acc : bool option;
-    var k : bits_n option;
-    var ni : bits_n option;
-    var nr : bits_n option;
-    var kmac : bits_n option;
-    var sid : (int * int * bits_n * bits_n * bits_n) option;
-    var mess : int;
     ec_result <- None;
     if (!(d_State.[ctr] = None)) {
       state <- oget d_State.[ctr];
@@ -98,13 +85,7 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
         d_return <- oget ec_r1;
         (state, msg_) <- d_return;
         d_State.[ctr] <- state;
-        (d_U, u, d_V, kid, acc, k, ni, nr, kmac, sid, mess) <- state;
-        if (!(ni = None)) {
-          if (!(nr = None)) {
-            d_ReverseMac.[((kid, d_U, d_V, oget ni, oget nr), (oget nr, 2))] <- ctr;
-            ec_result <- Some msg_;
-          }
-        }
+        ec_result <- Some msg_;
       }
     }
     return ec_result;
@@ -145,15 +126,6 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
               if (d_Second.[oget sid] = None) {
                 d_Second.[oget sid] <- ctr;
               }
-            }
-            if (!(ni = None)) {
-              if (!(nr = None)) {
-                d_ReverseMac.[((kid, d_U, d_V, oget ni, oget nr), (oget ni, 3))] <- ctr;
-              } else {
-                ec_done <- true;
-              }
-            } else {
-              ec_done <- true;
             }
           } else {
             ec_done <- true;
@@ -204,15 +176,6 @@ module KX_noprfkey (O : KX_noprfkey_Imports) = {
               if (d_Second.[oget sid] = None) {
                 d_Second.[oget sid] <- ctr;
               }
-            }
-            if (!(ni = None)) {
-              if (!(nr = None)) {
-                d_ReverseMac.[((kid, d_U, d_V, oget ni, oget nr), (zero_n, 4))] <- ctr;
-              } else {
-                ec_done <- true;
-              }
-            } else {
-              ec_done <- true;
             }
           } else {
             ec_done <- true;
@@ -443,7 +406,6 @@ type KX_noprfkey_pkgstate = {
   KX_noprfkey_d_RevTested : ((int * int * bits_n * bits_n * bits_n), bool) fmap;
   KX_noprfkey_d_Fresh : (int, bool) fmap;
   KX_noprfkey_d_RevTestEval : ((int * int * int * bits_n * bits_n), int) fmap;
-  KX_noprfkey_d_ReverseMac : (((int * int * int * bits_n * bits_n) * (bits_n * int)), int) fmap;
   KX_noprfkey_d_First : ((int * int * bits_n * bits_n * bits_n), int) fmap;
   KX_noprfkey_d_Second : ((int * int * bits_n * bits_n * bits_n), int) fmap;
   KX_noprfkey_d_State : (int, (int * bool * int * int * bool option * bits_n option * bits_n option * bits_n option * bits_n option * (int * int * bits_n * bits_n * bits_n) option * int)) fmap
