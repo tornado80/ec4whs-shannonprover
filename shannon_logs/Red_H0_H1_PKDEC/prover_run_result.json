@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/ec_sessions/.ec_session_prover_02a2e618d860_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "76bfdcbab372ddcd413343b98c5393d6b1b575dfd5af78a78a42e60ec0a48039",
+    "close_event_id": "18317f61-767a-4a0e-b08c-028ecd30b7f7",
+    "close_result_event_id": "bae10048-c7e1-41ef-873e-64eb3298ff12",
+    "history_sha256": "20594590a400fb57413efa9c5d1e9ea60bc112f6725b4957e79868015602de6c",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_02a2e618d860_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 5,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec",
+    "target_file_sha256": "af72d1d185036897d8ed39d02016d237c32d6fff69da683e30386351527f0c5e",
+    "target_lemma": "Red_H0_H1_PKDEC",
+    "terminal_event_id": "b165a640-1146-4161-9381-2304af1c5c09"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_02a2e618d860_tree_0_0",
+  "elapsed_seconds": 254.8445725440979,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "The compound `proc; rewrite /inv_H0_H1; inline *; sp.` hit the 170 s transaction timeout; submitting the same steps one at a time (`proc.`, then `sp; if; ...`, then `inline *.`) worked.",
+      "After `proc`, `sp; if; [by rewrite /inv_H0_H1; smt() | | by auto]` handles the outer abort-flag branch.",
+      "After `inline *`, both sides are deterministic, and `rewrite /inv_H0_H1; auto => />; smt().` closes the goal. This works because inv_H0_H1 gives abort_flag{1} = Red_H0_H1.abort_flag{2} and makes the assumption game's abort flag imply the reduction's abort flag."
+    ]
+  },
+  "result_id": "73e20e6c2e91ba751ae658b560cf4335032d029ee9c1f58ccf8c581490abe99d",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_02a2e618d860_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_02a2e618d860_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "cbca8a48-6c84-42c4-930b-243fbd4ffaed",
+  "skipped": false,
+  "status": "verified",
+  "turns": 9,
+  "verification": {
+    "candidate_id": "76bfdcbab372ddcd413343b98c5393d6b1b575dfd5af78a78a42e60ec0a48039",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

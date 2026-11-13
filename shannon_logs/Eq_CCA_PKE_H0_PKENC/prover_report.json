@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Inlining everything (`proc; inline *`) lines up the abort, pk and c checks on both sides, so plain `if` steps handle them. `rcondt{2} 2` twice removes the Correct_KEM pk and c checks on the right, which the invariant guarantees. Then `if{1}; wp; rnd; auto` pairs the two encapsulation random samples.",
+    "To close side conditions, unfold the invariant with `rewrite /inv /params_inv /StateRelation_invariant /=` and finish with `/#`. A bare `/#` without this unfolding failed."
+  ]
+}

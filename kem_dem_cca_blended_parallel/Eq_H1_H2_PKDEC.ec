@@ -49,6 +49,6 @@ lemma Eq_H1_H2_PKDEC : equiv[Comp_Hybrid0.Game_Hybrid0.d_PKDEC ~ Comp_Hybrid1.Ga
                          r_pkg_Reduction_KEM_b = Comp_Hybrid1.Pkg_Inst_Reduction_KEM.b{2};
                          r_abort_flag = Comp_Hybrid1.Game_Hybrid1.abort_flag{2} |}].
 proof.
-(* d_PKDEC *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip; rewrite /inv /params_inv /StateRelation_invariant /=.
+  smt().
 qed.

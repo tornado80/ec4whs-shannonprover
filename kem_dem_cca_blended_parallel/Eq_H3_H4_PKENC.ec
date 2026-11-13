@@ -45,6 +45,14 @@ lemma Eq_H3_H4_PKENC : equiv[Comp_Hybrid1.Game_Hybrid1.d_PKENC ~ Comp_Hybrid2.Ga
                          r_pkg_CCA_DEM_b = Comp_Hybrid2.Pkg_Inst_CCA_DEM.b{2};
                          r_abort_flag = Comp_Hybrid2.Game_Hybrid2.abort_flag{2} |}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; [by move=> &1 &2; rewrite /inv /= | | by auto].
+  sp; if; [move=> &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt() | | auto => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt()].
+  if; [move=> &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt() | | auto => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt()].
+  rcondt{1} 2; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+  rcondt{1} 2; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+  rcondt{1} 8; first by move=> &m; auto.
+  rcondt{1} 11; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+  rcondt{2} 9; first by move=> &m; auto.
+  rcondt{2} 17; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+  wp; rnd; wp; rnd; wp; skip => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
 qed.

@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *; sp; if => //; sp; if => //`, `rcondt{2} 2` uses the invariant to discharge the assumption game's abort-flag check inside the branch where the public key is not yet set.",
+    "`wp; rnd; wp; skip => /> /#` matches the two `dbits_kgenr` draws and proves the post-condition; `auto => /> /#` closes the branch where the public key is already set."
+  ]
+}

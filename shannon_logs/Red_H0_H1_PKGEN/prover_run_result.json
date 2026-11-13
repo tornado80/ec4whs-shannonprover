@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/ec_sessions/.ec_session_prover_572a506a0fad_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "f64a598ff56bebbc5ad5520df24c5a726578c07826e883ab75754234c9195658",
+    "close_event_id": "1a8ee00c-cfdd-4f53-9e21-9a5b60260c9f",
+    "close_result_event_id": "5b974af9-c4a3-4c88-874d-6c99a8b4a2c2",
+    "history_sha256": "90b4f61b628f85f92c8039f9a10dbca4e1218c95bc4bb650cf8eaccb73f6f208",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_572a506a0fad_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 6,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec",
+    "target_file_sha256": "37d832313d8957cff256e89056ea81a9485ae55f7adb4b96e1e2fa7fef67cffd",
+    "target_lemma": "Red_H0_H1_PKGEN",
+    "terminal_event_id": "cbd6ca42-7776-4e47-aa92-62749a36deb1"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_572a506a0fad_tree_0_0",
+  "elapsed_seconds": 78.92123246192932,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `proc; inline *; sp; if => //; sp; if => //`, `rcondt{2} 2` uses the invariant to discharge the assumption game's abort-flag check inside the branch where the public key is not yet set.",
+      "`wp; rnd; wp; skip => /> /#` matches the two `dbits_kgenr` draws and proves the post-condition; `auto => /> /#` closes the branch where the public key is already set."
+    ]
+  },
+  "result_id": "2b7484c3d017dbf45937852178c91570ea08bad5d9eb99fdfa20a972a145a954",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_572a506a0fad_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_572a506a0fad_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "f8cfd937-e0dc-4da7-b01b-8646735c1d76",
+  "skipped": false,
+  "status": "verified",
+  "turns": 10,
+  "verification": {
+    "candidate_id": "f64a598ff56bebbc5ad5520df24c5a726578c07826e883ab75754234c9195658",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

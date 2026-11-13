@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/ec_sessions/.ec_session_prover_c96f91c24d8b_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "a027121671b5d9ec553a59d8cb703b78cbb890b5e3ce0a2dfe2d869cb649eb67",
+    "close_event_id": "cb09d074-2e49-462c-95b7-eb23fe57da4e",
+    "close_result_event_id": "7358d2e4-7089-4b25-ac6b-4a3e03fe982d",
+    "history_sha256": "08fb4696fda6e79d26b5ad047ceefaf65174af347cfdb86547b473ccae2e241a",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_c96f91c24d8b_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 3,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec",
+    "target_file_sha256": "cee01fad33f1aa0c65cb998115bed70b0593a7477c299de3c8982a970d924a7a",
+    "target_lemma": "Eq_H1_H2_PKDEC",
+    "terminal_event_id": "4bab1cde-f92a-45e7-a00d-4d5d5f6e7beb"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_c96f91c24d8b_tree_0_0",
+  "elapsed_seconds": 60.75122141838074,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "All callees of d_PKDEC (Scheme_KEM.d_KEM_DECAPS, Scheme_DEM.d_DEM_DEC) are deterministic, so after proc; inline * the goal closes with wp; skip, unfolding inv/params_inv/StateRelation_invariant, then smt().",
+      "proc; inline *; sp; if was rejected with 'invalid first instruction'."
+    ]
+  },
+  "result_id": "15d61384017f6c15c5c8cb79a73a3e92422c926f90b95950bd296c811f6d5773",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_c96f91c24d8b_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_c96f91c24d8b_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "2ed149d8-705b-4de0-94c6-62c07409acd9",
+  "skipped": false,
+  "status": "verified",
+  "turns": 5,
+  "verification": {
+    "candidate_id": "a027121671b5d9ec553a59d8cb703b78cbb890b5e3ce0a2dfe2d869cb649eb67",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

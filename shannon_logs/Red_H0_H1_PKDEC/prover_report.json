@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "The compound `proc; rewrite /inv_H0_H1; inline *; sp.` hit the 170 s transaction timeout; submitting the same steps one at a time (`proc.`, then `sp; if; ...`, then `inline *.`) worked.",
+    "After `proc`, `sp; if; [by rewrite /inv_H0_H1; smt() | | by auto]` handles the outer abort-flag branch.",
+    "After `inline *`, both sides are deterministic, and `rewrite /inv_H0_H1; auto => />; smt().` closes the goal. This works because inv_H0_H1 gives abort_flag{1} = Red_H0_H1.abort_flag{2} and makes the assumption game's abort flag imply the reduction's abort flag."
+  ]
+}

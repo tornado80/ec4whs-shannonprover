@@ -1,0 +1,9 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `inline *`, the right side (Red_H4_0_H4_1 over Game_Composition_CCA_DEM) has an extra `if (!Game_Composition_CCA_DEM.abort_flag)` wrapper around the CCA_DEM.d_ENC body. It is discharged with `rcondt{2}`, because the invariant gives assm_abort => red_abort and red_abort is false inside the branch.",
+    "Scheme_KEM.d_KEM_ENCAPS always returns Some, so `rcondt` on `ec_r1 <> None` succeeds on both sides.",
+    "Writing `if; 1: by tac; last by tac` was rejected with 'expecting at least 1 subgoal(s)' because `by` captures the rest of the tactic chain; `if; [smt() | | auto => /> /#]` works.",
+    "A `seq 1 1` cut over the top-level if worked, with an intermediate invariant carrying `(assm_abort{2} => ec_result0{2} = None)` and `!red_abort{2}`."
+  ]
+}

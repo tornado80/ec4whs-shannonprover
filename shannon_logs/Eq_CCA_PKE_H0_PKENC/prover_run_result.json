@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/ec_sessions/.ec_session_prover_b84cdfc8fcd9_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "292e35f7d2fdd80eff03617d7a27ee0a3444f8c7a04b30b1de74e7b9392bd7c6",
+    "close_event_id": "4bd3a2f6-79e4-4d89-9783-688a6c538e96",
+    "close_result_event_id": "b74f291b-40f5-4dd4-930d-aaf245054b1e",
+    "history_sha256": "bb373704b143ea5fe3882b84e7563f72c64012c4ed6bb4587839b1050916c6fe",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_b84cdfc8fcd9_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 10,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec",
+    "target_file_sha256": "a6931f67f816efc234be6f2623af7b6559d65edd66b6672efd159c0f2d21b730",
+    "target_lemma": "Eq_CCA_PKE_H0_PKENC",
+    "terminal_event_id": "c4097678-c10d-4976-b86b-ff4381113d86"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_b84cdfc8fcd9_tree_0_0",
+  "elapsed_seconds": 96.07188558578491,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Inlining everything (`proc; inline *`) lines up the abort, pk and c checks on both sides, so plain `if` steps handle them. `rcondt{2} 2` twice removes the Correct_KEM pk and c checks on the right, which the invariant guarantees. Then `if{1}; wp; rnd; auto` pairs the two encapsulation random samples.",
+      "To close side conditions, unfold the invariant with `rewrite /inv /params_inv /StateRelation_invariant /=` and finish with `/#`. A bare `/#` without this unfolding failed."
+    ]
+  },
+  "result_id": "b7c5a73b48d1a79acffdd17d2d8d648cba0b2b461645e7bd9cab5ddebb8545a6",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "f007d5fa-819d-4689-98a4-f50f3c6d5ece",
+  "skipped": false,
+  "status": "verified",
+  "turns": 12,
+  "verification": {
+    "candidate_id": "292e35f7d2fdd80eff03617d7a27ee0a3444f8c7a04b30b1de74e7b9392bd7c6",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

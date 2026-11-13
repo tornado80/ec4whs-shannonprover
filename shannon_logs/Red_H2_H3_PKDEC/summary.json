@@ -1,0 +1,30 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec",
+    "lemma": "Red_H2_H3_PKDEC"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "ee06f6f61d5609e6abc6f694f59e13576b8085a2d29dad22df6a7cbacc05882b",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 0.8,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_26becfd91752_tree_0_0_closed/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "ee06f6f61d5609e6abc6f694f59e13576b8085a2d29dad22df6a7cbacc05882b",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_26becfd91752_tree_0_0_closed/resume.json"
+      ]
+    }
+  ]
+}

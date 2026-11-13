@@ -1,0 +1,52 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/ec_sessions/.ec_session_prover_b72ad7ca2c61_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "ca7716463e3548f3bd7bc4e7ab7af717573ba548a2e4593a6004201229f5469f",
+    "close_event_id": "1e1f6a10-c1b7-40b3-b00e-dcea69893ae7",
+    "close_result_event_id": "455bf8a9-b6b0-43f2-9a10-ead0a442d9b3",
+    "history_sha256": "923b9f89902c20826c27d5f28311475c4ebf85cc2e8defa5df30285b70c16c70",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_b72ad7ca2c61_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 8,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec",
+    "target_file_sha256": "63c1cf3c798e5acc42f96b1ac41011be9644d190ec873168c3f616bc628bdb8a",
+    "target_lemma": "Eq_CCA_PKE_H0_PKGEN",
+    "terminal_event_id": "bc04527c-9027-4fb8-b6e2-f82e51a881ec"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_b72ad7ca2c61_tree_0_0",
+  "elapsed_seconds": 56.09148836135864,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Inlined left and right d_PKGEN bodies align after `seq 1 1`; the main branch closes with `wp; rnd; wp; skip; smt()` and the aborted branch with `auto; smt()`."
+    ]
+  },
+  "result_id": "ee4b289315583ae7a257218d0d75d0ca086506acf28325650bc32d2e2d05672a",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b72ad7ca2c61_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b72ad7ca2c61_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "4e3c01d3-3f8b-49c5-b8f6-86abbea54554",
+  "skipped": false,
+  "status": "verified",
+  "turns": 8,
+  "verification": {
+    "candidate_id": "ca7716463e3548f3bd7bc4e7ab7af717573ba548a2e4593a6004201229f5469f",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

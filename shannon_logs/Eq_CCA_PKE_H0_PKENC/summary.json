@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec",
+    "lemma": "Eq_CCA_PKE_H0_PKENC"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "b7c5a73b48d1a79acffdd17d2d8d648cba0b2b461645e7bd9cab5ddebb8545a6",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 1.7,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "b7c5a73b48d1a79acffdd17d2d8d648cba0b2b461645e7bd9cab5ddebb8545a6",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b84cdfc8fcd9_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

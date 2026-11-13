@@ -1,0 +1,51 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/ec_sessions/.ec_session_prover_26becfd91752_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "e6053eccd68cd7c2540eea19d99a01800f177fa4440543df537371265c510d08",
+    "close_event_id": "2df5d8ee-fd91-4c51-9405-b6b4cb269d4f",
+    "close_result_event_id": "3d8e5054-f742-41b0-a94c-56f3c72f6cb7",
+    "history_sha256": "02a09740f4a0a12ad768cfa058c5fd5c334df798d9a4292b0c3248b5fe80a089",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_26becfd91752_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 2,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec",
+    "target_file_sha256": "fc32ff2d8e099ec24eed64282c87ee4a290ace6a11593f95f7fa452c0e6a0564",
+    "target_lemma": "Red_H2_H3_PKDEC",
+    "terminal_event_id": "3b0f1059-307f-4509-8888-29b7acb2b3d8"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_26becfd91752_tree_0_0",
+  "elapsed_seconds": 39.877171993255615,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After inlining, both sides of d_PKDEC run the same code with no random sampling (the CCA_KEM DECAPS and Scheme_DEM DEM_DEC paths have no `<$`). One `proc; inline *; auto => />; rewrite /inv_H2_H3 /=; smt().` closed the equivalence, and `qed.` was accepted."
+    ]
+  },
+  "result_id": "ee06f6f61d5609e6abc6f694f59e13576b8085a2d29dad22df6a7cbacc05882b",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_26becfd91752_tree_0_0_closed/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "f371ffc2-b5db-4903-a948-a9ecd0e488e7",
+  "skipped": false,
+  "status": "verified",
+  "turns": 3,
+  "verification": {
+    "candidate_id": "e6053eccd68cd7c2540eea19d99a01800f177fa4440543df537371265c510d08",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

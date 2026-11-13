@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "All callees of d_PKDEC (Scheme_KEM.d_KEM_DECAPS, Scheme_DEM.d_DEM_DEC) are deterministic, so after proc; inline * the goal closes with wp; skip, unfolding inv/params_inv/StateRelation_invariant, then smt().",
+    "proc; inline *; sp; if was rejected with 'invalid first instruction'."
+  ]
+}

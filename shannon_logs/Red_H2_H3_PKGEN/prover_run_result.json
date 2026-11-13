@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/ec_sessions/.ec_session_prover_db342ef14df3_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "f23950a5f4d0ac69b824dbaa9ce74221fb0e1a733aa444d7c3754fa2406080bc",
+    "close_event_id": "b1a4961d-8e48-4cd3-921c-b38bf262ec81",
+    "close_result_event_id": "54052152-0fd5-4675-8ae3-165d81289708",
+    "history_sha256": "c13719b62752a2659ae1b578ef59ed86566c58e38b735bfc918d8e288b906893",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_db342ef14df3_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 9,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec",
+    "target_file_sha256": "d0df73e1480627a0b21dab425941985181459d3e3df1d81bc0a72dd9f5e1396b",
+    "target_lemma": "Red_H2_H3_PKGEN",
+    "terminal_event_id": "be728a71-8a39-43a6-8f8e-ac72825881f0"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_db342ef14df3_tree_0_0",
+  "elapsed_seconds": 49.4660279750824,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "EasyCrypt accepted every tactic and `qed.` for Red_H2_H3_PKGEN; the session is closed but offline verification has not run yet.",
+      "Proof structure: `proc; inline *; sp`, then a matched `if` on the abort flags, a matched `if` on the Reduction_KEM pk-is-None check, `rcondt{2} 2` for the Game_Composition_CCA_KEM abort guard, a matched `if` on CCA_KEM.pk = None, then `wp; rnd; wp; skip`. Each else branch closed with `wp; skip; rewrite /inv_H2_H3; smt()`.",
+      "The right-side guard `!Game_Composition_CCA_KEM.abort_flag` is always true here because inv_H2_H3 includes `assm_abort => red_abort` and `game_abort = red_abort`."
+    ]
+  },
+  "result_id": "d2c055a6f1f919bb93cf2fc86411bb1264fe68ae199e3a8a544eef9073dfbdd8",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_db342ef14df3_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_db342ef14df3_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "926cd994-fb24-4f66-9494-408bf1bfdcd7",
+  "skipped": false,
+  "status": "verified",
+  "turns": 7,
+  "verification": {
+    "candidate_id": "f23950a5f4d0ac69b824dbaa9ce74221fb0e1a733aa444d7c3754fa2406080bc",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

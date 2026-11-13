@@ -1,0 +1,55 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/ec_sessions/.ec_session_prover_553374b4e15e_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "38266ebf67ca40dbd392a210584c93788b7fbccbf72c188acabaeb154edc0cab",
+    "close_event_id": "d62c4517-8b13-41ea-9163-42e26bd3da13",
+    "close_result_event_id": "7984b1e4-5528-4cbd-a70c-927c0eb0a1db",
+    "history_sha256": "eeaa37fa0db1da4413ba291e4f2038e05a31e1eb42eba2c06c19b77bf2609702",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_553374b4e15e_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 14,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec",
+    "target_file_sha256": "5c7ce8711e6d91161ceaf5a37bf78f334485a7a981d4916cda5429555b0d17b7",
+    "target_lemma": "Red_H4_0_H4_1_PKENC",
+    "terminal_event_id": "a3f1e374-8d39-4e05-b1d8-ee82950a7866"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_553374b4e15e_tree_0_0",
+  "elapsed_seconds": 104.97053909301758,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `inline *`, the right side (Red_H4_0_H4_1 over Game_Composition_CCA_DEM) has an extra `if (!Game_Composition_CCA_DEM.abort_flag)` wrapper around the CCA_DEM.d_ENC body. It is discharged with `rcondt{2}`, because the invariant gives assm_abort => red_abort and red_abort is false inside the branch.",
+      "Scheme_KEM.d_KEM_ENCAPS always returns Some, so `rcondt` on `ec_r1 <> None` succeeds on both sides.",
+      "Writing `if; 1: by tac; last by tac` was rejected with 'expecting at least 1 subgoal(s)' because `by` captures the rest of the tactic chain; `if; [smt() | | auto => /> /#]` works.",
+      "A `seq 1 1` cut over the top-level if worked, with an intermediate invariant carrying `(assm_abort{2} => ec_result0{2} = None)` and `!red_abort{2}`."
+    ]
+  },
+  "result_id": "a4a007867b626ea5771c71477e6992f1a0f0ba92c0ac1d5f1b83db81e9c0ab8d",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_553374b4e15e_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_553374b4e15e_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "a55a1d55-28dd-415d-905b-a79c57f4cdbc",
+  "skipped": false,
+  "status": "verified",
+  "turns": 15,
+  "verification": {
+    "candidate_id": "38266ebf67ca40dbd392a210584c93788b7fbccbf72c188acabaeb154edc0cab",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

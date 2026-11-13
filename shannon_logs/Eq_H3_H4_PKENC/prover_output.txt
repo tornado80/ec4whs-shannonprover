@@ -1,0 +1,9 @@
+I proved `Eq_H3_H4_PKENC` and the manager accepted `finish`. EasyCrypt took every tactic and the `qed.`, but the offline check runs after this node stops, so that final verification hasn't happened yet.
+
+How the proof works:
+- **Setup:** after inlining both sides, two-sided `if` steps match up the outer checks on `pk` and `c`. The invariant `inv` keeps the two games' `pk` and `c` in step.
+- **Branches that can't differ:** one-sided `rcondt` steps remove the branches whose outcome is fixed. The invariant says the KEM challenge bit `CCA_KEM.b` is always true, so the left side always draws a fresh random key. On the right, the DEM key slot `CCA_DEM.k` is still empty, so it draws a fresh key too.
+- **Random draws:** the encapsulation randomness and the fresh key are then paired one-to-one across the two games with `rnd`.
+- **Final step:** unfolding `inv` and `smt()` closes the last goal.
+
+PROVER REPORT: {"blockers": [], "discoveries": []}

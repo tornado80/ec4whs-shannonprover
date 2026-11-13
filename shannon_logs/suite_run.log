@@ -1,0 +1,1962 @@
+17:27:35 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_CCA_PKE_H0_PKGEN
+
+17:27:35 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec:Eq_CCA_PKE_H0_PKGEN
+17:27:35 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN
+
+──────────────────────────────────────────────────
+17:27:35 ▶ PROVE
+──────────────────────────────────────────────────
+17:27:35 [orchestrator] tree mode, 1 provers
+17:27:35 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec:Eq_CCA_PKE_H0_PKGEN
+17:27:36 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:27:36 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_4c5f9c74a4a9.sock
+17:27:36 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_4c5f9c74a4a9.sock
+17:27:36 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_4c5f9c74a4a9.sock (pid=15980)
+17:27:36 [Prover] why3server ready on /tmp/why3ec_4c5f9c74a4a9.sock
+17:27:36 [Prover] Tree mode for Eq_CCA_PKE_H0_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:27:36 [Orchestrator] Tree prover: starting 1 provers from root
+17:27:43 [Tree-0.0] 💬 Let me look at the procedures.
+17:27:43 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKGEN"})
+17:27:46 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:27:47 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 45, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:27:48 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:27:50 [Tree-0.0] 💬 Now Correct_KEM d_CORR_GEN and Scheme_KEM gen.
+17:27:51 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:27:52 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:27:52 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:27:53 [Tree-0.0] 💬 Inline everything, then sp; if; random; auto.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:27:55 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [smt(); | | auto]; [rcondt{1} 1; [auto | ]; sp; if; [smt(); | | auto]; sp; rnd; auto; smt()].
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:28:04 [Tree-0.0] 💬 Go step by step.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:28:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:28:07 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: smt(). sp; if; 1: smt(). sp; rnd; auto; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:28:07 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 0s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:28:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:28:20 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 1 : (#pre /\ ec_result0{1} = None /\ ec_result0{2} = None); 1: auto. if; 1: smt(). wp; rnd; wp; skip; smt(). auto; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:28:22 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: auto; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:28:23 [Orchestrator]   Tree-0.0 (d=0): 7 tactics, 1 errors, errs_since_accept=0, idle 0s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:24 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:24 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:26 [Tree-0.0] 💬 EasyCrypt accepted the proof and `qed.`; now submitting `finish` (offline verification runs after this node stops).
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:26 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:31 [Tree-0.0] 💬 I proved `Eq_CCA_PKE_H0_PKGEN`. EasyCrypt accepted every committed step and `qed.`, and the manager accepted `finish`. Offline verification hasn't run...
+
+🌳 1 alive │ 🐝0.0[7]★ │ 0 killed │ 47s
+17:28:32 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:28:32 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:28:32 [Prover] Stopped EasyCrypt daemon after tree prover
+17:28:32 [Prover] Selected tree result: Tree-0.0
+17:28:32 [workflow.agents.prover] INFO: Subagent session_id: 4e3c01d3-3f8b-49c5-b8f6-86abbea54554
+17:28:32 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_b72ad7ca2c61_tree_0_0
+17:28:32 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/payload_audit.jsonl
+17:28:32 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/ec_sessions
+17:28:32 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/iteration_1/resume_capsules
+17:28:32 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 1 discovery item(s)
+17:28:32 [Prover] Extracted 8 tactics. Writing proof to file...
+17:28:32 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Eq_CCA_PKE_H0_PKGEN.shannon-verify-eea5b436ca9e.ec with easycrypt...
+17:28:34 [workflow.agents.prover] INFO: Verification PASSED
+17:28:34 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec
+17:28:34 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 56s, Session: 4e3c01d3-3f8b-49c5-b8f6-86abbea54554
+17:28:34 ✓ PROVE → outcome=verified, time=56s
+
+17:28:34 [orchestrator] PROVE ✅ verified, 56s
+
+──────────────────────────────────────────────────
+17:28:34 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:28:34 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.0min
+17:28:34 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN/summary.json
+17:28:37 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_CCA_PKE_H0_PKENC
+
+17:28:37 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec:Eq_CCA_PKE_H0_PKENC
+17:28:37 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC
+
+──────────────────────────────────────────────────
+17:28:37 ▶ PROVE
+──────────────────────────────────────────────────
+17:28:37 [orchestrator] tree mode, 1 provers
+17:28:37 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec:Eq_CCA_PKE_H0_PKENC
+17:28:37 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:28:37 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_a18f45f26c55.sock
+17:28:37 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_a18f45f26c55.sock
+17:28:38 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_a18f45f26c55.sock (pid=16757)
+17:28:38 [Prover] why3server ready on /tmp/why3ec_a18f45f26c55.sock
+17:28:38 [Prover] Tree mode for Eq_CCA_PKE_H0_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:28:38 [Orchestrator] Tree prover: starting 1 provers from root
+17:28:45 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKENC"})
+17:28:47 [Tree-0.0] 💬 Let me read the target file and relevant packages.
+17:28:48 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:28:49 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 90, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:28:50 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 90, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:28:52 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:28:53 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 1s (15s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:28:55 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:28:56 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:28:57 [Tree-0.0] 💬 Now KEMDEM ENC, Correct_KEM ENCAPS, Scheme_KEM, Scheme_DEM.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:28:58 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:28:59 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:29:00 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:29:02 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:29:08 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 7s (30s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+17:29:10 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by move=> &1 &2 /> /#.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+17:29:17 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 4 4; if; 1: by move=> &1 &2 /> /#; last by auto => /> /#.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+17:29:24 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 0s (46s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 30s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 46s
+17:29:27 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 4 4; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 46s
+17:29:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 46s
+17:29:40 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 1 errors, errs_since_accept=0, idle 3s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 46s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:29:42 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 2; 1: by move=> &m; auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:29:47 [Tree-0.0] 💬 Working through the PKENC equivalence: both sides' ifs are now aligned. Next I'm discharging the right side's Correct_KEM guard, then I'll pair up the...
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:29:48 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 2; 1: by move=> &m; auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:29:53 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if{1}; wp; rnd; auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:29:55 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 1 errors, errs_since_accept=0, idle 0s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:29:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:03 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:06 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:07 [Tree-0.0] 💬 EasyCrypt accepted the whole proof and `qed.`, so I'm submitting `finish`.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:07 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:13 [Tree-0.0] 💬 EasyCrypt accepted every step of the `Eq_CCA_PKE_H0_PKENC` proof, including `qed.`, and the manager accepted `finish`. The offline verification that r...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 78s
+17:30:14 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:30:14 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:30:14 [Prover] Stopped EasyCrypt daemon after tree prover
+17:30:14 [Prover] Selected tree result: Tree-0.0
+17:30:14 [workflow.agents.prover] INFO: Subagent session_id: f007d5fa-819d-4689-98a4-f50f3c6d5ece
+17:30:14 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_b84cdfc8fcd9_tree_0_0
+17:30:14 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/payload_audit.jsonl
+17:30:14 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/ec_sessions
+17:30:14 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/iteration_1/resume_capsules
+17:30:14 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:30:14 [Prover] Extracted 10 tactics. Writing proof to file...
+17:30:14 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/.Eq_CCA_PKE_H0_PKENC.shannon-verify-847fb109e29a.ec with easycrypt...
+17:30:19 [workflow.agents.prover] INFO: Verification PASSED
+17:30:19 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec
+17:30:19 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 96s, Session: f007d5fa-819d-4689-98a4-f50f3c6d5ece
+17:30:19 ✓ PROVE → outcome=verified, time=96s
+
+17:30:19 [orchestrator] PROVE ✅ verified, 96s
+
+──────────────────────────────────────────────────
+17:30:19 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:30:19 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.7min
+17:30:19 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC/summary.json
+17:30:21 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_CCA_PKE_H0_PKDEC
+
+17:30:22 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec:Eq_CCA_PKE_H0_PKDEC
+17:30:22 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC
+
+──────────────────────────────────────────────────
+17:30:22 ▶ PROVE
+──────────────────────────────────────────────────
+17:30:22 [orchestrator] tree mode, 1 provers
+17:30:22 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec:Eq_CCA_PKE_H0_PKDEC
+17:30:22 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:30:22 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_214f2efe79c0.sock
+17:30:22 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_214f2efe79c0.sock
+17:30:22 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_214f2efe79c0.sock (pid=17364)
+17:30:22 [Prover] why3server ready on /tmp/why3ec_214f2efe79c0.sock
+17:30:22 [Prover] Tree mode for Eq_CCA_PKE_H0_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:30:22 [Orchestrator] Tree prover: starting 1 provers from root
+17:30:28 [Tree-0.0] 💬 I need to look at the source.
+17:30:29 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKDEC"})
+17:30:30 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:30:31 [Tree-0.0] 💬 Read the packages and invariant.
+17:30:34 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 120, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:30:35 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 130, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:30:35 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:30:38 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:40 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:40 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:44 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:45 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:45 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:30:54 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 2s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:30:56 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:30:56 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:30:58 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:03 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Eq_CCA_PKE_H0_PKDEC` with `qed.`, and the manager accepted `finish`. The node has stopped, and offline verification r...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:03 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:31:03 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:31:03 [Prover] Stopped EasyCrypt daemon after tree prover
+17:31:03 [Prover] Selected tree result: Tree-0.0
+17:31:03 [workflow.agents.prover] INFO: Subagent session_id: 2a865b81-cc31-4a8f-bc6b-f3da3da86e2e
+17:31:03 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_b34641ceb2fa_tree_0_0
+17:31:03 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/iteration_1/payload_audit.jsonl
+17:31:03 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/iteration_1/ec_sessions
+17:31:03 [Prover] Wrote 1 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/iteration_1/resume_capsules
+17:31:03 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:31:03 [Prover] Extracted 2 tactics. Writing proof to file...
+17:31:03 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/.Eq_CCA_PKE_H0_PKDEC.shannon-verify-4f5ec389097f.ec with easycrypt...
+17:31:06 [workflow.agents.prover] INFO: Verification PASSED
+17:31:06 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec
+17:31:06 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 41s, Session: 2a865b81-cc31-4a8f-bc6b-f3da3da86e2e
+17:31:06 ✓ PROVE → outcome=verified, time=41s
+
+17:31:06 [orchestrator] PROVE ✅ verified, 41s
+
+──────────────────────────────────────────────────
+17:31:06 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:31:06 [Orchestrator] Iterations: 1, Proved: YES, Time: 0.7min
+17:31:06 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/summary.json
+17:31:08 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H1_H2_PKGEN
+
+17:31:08 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec:Eq_H1_H2_PKGEN
+17:31:08 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN
+
+──────────────────────────────────────────────────
+17:31:08 ▶ PROVE
+──────────────────────────────────────────────────
+17:31:08 [orchestrator] tree mode, 1 provers
+17:31:08 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec:Eq_H1_H2_PKGEN
+17:31:09 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:31:09 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_e33c420bd081.sock
+17:31:09 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_e33c420bd081.sock
+17:31:09 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_e33c420bd081.sock (pid=17502)
+17:31:09 [Prover] why3server ready on /tmp/why3ec_e33c420bd081.sock
+17:31:09 [Prover] Tree mode for Eq_H1_H2_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:31:09 [Orchestrator] Tree prover: starting 1 provers from root
+17:31:16 [Tree-0.0] 💬 Need to see procedures. Let me read the target file.
+17:31:16 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKGEN"})
+17:31:18 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:31:19 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:31:20 [Tree-0.0] 💬 Need the other side and the oracles.
+17:31:23 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 42, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:31:23 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_CORR_GEN"})
+17:31:23 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_CCA_GEN"})
+17:31:25 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 2s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:31:26 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [smt(); | | auto].
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:31:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: smt(); 2: auto.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:31:41 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=0, idle 5s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:42 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; 1: smt(). rcondt{2} 2; 1: by auto; smt(). wp; rnd; wp; skip; smt(). auto; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:45 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:45 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:46 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:50 [Tree-0.0] 💬 I closed the proof of `Eq_H1_H2_PKGEN`: EasyCrypt accepted every tactic and `qed.`. The manager accepted `finish`, and offline verification runs after...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:31:51 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:31:51 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:31:51 [Prover] Stopped EasyCrypt daemon after tree prover
+17:31:51 [Prover] Selected tree result: Tree-0.0
+17:31:51 [workflow.agents.prover] INFO: Subagent session_id: 9e068843-addf-4608-8888-8d073c4e4868
+17:31:51 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_6d7e2cfcc2e9_tree_0_0
+17:31:51 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/payload_audit.jsonl
+17:31:51 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/ec_sessions
+17:31:51 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules
+17:31:51 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:31:51 [Prover] Extracted 6 tactics. Writing proof to file...
+17:31:51 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Eq_H1_H2_PKGEN.shannon-verify-3f330e5b02a1.ec with easycrypt...
+17:31:53 [workflow.agents.prover] INFO: Verification PASSED
+17:31:53 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec
+17:31:53 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 41s, Session: 9e068843-addf-4608-8888-8d073c4e4868
+17:31:53 ✓ PROVE → outcome=verified, time=41s
+
+17:31:53 [orchestrator] PROVE ✅ verified, 41s
+
+──────────────────────────────────────────────────
+17:31:53 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:31:53 [Orchestrator] Iterations: 1, Proved: YES, Time: 0.7min
+17:31:53 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/summary.json
+17:31:56 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H1_H2_PKENC
+
+17:31:56 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec:Eq_H1_H2_PKENC
+17:31:56 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC
+
+──────────────────────────────────────────────────
+17:31:56 ▶ PROVE
+──────────────────────────────────────────────────
+17:31:56 [orchestrator] tree mode, 1 provers
+17:31:56 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec:Eq_H1_H2_PKENC
+17:31:56 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:31:56 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_9f049a813ec0.sock
+17:31:56 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_9f049a813ec0.sock
+17:31:57 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_9f049a813ec0.sock (pid=17694)
+17:31:57 [Prover] why3server ready on /tmp/why3ec_9f049a813ec0.sock
+17:31:57 [Prover] Tree mode for Eq_H1_H2_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:31:57 [Orchestrator] Tree prover: starting 1 provers from root
+17:32:02 [Tree-0.0] 💬 Let me look at the source.
+17:32:03 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKENC"})
+17:32:05 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 90, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:32:07 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 90, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:32:08 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:32:11 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "max_results": 10, "query": "ENCAPS() :"})
+17:32:12 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:32:12 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:13 [Tree-0.0] 💬 Let me read the ENCAPS bodies.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:14 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 75, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:15 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 75, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:17 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:23 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; rewrite /inv /params_inv /StateRelation_invariant /=.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:32:28 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 2s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:32:34 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; [smt() | | auto => /> /#]; sp; if; [smt() | | auto => /> /#]; if; [smt() | | auto => /> /#]; sp; if; [smt() | | auto => /> /#]; if; [smt() | | auto => /> /#].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:32:42 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 2 2; seq 1 1 : (#pre /\ ={r2}); 1: auto. rcondt{1} 4; 1: auto. rcondt{2} 4; 1: auto. sp 6 6; rcondf{2} 1; 1: auto => /> /#. auto => /> /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:32:43 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 1s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:32:53 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 2 2; seq 1 1 : (#pre /\ ={r2}); [auto | rcondt{1} 4; [auto | rcondt{2} 4; [auto | sp 6 6; rcondf{2} 1; [auto => /> /# | auto => /> /#]]]].
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:32:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: move=> /> /#.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:32:59 [Tree-0.0] 💬 All goals are closed, so I'm committing `qed.` to save the proof.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:32:59 [Orchestrator]   Tree-0.0 (d=0): 4 tactics, 1 errors, errs_since_accept=0, idle 0s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 62s
+17:33:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 62s
+17:33:00 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 62s
+17:33:01 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 62s
+17:33:05 [Tree-0.0] 💬 EasyCrypt accepted the full proof of `Eq_H1_H2_PKENC`, including `qed.`, and the manager accepted `finish`. Offline verification runs after this node ...
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 62s
+17:33:05 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:33:05 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:33:05 [Prover] Stopped EasyCrypt daemon after tree prover
+17:33:05 [Prover] Selected tree result: Tree-0.0
+17:33:05 [workflow.agents.prover] INFO: Subagent session_id: 786542a2-ccd9-4b56-9706-80e63f697912
+17:33:05 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_fe0b32d6922c_tree_0_0
+17:33:05 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/payload_audit.jsonl
+17:33:05 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/ec_sessions
+17:33:06 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/resume_capsules
+17:33:06 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:33:06 [Prover] Extracted 5 tactics. Writing proof to file...
+17:33:06 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/.Eq_H1_H2_PKENC.shannon-verify-67598fbe1944.ec with easycrypt...
+17:33:09 [workflow.agents.prover] INFO: Verification PASSED
+17:33:09 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec
+17:33:09 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 69s, Session: 786542a2-ccd9-4b56-9706-80e63f697912
+17:33:09 ✓ PROVE → outcome=verified, time=69s
+
+17:33:09 [orchestrator] PROVE ✅ verified, 69s
+
+──────────────────────────────────────────────────
+17:33:09 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:33:09 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.2min
+17:33:09 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/summary.json
+17:33:12 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H1_H2_PKDEC
+
+17:33:12 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec:Eq_H1_H2_PKDEC
+17:33:12 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC
+
+──────────────────────────────────────────────────
+17:33:12 ▶ PROVE
+──────────────────────────────────────────────────
+17:33:12 [orchestrator] tree mode, 1 provers
+17:33:12 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec:Eq_H1_H2_PKDEC
+17:33:12 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:33:12 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_ad2f94b66bb8.sock
+17:33:12 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_ad2f94b66bb8.sock
+17:33:13 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_ad2f94b66bb8.sock (pid=17946)
+17:33:13 [Prover] why3server ready on /tmp/why3ec_ad2f94b66bb8.sock
+17:33:13 [Prover] Tree mode for Eq_H1_H2_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:33:13 [Orchestrator] Tree prover: starting 1 provers from root
+17:33:18 [Tree-0.0] 💬 Let me look at the procedures.
+17:33:19 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKDEC"})
+17:33:22 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 120, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:33:23 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 130, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:33:24 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:33:26 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:33:27 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:33:28 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:33:28 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:33:35 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [smt() | | by auto].
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:33:44 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 1 errors, errs_since_accept=1, idle 4s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:33:51 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:33:53 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_c)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:33:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip; rewrite /inv /params_inv /StateRelation_invariant /=.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:33:59 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 2s (47s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:03 [Tree-0.0] 💬 The tactic went through, but the remaining goal is too large to read. I'm trying to close it with smt.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:03 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:06 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:06 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:07 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:12 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Eq_H1_H2_PKDEC` and `qed.`, and the manager accepted `finish`. Offline verification of the saved proof hasn't run yet...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:34:13 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:34:13 [Prover] Stopped EasyCrypt daemon after tree prover
+17:34:13 [Prover] Selected tree result: Tree-0.0
+17:34:13 [workflow.agents.prover] INFO: Subagent session_id: 2ed149d8-705b-4de0-94c6-62c07409acd9
+17:34:13 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_c96f91c24d8b_tree_0_0
+17:34:13 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/payload_audit.jsonl
+17:34:13 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/ec_sessions
+17:34:13 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/iteration_1/resume_capsules
+17:34:13 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:34:13 [Prover] Extracted 3 tactics. Writing proof to file...
+17:34:13 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/.Eq_H1_H2_PKDEC.shannon-verify-060a225df944.ec with easycrypt...
+17:34:18 [workflow.agents.prover] INFO: Verification PASSED
+17:34:18 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec
+17:34:18 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 61s, Session: 2ed149d8-705b-4de0-94c6-62c07409acd9
+17:34:18 ✓ PROVE → outcome=verified, time=61s
+
+17:34:18 [orchestrator] PROVE ✅ verified, 61s
+
+──────────────────────────────────────────────────
+17:34:18 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:34:18 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.1min
+17:34:18 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/2026-11-13_1733_Eq_H1_H2_PKDEC/summary.json
+17:34:20 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H3_H4_PKGEN
+
+17:34:21 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKGEN.ec:Eq_H3_H4_PKGEN
+17:34:21 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/2026-11-13_1734_Eq_H3_H4_PKGEN
+
+──────────────────────────────────────────────────
+17:34:21 ▶ PROVE
+──────────────────────────────────────────────────
+17:34:21 [orchestrator] tree mode, 1 provers
+17:34:21 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKGEN.ec:Eq_H3_H4_PKGEN
+17:34:21 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:34:21 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_93979486fe80.sock
+17:34:21 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_93979486fe80.sock
+17:34:21 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_93979486fe80.sock (pid=18136)
+17:34:21 [Prover] why3server ready on /tmp/why3ec_93979486fe80.sock
+17:34:21 [Prover] Tree mode for Eq_H3_H4_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:34:21 [Orchestrator] Tree prover: starting 1 provers from root
+17:34:27 [Tree-0.0] 💬 Let me look at the procedures.
+17:34:28 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKGEN"})
+17:34:31 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:34:32 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:34:33 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:34:35 [Tree-0.0] 💬 Need O.d_KEMGEN in CCA_KEM and d_KEM_GEN in Hybrid2 (likely Scheme_KEM-based).
+17:34:35 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "max_results": 40, "query": "GEN() :", "scope": "task"})
+17:34:36 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 1s (15s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:34:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 45, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:34:40 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 30, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:34:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:34:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+17:34:52 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 0 errors, errs_since_accept=0, idle 0s (30s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 15s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:34:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 2; 1: by auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:34:56 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; rnd; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:00 [Tree-0.0] 💬 Two goals remain: the case where the key already exists, then the abort case.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:02 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: skip => &1 &2; smt().
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:04 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:04 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:06 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:11 [Tree-0.0] 💬 EasyCrypt accepted every step of the `Eq_H3_H4_PKGEN` proof, including `qed.`, and the manager accepted `finish`. The proof still has to pass offline ...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 30s
+17:35:12 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:35:12 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:35:12 [Prover] Stopped EasyCrypt daemon after tree prover
+17:35:12 [Prover] Selected tree result: Tree-0.0
+17:35:12 [workflow.agents.prover] INFO: Subagent session_id: b95c84e1-c16d-434c-9ce1-42f2a4bb7516
+17:35:12 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_a174d8e1eef5_tree_0_0
+17:35:12 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/2026-11-13_1734_Eq_H3_H4_PKGEN/iteration_1/payload_audit.jsonl
+17:35:12 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/2026-11-13_1734_Eq_H3_H4_PKGEN/iteration_1/ec_sessions
+17:35:12 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/2026-11-13_1734_Eq_H3_H4_PKGEN/iteration_1/resume_capsules
+17:35:12 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 1 discovery item(s)
+17:35:12 [Prover] Extracted 7 tactics. Writing proof to file...
+17:35:12 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Eq_H3_H4_PKGEN.shannon-verify-9d58ace179ee.ec with easycrypt...
+17:35:14 [workflow.agents.prover] INFO: Verification PASSED
+17:35:14 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKGEN.ec
+17:35:14 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 50s, Session: b95c84e1-c16d-434c-9ce1-42f2a4bb7516
+17:35:14 ✓ PROVE → outcome=verified, time=50s
+
+17:35:14 [orchestrator] PROVE ✅ verified, 50s
+
+──────────────────────────────────────────────────
+17:35:14 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:35:14 [Orchestrator] Iterations: 1, Proved: YES, Time: 0.9min
+17:35:14 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/2026-11-13_1734_Eq_H3_H4_PKGEN/summary.json
+17:35:17 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H3_H4_PKENC
+
+17:35:17 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec:Eq_H3_H4_PKENC
+17:35:17 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC
+
+──────────────────────────────────────────────────
+17:35:17 ▶ PROVE
+──────────────────────────────────────────────────
+17:35:17 [orchestrator] tree mode, 1 provers
+17:35:17 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec:Eq_H3_H4_PKENC
+17:35:18 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:35:18 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_089517b57a3a.sock
+17:35:18 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_089517b57a3a.sock
+17:35:18 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_089517b57a3a.sock (pid=18340)
+17:35:18 [Prover] why3server ready on /tmp/why3ec_089517b57a3a.sock
+17:35:18 [Prover] Tree mode for Eq_H3_H4_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:35:18 [Orchestrator] Tree prover: starting 1 provers from root
+17:35:25 [Tree-0.0] 💬 Let me look at the procedures.
+17:35:25 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKENC"})
+17:35:26 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:27 [Tree-0.0] 💬 Need the invariant and package code.
+17:35:28 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:29 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:30 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:34 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:34 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:35:34 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:35 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:36 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:37 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:48 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [by move=> &1 &2 [[-> _] [_ [-> _]]] | | by auto].
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:35:49 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 1s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:35:59 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [by move=> &1 &2; rewrite /inv /= | | by auto].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:36:05 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=0, idle 6s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:36:11 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; [by move=> &1 &2; rewrite /inv /StateRelation_invariant /= => /> | | by auto => &1 &2; rewrite /inv /StateRelation_invariant /= => />].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:36:20 [Tree-0.0] 💬 Splitting on the matched `pk` branch first, then I'll handle the side goals separately.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:36:20 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; [move=> &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt() | | auto => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt()].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:36:20 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 0s (63s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 63s
+17:36:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; [move=> &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt() | | auto => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt()].
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 63s
+17:36:36 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 1 errors, errs_since_accept=0, idle 2s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 63s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 78s
+17:36:40 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 2; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 78s
+17:36:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 2; first by move=> &m; auto => &hr; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+rcondt{1} 8; first by move=> &m; auto.
+rcondt{1} 11; first by move=> &m; auto => &hr; rewrite /inv /StateRelat...
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 78s
+17:36:50 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; rnd; wp; rnd; wp; skip => &1 &2; rewrite /inv /StateRelation_invariant /params_inv /=; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 78s
+17:36:52 [Orchestrator]   Tree-0.0 (d=0): 10 tactics, 1 errors, errs_since_accept=0, idle 1s (94s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:36:53 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:36:53 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:36:54 [Tree-0.0] 💬 The proof is closed and EasyCrypt accepted `qed.`; now submitting `finish`.
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:36:55 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:37:00 [Tree-0.0] 💬 I proved `Eq_H3_H4_PKENC` and the manager accepted `finish`. EasyCrypt took every tactic and the `qed.`, but the offline check runs after this node st...
+
+🌳 1 alive │ 🐝0.0[10]★ │ 0 killed │ 94s
+17:37:01 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:37:01 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:37:01 [Prover] Stopped EasyCrypt daemon after tree prover
+17:37:01 [Prover] Selected tree result: Tree-0.0
+17:37:01 [workflow.agents.prover] INFO: Subagent session_id: dcf85955-151a-4724-b71b-524f7f8c61a7
+17:37:01 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_52d467cbbab3_tree_0_0
+17:37:01 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/payload_audit.jsonl
+17:37:01 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/ec_sessions
+17:37:01 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/resume_capsules
+17:37:01 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 0 discovery item(s)
+17:37:01 [Prover] Extracted 11 tactics. Writing proof to file...
+17:37:01 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/.Eq_H3_H4_PKENC.shannon-verify-8a429e85d00c.ec with easycrypt...
+17:37:05 [workflow.agents.prover] INFO: Verification PASSED
+17:37:05 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec
+17:37:05 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 103s, Session: dcf85955-151a-4724-b71b-524f7f8c61a7
+17:37:05 ✓ PROVE → outcome=verified, time=103s
+
+17:37:05 [orchestrator] PROVE ✅ verified, 103s
+
+──────────────────────────────────────────────────
+17:37:05 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:37:05 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.8min
+17:37:05 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/summary.json
+17:37:07 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Eq_H3_H4_PKDEC
+
+17:37:08 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec:Eq_H3_H4_PKDEC
+17:37:08 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-13_1737_Eq_H3_H4_PKDEC
+
+──────────────────────────────────────────────────
+17:37:08 ▶ PROVE
+──────────────────────────────────────────────────
+17:37:08 [orchestrator] tree mode, 1 provers
+17:37:08 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec:Eq_H3_H4_PKDEC
+17:37:08 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:37:08 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_d3887bbc1be6.sock
+17:37:08 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_d3887bbc1be6.sock
+17:37:08 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_d3887bbc1be6.sock (pid=18649)
+17:37:08 [Prover] why3server ready on /tmp/why3ec_d3887bbc1be6.sock
+17:37:08 [Prover] Tree mode for Eq_H3_H4_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:37:08 [Orchestrator] Tree prover: starting 1 provers from root
+17:37:14 [Tree-0.0] 💬 Let me look at the source.
+17:37:15 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "d_PKDEC"})
+17:37:17 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 130, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:37:19 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:37:20 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:37:23 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [smt(); | | by auto].
+17:37:24 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 1s (16s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+17:37:35 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+17:37:40 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 5s (31s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:37:55 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 20s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:38:11 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 36s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+17:38:26 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 51s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+17:38:42 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 67s (93s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 93s
+17:38:57 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 82s (109s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 93s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 109s
+17:39:13 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 98s (124s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 109s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 124s
+17:39:28 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 113s (140s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 124s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 140s
+17:39:44 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 129s (155s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 140s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 155s
+17:39:59 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 144s (171s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 155s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 171s
+17:40:15 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 160s (186s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 171s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 186s
+17:40:32 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=0, idle 4s (199s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 186s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 199s
+17:40:53 [Tree-0.0] 💬 Timed out; retry with a lighter step.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 199s
+17:40:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; sp.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 199s
+17:41:07 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 199s
+17:41:19 [Tree-0.0] 💬 I couldn't prove `Eq_H3_H4_PKDEC`. Nothing was committed, and the session stopped because the proof manager timed out and marked the proof node unheal...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 199s
+🌳 0 alive │  │ 1 killed │ 211s
+17:41:33 [Orchestrator] No prover succeeded. Best: Tree-0.0 (1 tactics)
+17:41:33 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:41:33 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:41:33 [Prover] Stopped EasyCrypt daemon after tree prover
+17:41:33 [Prover] Selected tree result: Tree-0.0
+17:41:33 [workflow.agents.prover] INFO: Subagent session_id: 7b553fc6-6276-459b-9ee2-bc275dbf71e3
+17:41:33 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_4acdc5b20d69_tree_0_0
+17:41:33 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-13_1737_Eq_H3_H4_PKDEC/iteration_1/payload_audit.jsonl
+17:41:34 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-13_1737_Eq_H3_H4_PKDEC/iteration_1/ec_sessions
+17:41:37 [workflow.agents.prover] INFO: Prover report: 2 blocker(s), 2 discovery item(s)
+17:41:37 [Prover] Safe-stop checkpoint finalized via accepted_prefix_only (1 tactic(s)).
+17:41:37 [Prover] Could not extract a closed proof; wrote 1 tactic partial prefix to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-13_1737_Eq_H3_H4_PKDEC/iteration_1/partial_proof_prefix.ec.
+17:41:37 [workflow.agents.prover] INFO: Prover finished. Outcome: infrastructure_invalid, Time: 265s, Session: 7b553fc6-6276-459b-9ee2-bc275dbf71e3
+17:41:37 ✓ PROVE → outcome=infrastructure_invalid, time=265s
+
+17:41:37 [orchestrator] PROVE ⚠️ infrastructure invalid, 265s
+
+──────────────────────────────────────────────────
+17:41:37 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:41:37 [Orchestrator] Iterations: 1, Proved: NO, Time: 4.5min
+17:41:37 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/2026-11-13_1737_Eq_H3_H4_PKDEC/summary.json
+17:41:39 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H0_H1_PKGEN
+
+17:41:40 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec:Red_H0_H1_PKGEN
+17:41:40 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN
+
+──────────────────────────────────────────────────
+17:41:40 ▶ PROVE
+──────────────────────────────────────────────────
+17:41:40 [orchestrator] tree mode, 1 provers
+17:41:40 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec:Red_H0_H1_PKGEN
+17:41:40 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:41:40 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_a7b8aad1deba.sock
+17:41:40 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_a7b8aad1deba.sock
+17:41:40 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_a7b8aad1deba.sock (pid=18883)
+17:41:40 [Prover] why3server ready on /tmp/why3ec_a7b8aad1deba.sock
+17:41:40 [Prover] Tree mode for Red_H0_H1_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:41:40 [Orchestrator] Tree prover: starting 1 provers from root
+17:41:46 [Tree-0.0] 💬 Let me look at the procedures.
+17:41:47 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKGEN"})
+17:41:48 [Tree-0.0] 💬 Let me check inv_H0_H1 and the target file.
+17:41:49 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:41:50 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "max_results": 5, "query": "inv_H0_H1"})
+17:41:51 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:41:56 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:41:56 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 80, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:41:56 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:42:00 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:42:00 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:42:06 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; rewrite /inv_H0_H1.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:42:12 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 2s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:42:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if => //; sp; if; 1: smt(); last by auto => /> /#. rcondt{2} 1; 1: by auto => /> /#. wp; rnd; wp; skip => /> /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:42:24 [Tree-0.0] 💬 Still working through it: the compound tactic failed, so I'm now running the `if` steps one at a time.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:42:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if => //; [sp; if => //; [rcondt{2} 2; [by auto => /> /# | wp; rnd; wp; skip => /> /#] | by auto => /> /#] | by auto => /> /#].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:42:27 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 2 errors, errs_since_accept=2, idle 2s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:42:34 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if => //; sp; if => //; [rcondt{2} 1; [by auto => /> /# | wp; rnd; wp; skip => /> /#] | by auto => /> /#].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:42:43 [Tree-0.0] 💬 Commit the stages to see the goal.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:42:43 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if => //; sp; if => //.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:42:43 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 3 errors, errs_since_accept=3, idle 0s (63s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:46 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 2; 1: by auto => /> /#.
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:48 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; rnd; wp; skip => /> /#.
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: auto => /> /#.
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:53 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:53 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:54 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:58 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Red_H0_H1_PKGEN` and `qed.`, and the manager accepted `finish`. An offline verification still runs after this node st...
+
+🌳 1 alive │ 🐌0.0[2]★ │ 0 killed │ 63s
+17:42:59 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:42:59 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:42:59 [Prover] Stopped EasyCrypt daemon after tree prover
+17:42:59 [Prover] Selected tree result: Tree-0.0
+17:42:59 [workflow.agents.prover] INFO: Subagent session_id: f8cfd937-e0dc-4da7-b01b-8646735c1d76
+17:42:59 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_572a506a0fad_tree_0_0
+17:42:59 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/payload_audit.jsonl
+17:42:59 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/ec_sessions
+17:42:59 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/iteration_1/resume_capsules
+17:42:59 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:42:59 [Prover] Extracted 6 tactics. Writing proof to file...
+17:42:59 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Red_H0_H1_PKGEN.shannon-verify-765ae3193965.ec with easycrypt...
+17:43:01 [workflow.agents.prover] INFO: Verification PASSED
+17:43:01 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec
+17:43:01 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 79s, Session: f8cfd937-e0dc-4da7-b01b-8646735c1d76
+17:43:01 ✓ PROVE → outcome=verified, time=79s
+
+17:43:01 [orchestrator] PROVE ✅ verified, 79s
+
+──────────────────────────────────────────────────
+17:43:01 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:43:01 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.4min
+17:43:01 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/2026-11-13_1741_Red_H0_H1_PKGEN/summary.json
+17:43:04 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H0_H1_PKENC
+
+17:43:04 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec:Red_H0_H1_PKENC
+17:43:04 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC
+
+──────────────────────────────────────────────────
+17:43:04 ▶ PROVE
+──────────────────────────────────────────────────
+17:43:04 [orchestrator] tree mode, 1 provers
+17:43:04 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec:Red_H0_H1_PKENC
+17:43:05 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:43:05 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_4a40f7ca78f4.sock
+17:43:05 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_4a40f7ca78f4.sock
+17:43:05 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_4a40f7ca78f4.sock (pid=19177)
+17:43:05 [Prover] why3server ready on /tmp/why3ec_4a40f7ca78f4.sock
+17:43:05 [Prover] Tree mode for Red_H0_H1_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:43:05 [Orchestrator] Tree prover: starting 1 provers from root
+17:43:11 [Tree-0.0] 💬 I need to see the procedures.
+17:43:12 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKENC"})
+17:43:13 [Tree-0.0] 💬 Let me look at the sibling proof Red_H0_H1_PKDEC for a pattern.
+17:43:14 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:43:15 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:43:17 [Tree-0.0] 💬 Read the router for inv_H0_H1.
+17:43:17 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:43:19 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:43:21 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 2s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:43:24 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:43:35 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 1 : (#pre /\ ={ec_result}); 1: by auto. if; 1: by move=> &1 &2; rewrite /inv_H0_H1 /=; smt(). 2: by auto. seq 4 4 : (#pre /\ ={m00,m10,ec_result0,ec_done} /\ !Red_H0_H1.abort_flag{2}); 1: by auto. if; 1: by move...
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:43:37 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 0s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:43:39 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; first by move=> &1 &2; rewrite /inv_H0_H1 /=; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:43:52 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:43:52 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 2 errors, errs_since_accept=0, idle 0s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:44:07 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 4 4; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; sp 1 1; rcondt{2} 1; [by mo...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:44:08 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 2 errors, errs_since_accept=0, idle 1s (63s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:16 [Tree-0.0] 💬 All goals are closed; I'm committing `qed.` now.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:16 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:17 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:25 [Tree-0.0] 💬 EasyCrypt accepted the full proof of `Red_H0_H1_PKENC` and `qed.`, and the manager accepted `finish`. Offline verification runs after this node stops,...
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 63s
+17:44:26 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:44:26 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:44:26 [Prover] Stopped EasyCrypt daemon after tree prover
+17:44:26 [Prover] Selected tree result: Tree-0.0
+17:44:26 [workflow.agents.prover] INFO: Subagent session_id: a8a59c14-405a-4bb3-b9e6-13199e421386
+17:44:26 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_e6178accfd2e_tree_0_0
+17:44:26 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/payload_audit.jsonl
+17:44:26 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/ec_sessions
+17:44:26 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/resume_capsules
+17:44:26 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 3 discovery item(s)
+17:44:26 [Prover] Extracted 4 tactics. Writing proof to file...
+17:44:26 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/.Red_H0_H1_PKENC.shannon-verify-b8ac3bcc94ea.ec with easycrypt...
+17:44:34 [workflow.agents.prover] INFO: Verification PASSED
+17:44:34 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec
+17:44:34 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 81s, Session: a8a59c14-405a-4bb3-b9e6-13199e421386
+17:44:34 ✓ PROVE → outcome=verified, time=81s
+
+17:44:34 [orchestrator] PROVE ✅ verified, 81s
+
+──────────────────────────────────────────────────
+17:44:34 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:44:34 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.5min
+17:44:34 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/summary.json
+17:44:36 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H0_H1_PKDEC
+
+17:44:37 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec:Red_H0_H1_PKDEC
+17:44:37 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC
+
+──────────────────────────────────────────────────
+17:44:37 ▶ PROVE
+──────────────────────────────────────────────────
+17:44:37 [orchestrator] tree mode, 1 provers
+17:44:37 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec:Red_H0_H1_PKDEC
+17:44:37 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:44:37 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_d9a1d3ca3fe9.sock
+17:44:37 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_d9a1d3ca3fe9.sock
+17:44:37 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_d9a1d3ca3fe9.sock (pid=19427)
+17:44:37 [Prover] why3server ready on /tmp/why3ec_d9a1d3ca3fe9.sock
+17:44:37 [Prover] Tree mode for Red_H0_H1_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:44:37 [Orchestrator] Tree prover: starting 1 provers from root
+17:44:43 [Tree-0.0] 💬 Let me look at the source definitions.
+17:44:44 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKDEC"})
+17:44:45 [Tree-0.0] 💬 Let me read the target file and sibling PKENC proof.
+17:44:46 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:44:47 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:44:51 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_c)
+17:44:53 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:44:53 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:44:57 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; rewrite /inv_H0_H1; inline *; sp; if; 1: by move=> /> /#.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:45:09 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 1 errors, errs_since_accept=1, idle 4s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:45:15 [Tree-0.0] 💬 Commit the prefix to see the goal.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:45:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; rewrite /inv_H0_H1; inline *; sp.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:45:24 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 9s (47s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:45:40 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 24s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+17:45:55 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 40s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+17:46:11 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 56s (93s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 93s
+17:46:26 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 71s (109s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 93s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 109s
+17:46:42 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 87s (124s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 109s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 124s
+17:46:57 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 102s (140s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 124s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 140s
+17:47:13 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 118s (155s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 140s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 155s
+17:47:28 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 133s (171s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 155s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 171s
+17:47:44 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 149s (186s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 171s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 186s
+17:47:59 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 164s (202s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 186s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 202s
+17:48:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 202s
+17:48:15 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 2 errors, errs_since_accept=2, idle 0s (217s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 202s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 217s
+17:48:20 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; [by move=> &1 &2 [-> [-> _]] | | by auto].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 217s
+17:48:28 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; [by rewrite /inv_H0_H1; smt() | | by auto].
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 217s
+17:48:30 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 2 errors, errs_since_accept=0, idle 1s (233s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 217s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:32 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 60, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:34 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:38 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: inline *.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:43 [Tree-0.0] 💬 The goal is fully deterministic after inlining, so I'm closing it with `auto` plus SMT.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:43 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rewrite /inv_H0_H1; auto => />; smt().
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:46 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:46 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:48 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:52 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Red_H0_H1_PKDEC` and `qed.`, and the manager accepted `finish`. Offline verification runs after this node stops, so i...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 233s
+17:48:52 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:48:52 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:48:52 [Prover] Stopped EasyCrypt daemon after tree prover
+17:48:52 [Prover] Selected tree result: Tree-0.0
+17:48:52 [workflow.agents.prover] INFO: Subagent session_id: cbca8a48-6c84-42c4-930b-243fbd4ffaed
+17:48:52 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_02a2e618d860_tree_0_0
+17:48:52 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/payload_audit.jsonl
+17:48:52 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/ec_sessions
+17:48:52 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/iteration_1/resume_capsules
+17:48:52 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 3 discovery item(s)
+17:48:52 [Prover] Extracted 5 tactics. Writing proof to file...
+17:48:52 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/.Red_H0_H1_PKDEC.shannon-verify-f206e2c1fb78.ec with easycrypt...
+17:48:55 [workflow.agents.prover] INFO: Verification PASSED
+17:48:55 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec
+17:48:55 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 255s, Session: cbca8a48-6c84-42c4-930b-243fbd4ffaed
+17:48:55 ✓ PROVE → outcome=verified, time=255s
+
+17:48:55 [orchestrator] PROVE ✅ verified, 255s
+
+──────────────────────────────────────────────────
+17:48:55 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:48:55 [Orchestrator] Iterations: 1, Proved: YES, Time: 4.3min
+17:48:55 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/2026-11-13_1744_Red_H0_H1_PKDEC/summary.json
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec --lemma Eq_CCA_PKE_H0_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKGEN/r01
+PREFLIGHT OK — target 'Eq_CCA_PKE_H0_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec --lemma Eq_CCA_PKE_H0_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKENC/r01
+PREFLIGHT OK — target 'Eq_CCA_PKE_H0_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec --lemma Eq_CCA_PKE_H0_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01
+PREFLIGHT OK — target 'Eq_CCA_PKE_H0_PKDEC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec --lemma Eq_H1_H2_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01
+PREFLIGHT OK — target 'Eq_H1_H2_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec --lemma Eq_H1_H2_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01
+PREFLIGHT OK — target 'Eq_H1_H2_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec --lemma Eq_H1_H2_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKDEC/r01
+PREFLIGHT OK — target 'Eq_H1_H2_PKDEC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKGEN.ec --lemma Eq_H3_H4_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKGEN/r01
+PREFLIGHT OK — target 'Eq_H3_H4_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec --lemma Eq_H3_H4_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01
+PREFLIGHT OK — target 'Eq_H3_H4_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec --lemma Eq_H3_H4_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKDEC/r01
+PREFLIGHT OK — target 'Eq_H3_H4_PKDEC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec --lemma Red_H0_H1_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKGEN/r01
+PREFLIGHT OK — target 'Red_H0_H1_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec --lemma Red_H0_H1_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01
+PREFLIGHT OK — target 'Red_H0_H1_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec --lemma Red_H0_H1_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKDEC/r01
+PREFLIGHT OK — target 'Red_H0_H1_PKDEC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec --lemma Red_H2_H3_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r0117:48:57 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H2_H3_PKGEN
+
+17:48:58 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec:Red_H2_H3_PKGEN
+17:48:58 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN
+
+──────────────────────────────────────────────────
+17:48:58 ▶ PROVE
+──────────────────────────────────────────────────
+17:48:58 [orchestrator] tree mode, 1 provers
+17:48:58 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec:Red_H2_H3_PKGEN
+17:48:58 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:48:58 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_dc68012067f7.sock
+17:48:58 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_dc68012067f7.sock
+17:48:58 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_dc68012067f7.sock (pid=19784)
+17:48:58 [Prover] why3server ready on /tmp/why3ec_dc68012067f7.sock
+17:48:58 [Prover] Tree mode for Red_H2_H3_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:48:58 [Orchestrator] Tree prover: starting 1 provers from root
+17:49:04 [Tree-0.0] 💬 Let me look at the procedures.
+17:49:05 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKGEN"})
+17:49:06 [Tree-0.0] 💬 Let me read the target file to see inv_H2_H3.
+17:49:07 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:49:08 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 50, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+17:49:10 [Tree-0.0] 💬 Need inv_H2_H3 definition.
+17:49:11 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:49:14 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:49:14 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:49:17 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 80, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/p)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:49:22 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: by rewrite /inv_H2_H3; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:49:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 1 1; if; 1: (rewrite /inv_H2_H3; smt()); last first. + wp; skip; rewrite /inv_H2_H3; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:49:30 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 0 errors, errs_since_accept=0, idle 0s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{2} 2; 1: (auto; rewrite /inv_H2_H3; smt()). sp 1 2; if; 1: (rewrite /inv_H2_H3; smt()); last first. + wp; skip; rewrite /inv_H2_H3; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:35 [Tree-0.0] 💬 Closing the matched random-sampling branch now.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; rnd; wp; skip; rewrite /inv_H2_H3 /=; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:39 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: skip; rewrite /inv_H2_H3 /=; smt().
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:41 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:41 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:43 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:47 [Tree-0.0] 💬 PROVER REPORT: {"blockers": [], "discoveries": ["EasyCrypt accepted every tactic and `qed.` for Red_H2_H3_PKGEN; the session is closed but offline ver...
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 31s
+17:49:48 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:49:48 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:49:48 [Prover] Stopped EasyCrypt daemon after tree prover
+17:49:48 [Prover] Selected tree result: Tree-0.0
+17:49:48 [workflow.agents.prover] INFO: Subagent session_id: 926cd994-fb24-4f66-9494-408bf1bfdcd7
+17:49:48 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_db342ef14df3_tree_0_0
+17:49:48 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/payload_audit.jsonl
+17:49:48 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/ec_sessions
+17:49:48 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/iteration_1/resume_capsules
+17:49:48 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 3 discovery item(s)
+17:49:48 [Prover] Extracted 9 tactics. Writing proof to file...
+17:49:48 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Red_H2_H3_PKGEN.shannon-verify-a3d891a188cf.ec with easycrypt...
+17:49:51 [workflow.agents.prover] INFO: Verification PASSED
+17:49:51 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec
+17:49:51 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 49s, Session: 926cd994-fb24-4f66-9494-408bf1bfdcd7
+17:49:51 ✓ PROVE → outcome=verified, time=49s
+
+17:49:51 [orchestrator] PROVE ✅ verified, 49s
+
+──────────────────────────────────────────────────
+17:49:51 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:49:51 [Orchestrator] Iterations: 1, Proved: YES, Time: 0.9min
+17:49:51 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKGEN/r01/2026-11-13_1748_Red_H2_H3_PKGEN/summary.json
+17:49:54 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H2_H3_PKENC
+
+17:49:54 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec:Red_H2_H3_PKENC
+17:49:54 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC
+
+──────────────────────────────────────────────────
+17:49:54 ▶ PROVE
+──────────────────────────────────────────────────
+17:49:54 [orchestrator] tree mode, 1 provers
+17:49:54 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec:Red_H2_H3_PKENC
+17:49:54 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:49:54 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_f93b9cb7aa25.sock
+17:49:54 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_f93b9cb7aa25.sock
+17:49:55 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_f93b9cb7aa25.sock (pid=19977)
+17:49:55 [Prover] why3server ready on /tmp/why3ec_f93b9cb7aa25.sock
+17:49:55 [Prover] Tree mode for Red_H2_H3_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:49:55 [Orchestrator] Tree prover: starting 1 provers from root
+17:50:02 [Tree-0.0] 💬 Let me look at the source for both procedures.
+17:50:02 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "d_PKENC"})
+17:50:04 [Tree-0.0] 💬 Let me read the router file for inv_H2_H3.
+17:50:04 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:50:07 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; rewrite /inv_H2_H3 /=.
+17:50:11 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 1s (16s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+17:50:17 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //; last by auto. sp; if => //; last by auto => /#. if => //; last by auto => /#. sp; rcondt{2} 1; first by auto => /#. sp; if => //; last by auto => /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+17:50:21 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //; last by auto => /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+17:50:26 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 2 errors, errs_since_accept=2, idle 2s (32s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+17:50:31 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+17:50:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if => //; last by auto; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+17:50:40 [Tree-0.0] 💬 Working through the if-branches one at a time. Next I'll split on `c = None` and remove the KEM abort check on the right side.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+17:50:40 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if => //; last by auto; smt(). sp; rcondt{2} 1; first by auto; smt().
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+17:50:42 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 2 errors, errs_since_accept=0, idle 1s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 32s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:50:58 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 2 errors, errs_since_accept=0, idle 8s (63s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+17:50:59 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 2 : (ec_result1{1} = ec_result4{2} /\ m00{1} = m00{2} /\ m10{1} = m10{2} /\ ec_done{1} = false /\ ec_done{2} = false /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Red_H2_H3.abort_flag{2} /\ !Comp_Compositi...
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+17:51:10 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 2 : (ec_result1{1} = ec_result4{2} /\ m00{1} = m00{2} /\ m10{1} = m10{2} /\ ec_done{1} = false /\ ec_done{2} = false /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Red_H2_H3.abort_flag{2} /\ !Comp_Compositi...
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+17:51:13 [Orchestrator]   Tree-0.0 (d=0): 6 tactics, 2 errors, errs_since_accept=0, idle 3s (79s elapsed)
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 63s
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp 0 1; if => //; last by auto; smt(). if => //; last by auto; smt(). sp; seq 1 1 : (#pre /\ ={r2}); first by auto. sp; rcondt{1} 1; first by auto. rcondt{2} 1; first by auto. sp; if => //; auto; smt().
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:20 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: wp; skip; smt().
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:23 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:24 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:25 [Tree-0.0] 💬 EasyCrypt accepted `qed.`; I'm submitting `finish` now.
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:25 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:29 [Tree-0.0] 💬 EasyCrypt accepted every step of the `Red_H2_H3_PKENC` proof, including `qed.`, and the manager accepted `finish`. Offline verification hasn't run yet...
+
+🌳 1 alive │ 🐝0.0[6]★ │ 0 killed │ 79s
+17:51:30 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:51:30 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:51:30 [Prover] Stopped EasyCrypt daemon after tree prover
+17:51:30 [Prover] Selected tree result: Tree-0.0
+17:51:30 [workflow.agents.prover] INFO: Subagent session_id: cc26c79d-a5cb-4960-8379-da04485258d2
+17:51:30 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_19b9f983e701_tree_0_0
+17:51:30 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/payload_audit.jsonl
+17:51:30 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/ec_sessions
+17:51:30 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/resume_capsules
+17:51:30 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 3 discovery item(s)
+17:51:30 [Prover] Extracted 14 tactics. Writing proof to file...
+17:51:30 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/.Red_H2_H3_PKENC.shannon-verify-fd577cbf80de.ec with easycrypt...
+17:51:35 [workflow.agents.prover] INFO: Verification PASSED
+17:51:35 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec
+17:51:35 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 95s, Session: cc26c79d-a5cb-4960-8379-da04485258d2
+17:51:35 ✓ PROVE → outcome=verified, time=95s
+
+17:51:35 [orchestrator] PROVE ✅ verified, 95s
+
+──────────────────────────────────────────────────
+17:51:35 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:51:35 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.7min
+17:51:35 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/summary.json
+17:51:37 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H2_H3_PKDEC
+
+17:51:38 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec:Red_H2_H3_PKDEC
+17:51:38 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC
+
+──────────────────────────────────────────────────
+17:51:38 ▶ PROVE
+──────────────────────────────────────────────────
+17:51:38 [orchestrator] tree mode, 1 provers
+17:51:38 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec:Red_H2_H3_PKDEC
+17:51:38 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:51:38 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_7264a7018d5b.sock
+17:51:38 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_7264a7018d5b.sock
+17:51:39 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_7264a7018d5b.sock (pid=20271)
+17:51:39 [Prover] why3server ready on /tmp/why3ec_7264a7018d5b.sock
+17:51:39 [Prover] Tree mode for Red_H2_H3_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:51:39 [Orchestrator] Tree prover: starting 1 provers from root
+17:51:44 [Tree-0.0] 💬 Let me look at the source procedures.
+17:51:45 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKDEC"})
+17:51:46 [Tree-0.0] 💬 Let me read the target file and inv definition.
+17:51:48 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:51:49 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:51:50 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 130, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:51:53 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:51:53 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:51:54 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 1s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:51:56 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:02 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:03 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; auto => />; rewrite /inv_H2_H3 /=; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:10 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 5s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:12 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:12 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:14 [Tree-0.0] 💬 Proof closed and `qed.` accepted; submitting `finish`.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:14 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:18 [Tree-0.0] 💬 The `Red_H2_H3_PKDEC` proof is closed. EasyCrypt accepted one tactic, `proc; inline *; auto => />; rewrite /inv_H2_H3 /=; smt().`, and then `qed.`. Th...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:52:18 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:52:18 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:52:18 [Prover] Stopped EasyCrypt daemon after tree prover
+17:52:18 [Prover] Selected tree result: Tree-0.0
+17:52:18 [workflow.agents.prover] INFO: Subagent session_id: f371ffc2-b5db-4903-a948-a9ecd0e488e7
+17:52:18 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_26becfd91752_tree_0_0
+17:52:18 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/payload_audit.jsonl
+17:52:18 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/ec_sessions
+17:52:18 [Prover] Wrote 1 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/iteration_1/resume_capsules
+17:52:18 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 1 discovery item(s)
+17:52:18 [Prover] Extracted 2 tactics. Writing proof to file...
+17:52:18 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/.Red_H2_H3_PKDEC.shannon-verify-d36bbd10de3b.ec with easycrypt...
+17:52:23 [workflow.agents.prover] INFO: Verification PASSED
+17:52:23 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec
+17:52:23 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 40s, Session: f371ffc2-b5db-4903-a948-a9ecd0e488e7
+17:52:23 ✓ PROVE → outcome=verified, time=40s
+
+17:52:23 [orchestrator] PROVE ✅ verified, 40s
+
+──────────────────────────────────────────────────
+17:52:23 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:52:23 [Orchestrator] Iterations: 1, Proved: YES, Time: 0.8min
+17:52:23 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/2026-11-13_1751_Red_H2_H3_PKDEC/summary.json
+17:52:26 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H4_0_H4_1_PKGEN
+
+17:52:26 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec:Red_H4_0_H4_1_PKGEN
+17:52:26 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN
+
+──────────────────────────────────────────────────
+17:52:26 ▶ PROVE
+──────────────────────────────────────────────────
+17:52:26 [orchestrator] tree mode, 1 provers
+17:52:26 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec:Red_H4_0_H4_1_PKGEN
+17:52:26 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:52:26 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_b7ed4af44a86.sock
+17:52:26 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_b7ed4af44a86.sock
+17:52:27 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_b7ed4af44a86.sock (pid=20406)
+17:52:27 [Prover] why3server ready on /tmp/why3ec_b7ed4af44a86.sock
+17:52:27 [Prover] Tree mode for Red_H4_0_H4_1_PKGEN (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:52:27 [Orchestrator] Tree prover: starting 1 provers from root
+17:52:32 [Tree-0.0] 💬 Let me look at the procedures.
+17:52:33 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "d_PKGEN"})
+17:52:35 [Tree-0.0] 💬 Try a standard approach.
+17:52:36 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; [smt(); | | done]; wp; auto => /> /#.
+17:52:42 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 1 errors, errs_since_accept=1, idle 2s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:46 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; sp; if; 1: smt(); auto => />; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:53 [Tree-0.0] 💬 Need the invariant definition.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:54 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:57 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:52:58 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 2 errors, errs_since_accept=2, idle 1s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:52:59 [Tree-0.0] 💬 Unfold invariant first.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:52:59 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; rewrite /inv_H4_0_H4_1; sp; if; 1: smt(); auto => />; smt().
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:53:07 [Tree-0.0] 💬 Let me commit the prefix and look.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:53:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; rewrite /inv_H4_0_H4_1; sp; if.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:53:10 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: by move=> &1 &2 /> ->.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:53:12 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: sp; if; 1: by move=> &1 &2 />. wp; rnd; auto => />. auto => />.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+17:53:14 [Orchestrator]   Tree-0.0 (d=0): 5 tactics, 3 errors, errs_since_accept=0, idle 0s (47s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:15 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: auto => />.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:17 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:17 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:18 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:24 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Red_H4_0_H4_1_PKGEN`, `qed.` went through, and the manager accepted `finish`. Offline verification runs after this no...
+
+🌳 1 alive │ 🐝0.0[5]★ │ 0 killed │ 47s
+17:53:24 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:53:25 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:53:25 [Prover] Stopped EasyCrypt daemon after tree prover
+17:53:25 [Prover] Selected tree result: Tree-0.0
+17:53:25 [workflow.agents.prover] INFO: Subagent session_id: 4b75f379-8319-4513-850d-8c9553ce64ec
+17:53:25 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_927c767c57fa_tree_0_0
+17:53:25 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/payload_audit.jsonl
+17:53:25 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/ec_sessions
+17:53:25 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules
+17:53:25 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 3 discovery item(s)
+17:53:25 [Prover] Extracted 7 tactics. Writing proof to file...
+17:53:25 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/.Red_H4_0_H4_1_PKGEN.shannon-verify-93f662a8dc5c.ec with easycrypt...
+17:53:27 [workflow.agents.prover] INFO: Verification PASSED
+17:53:27 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec
+17:53:27 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 58s, Session: 4b75f379-8319-4513-850d-8c9553ce64ec
+17:53:27 ✓ PROVE → outcome=verified, time=58s
+
+17:53:27 [orchestrator] PROVE ✅ verified, 58s
+
+──────────────────────────────────────────────────
+17:53:27 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:53:27 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.0min
+17:53:27 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/summary.json
+17:53:29 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H4_0_H4_1_PKENC
+
+17:53:29 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec:Red_H4_0_H4_1_PKENC
+17:53:29 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC
+
+──────────────────────────────────────────────────
+17:53:29 ▶ PROVE
+──────────────────────────────────────────────────
+17:53:29 [orchestrator] tree mode, 1 provers
+17:53:29 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec:Red_H4_0_H4_1_PKENC
+17:53:30 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:53:30 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_bb8ca240faab.sock
+17:53:30 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_bb8ca240faab.sock
+17:53:30 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_bb8ca240faab.sock (pid=20682)
+17:53:30 [Prover] why3server ready on /tmp/why3ec_bb8ca240faab.sock
+17:53:30 [Prover] Tree mode for Red_H4_0_H4_1_PKENC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:53:30 [Orchestrator] Tree prover: starting 1 provers from root
+17:53:36 [Tree-0.0] 💬 Let me look at the procedures.
+17:53:37 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "d_PKENC"})
+17:53:39 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:40 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:41 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:41 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:43 [Tree-0.0] 💬 Now Hybrid2 and CCA_DEM, Scheme_KEM.
+17:53:45 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:46 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:46 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:53:46 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:53:51 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; rewrite /inv_H4_0_H4_1; inline *; sp; if; 1: by move=> /> /#.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:54:00 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> /> /#.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:54:01 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 1 errors, errs_since_accept=1, idle 1s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:54:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 3 3 : (#pre /\ ={m00, m10, ec_result0} /\ ec_result0{1} = None); 1: by auto => /> /#.
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:54:16 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> /> /#; last by auto => /> /#. if; 1: by move=> /> /#; last by auto => /> /#. seq 8 8 : (#pre /\ ={ec_r1}); 1: by auto => /> /#. if; 1: by move=> /> /#; last by auto => /> /#. rcondt{2} 8; 1: by move=>...
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:54:17 [Orchestrator]   Tree-0.0 (d=0): 2 tactics, 1 errors, errs_since_accept=1, idle 1s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:54:25 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 1 1 : (={ec_result0} /\ Comp_Hybrid2.Game_Hybrid2.abort_flag{1} = Red_H4_0_H4_1.abort_flag{2} /\ !Red_H4_0_H4_1.abort_flag{2} /\ (Comp_Composition_CCA_DEM.Game_Composition_CCA_DEM.abort_flag{2} => ec_result0{2} =...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:54:31 [Tree-0.0] 💬 Proof in progress: syncing the nested branches of both sides, then closing with wp/rnd.
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:54:33 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; 1: by move=> /> /#; last by auto => /> /#. if; 1: by move=> /> /#; last by auto => /> /#. seq 8 8 : (#pre /\ ={ec_r1}); 1: by auto => /> /#. if; 1: by move=> /> /#; last by auto => /> /#. seq 7 7 : (#pre /\ ={c_ke...
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+17:54:33 [Orchestrator]   Tree-0.0 (d=0): 3 tactics, 1 errors, errs_since_accept=0, idle 0s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[2]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:54:37 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; [smt() | | auto => /> /#].
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:54:41 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; [smt() | | auto => /> /#]; seq 8 8 : (#pre /\ ={ec_r1}); 1: by auto => /> /#. if; [smt() | | auto => /> /#]. seq 7 7 : (#pre /\ ={c_kem, m12, m02, ec_result2}); 1: by auto => /> /#. rcondt{2} 1; 1: by move=> &m; a...
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+17:54:49 [Orchestrator]   Tree-0.0 (d=0): 4 tactics, 1 errors, errs_since_accept=1, idle 3s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[3]★ │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:54:50 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: if; [smt() | | auto => /> /#].
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:54:54 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 8 8 : (#pre /\ ={ec_r1} /\ ec_r1{1} <> None); 1: by auto => /> /#.
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:54:58 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: rcondt{1} 1; 1: by auto. rcondt{2} 1; 1: by auto. rcondt{2} 8; 1: by move=> &m; auto => /> /#.
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:55:00 [Tree-0.0] 💬 Aligning the DEM-key branches on both sides now.
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:55:02 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: seq 8 11 : (#pre /\ ={c_kem, ec_done} /\ m12{1} = m13{2} /\ m02{1} = m03{2} /\ ec_result2{1} = ec_result3{2} /\ ec_result2{1} = None /\ !ec_done{1}); 1: by auto => /> /#. if; [smt() | | auto => /> /#]. wp; rnd; auto =...
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+17:55:04 [Orchestrator]   Tree-0.0 (d=0): 12 tactics, 1 errors, errs_since_accept=0, idle 1s (94s elapsed)
+
+🌳 1 alive │ 🐝0.0[4]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:05 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: auto => /> /#.
+
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:08 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:08 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:09 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:14 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Red_H4_0_H4_1_PKENC` and `qed.` was committed. The manager accepted `finish`, but offline verification only runs afte...
+
+🌳 1 alive │ 🐝0.0[12]★ │ 0 killed │ 94s
+17:55:15 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:55:15 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:55:15 [Prover] Stopped EasyCrypt daemon after tree prover
+17:55:15 [Prover] Selected tree result: Tree-0.0
+17:55:15 [workflow.agents.prover] INFO: Subagent session_id: a55a1d55-28dd-415d-905b-a79c57f4cdbc
+17:55:15 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_553374b4e15e_tree_0_0
+17:55:15 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/payload_audit.jsonl
+17:55:15 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/ec_sessions
+17:55:15 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/iteration_1/resume_capsules
+17:55:15 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 4 discovery item(s)
+17:55:15 [Prover] Extracted 14 tactics. Writing proof to file...
+17:55:15 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/.Red_H4_0_H4_1_PKENC.shannon-verify-649565754498.ec with easycrypt...
+17:55:19 [workflow.agents.prover] INFO: Verification PASSED
+17:55:19 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec
+17:55:19 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 105s, Session: a55a1d55-28dd-415d-905b-a79c57f4cdbc
+17:55:19 ✓ PROVE → outcome=verified, time=105s
+
+17:55:19 [orchestrator] PROVE ✅ verified, 105s
+
+──────────────────────────────────────────────────
+17:55:19 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:55:19 [Orchestrator] Iterations: 1, Proved: YES, Time: 1.8min
+17:55:19 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/2026-11-13_1753_Red_H4_0_H4_1_PKENC/summary.json
+17:55:21 [Orchestrator] EVAL MODE: blinding prover to concrete proofs of Red_H4_0_H4_1_PKDEC
+
+17:55:21 [Orchestrator] Starting run for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec:Red_H4_0_H4_1_PKDEC
+17:55:21 [Orchestrator] Run directory: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC
+
+──────────────────────────────────────────────────
+17:55:21 ▶ PROVE
+──────────────────────────────────────────────────
+17:55:21 [orchestrator] tree mode, 1 provers
+17:55:21 [workflow.orchestrator] INFO: PROVER: starting proof attempt for artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec:Red_H4_0_H4_1_PKDEC
+17:55:22 [workflow.agents.prover] INFO: Agent CLI: 2.1.323 (Claude Code) (/home/amir/.local/share/claude/versions/2.1.323)
+17:55:22 [workflow.agents.prover] INFO: Using per-run EasyCrypt daemon socket: /home/amir/shannon-prover/tmp/ec_daemons/ec_83abb68cd77a.sock
+17:55:22 [workflow.agents.prover] INFO: Using per-run why3server socket: /tmp/why3ec_83abb68cd77a.sock
+17:55:22 [workflow.agents.prover] INFO: Started why3server on /tmp/why3ec_83abb68cd77a.sock (pid=21002)
+17:55:22 [Prover] why3server ready on /tmp/why3ec_83abb68cd77a.sock
+17:55:22 [Prover] Tree mode for Red_H4_0_H4_1_PKDEC (agent=claude, model=claude-opus-5-5, timeout=30min, initial_roots=1, max_concurrent=1)
+17:55:22 [Orchestrator] Tree prover: starting 1 provers from root
+17:55:28 [Tree-0.0] 💬 Let me look at the source procedures.
+17:55:29 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"context_lines": 3, "query": "proc d_PKDEC"})
+17:55:30 [Tree-0.0] 💬 Look at target file for invariant definition and sibling proofs.
+17:55:31 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:55:32 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:55:36 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"end_line": 110, "path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/)
+17:55:37 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:55:38 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+17:55:38 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 0 errors, errs_since_accept=0, idle 0s (16s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:55:44 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; rewrite /inv_H4_0_H4_1; inline *; sp.
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+17:55:53 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 9s (31s elapsed)
+
+🌳 1 alive │ 🐣0.0[0] │ 0 killed │ 16s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+17:56:09 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 24s (47s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 31s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+17:56:24 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 40s (62s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 47s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+17:56:40 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 55s (78s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 62s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+17:56:55 [Orchestrator]   Tree-0.0 (d=0): 1 tactics, 0 errors, errs_since_accept=0, idle 70s (91s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 78s
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 91s
+17:57:16 [Tree-0.0] 🔧 mcp__proof_node_manager__read_easycrypt_source({"path": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compi)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 91s
+17:57:16 [Tree-0.0] 🔧 submit_proof_intent undo_last_step
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 91s
+17:57:16 [Orchestrator]   Tree-0.0 (d=0): 0 tactics, 1 errors, errs_since_accept=1, idle 0s, undo_repair (109s elapsed)
+
+🌳 1 alive │ 🐝0.0[1]★ │ 0 killed │ 91s
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s17:57:16 [workflow.tree.supervisor.tree_prover] INFO: Deferring structural-undo spawn from Tree-0.0 for 300s: waiting for the same agent to repair its route after undo.
+
+17:57:22 [Tree-0.0] 🔧 mcp__proof_node_manager__search_easycrypt_source({"max_results": 30, "query": "<$", "scope": "task"})
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:27 [Tree-0.0] 🧠 I'm trying to close `Red_H4_0_H4_1_PKDEC` in one step by inlining the deterministic procedures, computing the weakest pr...
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:27 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: proc; inline *; wp; skip; rewrite /inv_H4_0_H4_1; smt().
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:30 [Tree-0.0] 🔧 submit_proof_intent commit_tactic: qed.
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:31 [Orchestrator] Tree-0.0 produced a session-closed completion candidate. Killing 0 other provers.
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:32 [Tree-0.0] 🔧 submit_proof_intent finish
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:37 [Tree-0.0] 💬 EasyCrypt accepted the proof of `Red_H4_0_H4_1_PKDEC`, including `qed.`, and the manager accepted `finish`. Offline verification runs after this node ...
+
+🌳 1 alive │ 🔧0.0[0] │ 0 killed │ 109s
+17:57:38 [Orchestrator] Tree prover done: 1 node(s) spawned, max depth 0, winner: Tree-0.0
+17:57:38 [workflow.agents.prover] INFO: EasyCrypt daemon stopped during shutdown handshake (tree prover finished)
+17:57:38 [Prover] Stopped EasyCrypt daemon after tree prover
+17:57:38 [Prover] Selected tree result: Tree-0.0
+17:57:38 [workflow.agents.prover] INFO: Subagent session_id: eebf3cb7-f1a2-4e03-af33-9e5ed9f307cf
+17:57:38 [workflow.agents.prover] INFO: EasyCrypt session dir: /home/amir/shannon-prover/.ec_session_prover_58390a18eee9_tree_0_0
+17:57:38 [workflow.agents.prover] INFO: Payload audit: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/payload_audit.jsonl
+17:57:38 [Prover] Archived 1 EC session dir(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/ec_sessions
+17:57:38 [Prover] Wrote 2 proof-node resume capsule(s) to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/resume_capsules
+17:57:38 [workflow.agents.prover] INFO: Prover report: 0 blocker(s), 2 discovery item(s)
+17:57:38 [Prover] Extracted 2 tactics. Writing proof to file...
+17:57:38 [workflow.agents.prover] INFO: Verifying /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/.Red_H4_0_H4_1_PKDEC.shannon-verify-49a467bd4031.ec with easycrypt...
+17:57:41 [workflow.agents.prover] INFO: Verification PASSED
+17:57:41 [workflow.agents.prover] INFO: Wrote verified proof to /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec
+17:57:41 [workflow.agents.prover] INFO: Prover finished. Outcome: verified, Time: 136s, Session: eebf3cb7-f1a2-4e03-af33-9e5ed9f307cf
+17:57:41 ✓ PROVE → outcome=verified, time=136s
+
+17:57:41 [orchestrator] PROVE ✅ verified, 136s
+
+──────────────────────────────────────────────────
+17:57:41 ▶ RUN COMPLETE
+──────────────────────────────────────────────────
+17:57:41 [Orchestrator] Iterations: 1, Proved: YES, Time: 2.3min
+17:57:41 [Orchestrator] Summary: /home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/summary.json
+
+PREFLIGHT OK — target 'Red_H2_H3_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec --lemma Red_H2_H3_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01
+PREFLIGHT OK — target 'Red_H2_H3_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec --lemma Red_H2_H3_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKDEC/r01
+PREFLIGHT OK — target 'Red_H2_H3_PKDEC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec --lemma Red_H4_0_H4_1_PKGEN --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01
+PREFLIGHT OK — target 'Red_H4_0_H4_1_PKGEN': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec --lemma Red_H4_0_H4_1_PKENC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKENC/r01
+PREFLIGHT OK — target 'Red_H4_0_H4_1_PKENC': loads OK
+/home/amir/shannon-prover/.venv/bin/python -m workflow.orchestrator --file artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec --lemma Red_H4_0_H4_1_PKDEC --include-dir easycrypt-src/theories --max-iterations 1 --prover-timeout-minutes 30 --surface-profile proof_state_compiler --eval-mode --agent-backend claude --prover-model claude-opus-5-5 --prover-effort low --tree-initial-provers 1 --tree-max-concurrent 1 --output-dir artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01
+PREFLIGHT OK — target 'Red_H4_0_H4_1_PKDEC': loads OK
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_CCA_PKE_H0_PKGEN/2026-11-13_1727_Eq_CCA_PKE_H0_PKGEN--Eq_CCA_PKE_H0_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_CCA_PKE_H0_PKENC/2026-11-13_1728_Eq_CCA_PKE_H0_PKENC--Eq_CCA_PKE_H0_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_CCA_PKE_H0_PKDEC/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC--Eq_CCA_PKE_H0_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H1_H2_PKGEN/2026-11-13_1731_Eq_H1_H2_PKGEN--Eq_H1_H2_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H1_H2_PKENC/2026-11-13_1731_Eq_H1_H2_PKENC--Eq_H1_H2_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H1_H2_PKDEC/2026-11-13_1733_Eq_H1_H2_PKDEC--Eq_H1_H2_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H3_H4_PKGEN/2026-11-13_1734_Eq_H3_H4_PKGEN--Eq_H3_H4_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H3_H4_PKENC/2026-11-13_1735_Eq_H3_H4_PKENC--Eq_H3_H4_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Eq_H3_H4_PKDEC/2026-11-13_1737_Eq_H3_H4_PKDEC--Eq_H3_H4_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H0_H1_PKGEN/2026-11-13_1741_Red_H0_H1_PKGEN--Red_H0_H1_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H0_H1_PKENC/2026-11-13_1743_Red_H0_H1_PKENC--Red_H0_H1_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H0_H1_PKDEC/2026-11-13_1744_Red_H0_H1_PKDEC--Red_H0_H1_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H2_H3_PKGEN/2026-11-13_1748_Red_H2_H3_PKGEN--Red_H2_H3_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H2_H3_PKENC/2026-11-13_1749_Red_H2_H3_PKENC--Red_H2_H3_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H2_H3_PKDEC/2026-11-13_1751_Red_H2_H3_PKDEC--Red_H2_H3_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H4_0_H4_1_PKGEN/2026-11-13_1752_Red_H4_0_H4_1_PKGEN--Red_H4_0_H4_1_PKGEN__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H4_0_H4_1_PKENC/2026-11-13_1753_Red_H4_0_H4_1_PKENC--Red_H4_0_H4_1_PKENC__proof_state_compiler__r01__ba30e6c9-dirty
+AGENT-VIEW-BUNDLE: wrote /home/amir/shannon-prover/agent_view_runs/Red_H4_0_H4_1_PKDEC/2026-11-13_1755_Red_H4_0_H4_1_PKDEC--Red_H4_0_H4_1_PKDEC__proof_state_compiler__r01__ba30e6c9-dirty
+SUITE-EXECUTION-MANIFEST: artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/executions/20261113T152729.958343Z_4a9ad7e449b8/manifest.json

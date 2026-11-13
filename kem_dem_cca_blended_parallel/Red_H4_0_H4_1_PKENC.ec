@@ -30,6 +30,17 @@ lemma Red_H4_0_H4_1_PKENC : equiv[Comp_Hybrid2.Game_Hybrid2.d_PKENC ~ Red_H4_0_H
                       (glob Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM){1}
                       (glob Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM){2}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; rewrite /inv_H4_0_H4_1; inline *; sp; if; 1: by move=> /> /#.
+  seq 3 3 : (#pre /\ ={m00, m10, ec_result0} /\ ec_result0{1} = None); 1: by auto => /> /#.
+  seq 1 1 : (={ec_result0} /\ Comp_Hybrid2.Game_Hybrid2.abort_flag{1} = Red_H4_0_H4_1.abort_flag{2} /\ !Red_H4_0_H4_1.abort_flag{2} /\ (Comp_Composition_CCA_DEM.Game_Composition_CCA_DEM.abort_flag{2} => ec_result0{2} = None) /\ Comp_Hybrid2.Cloned_Pkg_Scheme_KEM.Scheme_KEM.st{1} = Cloned_Pkg_Scheme_KEM.Scheme_KEM.st{2} /\ Comp_Hybrid2.Cloned_Pkg_Reduction_DEM.Reduction_DEM.c{1} = Cloned_Pkg_Reduction_DEM.Reduction_DEM.c{2} /\ Comp_Hybrid2.Cloned_Pkg_Reduction_DEM.Reduction_DEM.pk{1} = Cloned_Pkg_Reduction_DEM.Reduction_DEM.pk{2} /\ Comp_Hybrid2.Cloned_Pkg_Reduction_DEM.Reduction_DEM.sk{1} = Cloned_Pkg_Reduction_DEM.Reduction_DEM.sk{2} /\ Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM.b{1} = Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM.b{2} /\ Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM.c{1} = Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM.c{2} /\ Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM.k{1} = Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM.k{2}); last by auto => /> /#.
+  if; [smt() | | auto => /> /#].
+  if; [smt() | | auto => /> /#].
+  seq 8 8 : (#pre /\ ={ec_r1} /\ ec_r1{1} <> None); 1: by auto => /> /#.
+  rcondt{1} 1; 1: by auto.
+  rcondt{2} 1; 1: by auto.
+  rcondt{2} 8; 1: by move=> &m; auto => /> /#.
+  seq 8 11 : (#pre /\ ={c_kem, ec_done} /\ m12{1} = m13{2} /\ m02{1} = m03{2} /\ ec_result2{1} = ec_result3{2} /\ ec_result2{1} = None /\ !ec_done{1}); 1: by auto => /> /#.
+  if; [smt() | | auto => /> /#].
+  wp; rnd; auto => /> /#.
+  auto => /> /#.
 qed.

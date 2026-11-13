@@ -30,6 +30,12 @@ lemma Red_H2_H3_PKGEN : equiv[Comp_Hybrid1.Game_Hybrid1.d_PKGEN ~ Red_H2_H3(Comp
                       (glob Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM){1}
                       (glob Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM){2}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: by rewrite /inv_H2_H3; smt().
+  sp 1 1; if; 1: (rewrite /inv_H2_H3; smt()); last first.
+  + wp; skip; rewrite /inv_H2_H3; smt().
+  rcondt{2} 2; 1: (auto; rewrite /inv_H2_H3; smt()).
+  sp 1 2; if; 1: (rewrite /inv_H2_H3; smt()); last first.
+  + wp; skip; rewrite /inv_H2_H3; smt().
+  wp; rnd; wp; skip; rewrite /inv_H2_H3 /=; smt().
+  skip; rewrite /inv_H2_H3 /=; smt().
 qed.

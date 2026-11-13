@@ -1,0 +1,5 @@
+EasyCrypt accepted the full proof of `Red_H0_H1_PKENC` and `qed.`, and the manager accepted `finish`. Offline verification runs after this node stops, so it hasn't happened yet.
+
+The approach was to inline everything, then go through both programs' `if` statements side by side. Each branch condition and leaf goal closed after unfolding `inv_H0_H1` and calling `smt()`. The right side has one extra check (the `Correct_KEM` game's abort flag), which I forced to true: when the reduction hasn't aborted, the invariant guarantees that flag is false.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Committing two tactic sentences separated by a period in one commit_tactic payload gave 'parse error'; one sentence joined with ';' and '[..|..]' was accepted.", "The right side's extra '!Game_Composition_Correct_KEM.abort_flag' branch was discharged with rcondt{2} 1, because inv_H0_H1 gives assm_abort => red_abort and red_abort is false in that branch.", "Every branch-condition and leaf goal closed with 'rewrite /inv_H0_H1 /=; smt()' after inline * and paired if/sp steps, with one wp; rnd; auto for the dbits_kencr sample."]}

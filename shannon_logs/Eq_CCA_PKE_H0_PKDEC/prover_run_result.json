@@ -1,0 +1,52 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/iteration_1/ec_sessions/.ec_session_prover_b34641ceb2fa_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "d76d0bb7d61aa381516cb620cc197de0b422ab87e8970601fd82e4e8ea50103a",
+    "close_event_id": "7fe385c7-0967-4c8d-9c2f-76fa0a83348d",
+    "close_result_event_id": "bec49c0d-b9ca-402c-9322-9ddb35d3959d",
+    "history_sha256": "8717d054fe05decc53b754e7796c55d1e8b49668851f0127f008a4a5d5c71d17",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_b34641ceb2fa_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 2,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/source/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec",
+    "target_file_sha256": "4279fd681d812d1ca319df21fab18387e271daf5bc8906ef23595c34ca763728",
+    "target_lemma": "Eq_CCA_PKE_H0_PKDEC",
+    "terminal_event_id": "6d6f105a-1a71-42e9-96b4-7761fc506502"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_b34641ceb2fa_tree_0_0",
+  "elapsed_seconds": 40.85863900184631,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Both d_PKDEC procedures are deterministic once inlined (Scheme_KEM.d_KEM_DECAPS and Scheme_DEM.d_DEM_DEC have no sampling), so `proc; inline *; wp; skip` reduces the equiv to one first-order goal.",
+      "Once inv, params_inv and StateRelation_invariant are unfolded, smt() closes that goal. It needs the invariant facts that CCA_PKE.sk = Correct_KEM.sk, CCA_PKE.c = Reduction_Correct_KEM.c, the pk=None <-> sk=None and Correct_KEM.c=None <-> Reduction.c=None correspondences, and Correct_KEM.b = false."
+    ]
+  },
+  "result_id": "eda119037d08fa0a35fdc87f3df33ef2006662fad73b1eb1ec9151a718b267db",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_CCA_PKE_H0_PKDEC/r01/2026-11-13_1730_Eq_CCA_PKE_H0_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_b34641ceb2fa_tree_0_0_closed/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "2a865b81-cc31-4a8f-bc6b-f3da3da86e2e",
+  "skipped": false,
+  "status": "verified",
+  "turns": 3,
+  "verification": {
+    "candidate_id": "d76d0bb7d61aa381516cb620cc197de0b422ab87e8970601fd82e4e8ea50103a",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

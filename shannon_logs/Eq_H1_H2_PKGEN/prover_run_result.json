@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/ec_sessions/.ec_session_prover_6d7e2cfcc2e9_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "666722f6e0235321d9f4752f5eaa8fad67131dec1facb012235d346985f18dd9",
+    "close_event_id": "6b03cadc-f4fe-488a-84c7-2e9b8f2b25e2",
+    "close_result_event_id": "bfab7a2e-7201-4aaa-9638-970123d51c68",
+    "history_sha256": "4c638a09da759bacc988da02d4d1a04304e8774efe6f14803b54d0e90c84a031",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_6d7e2cfcc2e9_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 6,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec",
+    "target_file_sha256": "51d376fd100fdc2482d8059e388a094a1ba82b9796512ab328d6c1867b168722",
+    "target_lemma": "Eq_H1_H2_PKGEN",
+    "terminal_event_id": "2a26aa40-2d95-40b6-b185-0d05aa39ffe9"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_6d7e2cfcc2e9_tree_0_0",
+  "elapsed_seconds": 41.471776485443115,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `proc; inline *; sp; if`, the outer branch where abort_flag is set closed by `auto`. The aligned branch where `Reduction_Correct_KEM.pk` is None on the left and `Reduction_KEM.pk` is None on the right closed with `sp 1 1; if; 1: smt()`.",
+      "On the right, the inner `CCA_KEM.pk = None` condition is always true inside that branch because of the invariant. `rcondt{2} 2` handles it, and `wp; rnd; wp; skip; smt()` closes the branch."
+    ]
+  },
+  "result_id": "4df29011e97cc3933ec8e4ea05dd524465ac54d05c7b68ce55545d0e282d5edb",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "9e068843-addf-4608-8888-8d073c4e4868",
+  "skipped": false,
+  "status": "verified",
+  "turns": 5,
+  "verification": {
+    "candidate_id": "666722f6e0235321d9f4752f5eaa8fad67131dec1facb012235d346985f18dd9",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

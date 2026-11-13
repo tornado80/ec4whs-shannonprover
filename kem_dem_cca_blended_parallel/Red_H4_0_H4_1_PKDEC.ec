@@ -30,6 +30,5 @@ lemma Red_H4_0_H4_1_PKDEC : equiv[Comp_Hybrid2.Game_Hybrid2.d_PKDEC ~ Red_H4_0_H
                       (glob Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM){1}
                       (glob Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM){2}].
 proof.
-(* d_PKDEC *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip; rewrite /inv_H4_0_H4_1; smt().
 qed.

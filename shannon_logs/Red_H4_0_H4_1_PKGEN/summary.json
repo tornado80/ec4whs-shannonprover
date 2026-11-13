@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec",
+    "lemma": "Red_H4_0_H4_1_PKGEN"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "00d331aad2d2cb29e1acdf07be757a7427bf407a67d85ce62830b0d20beb5b1e",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 1.0,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "00d331aad2d2cb29e1acdf07be757a7427bf407a67d85ce62830b0d20beb5b1e",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

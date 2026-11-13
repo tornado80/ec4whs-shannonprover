@@ -45,6 +45,7 @@ lemma Eq_H3_H4_PKDEC : equiv[Comp_Hybrid1.Game_Hybrid1.d_PKDEC ~ Comp_Hybrid2.Ga
                          r_pkg_CCA_DEM_b = Comp_Hybrid2.Pkg_Inst_CCA_DEM.b{2};
                          r_abort_flag = Comp_Hybrid2.Game_Hybrid2.abort_flag{2} |}].
 proof.
-(* d_PKDEC *)
-+ proc; inline. admit.
+proc; inline *; sp.
+(* PARTIAL: Shannon Prover stopped here (infrastructure_invalid, run 2026-11-13_1737_Eq_H3_H4_PKDEC); the 1 remaining goal(s) are admitted. *)
+admit.
 qed.

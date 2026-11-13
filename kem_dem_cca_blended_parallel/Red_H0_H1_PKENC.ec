@@ -30,6 +30,7 @@ lemma Red_H0_H1_PKENC : equiv[Comp_Hybrid0.Game_Hybrid0.d_PKENC ~ Red_H0_H1(Comp
                       (glob Comp_Hybrid0.Cloned_Pkg_Correct_KEM.Correct_KEM){1}
                       (glob Comp_Composition_Correct_KEM.Cloned_Pkg_Correct_KEM.Correct_KEM){2}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; inline *; wp.
+  sp 1 1; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto].
+  sp 4 4; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; sp 1 1; rcondt{2} 1; [by move=> &1; auto; rewrite /inv_H0_H1 /=; smt() | ]; sp 0 1; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; if; [by move=> &1 &2; rewrite /inv_H0_H1 /= /# | | by auto; rewrite /inv_H0_H1 /=; smt()]; wp; rnd; auto; rewrite /inv_H0_H1 /=; smt().
 qed.

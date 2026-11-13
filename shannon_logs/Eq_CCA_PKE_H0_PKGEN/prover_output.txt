@@ -1,0 +1,7 @@
+I proved `Eq_CCA_PKE_H0_PKGEN`. EasyCrypt accepted every committed step and `qed.`, and the manager accepted `finish`. Offline verification hasn't run yet; it happens after this node stops.
+
+Two attempts were rejected and nothing from them was committed: a bracketed compound tactic hit a parse error, and a multi-sentence one failed with "invalid last instruction". Breaking it into smaller steps worked.
+
+How the proof goes: I inlined both `d_PKGEN` procedures and split on the `abort_flag` branch. When the game hasn't aborted, both sides draw the same key-generation randomness and compute the same key pair. The invariant then follows by `smt()`. When the game has already aborted, `auto; smt()` closes the goal.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Inlined left and right d_PKGEN bodies align after `seq 1 1`; the main branch closes with `wp; rnd; wp; skip; smt()` and the aborted branch with `auto; smt()`."]}

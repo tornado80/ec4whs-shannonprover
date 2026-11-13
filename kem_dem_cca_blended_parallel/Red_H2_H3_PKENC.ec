@@ -30,6 +30,17 @@ lemma Red_H2_H3_PKENC : equiv[Comp_Hybrid1.Game_Hybrid1.d_PKENC ~ Red_H2_H3(Comp
                       (glob Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM){1}
                       (glob Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM){2}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; inline *; rewrite /inv_H2_H3 /=.
+  sp; if => //.
+  sp; if => //; last by auto; smt().
+  if => //; last by auto; smt().
+  sp; rcondt{2} 1; first by auto; smt().
+  seq 1 2 : (ec_result1{1} = ec_result4{2} /\ m00{1} = m00{2} /\ m10{1} = m10{2} /\ ec_done{1} = false /\ ec_done{2} = false /\ ec_result0{1} = None /\ ec_result0{2} = None /\ !Red_H2_H3.abort_flag{2} /\ !Comp_Composition_CCA_KEM.Game_Composition_CCA_KEM.abort_flag{2} /\ Comp_Hybrid1.Game_Hybrid1.abort_flag{1} = Red_H2_H3.abort_flag{2} /\ Comp_Hybrid1.Cloned_Pkg_Reduction_KEM.Reduction_KEM.b{1} = Cloned_Pkg_Reduction_KEM.Reduction_KEM.b{2} /\ Comp_Hybrid1.Cloned_Pkg_Reduction_KEM.Reduction_KEM.c{1} = Cloned_Pkg_Reduction_KEM.Reduction_KEM.c{2} /\ Comp_Hybrid1.Cloned_Pkg_Reduction_KEM.Reduction_KEM.k{1} = Cloned_Pkg_Reduction_KEM.Reduction_KEM.k{2} /\ Comp_Hybrid1.Cloned_Pkg_Reduction_KEM.Reduction_KEM.pk{1} = Cloned_Pkg_Reduction_KEM.Reduction_KEM.pk{2} /\ Comp_Hybrid1.Cloned_Pkg_Scheme_KEM.Scheme_KEM.st{1} = Comp_Composition_CCA_KEM.Cloned_Pkg_Scheme_KEM.Scheme_KEM.st{2} /\ Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM.b{1} = Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM.b{2} /\ Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM.c{1} = Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM.c{2} /\ Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM.pk{1} = Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM.pk{2} /\ Comp_Hybrid1.Cloned_Pkg_CCA_KEM.CCA_KEM.sk{1} = Comp_Composition_CCA_KEM.Cloned_Pkg_CCA_KEM.CCA_KEM.sk{2}).
+  sp 0 1; if => //; last by auto; smt().
+  if => //; last by auto; smt().
+  sp; seq 1 1 : (#pre /\ ={r2}); first by auto.
+  sp; rcondt{1} 1; first by auto.
+  rcondt{2} 1; first by auto.
+  sp; if => //; auto; smt().
+  wp; skip; smt().
 qed.

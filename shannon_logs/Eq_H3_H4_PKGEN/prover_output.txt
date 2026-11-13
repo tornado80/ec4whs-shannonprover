@@ -1,0 +1,5 @@
+EasyCrypt accepted every step of the `Eq_H3_H4_PKGEN` proof, including `qed.`, and the manager accepted `finish`. The proof still has to pass offline verification, which runs after this node stops.
+
+The proof inlines both `d_PKGEN` procedures and lines up the matching `if` branches using the invariant. Then it couples the single key-generation sample on each side. The three remaining cases (fresh key, key already present, and already aborted) each close with `smt()`.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["After `proc; inline *`, the `!abort_flag` and `Reduction_KEM.pk = None` / `Reduction_DEM.pk = None` branches are synchronized via inv (CCA_KEM.pk = Reduction_KEM.pk = Reduction_DEM.pk); the inner `CCA_KEM.pk = None` test on the left is discharged with `rcondt{1} 2`, after which a single `rnd` couples the dbits_kgenr samples and `smt()` closes each case after unfolding inv/params_inv/StateRelation_invariant."]}

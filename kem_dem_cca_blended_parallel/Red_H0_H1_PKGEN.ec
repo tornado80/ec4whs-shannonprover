@@ -30,6 +30,9 @@ lemma Red_H0_H1_PKGEN : equiv[Comp_Hybrid0.Game_Hybrid0.d_PKGEN ~ Red_H0_H1(Comp
                       (glob Comp_Hybrid0.Cloned_Pkg_Correct_KEM.Correct_KEM){1}
                       (glob Comp_Composition_Correct_KEM.Cloned_Pkg_Correct_KEM.Correct_KEM){2}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; sp; rewrite /inv_H0_H1.
+  if => //; sp; if => //.
+  rcondt{2} 2; 1: by auto => /> /#.
+  wp; rnd; wp; skip => /> /#.
+  auto => /> /#.
 qed.

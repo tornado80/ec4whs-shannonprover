@@ -49,6 +49,8 @@ lemma Eq_H1_H2_PKENC : equiv[Comp_Hybrid0.Game_Hybrid0.d_PKENC ~ Comp_Hybrid1.Ga
                          r_pkg_Reduction_KEM_b = Comp_Hybrid1.Pkg_Inst_Reduction_KEM.b{2};
                          r_abort_flag = Comp_Hybrid1.Game_Hybrid1.abort_flag{2} |}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; inline *; rewrite /inv /params_inv /StateRelation_invariant /=.
+  sp 1 1; if; [smt() | | auto => /> /#]; sp; if; [smt() | | auto => /> /#]; if; [smt() | | auto => /> /#]; sp; if; [smt() | | auto => /> /#]; if; [smt() | | auto => /> /#].
+  sp 2 2; seq 1 1 : (#pre /\ ={r2}); [auto | rcondt{1} 4; [auto | rcondt{2} 4; [auto | sp 6 6; rcondf{2} 1; [auto => /> /# | auto => /> /#]]]].
+  move=> /> /#.
 qed.

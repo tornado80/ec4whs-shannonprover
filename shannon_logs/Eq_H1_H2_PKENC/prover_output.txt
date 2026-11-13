@@ -1,0 +1,3 @@
+EasyCrypt accepted the full proof of `Eq_H1_H2_PKENC`, including `qed.`, and the manager accepted `finish`. Offline verification runs after this node stops, so the final check is still pending.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["After `inline *`, the only difference between the two sides is the right side's `if (CCA_KEM.b) { k1 <$ dbits_dkeyl }`. The invariant fixes `CCA_KEM.b{2} = false`, so `rcondf{2}` removes that branch once the `sp` steps bring it to the front.", "The manager rejects a compound command made of several separate tactic sentences ('did not parse as one global action'). The fix was to chain the steps with `;` and `[ | ]` into a single sentence."]}

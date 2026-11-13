@@ -45,6 +45,10 @@ lemma Eq_H3_H4_PKGEN : equiv[Comp_Hybrid1.Game_Hybrid1.d_PKGEN ~ Comp_Hybrid2.Ga
                          r_pkg_CCA_DEM_b = Comp_Hybrid2.Pkg_Inst_CCA_DEM.b{2};
                          r_abort_flag = Comp_Hybrid2.Game_Hybrid2.abort_flag{2} |}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  sp 1 1; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  rcondt{1} 2; 1: by auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  wp; rnd; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
+  skip => &1 &2; smt().
 qed.

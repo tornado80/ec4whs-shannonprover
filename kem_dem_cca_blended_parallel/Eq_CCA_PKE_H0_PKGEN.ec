@@ -43,6 +43,11 @@ lemma Eq_CCA_PKE_H0_PKGEN : equiv[Comp_Composition_CCA_PKE.Game_Composition_CCA_
                          r_pkg_Reduction_Correct_KEM_b = Comp_Hybrid0.Pkg_Inst_Reduction_Correct_KEM.b{2};
                          r_abort_flag = Comp_Hybrid0.Game_Hybrid0.abort_flag{2} |}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; sp; if.
+  smt().
+  seq 1 1 : (#pre /\ ec_result0{1} = None /\ ec_result0{2} = None); 1: auto.
+  if; 1: smt().
+  wp; rnd; wp; skip; smt().
+  auto; smt().
+  auto; smt().
 qed.

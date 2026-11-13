@@ -43,6 +43,5 @@ lemma Eq_CCA_PKE_H0_PKDEC : equiv[Comp_Composition_CCA_PKE.Game_Composition_CCA_
                          r_pkg_Reduction_Correct_KEM_b = Comp_Hybrid0.Pkg_Inst_Reduction_Correct_KEM.b{2};
                          r_abort_flag = Comp_Hybrid0.Game_Hybrid0.abort_flag{2} |}].
 proof.
-(* d_PKDEC *)
-+ proc; inline. admit.
+  proc; inline *; wp; skip => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /=; smt().
 qed.

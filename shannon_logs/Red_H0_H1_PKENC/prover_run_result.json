@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/ec_sessions/.ec_session_prover_e6178accfd2e_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "70f3a4862aef5976e44e47314299bc6ead4df26ec1ed215df798956228dbae9d",
+    "close_event_id": "23451a77-f637-45ff-a3c0-c127513acd4c",
+    "close_result_event_id": "031b8e56-ce85-4bfb-ae2a-53dcc51ed5c2",
+    "history_sha256": "b25421afcb8dfc1b757a6a063cff35e96de5dc6b2a9c73e6d3fb7042b28fb02b",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_e6178accfd2e_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 4,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec",
+    "target_file_sha256": "0c704347a44ea956c9625ee3f04acbc65fbb2e166c655c2b9e614916b69b3193",
+    "target_lemma": "Red_H0_H1_PKENC",
+    "terminal_event_id": "e249069d-6f56-41f9-88f9-fbdbe06db08a"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_e6178accfd2e_tree_0_0",
+  "elapsed_seconds": 81.1288423538208,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Committing two tactic sentences separated by a period in one commit_tactic payload gave 'parse error'; one sentence joined with ';' and '[..|..]' was accepted.",
+      "The right side's extra '!Game_Composition_Correct_KEM.abort_flag' branch was discharged with rcondt{2} 1, because inv_H0_H1 gives assm_abort => red_abort and red_abort is false in that branch.",
+      "Every branch-condition and leaf goal closed with 'rewrite /inv_H0_H1 /=; smt()' after inline * and paired if/sp steps, with one wp; rnd; auto for the dbits_kencr sample."
+    ]
+  },
+  "result_id": "64d409ecd8a8657b61d2b5a171875879d999b59be8f3a6673c9ee57ac00faa76",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_e6178accfd2e_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H0_H1_PKENC/r01/2026-11-13_1743_Red_H0_H1_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_e6178accfd2e_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "a8a59c14-405a-4bb3-b9e6-13199e421386",
+  "skipped": false,
+  "status": "verified",
+  "turns": 7,
+  "verification": {
+    "candidate_id": "70f3a4862aef5976e44e47314299bc6ead4df26ec1ed215df798956228dbae9d",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

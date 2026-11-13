@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *; sp; if`, the outer branch where abort_flag is set closed by `auto`. The aligned branch where `Reduction_Correct_KEM.pk` is None on the left and `Reduction_KEM.pk` is None on the right closed with `sp 1 1; if; 1: smt()`.",
+    "On the right, the inner `CCA_KEM.pk = None` condition is always true inside that branch because of the invariant. `rcondt{2} 2` handles it, and `wp; rnd; wp; skip; smt()` closes the branch."
+  ]
+}

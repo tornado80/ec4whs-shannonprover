@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *`, the right side has an extra abort check on Comp_Composition_CCA_KEM.Game_Composition_CCA_KEM.abort_flag. The invariant together with !Red_H2_H3.abort_flag shows that flag is false, so `rcondt{2} 1` removes the check.",
+    "The right side stores the encapsulation result in ec_result4 and copies it to ec_result1 later. A `seq 1 2` with ec_result1{1} = ec_result4{2} lines the two sides up before the DEM part.",
+    "Once the random draws were handled, the remaining code had no randomness and `wp; skip; smt()` closed it."
+  ]
+}

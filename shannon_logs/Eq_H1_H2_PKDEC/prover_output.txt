@@ -1,0 +1,11 @@
+EasyCrypt accepted the proof of `Eq_H1_H2_PKDEC` and `qed.`, and the manager accepted `finish`. Offline verification of the saved proof hasn't run yet; it runs after this node stops.
+
+The proof is two steps:
+1. `proc; inline *; wp; skip; rewrite /inv /params_inv /StateRelation_invariant /=.`
+2. `smt().`
+
+This worked because every procedure called by `d_PKDEC` on both sides is deterministic, with no random sampling, so `wp` could step back through all the branching after inlining. An earlier attempt, `proc; inline *; sp; if; ...`, was rejected with "invalid first instruction" at the `if` and nothing was committed.
+
+The goal after step 1 was about 100,000 characters, too large to show here, so I sent `smt().` without reading it.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["All callees of d_PKDEC (Scheme_KEM.d_KEM_DECAPS, Scheme_DEM.d_DEM_DEC) are deterministic, so after proc; inline * the goal closes with wp; skip, unfolding inv/params_inv/StateRelation_invariant, then smt().", "proc; inline *; sp; if was rejected with 'invalid first instruction'."]}

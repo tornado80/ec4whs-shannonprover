@@ -1,0 +1,5 @@
+EasyCrypt accepted the proof of `Red_H4_0_H4_1_PKGEN`, `qed.` went through, and the manager accepted `finish`. Offline verification runs after this node stops, so the proof isn't fully confirmed yet.
+
+The proof unfolds `inv_H4_0_H4_1`, then matches the two `if` branches on each side step by step. The first branch condition followed from the abort flags being equal on both sides. Three earlier compound attempts were rejected and rolled back (a parse error, then `smt()` failing on that same abort-flag goal); committing the prefix and closing the goal by rewriting fixed it.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["inv_H4_0_H4_1 is a conjunction: game_abort = red_abort, assm_abort => red_abort, and equalities of the Scheme_KEM, Reduction_DEM, Scheme_DEM and CCA_DEM globals.", "After `proc; inline *; rewrite /inv_H4_0_H4_1; sp; if`, `smt()` could not prove the abort-flag goal; `move=> &1 &2 /> ->` closed it.", "Both sides of d_PKGEN inline to the same code, so `sp; if` plus `wp; rnd; auto => />` closes the remaining goals."]}

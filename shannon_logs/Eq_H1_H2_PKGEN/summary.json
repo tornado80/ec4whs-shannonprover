@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec",
+    "lemma": "Eq_H1_H2_PKGEN"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "4df29011e97cc3933ec8e4ea05dd524465ac54d05c7b68ce55545d0e282d5edb",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 0.7,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "4df29011e97cc3933ec8e4ea05dd524465ac54d05c7b68ce55545d0e282d5edb",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKGEN/r01/2026-11-13_1731_Eq_H1_H2_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_6d7e2cfcc2e9_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

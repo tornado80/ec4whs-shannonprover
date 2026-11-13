@@ -1,0 +1,5 @@
+EasyCrypt accepted the proof of `Red_H0_H1_PKGEN` and `qed.`, and the manager accepted `finish`. An offline verification still runs after this node stops, and that hasn't happened yet.
+
+The proof inlines both sides and lines up their branches. In the branch where the public key isn't set yet, it uses the invariant (the assumption game's abort flag implies the reduction's abort flag) to show the assumption game's check (that it hasn't aborted) always passes. After that, the random key-generation draws are matched and the remaining steps close automatically.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["After `proc; inline *; sp; if => //; sp; if => //`, `rcondt{2} 2` uses the invariant to discharge the assumption game's abort-flag check inside the branch where the public key is not yet set.", "`wp; rnd; wp; skip => /> /#` matches the two `dbits_kgenr` draws and proves the post-condition; `auto => /> /#` closes the branch where the public key is already set."]}

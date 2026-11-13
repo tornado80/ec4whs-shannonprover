@@ -1,0 +1,11 @@
+I couldn't prove `Eq_H3_H4_PKDEC`. Nothing was committed, and the session stopped because the proof manager timed out and marked the proof node unhealthy.
+
+1. My first tactic, `proc; inline *; sp; if; [smt(); | | by auto].`, was rejected with a parse error. The manager also reported that the `if` step would fail with "invalid first instruction" after the first three steps had run.
+2. I then submitted just `proc; inline *; sp.` (the three steps the manager said would run). The manager timed out on it. The likely cause is `inline *` expanding every call in both procedures at once.
+3. Both later submissions, including `finish`, returned the same unhealthy-node stop: the commit timed out after 180s and the proof state may be uncertain. No further proof steps can be submitted until the node is restarted.
+
+PROVER REPORT: {"blockers": ["manager_action_timeout: commit_tactic timed out after 180s on `proc; inline *; sp.` and the node was marked unhealthy, so no further intents are accepted", "Compound `proc; inline *; sp; if; [smt(); | | by auto].` was rejected with a parse error; the manager reported that after `proc; inline *; sp` the `if` step fails with 'invalid first instruction'"], "discoveries": ["Left side Game_Hybrid1.d_PKDEC calls Pkg_Inst_Reduction_KEM.d_PKDEC (oracle calls O.d_DECAPS and O.d_DEM_DEC) and right side Game_Hybrid2.d_PKDEC calls Pkg_Inst_Reduction_DEM.d_PKDEC (oracle calls O.d_KEM_DECAPS, O.d_DEM_DEC and O.d_DEC); both are wrapped in an `if (!abort_flag)` guard", "The inv invariant (Eq_H3_H4_Invariants.ec) relates CCA_KEM.sk to Reduction_DEM.sk, Reduction_KEM.k to CCA_DEM.k, and Reduction_KEM.c to Reduction_DEM.c, and makes CCA_KEM.c and CCA_DEM.c the first and second components of that c when it is not None"]}
+
+MANAGER WORKER ERROR: proof node became unhealthy: manager_action_timeout: manager backend action 'commit_tactic' timed out after 180.0s; proof state may be uncertain; returning the last completed ProverWorkspaceView without refreshing
+
+MANAGER WORKER ERROR: agent exited with 2.

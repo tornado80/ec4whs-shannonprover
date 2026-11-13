@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After `proc; inline *`, the `!abort_flag` and `Reduction_KEM.pk = None` / `Reduction_DEM.pk = None` branches are synchronized via inv (CCA_KEM.pk = Reduction_KEM.pk = Reduction_DEM.pk); the inner `CCA_KEM.pk = None` test on the left is discharged with `rcondt{1} 2`, after which a single `rnd` couples the dbits_kgenr samples and `smt()` closes each case after unfolding inv/params_inv/StateRelation_invariant."
+  ]
+}

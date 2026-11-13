@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Inlined left and right d_PKGEN bodies align after `seq 1 1`; the main branch closes with `wp; rnd; wp; skip; smt()` and the aborted branch with `auto; smt()`."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/ec_sessions/.ec_session_prover_52d467cbbab3_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "b52ab93421320896cc34ccfc037405451ac2eb27d094e52089ef88120494240b",
+    "close_event_id": "8d18fcae-0d8a-4c15-aaf4-e9c36412b85a",
+    "close_result_event_id": "c31ce133-0991-4df6-9085-f765cadf0b17",
+    "history_sha256": "33f7bfb7d8119d634f0f8dc829ef71986789d8d322eb65b4d562b4d9c89da22c",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_52d467cbbab3_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 11,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec",
+    "target_file_sha256": "1305f49c34d4b2222e09eb1c859f96cc05c1f27f52bbbfc830138f7502537061",
+    "target_lemma": "Eq_H3_H4_PKENC",
+    "terminal_event_id": "45d5a1f6-4e3c-4162-8a0b-896c852e1320"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_52d467cbbab3_tree_0_0",
+  "elapsed_seconds": 102.92799043655396,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": []
+  },
+  "result_id": "9ca95d52b8eab33d452e922039ce8d8b839b3e5751260c7ba4d1801874a9dddb",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_52d467cbbab3_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H3_H4_PKENC/r01/2026-11-13_1735_Eq_H3_H4_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_52d467cbbab3_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "dcf85955-151a-4724-b71b-524f7f8c61a7",
+  "skipped": false,
+  "status": "verified",
+  "turns": 10,
+  "verification": {
+    "candidate_id": "b52ab93421320896cc34ccfc037405451ac2eb27d094e52089ef88120494240b",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

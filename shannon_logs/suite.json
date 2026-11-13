@@ -1,0 +1,132 @@
+{
+ "suite": "ec4whs_kem_dem_cca",
+ "profiles": [
+  "proof_state_compiler"
+ ],
+ "defaults": {
+  "eval_mode": true,
+  "agent_backend": "claude",
+  "model": "claude-opus-5-5",
+  "effort": "low",
+  "max_iterations": 1,
+  "timeout_minutes": 30,
+  "repeats": 1,
+  "tree_initial_provers": 1,
+  "tree_max_concurrent": 1,
+  "output_dir": "artifacts/ec4whs/kem-dem-cca/runs",
+  "source_isolation": true,
+  "strip_proofs": true,
+  "source_navigation": true,
+  "include_dir": "easycrypt-src/theories"
+ },
+ "targets": [
+  {
+   "id": "Eq_CCA_PKE_H0_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKGEN.ec",
+   "lemma": "Eq_CCA_PKE_H0_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_CCA_PKE_H0_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKENC.ec",
+   "lemma": "Eq_CCA_PKE_H0_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_CCA_PKE_H0_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_CCA_PKE_H0_PKDEC.ec",
+   "lemma": "Eq_CCA_PKE_H0_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H1_H2_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H1_H2_PKGEN.ec",
+   "lemma": "Eq_H1_H2_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H1_H2_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec",
+   "lemma": "Eq_H1_H2_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H1_H2_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H1_H2_PKDEC.ec",
+   "lemma": "Eq_H1_H2_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H3_H4_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H3_H4_PKGEN.ec",
+   "lemma": "Eq_H3_H4_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H3_H4_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H3_H4_PKENC.ec",
+   "lemma": "Eq_H3_H4_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Eq_H3_H4_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Eq_H3_H4_PKDEC.ec",
+   "lemma": "Eq_H3_H4_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H0_H1_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H0_H1_PKGEN.ec",
+   "lemma": "Red_H0_H1_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H0_H1_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H0_H1_PKENC.ec",
+   "lemma": "Red_H0_H1_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H0_H1_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H0_H1_PKDEC.ec",
+   "lemma": "Red_H0_H1_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H2_H3_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H2_H3_PKGEN.ec",
+   "lemma": "Red_H2_H3_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H2_H3_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec",
+   "lemma": "Red_H2_H3_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H2_H3_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H2_H3_PKDEC.ec",
+   "lemma": "Red_H2_H3_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H4_0_H4_1_PKGEN",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec",
+   "lemma": "Red_H4_0_H4_1_PKGEN",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H4_0_H4_1_PKENC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKENC.ec",
+   "lemma": "Red_H4_0_H4_1_PKENC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  },
+  {
+   "id": "Red_H4_0_H4_1_PKDEC",
+   "file": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec",
+   "lemma": "Red_H4_0_H4_1_PKDEC",
+   "copy_root": "artifacts/ec4whs/kem-dem-cca/snapshot/kem_dem_cca_blended_parallel"
+  }
+ ]
+}

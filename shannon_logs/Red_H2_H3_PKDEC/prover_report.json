@@ -1,0 +1,6 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "After inlining, both sides of d_PKDEC run the same code with no random sampling (the CCA_KEM DECAPS and Scheme_DEM DEM_DEC paths have no `<$`). One `proc; inline *; auto => />; rewrite /inv_H2_H3 /=; smt().` closed the equivalence, and `qed.` was accepted."
+  ]
+}

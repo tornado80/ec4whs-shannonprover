@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/ec_sessions/.ec_session_prover_58390a18eee9_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "2c1e035ef04876196f3f4a9b90775728b2c747bdd412f437d1c8b3ad35de3654",
+    "close_event_id": "cd52acaf-2827-44d4-aeaf-4f54df706784",
+    "close_result_event_id": "40c9d875-ae4a-499a-ba06-720c482364a9",
+    "history_sha256": "c868df3ae3b62e8a734e7836f2490949c20e17d9c655ca321fa6b90104f93ba8",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_58390a18eee9_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 2,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKDEC.ec",
+    "target_file_sha256": "3881e863164c11424660dbed833abdb55ef512269c0246073f984ccb455d6208",
+    "target_lemma": "Red_H4_0_H4_1_PKDEC",
+    "terminal_event_id": "8e9c5bf7-340a-4469-8d11-b7d09e8bbdf6"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_58390a18eee9_tree_0_0",
+  "elapsed_seconds": 135.64866042137146,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After inlining, every procedure d_PKDEC reaches is deterministic: no sampling occurs in Scheme_KEM.d_KEM_DECAPS, CCA_DEM.d_DEC or Scheme_DEM.d_DEM_DEC. So `proc; inline *; wp; skip; rewrite /inv_H4_0_H4_1; smt().` closes the equivalence in one step.",
+      "Committing `proc; rewrite /inv_H4_0_H4_1; inline *; sp.` came back as an endpoint error ('response is too large'), but EasyCrypt had actually committed it. `undo_last_step` took the state back to the original goal."
+    ]
+  },
+  "result_id": "ece64612eaf1a532af8a39787e13da6adfbdd72d31d5aee48cc09f32723c2a1e",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_58390a18eee9_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKDEC/r01/2026-11-13_1755_Red_H4_0_H4_1_PKDEC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_58390a18eee9_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "eebf3cb7-f1a2-4e03-af33-9e5ed9f307cf",
+  "skipped": false,
+  "status": "verified",
+  "turns": 5,
+  "verification": {
+    "candidate_id": "2c1e035ef04876196f3f4a9b90775728b2c747bdd412f437d1c8b3ad35de3654",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

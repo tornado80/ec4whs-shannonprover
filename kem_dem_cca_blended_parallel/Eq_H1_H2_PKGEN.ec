@@ -49,6 +49,9 @@ lemma Eq_H1_H2_PKGEN : equiv[Comp_Hybrid0.Game_Hybrid0.d_PKGEN ~ Comp_Hybrid1.Ga
                          r_pkg_Reduction_KEM_b = Comp_Hybrid1.Pkg_Inst_Reduction_KEM.b{2};
                          r_abort_flag = Comp_Hybrid1.Game_Hybrid1.abort_flag{2} |}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: smt(); 2: auto.
+  sp 1 1; if; 1: smt().
+  rcondt{2} 2; 1: by auto; smt().
+  wp; rnd; wp; skip; smt().
+  auto; smt().
 qed.

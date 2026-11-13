@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/ec_sessions/.ec_session_prover_927c767c57fa_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "973313b2078885fef0a3aa965bf5f485d0f27107f166fc7d06933fd05676ce9b",
+    "close_event_id": "0e3aa0e9-f679-448f-8ea5-1b2527ce87d2",
+    "close_result_event_id": "ee63cea7-8b48-45e4-a38c-a0089fe953d1",
+    "history_sha256": "a47f0e77744e943d21b31d4762b013a9fb323859977d31c244f603a648e484a3",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_927c767c57fa_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 7,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/source/kem_dem_cca_blended_parallel/Red_H4_0_H4_1_PKGEN.ec",
+    "target_file_sha256": "4afa27f40469bdc158a6da04e7c0038601e8d167c89536ea21235f6ec8758ec4",
+    "target_lemma": "Red_H4_0_H4_1_PKGEN",
+    "terminal_event_id": "e80983c0-90d6-4f2f-9ad5-897d469968ca"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_927c767c57fa_tree_0_0",
+  "elapsed_seconds": 57.88904428482056,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "inv_H4_0_H4_1 is a conjunction: game_abort = red_abort, assm_abort => red_abort, and equalities of the Scheme_KEM, Reduction_DEM, Scheme_DEM and CCA_DEM globals.",
+      "After `proc; inline *; rewrite /inv_H4_0_H4_1; sp; if`, `smt()` could not prove the abort-flag goal; `move=> &1 &2 /> ->` closed it.",
+      "Both sides of d_PKGEN inline to the same code, so `sp; if` plus `wp; rnd; auto => />` closes the remaining goals."
+    ]
+  },
+  "result_id": "00d331aad2d2cb29e1acdf07be757a7427bf407a67d85ce62830b0d20beb5b1e",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H4_0_H4_1_PKGEN/r01/2026-11-13_1752_Red_H4_0_H4_1_PKGEN/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_927c767c57fa_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "4b75f379-8319-4513-850d-8c9553ce64ec",
+  "skipped": false,
+  "status": "verified",
+  "turns": 9,
+  "verification": {
+    "candidate_id": "973313b2078885fef0a3aa965bf5f485d0f27107f166fc7d06933fd05676ce9b",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/ec_sessions/.ec_session_prover_fe0b32d6922c_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "d86c5a91868f801549b91ff19e4a7dcdcd4c163bb94db7eaf15830d6750cfbf8",
+    "close_event_id": "df632ded-fc59-4380-b9c2-92b242d08195",
+    "close_result_event_id": "c84ed905-27f1-4bc3-8e30-309aad8515b5",
+    "history_sha256": "ca36e1b23d38779f4bdbe33e32b9bc9413237c54ecf4fa9029c9589f94ed5c28",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_fe0b32d6922c_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 5,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/source/kem_dem_cca_blended_parallel/Eq_H1_H2_PKENC.ec",
+    "target_file_sha256": "b121138eb4b10fa577c206f579c20400e3e7a6cd3d48eaa8bd47438586ec6449",
+    "target_lemma": "Eq_H1_H2_PKENC",
+    "terminal_event_id": "55d560b2-2d4f-495f-8d72-13c0217861de"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_fe0b32d6922c_tree_0_0",
+  "elapsed_seconds": 68.96645426750183,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `inline *`, the only difference between the two sides is the right side's `if (CCA_KEM.b) { k1 <$ dbits_dkeyl }`. The invariant fixes `CCA_KEM.b{2} = false`, so `rcondf{2}` removes that branch once the `sp` steps bring it to the front.",
+      "The manager rejects a compound command made of several separate tactic sentences ('did not parse as one global action'). The fix was to chain the steps with `;` and `[ | ]` into a single sentence."
+    ]
+  },
+  "result_id": "8e0fc6d7af09f1b23387d16245d8358d20f2f079d28a2a89300139e1b36d60a3",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_fe0b32d6922c_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Eq_H1_H2_PKENC/r01/2026-11-13_1731_Eq_H1_H2_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_fe0b32d6922c_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "786542a2-ccd9-4b56-9706-80e63f697912",
+  "skipped": false,
+  "status": "verified",
+  "turns": 7,
+  "verification": {
+    "candidate_id": "d86c5a91868f801549b91ff19e4a7dcdcd4c163bb94db7eaf15830d6750cfbf8",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

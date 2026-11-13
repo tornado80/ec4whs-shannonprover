@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/ec_sessions/.ec_session_prover_19b9f983e701_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "0d73277b26493a985d86de0ac06279f4c36a269bb30fdbc8c5093d6998eb1f82",
+    "close_event_id": "3a09f0d3-eec5-4ae5-91bd-4fc9d21e14d5",
+    "close_result_event_id": "c4eca32b-673c-44cc-a5c6-5e48e08dbb96",
+    "history_sha256": "9a27ffa3493b3a1c1494ca2549be00c0831ec9e40629cb4856ec276ef5a001df",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_19b9f983e701_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 14,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/source/kem_dem_cca_blended_parallel/Red_H2_H3_PKENC.ec",
+    "target_file_sha256": "0d0ea1ee2591733e42306e2a9e93666509c3c5bf9ef6b266c6074c88adb7c0ce",
+    "target_lemma": "Red_H2_H3_PKENC",
+    "terminal_event_id": "dc9fb235-8733-4f8f-bc47-8fce033eb69b"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_19b9f983e701_tree_0_0",
+  "elapsed_seconds": 95.28519105911255,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "After `proc; inline *`, the right side has an extra abort check on Comp_Composition_CCA_KEM.Game_Composition_CCA_KEM.abort_flag. The invariant together with !Red_H2_H3.abort_flag shows that flag is false, so `rcondt{2} 1` removes the check.",
+      "The right side stores the encapsulation result in ec_result4 and copies it to ec_result1 later. A `seq 1 2` with ec_result1{1} = ec_result4{2} lines the two sides up before the DEM part.",
+      "Once the random draws were handled, the remaining code had no randomness and `wp; skip; smt()` closed it."
+    ]
+  },
+  "result_id": "e739077a5e1c934ec9602a528e265a0fe7dd14f5f85a715ea5ae46f841e37fa2",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_19b9f983e701_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/kem-dem-cca/runs/ec4whs_kem_dem_cca/proof_state_compiler/Red_H2_H3_PKENC/r01/2026-11-13_1749_Red_H2_H3_PKENC/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_19b9f983e701_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "cc26c79d-a5cb-4960-8379-da04485258d2",
+  "skipped": false,
+  "status": "verified",
+  "turns": 12,
+  "verification": {
+    "candidate_id": "0d73277b26493a985d86de0ac06279f4c36a269bb30fdbc8c5093d6998eb1f82",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

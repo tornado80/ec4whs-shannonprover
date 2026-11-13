@@ -30,6 +30,10 @@ lemma Red_H4_0_H4_1_PKGEN : equiv[Comp_Hybrid2.Game_Hybrid2.d_PKGEN ~ Red_H4_0_H
                       (glob Comp_Hybrid2.Cloned_Pkg_CCA_DEM.CCA_DEM){1}
                       (glob Comp_Composition_CCA_DEM.Cloned_Pkg_CCA_DEM.CCA_DEM){2}].
 proof.
-(* d_PKGEN *)
-+ proc; inline. admit.
+  proc; inline *; rewrite /inv_H4_0_H4_1; sp; if.
+  by move=> &1 &2 /> ->.
+  sp; if; 1: by move=> &1 &2 />.
+  wp; rnd; auto => />.
+  auto => />.
+  auto => />.
 qed.

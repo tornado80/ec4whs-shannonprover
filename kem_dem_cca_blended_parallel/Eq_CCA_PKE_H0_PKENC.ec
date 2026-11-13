@@ -43,6 +43,13 @@ lemma Eq_CCA_PKE_H0_PKENC : equiv[Comp_Composition_CCA_PKE.Game_Composition_CCA_
                          r_pkg_Reduction_Correct_KEM_b = Comp_Hybrid0.Pkg_Inst_Reduction_Correct_KEM.b{2};
                          r_abort_flag = Comp_Hybrid0.Game_Hybrid0.abort_flag{2} |}].
 proof.
-(* d_PKENC *)
-+ proc; inline. admit.
+  proc; inline *; sp; if; 1: by move=> &1 &2 /> /#.
+  sp 4 4; if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /#.
+  if; 1: by move=> &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= => /#.
+  rcondt{2} 2; 1: by move=> &m; auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+  rcondt{2} 2; 1: by move=> &m; auto => &hr; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+  if{1}; wp; rnd; auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+  by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+  by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
+  by auto => &1 &2; rewrite /inv /params_inv /StateRelation_invariant /= /#.
 qed.
