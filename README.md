@@ -13,7 +13,7 @@ Admits left by Domino (task: complete them):
 - `Eq_H6_1_1_H7_0_Send4.ec`: 2 (J7, J8 side goals; ec4whs `2b9d9ef`)
 - `Eq_H6_1_1_H7_0_Send2.ec`: 4
 - `Eq_H6_1_1_H7_0_Reveal.ec`: 3
-- `Eq_H6_1_1_H7_0_AtLeast.ec`: 1
+- `Eq_H6_1_1_H7_0_AtLeast.ec`: 0 (closed, ec4whs working tree 2026-11-14)
 - side invariants: `SideInv_H6_Reveal.ec`, `SideInv_H6_Test.ec` (1 each)
 
 Compile: `easycrypt compile -I Full4WHS Full4WHS/Eq_H6_1_1_H7_0.ec`.

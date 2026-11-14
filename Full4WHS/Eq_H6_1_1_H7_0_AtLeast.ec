@@ -140,28 +140,6 @@ proof.
   sp 1 1.
   if.
   + auto => /#.
-  + sp 3 3.
-    if.
-    + move=> /> &1 &2 *; smt().
-    + rcondt{1} ^if; 1: auto => /#.
-      rcondt{1} ^if; 1: auto => /#.
-      rcondt{2} ^if.
-      + move => &m.
-        auto.
-        move=> /> &hr *; smt().
-      rcondt{2} ^if.
-      + move => &m.
-        auto.
-        move=> /> &hr *; smt().
-      sp 1 1.
-      if.
-      + admit. (* domino: J1 branch-condition; domino-verified-ec-failed *)
-      + rcondf{1} ^if; 1: by auto.
-        rcondf{1} ^if; 1: by auto.
-        rcondf{2} ^if; 1: by auto.
-        rcondf{2} ^if; 1: by auto.
-        auto => &1 &2 hpre.
-      + auto => /#.
-    + auto => /#.
+  + auto => /#.
   + auto => /#.
 qed.
