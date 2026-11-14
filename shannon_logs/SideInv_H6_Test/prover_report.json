@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "The first replay boundary was a no-op `rewrite ... in hpre4` (partial proof line 88), which the manager reverts on its own; committing it in a block with the following tactics is accepted.",
+    "Domino's admit at line 372 (goal: `d_PRF.[kid0, x0] = None` before the PRF sampling, in the !btest/bprf branch) closes by instantiating links, kmac_is_wellformed, kmac_requires_nonces (which, using tuple fields 8-10, gives sid <> None => kmac <> None), sid_is_wellformed, h_and_fresh_match and k_prf_implies_rev_tested_sid at ctr0, then `apply/contraT` and a small `smt()`.",
+    "Goal printouts in this lemma exceed 110k characters; `clear hpre.` followed by `undo_last_step` gives a readable view of the current goal."
+  ]
+}

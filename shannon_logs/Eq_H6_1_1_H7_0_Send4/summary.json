@@ -1,0 +1,26 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_125916_Eq_H6_1_1_H7_0_Send4/source/Full4WHS/Eq_H6_1_1_H7_0_Send4.ec",
+    "lemma": "Eq_H6_1_1_H7_0_Send4"
+  },
+  "iterations": 1,
+  "final_proved": false,
+  "final_prover_result_id": "adc3576194d4c8c2c19ccb97ff81ada36888d8afc18ef5480c078f5bb2365b8d",
+  "final_prover_result_status": "infrastructure_invalid",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 77.1,
+  "resume_capsules": [],
+  "generated_resume_capsules": [],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "adc3576194d4c8c2c19ccb97ff81ada36888d8afc18ef5480c078f5bb2365b8d",
+      "prover_result_status": "infrastructure_invalid",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_125916_Eq_H6_1_1_H7_0_Send4/run/2026-11-14_1300_Eq_H6_1_1_H7_0_Send4/iteration_1/prover_run_result.json",
+      "verified": false,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": []
+    }
+  ]
+}

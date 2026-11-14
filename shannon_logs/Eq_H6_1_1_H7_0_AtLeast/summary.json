@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/source/Full4WHS/Eq_H6_1_1_H7_0_AtLeast.ec",
+    "lemma": "Eq_H6_1_1_H7_0_AtLeast"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "a8cb7a2296e4a5dfc37f78f9533f20472ced9d5a6cfd394b47b954f64a548c3f",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 2.9,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "a8cb7a2296e4a5dfc37f78f9533f20472ced9d5a6cfd394b47b954f64a548c3f",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

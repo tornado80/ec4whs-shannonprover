@@ -1,0 +1,3 @@
+Failed to authenticate: OAuth session expired and could not be refreshed
+
+MANAGER WORKER ERROR: agent exited with 1.

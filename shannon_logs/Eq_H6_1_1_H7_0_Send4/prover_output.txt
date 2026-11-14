@@ -1,0 +1,3 @@
+unknown Claude user block 'text'
+
+MANAGER WORKER ERROR: agent exited with 2.

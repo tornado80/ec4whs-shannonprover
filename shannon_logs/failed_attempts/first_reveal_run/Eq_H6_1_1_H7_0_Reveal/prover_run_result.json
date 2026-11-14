@@ -1,0 +1,33 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_005026_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_0051_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_282402387858_tree_0_0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_282402387858_tree_0_0",
+  "elapsed_seconds": 1257.484426498413,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Hole J1 closed via Comp_H7.GameInv_session__key__is__defined_of_H7 (d_H.[kid] <> None), trivial-equality d_LTK/d_H between H6 and H7, and Comp_H6.GameInv_no__overwriting__prf_of_H6 (d_LTK = None => d_H = None).",
+      "Holes J2a/J2b closed via contrapositive of Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 with sid_is_wellformed, kmac_is_wellformed, h_and_fresh_match and kmac_requires_nonces (whose shifted indices give sid <> None => kmac <> None); J2b transferred to H7 via StateRelation_relation_prf_equality and state_equality under Fresh = Some true.",
+      "Unfolding all invariants into hypotheses made manager outputs exceed the readable size; destructuring the folded hypotheses with intro patterns and instantiating only needed invariants kept goals small and smt fast.",
+      "In compound commits, `have h : P by tac1; tac2` lets `by` absorb the rest of the chain; wrapping as `by (tac1)` was needed."
+    ]
+  },
+  "result_id": "05136479306e3dc328a6fcb306674991f45ff71956d8efa6d41fd5bd5d7aa5d6",
+  "resume_capsules": [],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "39ecf453-24de-49c9-8ec3-41b49f1e2d8b",
+  "skipped": false,
+  "status": "incomplete",
+  "turns": 42,
+  "verification": {}
+}

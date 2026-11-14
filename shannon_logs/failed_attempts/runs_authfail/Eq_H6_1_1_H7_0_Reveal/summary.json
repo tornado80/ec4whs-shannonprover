@@ -1,0 +1,42 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/source/Full4WHS/Eq_H6_1_1_H7_0_Reveal.ec",
+    "lemma": "Eq_H6_1_1_H7_0_Reveal"
+  },
+  "iterations": 1,
+  "final_proved": false,
+  "final_prover_result_id": "214f0d6401baed221563d448767e71a56b52f0d6ebb58ffa8c8f903c1fd114c3",
+  "final_prover_result_status": "infrastructure_invalid",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 2.1,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_ff6b78d70e0c_tree_0_0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0_r0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "214f0d6401baed221563d448767e71a56b52f0d6ebb58ffa8c8f903c1fd114c3",
+      "prover_result_status": "infrastructure_invalid",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/prover_run_result.json",
+      "verified": false,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_ff6b78d70e0c_tree_0_0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0_r0/resume.json"
+      ]
+    }
+  ]
+}

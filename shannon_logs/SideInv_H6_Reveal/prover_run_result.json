@@ -1,0 +1,53 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002830_SideInv_H6_Reveal/run/2026-11-14_0029_SideInv_H6_Reveal/iteration_1/ec_sessions/.ec_session_prover_07562788e636_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "d7522bb2cf4de838c9465bed383afeeba1e6c230abb60af6f9e392a4d984dee3",
+    "close_event_id": "ef02ef4d-2e20-46a1-abc7-41409768faf3",
+    "close_result_event_id": "3c3a601d-c9b6-4475-9d46-d152e343ed7c",
+    "history_sha256": "7ec1b93d57b9e268aaa652bd2cbd4e9059d5fe78477cdbb29108cbe1559204bf",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_07562788e636_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 333,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002830_SideInv_H6_Reveal/source/Full4WHS/SideInv_H6_Reveal.ec",
+    "target_file_sha256": "eb61e3e99ad6ce8fccf68ea3c3fdf19299666dcd14277dacf23eb0a724d11253",
+    "target_lemma": "SideInv_H6_Reveal",
+    "terminal_event_id": "f55a7f46-f87c-486b-b26e-64eddea5e02b"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_07562788e636_tree_0_0",
+  "elapsed_seconds": 467.6427810192108,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Domino's admit hole (rcondt ^if side goal: d_PRF[kid0,x0] = None) is provable from the pre via GameInv_k__prf__implies__rev__tested__sid, GameInv_sid__is__wellformed, GameInv_kmac__is__wellformed, GameInv_h__and__fresh__match and GameInv_kmac__requires__nonces (whose shifted tuple indices `8/`9/`10 yield sid <> None => kmac <> None), plus links PRF.b = bprf and the branch condition d_H[kid] <> Some false /\\ b",
+      "The first boundary tactic `rewrite ... in hpre4` was a no-op and was skipped; all other partial-proof tactics replayed unchanged"
+    ]
+  },
+  "result_id": "a2873310313624d7f1fc833c45d625a167ce8a00a1a4d0ca22d0f80a6a9fd8d1",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002830_SideInv_H6_Reveal/run/2026-11-14_0029_SideInv_H6_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_07562788e636_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002830_SideInv_H6_Reveal/run/2026-11-14_0029_SideInv_H6_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_07562788e636_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "449e0b2c-46f7-45f3-845c-8b1ad7cd3074",
+  "skipped": false,
+  "status": "verified",
+  "turns": 31,
+  "verification": {
+    "candidate_id": "d7522bb2cf4de838c9465bed383afeeba1e6c230abb60af6f9e392a4d984dee3",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

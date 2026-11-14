@@ -1,0 +1,8 @@
+`SideInv_H6_Reveal` is closed. EasyCrypt accepted `qed.`, there are no `admit`s left, and the manager accepted `finish`. Offline verification runs after this node stops, so the final check hasn't happened yet.
+
+- **The hole (the `rcondt ^if` side condition after `auto`):** I replaced the `admit` with a direct proof that the PRF entry being queried is still empty. It uses five of the invariants, plus the link `PRF.b = bprf` and the branch fact that `d_H[kid]` is not `Some false`. The key step is that `GameInv_kmac__requires__nonces` reads tuple fields 8–10, which are `nr`, `kmac` and `sid`. So in practice it says "sid set implies kmac set", which is the fact that closes the proof. That likely explains why Domino's plain `smt()` failed.
+- **One change outside the hole:** I skipped Domino's first `rewrite … in hpre4` at the boundary. It didn't change the goal, so the manager rejected it as a no-op. Everything else is Domino's proof as written.
+
+Many of the manager's replies after commits were too large to display. To check the proof was on track, I temporarily committed `clear hpre.` to shrink the output, then undid it.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Domino's admit hole (rcondt ^if side goal: d_PRF[kid0,x0] = None) is provable from the pre via GameInv_k__prf__implies__rev__tested__sid, GameInv_sid__is__wellformed, GameInv_kmac__is__wellformed, GameInv_h__and__fresh__match and GameInv_kmac__requires__nonces (whose shifted tuple indices `8/`9/`10 yield sid <> None => kmac <> None), plus links PRF.b = bprf and the branch condition d_H[kid] <> Some false /\\ b", "The first boundary tactic `rewrite ... in hpre4` was a no-op and was skipped; all other partial-proof tactics replayed unchanged"]}

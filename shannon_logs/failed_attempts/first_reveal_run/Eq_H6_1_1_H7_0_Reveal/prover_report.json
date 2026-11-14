@@ -1,0 +1,9 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Hole J1 closed via Comp_H7.GameInv_session__key__is__defined_of_H7 (d_H.[kid] <> None), trivial-equality d_LTK/d_H between H6 and H7, and Comp_H6.GameInv_no__overwriting__prf_of_H6 (d_LTK = None => d_H = None).",
+    "Holes J2a/J2b closed via contrapositive of Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 with sid_is_wellformed, kmac_is_wellformed, h_and_fresh_match and kmac_requires_nonces (whose shifted indices give sid <> None => kmac <> None); J2b transferred to H7 via StateRelation_relation_prf_equality and state_equality under Fresh = Some true.",
+    "Unfolding all invariants into hypotheses made manager outputs exceed the readable size; destructuring the folded hypotheses with intro patterns and instantiating only needed invariants kept goals small and smt fast.",
+    "In compound commits, `have h : P by tac1; tac2` lets `by` absorb the rest of the chain; wrapping as `by (tac1)` was needed."
+  ]
+}

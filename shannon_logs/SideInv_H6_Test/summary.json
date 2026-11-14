@@ -1,0 +1,32 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/source/Full4WHS/SideInv_H6_Test.ec",
+    "lemma": "SideInv_H6_Test"
+  },
+  "iterations": 1,
+  "final_proved": true,
+  "final_prover_result_id": "b1ff2aaa86c63da5dca5d92c476b9e37b618a248625ed31ed08b5ebac220892e",
+  "final_prover_result_status": "verified",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 11.9,
+  "resume_capsules": [],
+  "generated_resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0/resume.json"
+  ],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "b1ff2aaa86c63da5dca5d92c476b9e37b618a248625ed31ed08b5ebac220892e",
+      "prover_result_status": "verified",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/prover_run_result.json",
+      "verified": true,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": [
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0_closed/resume.json",
+        "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0/resume.json"
+      ]
+    }
+  ]
+}

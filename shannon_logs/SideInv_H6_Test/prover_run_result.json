@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/ec_sessions/.ec_session_prover_8a967ed5cbe5_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "a1372ec276735387474d4c96a8beec14eeefc6ffe42ca47295716a5d301e4e86",
+    "close_event_id": "bda16b09-d206-406a-9406-2662de386db6",
+    "close_result_event_id": "f002bdb3-62d9-48a9-9992-99e148baed87",
+    "history_sha256": "620cfa6815425c690271b2e75efb6fe08f460e4ad5fe5b8e4e934857b6bb8ab5",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_8a967ed5cbe5_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 485,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/source/Full4WHS/SideInv_H6_Test.ec",
+    "target_file_sha256": "2fc337590e9053b9f537a369baba0f794e46db45fc02059050dbfb06b6af43e0",
+    "target_lemma": "SideInv_H6_Test",
+    "terminal_event_id": "9f8771d2-a92a-438c-acd4-a3a99e6dea9a"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_8a967ed5cbe5_tree_0_0",
+  "elapsed_seconds": 617.7969479560852,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "The first replay boundary was a no-op `rewrite ... in hpre4` (partial proof line 88), which the manager reverts on its own; committing it in a block with the following tactics is accepted.",
+      "Domino's admit at line 372 (goal: `d_PRF.[kid0, x0] = None` before the PRF sampling, in the !btest/bprf branch) closes by instantiating links, kmac_is_wellformed, kmac_requires_nonces (which, using tuple fields 8-10, gives sid <> None => kmac <> None), sid_is_wellformed, h_and_fresh_match and k_prf_implies_rev_tested_sid at ctr0, then `apply/contraT` and a small `smt()`.",
+      "Goal printouts in this lemma exceed 110k characters; `clear hpre.` followed by `undo_last_step` gives a readable view of the current goal."
+    ]
+  },
+  "result_id": "b1ff2aaa86c63da5dca5d92c476b9e37b618a248625ed31ed08b5ebac220892e",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_8a967ed5cbe5_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "0b32c38c-7156-4202-a51d-1032a1285023",
+  "skipped": false,
+  "status": "verified",
+  "turns": 35,
+  "verification": {
+    "candidate_id": "a1372ec276735387474d4c96a8beec14eeefc6ffe42ca47295716a5d301e4e86",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/ec_sessions/.ec_session_prover_1c37bded7912_tree_0_0"
+  ],
+  "completion_candidate": {
+    "candidate_id": "96151fd67fe68563149f35516101a2b42a9df51d7ebf6ff56d2cfc770d2b77d9",
+    "close_event_id": "d278edac-69b2-4125-a5a1-813a8e4fe1cd",
+    "close_result_event_id": "e85e664d-629a-4f07-9335-e700528ca7db",
+    "history_sha256": "c3dcb69956471c104f842be43c2e56ccb3992784424dbfda86a46d540e9c25aa",
+    "node_id": "Tree-0.0",
+    "session_dir": "/home/amir/shannon-prover/.ec_session_prover_1c37bded7912_tree_0_0",
+    "session_status": "session_closed_pending_verification",
+    "tactic_count": 33,
+    "target_file": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/source/Full4WHS/Eq_H6_1_1_H7_0_AtLeast.ec",
+    "target_file_sha256": "70a94e1fa0e9002ab865adfcd1e8b42f9153ed4aa3928242a29fa944026be48f",
+    "target_lemma": "Eq_H6_1_1_H7_0_AtLeast",
+    "terminal_event_id": "de4b1211-62bd-4215-8474-74439862d5ba"
+  },
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_1c37bded7912_tree_0_0",
+  "elapsed_seconds": 165.14971280097961,
+  "error": "",
+  "event_contract_checked": true,
+  "event_contract_errors": [],
+  "event_contract_ok": true,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "The admit was the J1 branch-condition equivalence after `if.`; it closes by unfolding `inv` (abort flag false gives StateRelation_invariant), using d_Fresh/d_First equality and sid0{1}=sid0{2}, applying the state-equality relation at oget d_First{1}.[sid0{1}] (acc1 is field 5, unaffected by the kmac=None rewrite), splitting on d_Fresh = Some true, then smt().",
+      "Comp_H6/H7.Pkg_Inst_* names simplify to Cloned_Pkg_*.* after rewriting with /=, so the inv fields match the goal's identifiers.",
+      "All remaining partial-proof tactics (rcondf x4, auto => &1 &2 hpre., auto => /# x3) were accepted unchanged and qed. was accepted; offline verification is still pending."
+    ]
+  },
+  "result_id": "a8cb7a2296e4a5dfc37f78f9533f20472ced9d5a6cfd394b47b954f64a548c3f",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0_closed/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_002510_Eq_H6_1_1_H7_0_AtLeast/run/2026-11-14_0025_Eq_H6_1_1_H7_0_AtLeast/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_1c37bded7912_tree_0_0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "7f617b2b-b6ed-4dea-ab66-0283092c32e1",
+  "skipped": false,
+  "status": "verified",
+  "turns": 13,
+  "verification": {
+    "candidate_id": "96151fd67fe68563149f35516101a2b42a9df51d7ebf6ff56d2cfc770d2b77d9",
+    "event_contract_ok": true,
+    "event_verification_status": "pass",
+    "method": "full_file",
+    "status": "pass"
+  }
+}

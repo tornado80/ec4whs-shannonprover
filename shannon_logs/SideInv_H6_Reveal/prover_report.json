@@ -1,0 +1,7 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "Domino's admit hole (rcondt ^if side goal: d_PRF[kid0,x0] = None) is provable from the pre via GameInv_k__prf__implies__rev__tested__sid, GameInv_sid__is__wellformed, GameInv_kmac__is__wellformed, GameInv_h__and__fresh__match and GameInv_kmac__requires__nonces (whose shifted tuple indices `8/`9/`10 yield sid <> None => kmac <> None), plus links PRF.b = bprf and the branch condition d_H[kid] <> Some false /\\ b",
+    "The first boundary tactic `rewrite ... in hpre4` was a no-op and was skipped; all other partial-proof tactics replayed unchanged"
+  ]
+}

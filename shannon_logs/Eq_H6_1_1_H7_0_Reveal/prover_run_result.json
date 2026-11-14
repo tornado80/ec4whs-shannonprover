@@ -1,0 +1,33 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_114814_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1148_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_fcadea0b2c8e_tree_0_0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_fcadea0b2c8e_tree_0_0",
+  "elapsed_seconds": 799.9023230075836,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [],
+  "notes": "",
+  "report": {
+    "blockers": [],
+    "discoveries": [
+      "Hole 1 closed via H7 GameInv_session__key__is__defined (d_H[kid] defined), the relation's trivial equalities (d_LTK and d_H equal across H6/H7), and H6 GameInv_no__overwriting__prf.",
+      "Hole 2 closed by contradiction: hcond plus h_and_fresh_match give d_H[kid] = Some true, so the session is fresh; kmac_requires_nonces gives kmac <> None from sid <> None (its tuple indices are shifted by one); kmac_is_wellformed, sid_is_wellformed and k_prf_implies_rev_tested_sid then contradict d_RevTested_L[oget sid] = None.",
+      "Hole 3 closed by repeating the hole 2 argument on H6, then using StateRelation_relation_state_equality to show the H7 and H6 sessions share kid/d_U/d_V/ni/nr, and StateRelation_relation_prf_equality to transfer the result to H7.",
+      "The intro pattern [#] and the projection syntax (h x).`1 failed in this environment; explicit nested [a [b ...]] patterns worked. `rewrite hFeq ... in hW` failed with 'unknown lemma'; `move: hW; rewrite ... => hW` worked."
+    ]
+  },
+  "result_id": "6cde6fcdb1ccc5c7b4f67d35172b3842e9bfba1545c39a3fa44f07f9740754a7",
+  "resume_capsules": [],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "3d0704e9-aee9-4be5-9c79-0a798108c5f9",
+  "skipped": false,
+  "status": "incomplete",
+  "turns": 34,
+  "verification": {}
+}

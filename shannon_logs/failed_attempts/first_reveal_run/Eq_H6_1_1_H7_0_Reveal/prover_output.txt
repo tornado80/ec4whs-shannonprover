@@ -1,0 +1,12 @@
+The proof of `Eq_H6_1_1_H7_0_Reveal` is complete with no admits left. EasyCrypt accepted `qed.` and the manager accepted `finish`; offline re-verification of the saved proof is still pending.
+
+All three of Domino's holes are filled, and every other tactic from its partial proof was replayed as written.
+
+- **J1, line 161** (`rcondt{2}`, goal `d_LTK.[kid] <> None` on the H7 side): H7's `session_key_is_defined` gives `d_H.[kid] <> None`. The relation says H6 and H7 have the same `d_LTK` and `d_H`, and H6's `no_overwriting_prf` says `d_LTK = None => d_H = None`.
+- **J2a, line 225** (`rcondt{1}`, goal `d_PRF.[kid,(…,true)] = None` on H6): this is the contrapositive of `k_prf_implies_rev_tested_sid`. The other facts it needs come from `sid_is_wellformed`, `kmac_is_wellformed`, `h_and_fresh_match` and the branch condition.
+  - `kmac_requires_nonces` is defined with shifted tuple indices, so in practice it says `sid <> None => kmac <> None`. That is the fact this argument needed.
+- **J2b, line 229** (`rcondt{2}`, same goal on H7): the same H6 fact, carried over by the PRF-equality relation. The state-equality relation (with Fresh = `Some true`) shows the H7 session fields equal H6's.
+
+I didn't try one large `smt()` on the fully unfolded invariant, since that is where Domino's calls timed out. Each hole instead destructures the hypotheses by name, keeps only the instances it needs, and finishes with a small `smt()` or `exact`.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["Hole J1 closed via Comp_H7.GameInv_session__key__is__defined_of_H7 (d_H.[kid] <> None), trivial-equality d_LTK/d_H between H6 and H7, and Comp_H6.GameInv_no__overwriting__prf_of_H6 (d_LTK = None => d_H = None).", "Holes J2a/J2b closed via contrapositive of Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 with sid_is_wellformed, kmac_is_wellformed, h_and_fresh_match and kmac_requires_nonces (whose shifted indices give sid <> None => kmac <> None); J2b transferred to H7 via StateRelation_relation_prf_equality and state_equality under Fresh = Some true.", "Unfolding all invariants into hypotheses made manager outputs exceed the readable size; destructuring the folded hypotheses with intro patterns and instantiating only needed invariants kept goals small and smt fast.", "In compound commits, `have h : P by tac1; tac2` lets `by` absorb the rest of the chain; wrapping as `by (tac1)` was needed."]}

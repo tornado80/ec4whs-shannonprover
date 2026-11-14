@@ -1,0 +1,27 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_111408_Eq_H6_1_1_H7_0_Send4/run/2026-11-14_1115_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_0d031432404f_tree_0_0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_0d031432404f_tree_0_0",
+  "elapsed_seconds": 533.0365805625916,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "selected proof worker exited nonzero (code 1)"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "594bb6b068548372512b9b5c2f79b75589a30018b754caa0c15d71fa9aab3d56",
+  "resume_capsules": [],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "d7960d4e-f8d7-4f0a-8ab9-62dc072d4004",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 18,
+  "verification": {}
+}

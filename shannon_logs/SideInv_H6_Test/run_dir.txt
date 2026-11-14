@@ -1,0 +1,1 @@
+artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_003756_SideInv_H6_Test/run/2026-11-14_0038_SideInv_H6_Test

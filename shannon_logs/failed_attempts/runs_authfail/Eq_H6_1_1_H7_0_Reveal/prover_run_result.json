@@ -1,0 +1,41 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/ec_sessions/.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0_r0"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_ff6b78d70e0c_tree_0_0",
+  "elapsed_seconds": 127.40716195106506,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "selected proof worker exited nonzero (code 1)"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "214f0d6401baed221563d448767e71a56b52f0d6ebb58ffa8c8f903c1fd114c3",
+  "resume_capsules": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_.ec_session_prover_ff6b78d70e0c_tree_0_0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0/resume.json",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_112605_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_1126_Eq_H6_1_1_H7_0_Reveal/iteration_1/resume_capsules/Tree_0_0_r0_r0_r0_r0_r0_r0_.ec_session_prover_ff6b78d70e0c_tree_0_0_r0_r0_r0_r0_r0_r0/resume.json"
+  ],
+  "schema_version": 1,
+  "selected_node_id": "0.0",
+  "session_id": "5a21bb55-b7ea-4be3-91d5-cad9e2d5ebed",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 0,
+  "verification": {}
+}

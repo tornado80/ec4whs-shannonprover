@@ -1,0 +1,29 @@
+{
+  "archived_ec_session_dirs": [
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_125916_Eq_H6_1_1_H7_0_Send4/run/2026-11-14_1300_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_c76d0537760d_tree_0_0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_125916_Eq_H6_1_1_H7_0_Send4/run/2026-11-14_1300_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_c76d0537760d_tree_0_0_r0",
+    "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_125916_Eq_H6_1_1_H7_0_Send4/run/2026-11-14_1300_Eq_H6_1_1_H7_0_Send4/iteration_1/ec_sessions/.ec_session_prover_c76d0537760d_tree_0_0_r0_r1"
+  ],
+  "completion_candidate": {},
+  "ec_session_dir": "/home/amir/shannon-prover/.ec_session_prover_c76d0537760d_tree_0_0_r0",
+  "elapsed_seconds": 4625.150332927704,
+  "error": "",
+  "event_contract_checked": false,
+  "event_contract_errors": [],
+  "event_contract_ok": false,
+  "information_source_audit": [],
+  "infrastructure_errors": [
+    "selected proof worker exited nonzero (code 2)"
+  ],
+  "notes": "",
+  "report": {},
+  "result_id": "adc3576194d4c8c2c19ccb97ff81ada36888d8afc18ef5480c078f5bb2365b8d",
+  "resume_capsules": [],
+  "schema_version": 1,
+  "selected_node_id": "0.0.r0",
+  "session_id": "bba6f6d7-7ca3-4bcc-941c-be93f3003eb9",
+  "skipped": false,
+  "status": "infrastructure_invalid",
+  "turns": 93,
+  "verification": {}
+}

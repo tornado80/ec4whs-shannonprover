@@ -1,0 +1,26 @@
+{
+  "target": {
+    "file": "artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_005026_Eq_H6_1_1_H7_0_Reveal/source/Full4WHS/Eq_H6_1_1_H7_0_Reveal.ec",
+    "lemma": "Eq_H6_1_1_H7_0_Reveal"
+  },
+  "iterations": 1,
+  "final_proved": false,
+  "final_prover_result_id": "05136479306e3dc328a6fcb306674991f45ff71956d8efa6d41fd5bd5d7aa5d6",
+  "final_prover_result_status": "incomplete",
+  "final_regression_ok": true,
+  "total_elapsed_minutes": 21.0,
+  "resume_capsules": [],
+  "generated_resume_capsules": [],
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "prover_result_id": "05136479306e3dc328a6fcb306674991f45ff71956d8efa6d41fd5bd5d7aa5d6",
+      "prover_result_status": "incomplete",
+      "prover_result_artifact": "/home/amir/shannon-prover/artifacts/ec4whs/full4whs-H6_1_1-H7_0-domino-admits/runs/2026-11-14_005026_Eq_H6_1_1_H7_0_Reveal/run/2026-11-14_0051_Eq_H6_1_1_H7_0_Reveal/iteration_1/prover_run_result.json",
+      "verified": false,
+      "has_improvements": false,
+      "regression_ok": true,
+      "resume_capsules": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+I filled the one `admit.` hole in `Eq_H6_1_1_H7_0_AtLeast`, and EasyCrypt accepted `qed.` in the live session. The proof has no admits left. The final offline verification still has to run.
+
+**The hole.** It was the first goal produced by `if.` (Domino's "J1 branch-condition" goal). That goal says both games take the same branch: `acc1 = Some true` together with `d_Fresh.[oget d_First.[sid0]] = Some true` is equivalent on the two sides. I proved it from the invariant `inv`:
+- The abort flag is false here, so the state relation holds.
+- `d_Fresh` and `d_First` are equal on both sides, and `sid0{1} = sid0{2}`.
+- At that session's index, the stored states are either both empty (`None`) or equal on everything except one field (`kmac`, the 9th); `acc1` is the 5th field, so it agrees on both sides.
+
+After rewriting with those facts and splitting on whether the session is fresh, `smt()` closes it.
+
+**The rest.** I then committed the partial proof's remaining tactics unchanged: the four `rcondf` steps, `auto => &1 &2 hpre.`, and three `auto => /#.` steps, then `qed.`. None of Domino's original steps needed changing.
+
+PROVER REPORT: {"blockers": [], "discoveries": ["The admit was the J1 branch-condition equivalence after `if.`; it closes by unfolding `inv` (abort flag false gives StateRelation_invariant), using d_Fresh/d_First equality and sid0{1}=sid0{2}, applying the state-equality relation at oget d_First{1}.[sid0{1}] (acc1 is field 5, unaffected by the kmac=None rewrite), splitting on d_Fresh = Some true, then smt().", "Comp_H6/H7.Pkg_Inst_* names simplify to Cloned_Pkg_*.* after rewriting with /=, so the inv fields match the goal's identifiers.", "All remaining partial-proof tactics (rcondf x4, auto => &1 &2 hpre., auto => /# x3) were accepted unchanged and qed. was accepted; offline verification is still pending."]}

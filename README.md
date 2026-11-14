@@ -17,3 +17,78 @@ Admits left by Domino (task: complete them):
 - side invariants: `SideInv_H6_Reveal.ec`, `SideInv_H6_Test.ec` (1 each)
 
 Compile: `easycrypt compile -I Full4WHS Full4WHS/Eq_H6_1_1_H7_0.ec`.
+
+## Shannon Prover run (2026-11-14): filling Domino's admits
+
+Shannon Prover (repo release 0.3.2, EasyCrypt r2026.06) was asked to fill only the
+admits, keeping the rest of each proof. Setup:
+
+- Model: Claude Opus 5.5 (`claude-opus-5-5`), effort high, 80 min per lemma, one
+  lemma at a time, one proof node (`--tree-initial-provers 1 --tree-max-concurrent 1`).
+- Eval mode with bubblewrap confinement: the agent sees only a proof-stripped copy of
+  `Full4WHS/` plus EasyCrypt's theories, and no built-in tools.
+- **Outer-proof handoff** (`--outer-proof-handoff`): the manager first replays the
+  partial proof up to its first `admit` and certifies that goal. The agent starts there,
+  with the rest of the partial proof as the commands to continue with. The task note told
+  it to keep the rest of the script, to change a step only when it fails (and then
+  minimally and locally), and not to start extra EasyCrypt sessions (4 GB machine).
+  Driver: `shannon_logs/fill_admits.py`.
+- Solvers: Z3 5.1.0, cvc5 1.4.2, Alt-Ergo 2.6.3, one prover at a time
+  (`running_provers_max = 1`). From 13:14 each solver was capped at about 1 GB of
+  address space (`ulimit -v`) after a z3 call grew to 2 GB.
+- Each result was spliced back and checked with
+  `easycrypt compile -timeout 10 -I Full4WHS -I <easycrypt theories>`.
+
+### Results
+
+| lemma | admits before → after | result | how |
+|---|---|---|---|
+| `Eq_H6_1_1_H7_0_AtLeast` | 1 → 0 | verified | admit replaced by 5 tactics |
+| `SideInv_H6_Reveal` | 1 → 0 | verified | admit filled; 2 Domino `rewrite` lines EasyCrypt rejects were dropped |
+| `SideInv_H6_Test` | 1 → 0 | verified | admit filled; 4 rejected Domino `rewrite` lines dropped |
+| `Eq_H6_1_1_H7_0_Reveal` | 3 → 0 | proved (recovered) | all 3 admits filled; the run committed `qed` but the harness reported `incomplete`, so the proof was taken from the run's proof prefix and compiled |
+| `Eq_H6_1_1_H7_0_Send4` | 2 → 2 | not closed | kept your proof (ec4whs `2b9d9ef`); see below |
+| `Eq_H6_1_1_H7_0_Send2` | 4 → 4 | not run | first prompt too large; see below |
+| `Eq_H6_1_1_H7_0_Send3` | 0 | not needed | your proof; compiles with `-timeout 10` (45 min, 1.1 GB peak) but its `smt()` at line 188 fails at the default timeout |
+
+In every changed proof, Domino's commands are kept in order. Only the admits and the
+rejected `rewrite` steps differ.
+
+**Send4**: Shannon took over after 42 of your commands (`--stop-after 42`). It kept your
+script through command 413, raising some `smt()` timeouts to 60 s and changing one step
+locally. It then worked on the J7 admit and was still at it (8 goals open) when the
+80 minutes ran out. Its partial proof is in `shannon_logs/Eq_H6_1_1_H7_0_Send4/`.
+
+**Send2** (and the first versions of Send3/Send4): at the handoff point the proof state
+is about 5,700 lines, so Shannon's first prompt was 357–386 KB. Shannon passes that prompt
+as one command-line argument, and Linux limits one argument to 128 KB (`Argument list too
+long`). At about 240 k tokens it would also exceed the agent's 200 k context. These runs
+never reached the model. The same crash loop caused an out-of-memory kill at 01:26.
+
+### Tokens and cost
+
+List-price equivalent for Opus 5.5 (USD per million tokens: 4 input, 8 cache write (1 h),
+0.20 cache read, 20 output). This is not the subscription bill.
+
+| run | wall time | msgs | output | cache wr 1h | cache read | cost (USD) |
+|---|---:|---:|---:|---:|---:|---:|
+| AtLeast | 0:02:45 | 16 | 5,923 | 82,147 | 822,135 | 0.94 |
+| SideInv_H6_Reveal | 0:07:47 | 43 | 34,630 | 176,878 | 5,189,403 | 3.15 |
+| SideInv_H6_Test | 0:10:17 | 46 | 48,041 | 199,817 | 6,235,431 | 3.81 |
+| Reveal, run 1 (00:51, proof closed, not compile-checked) | 0:20:57 | 55 | | | | 4.90 |
+| Reveal, run 2 (11:48, proof committed here) | 0:13:19 | 42 | 46,630 | 348,522 | 8,109,844 | 5.34 |
+| Send4, try 1 (OAuth token revoked after 9 min) | 0:08:53 | 29 | | | | 2.49 |
+| Send4, try 2 (out of memory after 10 min) | 0:10:03 | 21 | | | | 2.36 |
+| Send4, try 3 (80 min limit) | 1:17:05 | 191 | 144,219 | 1,055,612 | 33,109,683 | 17.95 |
+| Send2, Send3/Send4 old versions, Reveal after OAuth expiry | | 0 | | | | 0.00 |
+| **total** | | | | | | **40.94** |
+
+### Logs
+
+`shannon_logs/<lemma>/` holds each lemma's latest run: `summary.json`,
+`prover_run_result.json`, `prover_report.json`, `prover_output.txt`,
+`partial_proof_prefix.ec`, `timeline.jsonl` (tactic timeline), `token_usage.jsonl` (one
+line per model message with usage and cost) and the full agent transcript
+(`transcript_*.jsonl.gz`). Failed and superseded attempts are in
+`shannon_logs/failed_attempts/`. The queue scripts, `fill_admits.log`,
+`queue_domino.log` and the Send3 compile log are in `shannon_logs/`.

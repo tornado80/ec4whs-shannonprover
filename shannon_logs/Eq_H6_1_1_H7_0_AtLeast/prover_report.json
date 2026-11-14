@@ -1,0 +1,8 @@
+{
+  "blockers": [],
+  "discoveries": [
+    "The admit was the J1 branch-condition equivalence after `if.`; it closes by unfolding `inv` (abort flag false gives StateRelation_invariant), using d_Fresh/d_First equality and sid0{1}=sid0{2}, applying the state-equality relation at oget d_First{1}.[sid0{1}] (acc1 is field 5, unaffected by the kmac=None rewrite), splitting on d_Fresh = Some true, then smt().",
+    "Comp_H6/H7.Pkg_Inst_* names simplify to Cloned_Pkg_*.* after rewriting with /=, so the inv fields match the goal's identifiers.",
+    "All remaining partial-proof tactics (rcondf x4, auto => &1 &2 hpre., auto => /# x3) were accepted unchanged and qed. was accepted; offline verification is still pending."
+  ]
+}
