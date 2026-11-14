@@ -135,33 +135,37 @@ lemma Eq_H6_1_1_H7_0_AtLeast (b : bool) : equiv[Comp_H6.Game_H6.d_AtLeast ~ Comp
                          r_pkg_KX_bleast = Comp_H7.Pkg_Inst_KX.bleast{2};
                          r_abort_flag = Comp_H7.Game_H7.abort_flag{2} |}].
 proof.
-(* d_AtLeast *)
+  (* d_AtLeast *)
 + proc; inline.
   sp 1 1.
   if.
   + auto => /#.
   + sp 3 3.
-    if.
-    + move=> /> &1 &2 *; smt().
-    + rcondt{1} ^if; 1: auto => /#.
-      rcondt{1} ^if; 1: auto => /#.
-      rcondt{2} ^if.
-      + move => &m.
-        auto.
-        move=> /> &hr *; smt().
-      rcondt{2} ^if.
-      + move => &m.
-        auto.
-        move=> /> &hr *; smt().
-      sp 1 1.
-      if.
-      + admit. (* domino: J1 branch-condition; domino-verified-ec-failed *)
-      + rcondf{1} ^if; 1: by auto.
-        rcondf{1} ^if; 1: by auto.
-        rcondf{2} ^if; 1: by auto.
-        rcondf{2} ^if; 1: by auto.
-        auto => &1 &2 hpre.
-      + auto => /#.
-    + auto => /#.
-  + auto => /#.
+  if.
+  + move=> /> &1 &2 *; smt().
+  + rcondt{1} ^if; 1: auto => /#.
+  rcondt{1} ^if; 1: auto => /#.
+  rcondt{2} ^if.
+  + move => &m.
+  auto.
+  move=> /> &hr *; smt().
+  rcondt{2} ^if.
+  + move => &m.
+  auto.
+  move=> /> &hr *; smt().
+  sp 1 1.
+  if.
+  move=> &1 &2 [#] hs2 hs1 hsid0r _ _ hsid0l _ _ _ _ hsid hinv _ _ habort hbl hfst hsnd.
+  move: hinv; rewrite /inv /StateRelation_invariant /StateRelation_relation_trivial_equalities /StateRelation_relation_state_equality /= habort /=.
+  move=> [#] _ _ _ _ _ _ _ hfr hfi _ _ _ hst _ _.
+  have e : sid0{2} = sid0{1} by rewrite hsid0r hsid0l hsid.
+  move: hs2 (hst (oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_First{1}.[sid0{1}])); rewrite e -hfi -hfr; case: (Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_Fresh{1}.[oget Comp_H6.Cloned_Pkg_KX.KX_noprfkey.d_First{1}.[sid0{1}]] = Some true) => hf /=; smt().
+  rcondf{1} ^if; 1: by auto.
+  rcondf{1} ^if; 1: by auto.
+  rcondf{2} ^if; 1: by auto.
+  rcondf{2} ^if; 1: by auto.
+  auto => &1 &2 hpre.
+  auto => /#.
+  auto => /#.
+  auto => /#.
 qed.

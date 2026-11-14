@@ -54,485 +54,489 @@ lemma SideInv_H6_Test (bleast : bool) (bprf : bool) (btest : bool) : hoare[Comp_
                Comp_H6.H6_const_btest = btest;
                Comp_H6.H6_abort_flag = Comp_H6.Game_H6.abort_flag |}].
 proof.
-(* d_Test *)
+  (* d_Test *)
 + proc; inline.
   sp 1.
   if.
   + sp 3.
-    if.
-    + sp 1.
-      if.
-      + rcondt ^if; 1: auto => /#.
-        if.
-        + if.
-          + if.
-            + sp 1.
-              if.
-              + seq 1 : (#pre); 1: auto => />.
-                rcondt ^if; 1: auto => /#.
-                rcondf ^if; 1: by auto.
-                auto => &hr hpre /=.
-                rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
-                rewrite /Comp_H6.side_inv_H6 /=.
-                move => hpre1 /=.
-                do split.
-                + smt().
-                + smt().
-                + smt().
-                + smt().
-                + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
-                  move => ctr1 /=.
-                  move => hpre2 /=.
-                  do split.
-                  + move => hpre3 /=.
-                    do split.
-                    + move => hpre4 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                      do split.
-                      + smt().
-                      + smt().
-                      + smt().
-                      + smt().
-                      + smt().
-                    + move => hpre4 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                      do split.
-                      + move => hpre5 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                        smt().
-                      + move => hpre5 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                        smt().
-                      + move => hpre5 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                  + move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    do split.
-                    + move => hpre4 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                      do split.
-                      + smt().
-                      + smt().
-                      + smt().
-                      + smt().
-                      + smt().
-                    + move => hpre4 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                      do split.
-                      + move => hpre5 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                      + move => hpre5 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
-                  move => hpre2 /=.
-                  move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                  do split.
-                  + move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    smt().
-                  + move => hpre3 /=.
-                    smt().
-                + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
-                  move => i /=.
-                  do split.
-                  + smt().
-                  + move => hpre2 /=.
-                    smt().
-                  + move => hpre2 /=.
-                    smt().
-                  + move => hpre2 /=.
-                    do split.
-                    + smt().
-                    + smt().
-                + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
-                  move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                  move => hpre2 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                  smt().
-                + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
-                  move => hpre2 /=.
-                  move => ctr1 /=.
-                  move => hpre3 /=.
-                  move => hpre4 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                  smt().
-                + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
-                  move => ctr1 /=.
-                  move => hpre2 /=.
-                  move => hpre3 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                  do split.
-                  + smt().
-                  + smt().
-                + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
-                  move => ctr1 /=.
-                  move => hpre2 /=.
-                  move => hpre3 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                  smt().
-                + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
-                  move => hpre2 /=.
-                  move => ctr1 /=.
-                  move => hpre3 /=.
-                  move => hpre4 /=.
-                  do split.
-                  + smt().
-                  + move => hpre5 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                    smt().
-                + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
-                  move => ctr1 /=.
-                  move => hpre2 /=.
-                  move => hpre3 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                  do split.
-                  + smt().
-                  + smt().
-                + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
-                  move => ctr1 /=.
-                  move => hpre2 /=.
-                  do split.
-                  + smt().
-                  + smt().
-                  + smt().
-                + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
-                  move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                  move => hpre2 /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                  smt(get_setE mem_set remE mem_rem emptyE).
-              + rcondt ^if; 1: auto => /#.
-                rcondt ^if; 1: auto => /#.
-                rcondt ^if; 1: auto => /#.
-                sp 6.
-                if.
-                + rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
-                  rcondf ^if; 1: by auto.
-                  auto => &hr hpre /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
-                  rewrite /Comp_H6.side_inv_H6 /=.
-                  move => hpre1 /=.
-                  do split.
-                  + smt().
-                  + smt().
-                  + smt().
-                  + smt().
-                  + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    do split.
-                    + move => hpre3 /=.
-                      do split.
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                    + move => hpre3 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                      do split.
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                  + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
-                    move => hpre2 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    do split.
-                    + move => hpre3 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                      move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                    + move => hpre3 /=.
-                      smt(get_setE mem_set remE mem_rem emptyE).
-                  + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
-                    move => i /=.
-                    do split.
-                    + smt().
-                    + move => hpre2 /=.
-                      smt().
-                    + move => hpre2 /=.
-                      smt().
-                    + move => hpre2 /=.
-                      do split.
-                      + smt().
-                      + smt().
-                  + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    move => hpre2 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                    smt().
-                  + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
-                    move => hpre2 /=.
-                    move => ctr1 /=.
-                    move => hpre3 /=.
-                    move => hpre4 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                    smt().
-                  + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    do split.
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    smt().
-                  + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
-                    move => hpre2 /=.
-                    move => ctr1 /=.
-                    move => hpre3 /=.
-                    move => hpre4 /=.
-                    do split.
-                    + smt().
-                    + move => hpre5 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                      smt().
-                  + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    do split.
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    do split.
-                    + smt().
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    move => hpre2 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                    smt(get_setE mem_set remE mem_rem emptyE).
-                + rcondt ^if.
-                  + auto.
-                    admit. (* domino: J3 side-goal; domino-verified-ec-failed *)
-                  seq 1 : (#pre); 1: auto => />.
-                  rcondt ^if.
-                  + auto.
-                    smt(get_setE mem_set remE mem_rem emptyE).
-                  rcondt ^if; 1: auto => /#.
-                  rcondt ^if; 1: auto => /#.
-                  rcondf ^if; 1: by auto.
-                  auto => &hr hpre /=.
-                  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
-                  rewrite /Comp_H6.side_inv_H6 /=.
-                  move => hpre1 /=.
-                  do split.
-                  + smt().
-                  + smt().
-                  + smt().
-                  + smt().
-                  + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    do split.
-                    + move => hpre3 /=.
-                      do split.
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                    + move => hpre3 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                      do split.
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                        + smt().
-                      + move => hpre4 /=.
-                        rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                        do split.
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                        + move => hpre5 /=.
-                          rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                          do split.
-                          + smt().
-                          + smt().
-                          + smt().
-                          + smt().
-                  + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
-                    move => hpre2 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    do split.
-                    + move => hpre3 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                      move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                    + move => hpre3 /=.
-                      move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                  + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
-                    move => i /=.
-                    do split.
-                    + smt().
-                    + move => hpre2 /=.
-                      smt().
-                    + move => hpre2 /=.
-                      smt().
-                    + move => hpre2 /=.
-                      do split.
-                      + smt().
-                      + smt().
-                  + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    move => hpre2 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                    move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
-                  + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
-                    move => hpre2 /=.
-                    move => ctr1 /=.
-                    move => hpre3 /=.
-                    move => hpre4 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
-                    smt(get_setE mem_set remE mem_rem emptyE).
-                  + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    do split.
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    smt().
-                  + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
-                    move => hpre2 /=.
-                    move => ctr1 /=.
-                    move => hpre3 /=.
-                    move => hpre4 /=.
-                    do split.
-                    + smt().
-                    + move => hpre5 /=.
-                      rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
-                      smt(get_setE mem_set remE mem_rem emptyE).
-                  + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    move => hpre3 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
-                    do split.
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
-                    move => ctr1 /=.
-                    move => hpre2 /=.
-                    do split.
-                    + smt().
-                    + smt().
-                    + smt().
-                  + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
-                    move => kid1 d_U0 d_V0 ni0 nr0 /=.
-                    move => hpre2 /=.
-                    rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
-                    move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
-            + rcondt ^if; 1: by auto.
-              auto => &hr hpre /=.
-          + rcondt ^if; 1: by auto.
-            auto => &hr hpre /=.
-        + rcondt ^if; 1: by auto.
-          auto => &hr hpre /=.
-      + rcondt ^if; 1: by auto.
-        auto => &hr hpre /=.
-    + rcondt ^if; 1: by auto.
-      auto => &hr hpre /=.
+  if.
+  + sp 1.
+  if.
+  + rcondt ^if; 1: auto => /#.
+  if.
+  + if.
+  + if.
+  + sp 1.
+  if.
+  + seq 1 : (#pre); 1: auto => />.
+  rcondt ^if; 1: auto => /#.
+  rcondf ^if; 1: by auto.
+  auto => &hr hpre /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
+  rewrite /Comp_H6.side_inv_H6 /=.
+  move => hpre1 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + move => hpre3 /=.
+  do split.
+  + move => hpre4 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  smt().
+  + move => hpre5 /=.
+  smt().
+  + move => hpre5 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
+  move => hpre2 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  do split.
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  smt().
+  + move => hpre3 /=.
+  smt().
+  + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
+  move => i /=.
+  do split.
+  + smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  smt().
+  + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  smt().
+  + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  smt().
+  + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  do split.
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  + rcondt ^if; 1: auto => /#.
+  rcondt ^if; 1: auto => /#.
+  rcondt ^if; 1: auto => /#.
+  sp 6.
+  if.
+  + rcondt ^if; 1: auto => /#.
+  rcondt ^if; 1: auto => /#.
+  rcondf ^if; 1: by auto.
+  auto => &hr hpre /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
+  rewrite /Comp_H6.side_inv_H6 /=.
+  move => hpre1 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + move => hpre3 /=.
+  do split.
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
+  move => hpre2 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  do split.
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
+  + move => hpre3 /=.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
+  move => i /=.
+  do split.
+  + smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  smt().
+  + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  smt().
+  + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  smt().
+  + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  do split.
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  + rcondt ^if.
+  + auto.
+  move=> &hr [[d_RTE [_ [eh [ex [ek [ex0 [_ [[d_RT [_ [[[[[hst [[_ [_ [_ [[_ hinv] habort]]]] hdef]] hacc] hfr] hsid] hRT]]] _]]]]]]]] hb].
+  move: hinv; rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /= => /(_ habort) [[hlb _] [_ [_ [_ [_ [hkw [hkr [hsw [_ [_ [hhf hkp]]]]]]]]]]].
+  have hbp : bprf by move: hb; rewrite hlb => /#.
+  move: (hkw hbp _ hdef) (hkr _ hdef) (hsw _ hdef) (hhf _ hdef); rewrite -hst /= => hkw0 hkr0 hsw0 hhf0.
+  rewrite ek eh ex0 ex.
+  apply/contraT => hne.
+  have hk1 := hkp _ _ _ _ _ hne.
+  clear hkw hkr hsw hhf hkp.
+  smt().
+  seq 1 : (#pre); 1: auto => />.
+  rcondt ^if.
+  + auto.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  rcondt ^if; 1: auto => /#.
+  rcondt ^if; 1: auto => /#.
+  rcondf ^if; 1: by auto.
+  auto => &hr hpre /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre.
+  rewrite /Comp_H6.side_inv_H6 /=.
+  move => hpre1 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + move => hpre3 /=.
+  do split.
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  do split.
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_revtesteval__populated_of_H6 /=.
+  move => hpre2 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  do split.
+  + move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
+  + move => hpre3 /=.
+  move: hpre hpre1 hpre2 hpre3 => />; smt(get_setE mem_set remE mem_rem emptyE).
+  + rewrite /Comp_H6.GameInv_no__overwriting__prf_of_H6 /=.
+  move => i /=.
+  do split.
+  + smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  smt().
+  + move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_kmac__before__k_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
+  + rewrite /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre4.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  + rewrite /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_sid__is__wellformed_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  smt().
+  + rewrite /Comp_H6.GameInv_honest__kmac_of_H6 /=.
+  move => hpre2 /=.
+  move => ctr1 /=.
+  move => hpre3 /=.
+  move => hpre4 /=.
+  do split.
+  + smt().
+  + move => hpre5 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre5.
+  smt(get_setE mem_set remE mem_rem emptyE).
+  + rewrite /Comp_H6.GameInv_sid__requires__nonces_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  move => hpre3 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre3.
+  do split.
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_h__and__fresh__match_of_H6 /=.
+  move => ctr1 /=.
+  move => hpre2 /=.
+  do split.
+  + smt().
+  + smt().
+  + smt().
+  + rewrite /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 /=.
+  move => kid1 d_U0 d_V0 ni0 nr0 /=.
+  move => hpre2 /=.
+  rewrite /Comp_H6.side_inv_H6 /Comp_H6.links_H6 /Comp_H6.GameInv_stuff__not__initialized__early_of_H6 /Comp_H6.GameInv_revtesteval__populated_of_H6 /Comp_H6.GameInv_no__overwriting__prf_of_H6 /Comp_H6.GameInv_kmac__before__k_of_H6 /Comp_H6.GameInv_kmac__is__wellformed_of_H6 /Comp_H6.GameInv_kmac__requires__nonces_of_H6 /Comp_H6.GameInv_sid__is__wellformed_of_H6 /Comp_H6.GameInv_honest__kmac_of_H6 /Comp_H6.GameInv_sid__requires__nonces_of_H6 /Comp_H6.GameInv_h__and__fresh__match_of_H6 /Comp_H6.GameInv_k__prf__implies__rev__tested__sid_of_H6 in hpre2.
+  move: hpre hpre1 hpre2 => />; smt(get_setE mem_set remE mem_rem emptyE).
+  + rcondt ^if; 1: by auto.
+  auto => &hr hpre /=.
+  + rcondt ^if; 1: by auto.
+  auto => &hr hpre /=.
+  + rcondt ^if; 1: by auto.
+  auto => &hr hpre /=.
+  + rcondt ^if; 1: by auto.
+  auto => &hr hpre /=.
+  + rcondt ^if; 1: by auto.
+  auto => &hr hpre /=.
   + auto => /#.
 qed.
