@@ -13,7 +13,7 @@ Admits left by Domino (task: complete them):
 - `Eq_H6_1_1_H7_0_Send4.ec`: 2 (J7, J8 side goals; ec4whs `2b9d9ef`)
 - `Eq_H6_1_1_H7_0_Send2.ec`: 4
 - `Eq_H6_1_1_H7_0_Reveal.ec`: 3
-- `Eq_H6_1_1_H7_0_AtLeast.ec`: 1
+- `Eq_H6_1_1_H7_0_AtLeast.ec`: 0 (closed, ec4whs working tree 2026-11-14)
 - side invariants: `SideInv_H6_Reveal.ec`, `SideInv_H6_Test.ec` (1 each)
 
 Compile: `easycrypt compile -I Full4WHS Full4WHS/Eq_H6_1_1_H7_0.ec`.
@@ -43,7 +43,7 @@ admits, keeping the rest of each proof. Setup:
 
 | lemma | admits before → after | result | how |
 |---|---|---|---|
-| `Eq_H6_1_1_H7_0_AtLeast` | 1 → 0 | verified | admit replaced by 5 tactics |
+| `Eq_H6_1_1_H7_0_AtLeast` | 1 → 0 | verified | admit replaced by 5 tactics (commit `ac77d78`); the file now holds your own proof from `c5aa117`, and Shannon's is in the history and `shannon_logs/` |
 | `SideInv_H6_Reveal` | 1 → 0 | verified | admit filled; 2 Domino `rewrite` lines EasyCrypt rejects were dropped |
 | `SideInv_H6_Test` | 1 → 0 | verified | admit filled; 4 rejected Domino `rewrite` lines dropped |
 | `Eq_H6_1_1_H7_0_Reveal` | 3 → 0 | proved (recovered) | all 3 admits filled; the run committed `qed` but the harness reported `incomplete`, so the proof was taken from the run's proof prefix and compiled |
