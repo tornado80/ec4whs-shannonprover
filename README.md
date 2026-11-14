@@ -9,8 +9,8 @@ All files, including `Pkg_KX_noprfkey.ec`, are the current translation
 (without `ReverseMac`), as committed in ec4whs `57e3e53`.
 
 Admits left by Domino (task: complete them):
-- `Eq_H6_1_1_H7_0_Send3.ec`: 22
-- `Eq_H6_1_1_H7_0_Send4.ec`: 17
+- `Eq_H6_1_1_H7_0_Send3.ec`: 0 (closed, ec4whs `2b9d9ef`)
+- `Eq_H6_1_1_H7_0_Send4.ec`: 2 (J7, J8 side goals; ec4whs `2b9d9ef`)
 - `Eq_H6_1_1_H7_0_Send2.ec`: 4
 - `Eq_H6_1_1_H7_0_Reveal.ec`: 3
 - `Eq_H6_1_1_H7_0_AtLeast.ec`: 1
